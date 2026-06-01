@@ -1,0 +1,10 @@
+name: Validate Atlas governance artifacts
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/validate_static_site.py

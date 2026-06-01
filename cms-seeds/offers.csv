@@ -1,0 +1,7 @@
+slug,title,segment,delivery_mode,risk_class,published
+executive-work-copilot,Executive Work Copilot,business,guided,low,true
+commercial-growth-copilot,Commercial Growth Copilot,business,guided,low,true
+accounting-bookkeeping-expert,Accounting & Bookkeeping Expert,professional,guided,moderate,true
+study-planner-exam-coach,Study Planner & Exam Coach,student,native,moderate,true
+personal-life-organizer,Personal Life Organizer,consumer,native,low,true
+managed-secure-mode,Managed Secure Mode,enterprise,managed_secure_future,moderate,false

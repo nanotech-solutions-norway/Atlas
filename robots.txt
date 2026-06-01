@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nanotech-solutions-norway.github.io/Atlas/sitemap.xml
