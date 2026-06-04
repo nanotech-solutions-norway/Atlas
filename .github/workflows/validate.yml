@@ -1,4 +1,4 @@
-name: Validate Atlas governance artifacts
+name: Validate Atlas AI governance artifacts
 on:
   pull_request:
   workflow_dispatch:

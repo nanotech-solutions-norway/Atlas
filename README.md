@@ -1,21 +1,30 @@
-# Atlas Website Repository
+# Atlas AI Website and Governance Repository
 
-Generated: 12:45, 01.06.2026 Europe/Oslo
+Updated: 13:02, 04.06.2026 Europe/Oslo
 
-This repository contains the static Atlas website and the GitHub-governed implementation package for the Atlas website workstream.
+This repository contains the GitHub-governed website source, public static pages, CMS schemas, seed packs, QA scripts, governance records, legal/trust drafts, Velo notes, and future Azure placeholders for the Atlas AI website workstream.
 
-## Scope
+## Canonical positioning
 
-Atlas is an AI enablement and delivery venture that packages governed, purpose-specific AI work models. This repository contains public/static website content, governance documentation, schemas, seed data, QA scripts, Velo/source placeholders, and future secure-runtime contracts.
+Atlas AI is a governed AI solution-layer company. Atlas owns problem framing, workflow design, knowledge architecture, onboarding, governance, secure delivery, QA, support, and lifecycle management. Third-party model providers supply the model layer where appropriate.
+
+Atlas AI must not be presented as a proprietary foundation-model company, a generic custom-GPT storefront, or a reseller of vendor subscriptions unless a specific vendor agreement exists.
+
+## Public website model
+
+- Root `/` is Bokmål.
+- `/en/` is English.
+- Primary navigation: Solutions, Managed Secure, Pricing, Trust, Resources, About, Contact.
+- Platform Lanes are accessible, but not over-promoted.
+- Ordinary public forms are low-risk qualification only.
+- Managed Secure and Azure remain gated until validated Phase 3/6 evidence exists.
 
 ## Deployment
 
-GitHub Pages deployment is configured through `.github/workflows/deploy-pages.yml`.
+GitHub Pages deployment is configured through `.github/workflows/deploy-pages.yml`. The workflow publishes only public website assets and excludes governance/source folders from the Pages artifact.
 
-Manual settings still required: Repository Settings → Pages → Source: GitHub Actions. Add a custom domain only after ownership and DNS records are verified.
+Manual setting required if not already done: Repository Settings → Pages → Source → GitHub Actions.
 
-## Boundary
+## Repository boundary
 
-Do not commit secrets, credentials, customer files, private accounting data, confidential contracts, API keys, or sensitive personal data.
-
-Azure and Managed Secure Mode are placeholders until a commercial secure-delivery use case is approved.
+Do not commit secrets, credentials, protected artifacts, customer confidential data, private packages, bank/accounting data, tokens, API keys, or sensitive personal data.

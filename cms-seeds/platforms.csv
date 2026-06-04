@@ -1,5 +1,0 @@
-slug,name,visibility,status,notes
-github,GitHub governance plane,public,active,Source of truth for repo assets and deployment workflow
-wix,Wix commercial shell,future,external,Existing shell reported but not audited in this repo deployment
-gamma,Gamma design references,internal,planned,Exact deck URLs or IDs pending
-azure,Azure secure control plane,internal,not_started,Future secure runtime only

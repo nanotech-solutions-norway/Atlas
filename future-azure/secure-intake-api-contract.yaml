@@ -1,0 +1,14 @@
+openapi: 3.1.0
+info:
+  title: Atlas AI Future Secure Intake API
+  version: 0.1.0
+  description: Placeholder only. Do not implement until Managed Secure use case is commercially approved.
+paths:
+  /secure-intake:
+    post:
+      summary: Receive classified secure-intake metadata after qualification
+      x-status: not_started
+  /audit-event:
+    post:
+      summary: Record audit event for protected workflow
+      x-status: not_started

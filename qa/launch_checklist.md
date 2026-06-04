@@ -1,11 +1,12 @@
-# Atlas Launch Checklist — 12:45, 01.06.2026
+# Atlas AI Launch Checklist — 13:02, 04.06.2026
 
-- [ ] `index.html` loads at repository root.
-- [ ] Navigation links work on desktop and mobile.
-- [ ] 404 page is present.
-- [ ] `robots.txt` and `sitemap.xml` use the correct final domain.
-- [ ] Placeholder email is replaced before production launch.
-- [ ] No secrets, credentials or confidential files are present.
-- [ ] Pages source is set to GitHub Actions.
-- [ ] Deploy workflow passes.
-- [ ] HTTPS is enabled after DNS is configured.
+- [ ] GitHub Pages source is set to GitHub Actions.
+- [ ] Bokmål root and `/en/` English pages load.
+- [ ] Navigation matches approved lean IA.
+- [ ] `hreflang` exists for nb-NO, en and x-default.
+- [ ] Public form copy says not to upload confidential files.
+- [ ] Pricing page states Atlas prices the solution layer and vendor costs are BYOL/pass-through by default.
+- [ ] Trust Center includes provider disclosure and AI-output disclaimer language.
+- [ ] Claims registry review is complete.
+- [ ] Legal pack is reviewed before production.
+- [ ] No secrets, customer files or protected artifacts are in repo.

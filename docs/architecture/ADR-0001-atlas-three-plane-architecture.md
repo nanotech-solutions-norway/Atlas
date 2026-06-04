@@ -1,13 +1,10 @@
-# ADR-0001 — Atlas Three-Plane Architecture — 12:45, 01.06.2026
+# ADR-0001 — Atlas AI Three-Plane Architecture — 13:02, 04.06.2026
 
 ## Status
-Accepted.
+Accepted; updated by June 2026 website strategy.
 
 ## Decision
-Atlas uses three platform planes: public presentation, GitHub engineering governance, and future Azure secure execution/control.
+Atlas AI keeps the three-plane architecture: public/commercial plane, GitHub governance plane, and secure control plane.
 
 ## Boundary
-This repo may publish public static information and govern implementation artifacts. It must not store backend secrets, customer-sensitive data, entitlement data, or confidential deliverables.
-
-## Rationale
-The architecture reduces drift, supports rollback, keeps launch delivery simple, and preserves a future path toward Managed Secure Mode.
+The public site must not process secrets, credentials, protected customer artifacts, or confidential/restricted uploads. Ordinary forms are low-risk qualification only. Azure-backed secure orchestration is reserved for qualified Managed Secure / controlled-delivery use cases.

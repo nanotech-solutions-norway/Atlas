@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.nav-toggle'),n=document.querySelector('.nav');if(b&&n)b.addEventListener('click',()=>n.classList.toggle('open'));});
+document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav');if(btn&&nav){btn.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));});}});

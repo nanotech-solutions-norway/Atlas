@@ -1,10 +1,13 @@
-# Atlas Branch and Release Policy — 12:45, 01.06.2026
+# Atlas AI Branch and Release Policy — 13:02, 04.06.2026
 
-`main` is the deployment branch. Material schema, route, Velo, QA, legal/trust, or Azure-contract changes should be reviewed before merge.
+`main` is the approved source-of-truth and deployment branch.
 
-## Release checklist
+Material changes require review when they affect public claims, pricing, provider disclosure, trust/legal text, CMS schema, routes, forms, security posture, Managed Secure language, Azure contracts, or bilingual content.
+
+## Release gate
 1. Static validation passes.
-2. Sitemap and robots are updated.
-3. Navigation links are verified.
-4. Implementation register is updated.
-5. No secrets or confidential files are present.
+2. No secrets or confidential files are detected.
+3. Public claims are mapped to `claims_registry`.
+4. Bokmål/English parity checks pass.
+5. Trust/legal drafts are reviewed before production use.
+6. GitHub Pages workflow publishes only public website assets.

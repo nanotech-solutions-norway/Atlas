@@ -1,9 +1,7 @@
-# Atlas Link Map — 12:45, 01.06.2026
+# Atlas AI Link Map — 13:02, 04.06.2026
 
-| Source | Destination | Purpose |
+| Visitor type | Route | Outcome |
 |---|---|---|
-| Home | Offers | Primary conversion |
-| Home | Governance | Trust and architecture proof |
-| Offers | Intake | Structured handoff |
-| Intake | Contact | Scoping request |
-| Trust | Contact | Risk-aware enquiry |
+| Low-risk SMB/professional | Home → Solutions → Pricing → Onboarding | Native package or guided setup |
+| Team/department buyer | Home → Solutions → Platform Lanes → Pricing → Onboarding | Business Workspace proposal |
+| Security-sensitive buyer | Home → Managed Secure → Trust Center → Contact | Architecture review |
