@@ -1,0 +1,6 @@
+[
+  {"scenario_id":"business_document_workflow","segment":"business_professional","baseline_hours_per_month":40,"estimated_hourly_cost_nok":950,"expected_efficiency_gain_percent":25,"implementation_cost_nok":120000,"vendor_cost_policy":"BYOL/pass-through","notes":"Planning input only; customer-specific ROI requires discovery."},
+  {"scenario_id":"business_team_workspace","segment":"business_professional","baseline_hours_per_month":160,"estimated_hourly_cost_nok":950,"expected_efficiency_gain_percent":15,"implementation_cost_nok":300000,"vendor_cost_policy":"Customer-owned workspace","notes":"Planning input only; use after team-size and workflow mapping."},
+  {"scenario_id":"student_study_planning","segment":"student","baseline_hours_per_month":20,"estimated_hourly_cost_nok":0,"expected_efficiency_gain_percent":20,"implementation_cost_nok":0,"vendor_cost_policy":"Low-cost or customer-owned vendor access","notes":"Do not present as financial ROI; use as study-structure benefit model."},
+  {"scenario_id":"consumer_personal_productivity","segment":"consumer_private_user","baseline_hours_per_month":10,"estimated_hourly_cost_nok":0,"expected_efficiency_gain_percent":15,"implementation_cost_nok":0,"vendor_cost_policy":"Low-cost or customer-owned vendor access","notes":"Do not present as financial ROI; use as time-organization benefit model."}
+]
