@@ -1,0 +1,6 @@
+[
+  {"slug":"native_package","name":"Native package","best_for":"Low-risk professional, student or consumer utility","boundary":"Customer-owned vendor workspace; no confidential files through public forms"},
+  {"slug":"guided_setup","name":"Guided setup","best_for":"SMB/professional workflows needing tailoring","boundary":"Atlas supports configuration, knowledge setup, guardrails and QA; vendor costs BYOL/pass-through"},
+  {"slug":"business_workspace","name":"Business Workspace","best_for":"Teams with role-specific work models and shared governance","boundary":"Customer workspace permissions and data handling must be explicit"},
+  {"slug":"managed_secure","name":"Managed Secure","best_for":"Confidential and control-sensitive workflows","boundary":"Quote-only; requires architecture review and tested Phase 3/6 evidence"}
+]
