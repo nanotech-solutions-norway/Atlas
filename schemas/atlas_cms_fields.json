@@ -1,17 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Atlas AI CMS Field Dictionary",
-  "version": "0.2.0",
-  "generated": "13:02, 04.06.2026 Europe/Oslo",
+  "version": "0.3.0",
+  "generated": "13:42, 04.06.2026 Europe/Oslo",
   "collections": {
-    "packages": {"fields": ["slug", "title", "page_title", "seo_title", "meta_description", "tier", "segment", "delivery_mode", "platform_lanes", "risk_class", "data_sensitivity", "support_level", "customer_prerequisites", "vendor_policy", "api_budget_flag", "sla", "scope", "deliverables", "exclusions", "proof_block", "trust_topics", "cta_primary", "cta_secondary", "related_locale_string_keys", "language_status", "published"]},
+    "packages": {"fields": ["slug", "title", "page_title", "seo_title", "meta_description", "tier", "customer_segment", "delivery_mode", "platform_lanes", "risk_class", "data_sensitivity", "support_level", "customer_prerequisites", "vendor_policy", "api_budget_flag", "sla", "scope", "deliverables", "exclusions", "proof_block", "trust_topics", "cta_primary", "cta_secondary", "related_locale_string_keys", "language_status", "published"]},
+    "customer_segments": {"fields": ["slug", "segment_name", "priority", "jobs_to_be_done", "pain_points", "trust_triggers", "recommended_cta", "risk_profile", "website_treatment", "route"]},
+    "audience_paths": {"fields": ["slug", "segment", "priority", "route", "primary_cta", "risk_profile", "trust_triggers", "no_upload_notice_required"]},
     "platform_lanes": {"fields": ["slug", "name", "provider", "best_use", "admin_auth_pattern", "privacy_note", "pricing_note", "visibility", "status", "review_date"]},
-    "pricing_plans": {"fields": ["slug", "package_slug", "public_price_wording", "vendor_cost_policy", "target_gross_margin", "usage_budget_required", "overage_clause_required", "approval_status"]},
+    "pricing_plans": {"fields": ["slug", "package_slug", "customer_segment", "public_price_wording", "vendor_cost_policy", "target_gross_margin", "usage_budget_required", "overage_clause_required", "approval_status"]},
     "onboarding_routes": {"fields": ["slug", "route_name", "visitor_type", "risk_condition", "entry_page", "next_step_statuses", "secure_handoff_trigger", "no_confidential_upload_notice_key"]},
     "trust_topics": {"fields": ["slug", "title", "category", "public_summary", "evidence_ref", "approval_status", "owner", "review_date"]},
     "claims_registry": {"fields": ["claim_id", "claim", "category", "evidence_ref", "approval_status", "owner", "review_date", "public_allowed"]},
     "legal_docs": {"fields": ["slug", "title", "document_type", "status", "review_owner", "last_review_date", "public_route"]},
-    "resources": {"fields": ["slug", "title", "topic_cluster", "language", "summary", "cta", "approval_status", "review_date"]},
+    "resources": {"fields": ["slug", "title", "topic_cluster", "language", "audience", "summary", "cta", "approval_status", "review_date"]},
+    "faqs": {"fields": ["slug", "question", "answer", "audience", "category", "locale_key", "approval_status"]},
+    "case_studies": {"fields": ["slug", "title", "audience", "case_summary", "proof_blocks", "claims_refs", "approval_status"]},
+    "proof_blocks": {"fields": ["slug", "title", "body", "claims_refs", "evidence_ref", "approval_status"]},
+    "package_finder_rules": {"fields": ["rule_id", "segment", "signal", "recommended_package", "risk_route", "platform_lane_hint", "cta", "secure_review_required"]},
+    "roi_calculator_inputs": {"fields": ["scenario_id", "segment", "baseline_hours_per_month", "estimated_hourly_cost_nok", "expected_efficiency_gain_percent", "implementation_cost_nok", "vendor_cost_policy", "notes"]},
+    "deployment_modes": {"fields": ["slug", "name", "best_for", "boundary"]},
     "locale_strings": {"fields": ["key", "nb", "en", "owner", "review_date"]}
   }
 }
