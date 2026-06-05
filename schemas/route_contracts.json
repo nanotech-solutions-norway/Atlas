@@ -1,1 +1,19 @@
-{"version":"0.2.0","routes":[{"path":"/","purpose":"Bokmål home and category lock","primary_cta":"/solutions/"},{"path":"/en/","purpose":"English home","primary_cta":"/en/solutions/"},{"path":"/solutions/","purpose":"Package catalogue","primary_cta":"/pricing/"},{"path":"/managed-secure/","purpose":"High-trust secure route","primary_cta":"/contact/"},{"path":"/pricing/","purpose":"BYOL/pass-through pricing logic","primary_cta":"/onboarding/"},{"path":"/trust/","purpose":"Trust Center","primary_cta":"/contact/"},{"path":"/onboarding/","purpose":"Risk-gated onboarding","primary_cta":"/contact/"},{"path":"/platform-lanes/","purpose":"Provider lane explanation","primary_cta":"/solutions/"}]}
+{
+  "version": "0.3.0",
+  "routes": [
+    {"path": "/", "purpose": "Bokmål home, category lock and audience router", "primary_cta": "/solutions/", "audience": "all"},
+    {"path": "/en/", "purpose": "English home, category lock and audience router", "primary_cta": "/en/solutions/", "audience": "all"},
+    {"path": "/business/", "purpose": "Business/professional primary commercial route", "primary_cta": "/solutions/", "audience": "business_professional"},
+    {"path": "/en/business/", "purpose": "English business/professional route", "primary_cta": "/en/solutions/", "audience": "business_professional"},
+    {"path": "/students/", "purpose": "Responsible study-support route", "primary_cta": "/onboarding/", "audience": "student"},
+    {"path": "/en/students/", "purpose": "English responsible study-support route", "primary_cta": "/en/onboarding/", "audience": "student"},
+    {"path": "/consumers/", "purpose": "Private-user productivity route", "primary_cta": "/onboarding/", "audience": "consumer_private_user"},
+    {"path": "/en/consumers/", "purpose": "English private-user productivity route", "primary_cta": "/en/onboarding/", "audience": "consumer_private_user"},
+    {"path": "/solutions/", "purpose": "Package catalogue", "primary_cta": "/pricing/", "audience": "all"},
+    {"path": "/managed-secure/", "purpose": "High-trust secure route", "primary_cta": "/contact/", "audience": "business_professional"},
+    {"path": "/pricing/", "purpose": "BYOL/pass-through pricing logic", "primary_cta": "/onboarding/", "audience": "all"},
+    {"path": "/trust/", "purpose": "Trust Center", "primary_cta": "/contact/", "audience": "all"},
+    {"path": "/onboarding/", "purpose": "Risk-gated onboarding", "primary_cta": "/contact/", "audience": "all"},
+    {"path": "/platform-lanes/", "purpose": "Provider lane explanation", "primary_cta": "/solutions/", "audience": "all"}
+  ]
+}
