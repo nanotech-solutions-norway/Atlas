@@ -1,0 +1,29 @@
+{
+  "asset_name": "Better grades circular progress 73 percent",
+  "directory": "animarions",
+  "source_reference": "Better_grades_01.png",
+  "target_percent": 73,
+  "animation": {
+    "start_percent": 0,
+    "end_percent": 73,
+    "duration_ms": 1700,
+    "easing": "easeOutCubic",
+    "ring_direction": "clockwise",
+    "ring_start_position": "12 o'clock"
+  },
+  "colors": {
+    "background": "#000000",
+    "progress_blue": "#3357b8",
+    "remaining_track": "#c2cbe4",
+    "percentage_text": "#172448"
+  },
+  "accessibility": {
+    "aria_live_count": true,
+    "prefers_reduced_motion_supported": true
+  },
+  "implementation": {
+    "format": "HTML + CSS + JavaScript + SVG",
+    "external_libraries": false,
+    "intended_use": "Atlas website visual/animation asset"
+  }
+}
