@@ -1,9 +1,9 @@
 :root {
   --atlas-black: #000000;
-  --atlas-blue: #3357b8;
-  --atlas-track: #c2cbe4;
-  --atlas-text: #172448;
-  --ring-size: min(82vmin, 760px);
+  --atlas-blue: #385bb8;
+  --atlas-track: #e6eaf2;
+  --atlas-text: #152243;
+  --ring-size: min(78vmin, 720px);
   --ring-width: 58px;
 }
 
@@ -19,34 +19,39 @@ body {
 }
 
 body {
-  display: grid;
-  place-items: center;
   min-height: 100vh;
   background: var(--atlas-black);
-  font-family: "RobotSlob", "Roboto Slab", Rockwell, "Courier New", serif;
+  font-family: "Roboto Slab", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.animation-stage {
+.animation-gallery {
   display: grid;
-  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 0;
   width: 100%;
   min-height: 100vh;
-  padding: clamp(24px, 5vw, 72px);
 }
 
-.progress-card {
+.metric-card {
   display: grid;
   place-items: center;
-  width: var(--ring-size);
-  aspect-ratio: 1;
+  min-height: 100vh;
+  padding: clamp(24px, 5vw, 72px);
+  background: var(--atlas-black);
 }
 
-.progress-visual {
+.metric-visual {
   position: relative;
   display: grid;
   place-items: center;
   width: 100%;
+  max-width: var(--ring-size);
   aspect-ratio: 1;
+}
+
+.metric-card--text .metric-visual {
+  max-width: min(88vw, 980px);
+  aspect-ratio: 16 / 9;
 }
 
 .progress-ring {
@@ -74,27 +79,41 @@ body {
   transition: stroke-dashoffset 90ms ease-out;
 }
 
-.progress-label {
+.metric-label {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--atlas-text);
-  font-weight: 400;
+  font-family: "Roboto Slab", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 700;
   letter-spacing: -0.065em;
+  line-height: 1;
   transform: translateY(-1px);
 }
 
-.progress-number {
-  font-size: clamp(84px, 17vmin, 184px);
-  line-height: 1;
+.metric-card--ring .metric-number {
+  font-size: clamp(76px, 13vmin, 148px);
 }
 
-.progress-symbol {
+.metric-card--ring .metric-suffix {
   margin-left: 0.02em;
-  font-size: clamp(58px, 11vmin, 122px);
-  line-height: 1;
+  font-size: clamp(52px, 8.5vmin, 98px);
+}
+
+.metric-card--text .metric-number {
+  font-size: clamp(112px, 18vw, 340px);
+}
+
+.metric-card--text .metric-suffix {
+  margin-left: 0.04em;
+  font-size: clamp(96px, 14vw, 260px);
+}
+
+#faster-work .metric-number,
+#faster-work .metric-suffix {
+  font-size: clamp(150px, 24vw, 420px);
 }
 
 .sr-only {
