@@ -1,0 +1,98 @@
+# Atlas Evidence Index — master validation update — 12:33, 10.06.2026
+# Source: Atlas_Master_Claims_Evidence_Vendor_Validation_Report_1120_10062026.docx
+# Control: ADR-0005
+
+source_quality_hierarchy:
+  - tier: 1
+    label: Atlas-owned validated evidence
+    examples: pilot results, production telemetry, customer-approved case evidence, audits, signed acceptance records
+    permitted_use: direct Atlas claim if measurement method, scope, date and owner are documented
+  - tier: 2
+    label: Official vendor / regulatory / legal sources
+    examples: vendor trust portals, DPAs, SLA terms, regulator guidance, standards bodies
+    permitted_use: vendor-attributed or legal-context claim only; not automatic Atlas proof
+  - tier: 3
+    label: Primary academic and controlled studies
+    examples: peer-reviewed RCTs, controlled field studies, economic studies
+    permitted_use: contextual research; no Atlas outcome claim without Atlas data
+  - tier: 4
+    label: Industry surveys and consulting reports
+    examples: Gallup, Deloitte, IBM, Workday-style adoption/benefit reports
+    permitted_use: market context only; cite sample and caveats
+  - tier: 5
+    label: Unverified placeholders / marketing copy
+    examples: unsupported percentages, generic claims, internal placeholders without evidence
+    permitted_use: not approved for external publication
+
+external_research:
+  - ref: W18
+    area: productivity_quality
+    evidence_type: controlled_field_context
+    atlas_use: Context only. Supports the rationale that AI assistance can improve productivity/quality in defined knowledge-work tasks, not Atlas-specific outcomes.
+  - ref: W19
+    area: productivity_time
+    evidence_type: economic_survey_context
+    atlas_use: Conservative contextual productivity framing only.
+  - ref: W20
+    area: productivity_time
+    evidence_type: vendor_model_research
+    atlas_use: High-caveat context only; do not convert to Atlas time-saving claim.
+  - ref: W21_W22_W23
+    area: roi_cost
+    evidence_type: industry_survey_context
+    atlas_use: Context only. Direct Atlas ROI/payback requires customer-specific financial model or Atlas data.
+  - ref: W24
+    area: quality_rework
+    evidence_type: vendor_research_caution
+    atlas_use: Risk disclosure; supports human QA and workflow qualification.
+  - ref: W25
+    area: learning_outcomes
+    evidence_type: peer_reviewed_rct_context
+    atlas_use: Education context only; Atlas student outcomes need Atlas education pilot evidence.
+  - ref: W26
+    area: user_adoption
+    evidence_type: survey_context
+    atlas_use: Market context only; not Atlas satisfaction/adoption proof.
+
+vendor_evidence:
+  - provider: OpenAI / ChatGPT / API
+    evidence_status: documented_provider_controls
+    usable_claim: OpenAI documents security/privacy controls and selected certifications for relevant services.
+    caveat: Applicability depends on product, tier, enterprise/portal access, contract, data-residency setting and configuration. Scale Tier SLA is only for eligible Scale Tier traffic.
+  - provider: Google Gemini / Google Cloud / Workspace
+    evidence_status: documented_provider_controls
+    usable_claim: Google documents certifications, GDPR processing mechanisms and selected service SLAs.
+    caveat: Applicability depends on product, edition, region, contract and architecture.
+  - provider: Microsoft Azure / Microsoft 365
+    evidence_status: documented_provider_controls
+    usable_claim: Microsoft documents compliance reports and conditional availability-zone SLAs for eligible Azure services.
+    caveat: Atlas must not imply it is Microsoft-certified. SLA use requires qualified service and architecture.
+  - provider: GitHub
+    evidence_status: documented_provider_controls
+    usable_claim: GitHub provides compliance reports to eligible enterprise/organization owners.
+    caveat: Access and scope depend on plan/role. GitHub status is not an Atlas SLA.
+  - provider: Wix
+    evidence_status: documented_provider_controls
+    usable_claim: Wix publishes trust/compliance information and status dashboards.
+    caveat: No formal public Wix uptime SLA found in the master review; dashboards must not be presented as contractual SLA.
+  - provider: Domeneshop
+    evidence_status: limited_public_vendor_evidence
+    usable_claim: Domeneshop terms include a standard DPA for relevant hosting services.
+    caveat: No public ISO/SOC certification or formal public SLA evidence is registered. Security-certification claims remain needs-evidence.
+  - provider: AWS
+    evidence_status: documented_provider_controls
+    usable_claim: AWS documents compliance programs, DPA and service-specific compute SLA terms.
+    caveat: Each AWS service has its own SLA; confirm service, region, architecture and contract before use as Atlas evidence.
+
+atlas_evidence_required_before_public_claim:
+  - productivity/time-saving percentage
+  - fixed ROI/payback period
+  - quality/accuracy improvement percentage
+  - student grades/test-score/retention improvement
+  - NPS/user-satisfaction/active-user counts
+  - GDPR-compliant or GDPR-certified blanket claim
+  - ISO/SOC-certified Atlas claim
+  - fixed uptime/availability guarantee
+  - data stored only in Norway or never leaves EEA
+  - full secure-delivery or Managed Secure active-state claim
+  - sector-specific compliance claim for healthcare, finance or public sector
