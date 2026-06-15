@@ -1,0 +1,93 @@
+# Atlas Not-Approved Claims and Forbidden Wording — 12:35, 10.06.2026
+# Source: Atlas_Master_Claims_Evidence_Vendor_Validation_Report_1120_10062026.docx
+# Control: ADR-0005
+
+status: active
+owner: Claims / Legal / Trust
+review_date: 2026-06-30
+
+forbidden_or_evidence_gated_phrases:
+  - phrase: "87% tidsbesparelse"
+    reason: Atlas-specific timing evidence missing.
+    replacement: "Designet for å redusere manuelt arbeid i definerte arbeidsflyter."
+  - phrase: "73% bedre karakterer"
+    reason: Atlas-specific education pilot/control evidence missing and student grade guarantees are high risk.
+    replacement: "Støtter ansvarlig studieplanlegging, forklaring, repetisjon og kildearbeid."
+  - phrase: "91% fornøyde brukere"
+    reason: Atlas-specific user survey evidence missing.
+    replacement: "Brukeropplevelse og tilfredshet skal måles etter pilot eller produksjonsbruk."
+  - phrase: "94% brukertilfredshet"
+    reason: Atlas-specific NPS or survey evidence missing.
+    replacement: "Kundetilfredshet skal dokumenteres gjennom godkjent survey/evidence pack."
+  - phrase: "3x raskere arbeidsflyt"
+    reason: Atlas-specific workflow timing benchmark missing.
+    replacement: "Målet er raskere og mer strukturert arbeid i klart avgrensede prosesser."
+  - phrase: "12K+ aktive brukere"
+    reason: Atlas-specific analytics evidence missing.
+    replacement: "Aktive brukere og adopsjon publiseres først etter godkjent analysegrunnlag."
+  - phrase: "98% oppetid"
+    reason: Atlas service boundary, monitoring evidence and SLA contract missing.
+    replacement: "Tilgjengelighet avhenger av valgt leveransemodell, leverandørstack og avtalevilkår."
+  - phrase: "Garantert tilgjengelighet"
+    reason: Formal Atlas SLA missing.
+    replacement: "Tilgjengelighet håndteres etter valgt leveransemodell og avtalte vilkår."
+  - phrase: "GDPR-trygg"
+    reason: Blanket compliance/safety wording without legal review and evidence is not approved.
+    replacement: "Utformet for GDPR-tilpasset drift med dataminimering, leverandøravklaringer og dokumenterte rutiner."
+  - phrase: "Atlas overholder GDPR fullt ut"
+    reason: Atlas-specific processing records, DPA mapping, retention, DPIA/assessment and legal review required.
+    replacement: "Atlas er designet for å støtte GDPR-tilpasset bruk gjennom dokumenterte kontroller og leverandøravtaler."
+  - phrase: "Ingen data deles med tredjeparter"
+    reason: Incorrect or unverified if third-party AI providers, hosting, analytics, forms or support processors are used.
+    replacement: "Leverandørbruk og databehandling beskrives i leverandøroversikt, personvernerklæring og valgt leveransemodell."
+  - phrase: "Data lagret i Norge"
+    reason: Data residency depends on provider, product, region, plan, contract and architecture.
+    replacement: "Datalagring og databehandling avhenger av valgt leverandør, region, avtale og leveransemodell."
+  - phrase: "All data lagres på norske servere"
+    reason: Not verified for all Atlas routes/providers.
+    replacement: "Datalagring avklares per løsning og dokumenteres i leveranse- og leverandørgrunnlaget."
+  - phrase: "Vi forlater aldri EØS-området"
+    reason: Cross-border support/subprocessor/provider paths must be mapped before publication.
+    replacement: "Eventuelle overføringer og leverandørtilganger vurderes og dokumenteres per leveranse."
+  - phrase: "ISO 27001"
+    reason: Atlas must not imply Atlas-owned certification unless certified; provider certifications require attribution.
+    replacement: "Relevante leverandører kan dokumentere egne sikkerhets- og samsvarskontroller."
+  - phrase: "SOC 2 Type II"
+    reason: Atlas must not imply Atlas-owned SOC 2 unless audited; vendor SOC 2 requires attribution and plan/contract caveat.
+    replacement: "Enkelte leverandører dokumenterer SOC 2 Type II for relevante tjenester."
+  - phrase: "Sertifisert informasjonssikkerhetsstyring"
+    reason: Atlas-owned ISO certification not registered.
+    replacement: "Sikkerhetsarbeidet styres gjennom dokumenterte kontroller og leverandørvurderinger."
+  - phrase: "Uavhengig verifisert sikkerhet og tilgjengelighet"
+    reason: Needs Atlas audit/SOC evidence or clear vendor attribution.
+    replacement: "Leverandørdokumentasjon og Atlas-kontroller vurderes før publisering av sikkerhets- eller tilgjengelighetskrav."
+  - phrase: "Databehandleravtale inkludert for alle kunder"
+    reason: Requires legal review and exact customer/service scope.
+    replacement: "Databehandleravtale og leverandørvilkår avklares etter valgt tjeneste og avtaleform."
+  - phrase: "Altinn, ByggNett, Visma m.fl."
+    reason: Specific integration availability requires implemented connector or scoped integration evidence.
+    replacement: "Integrasjoner vurderes og avtales etter system, tilgang, API og sikkerhetskrav."
+  - phrase: "Finans, helse, offentlig m.fl."
+    reason: Sector-specific claims require regulated-use review and evidence.
+    replacement: "Sektorbruk vurderes etter datakategori, risikoprofil og krav til kontroll."
+  - phrase: "Oppgavehjelp"
+    reason: Ambiguous student wording may imply ghostwriting or direct assignment support.
+    replacement: "Strukturhjelp, kildearbeid, forklaring og repetisjon innenfor ansvarlige bruksgrenser."
+  - phrase: "Skriv oppgaver"
+    reason: Could imply ghostwriting/direct assignment generation.
+    replacement: "Få hjelp til struktur, forståelse, kildebruk og revisjonsplan uten ghostwriting."
+
+blocked_claim_families_without_registered_evidence:
+  - guaranteed ROI or payback period
+  - fixed time-saving/productivity percentages
+  - fixed quality/accuracy improvement percentages
+  - grade or learning-outcome guarantees
+  - active-user/user-satisfaction/NPS numbers
+  - blanket GDPR compliance or GDPR certification
+  - Atlas-owned ISO/SOC/security certification
+  - blanket Norwegian-only/EEA-only data residency
+  - formal uptime/SLA claims
+  - fully secure / zero-risk / no-third-party-access claims
+  - vendor partnership/endorsement claims unless contractually true
+  - cheating, ghostwriting or direct assignment-submission positioning
+  - emotional-companion, therapy, emergency, medical, legal or financial decision positioning for consumer packages
