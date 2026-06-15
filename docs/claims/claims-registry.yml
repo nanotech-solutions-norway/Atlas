@@ -1,0 +1,330 @@
+# Atlas Claims Registry — master validation update — 12:30, 10.06.2026
+# Source: Atlas_Master_Claims_Evidence_Vendor_Validation_Report_1120_10062026.docx
+# Control: ADR-0005
+# Rule: public_allowed=true does not mean uncaveated; use mandatory_caveat and publication_rule.
+
+claims:
+  - id: CLM-001
+    slug: atlas-fixed-time-saving-percentage
+    claim_family: Atlas reduces task or document-processing time by a fixed percentage
+    category: efficiency
+    evidence_class: atlas_specific_missing
+    status: needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Use only after Atlas pilot or customer timing data exists.
+    safer_wording: Atlas is designed to reduce manual effort in defined workflows.
+    owner: Product / Governance
+    review_date: 2026-06-30
+
+  - id: CLM-002
+    slug: external-ai-productivity-context
+    claim_family: External studies show AI assistance can increase productivity and speed
+    category: efficiency
+    evidence_class: external_research_proxy
+    status: context_only
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Attribute source, study context and task boundary; do not imply Atlas will reproduce the same percentage.
+    safer_wording: External studies show AI assistance can improve productivity in defined knowledge-work contexts.
+    owner: Content / Claims
+    review_date: 2026-06-30
+
+  - id: CLM-003
+    slug: ai-80-percent-time-saving-context
+    claim_family: AI tools can cut task completion time by about 80 percent
+    category: efficiency
+    evidence_class: vendor_model_research
+    status: context_only_high_caveat
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Use only as attributed vendor/model research with limitations; not Atlas proof or guarantee.
+    safer_wording: Some vendor research reports substantial acceleration in selected AI-assisted tasks, but results depend on task and validation work.
+    owner: Content / Claims
+    review_date: 2026-06-30
+
+  - id: CLM-004
+    slug: atlas-fast-roi-payback
+    claim_family: Atlas delivers ROI within 6-12 months or pays for itself rapidly
+    category: cost_roi
+    evidence_class: atlas_specific_missing
+    status: not_approved_needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Do not publish as a general claim. Use only customer-specific ROI models with assumptions.
+    safer_wording: ROI depends on workflow scope, adoption, baseline cost, implementation effort and customer assumptions.
+    owner: Commercial / Legal
+    review_date: 2026-06-30
+
+  - id: CLM-005
+    slug: ai-adoption-cost-benefit-context
+    claim_family: AI adoption can produce cost reduction and business benefits
+    category: cost_roi
+    evidence_class: industry_survey_context
+    status: context_only
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Attribute the survey and avoid Atlas guarantee language.
+    safer_wording: Industry surveys indicate that some AI adopters report productivity and cost benefits, with outcomes varying by use case.
+    owner: Content / Claims
+    review_date: 2026-06-30
+
+  - id: CLM-006
+    slug: atlas-fixed-quality-accuracy-gain
+    claim_family: Atlas improves output quality or accuracy by a fixed percentage
+    category: quality_accuracy
+    evidence_class: atlas_specific_missing
+    status: needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Requires task-defined Atlas benchmark/audit data.
+    safer_wording: Atlas workflows include human review and quality controls for suitable tasks.
+    owner: Product / QA
+    review_date: 2026-06-30
+
+  - id: CLM-007
+    slug: ai-quality-suitable-tasks-context
+    claim_family: AI can improve work quality when used on suitable tasks
+    category: quality_accuracy
+    evidence_class: external_research_proxy
+    status: context_only
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: State suitable tasks, trained users and human QA.
+    safer_wording: AI assistance can improve work quality in suitable tasks when paired with review and workflow controls.
+    owner: Content / Claims
+    review_date: 2026-06-30
+
+  - id: CLM-008
+    slug: ai-capability-boundary-risk
+    claim_family: AI can degrade performance outside its capability boundary
+    category: quality_risk
+    evidence_class: external_research_and_vendor_caveat
+    status: ready_as_risk_disclosure
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Use to justify human review, workflow qualification and risk-gated onboarding.
+    safer_wording: AI should be applied inside defined task boundaries with human review and clear escalation.
+    owner: Responsible AI / QA
+    review_date: 2026-06-30
+
+  - id: CLM-009
+    slug: ai-tutoring-learning-context
+    claim_family: AI tutoring can improve learning outcomes
+    category: learning_outcomes
+    evidence_class: peer_reviewed_context
+    status: context_only
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Attribute specific study context; do not imply Atlas student outcomes without Atlas pilots.
+    safer_wording: Peer-reviewed research indicates carefully designed AI tutoring can support learning in specific settings.
+    owner: Student Product / Claims
+    review_date: 2026-06-30
+
+  - id: CLM-010
+    slug: atlas-student-grade-improvement
+    claim_family: Atlas improves student test scores, retention or learning efficiency by a fixed amount
+    category: learning_outcomes
+    evidence_class: atlas_specific_missing
+    status: needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Requires Atlas education pilot or controlled evaluation before publication.
+    safer_wording: Atlas student packages support responsible study planning, explanation, revision and source discipline.
+    owner: Student Product / Legal
+    review_date: 2026-06-30
+
+  - id: CLM-011
+    slug: user-adoption-benefits-context
+    claim_family: Users report high satisfaction or adoption of AI tools
+    category: user_benefits_adoption
+    evidence_class: industry_survey_context
+    status: context_only
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Attribute source and sample; do not imply Atlas adoption/satisfaction.
+    safer_wording: AI adoption surveys show broad interest and reported productivity benefits among some users.
+    owner: Content / Claims
+    review_date: 2026-06-30
+
+  - id: CLM-012
+    slug: atlas-gdpr-compliant
+    claim_family: Atlas is GDPR compliant
+    category: security_compliance
+    evidence_class: mixed_atlas_evidence_missing
+    status: needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Avoid blanket GDPR-compliant or GDPR-certified wording without legal review and processing records.
+    safer_wording: Atlas is designed to support GDPR-aligned operation through documented controls, minimization and vendor DPAs.
+    owner: Legal / Privacy
+    review_date: 2026-06-30
+
+  - id: CLM-013
+    slug: providers-document-security-certifications
+    claim_family: Atlas is built on providers with documented certifications
+    category: security_compliance
+    evidence_class: vendor_attributed
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Say provider documents; do not imply Atlas holds the certificates.
+    safer_wording: Atlas may use services from providers that document security and compliance controls.
+    owner: Trust / Provider Disclosure
+    review_date: 2026-06-30
+
+  - id: CLM-014
+    slug: openai-provider-certifications
+    claim_family: OpenAI services document SOC 2 and ISO certifications
+    category: security_compliance
+    evidence_class: vendor_evidence
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Only for relevant OpenAI services; SOC report access may require Trust Portal/customer access.
+    safer_wording: OpenAI documents certifications for relevant services; applicability depends on product, contract and configuration.
+    owner: Trust / Provider Disclosure
+    review_date: 2026-06-30
+
+  - id: CLM-015
+    slug: openai-scale-tier-sla
+    claim_family: OpenAI Scale Tier provides 99.9 percent uptime SLA
+    category: reliability_sla
+    evidence_class: vendor_sla
+    status: usable_with_caveat
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Only if Atlas uses eligible Scale Tier traffic under applicable terms.
+    safer_wording: Provider SLA availability depends on service tier, contract and traffic classification.
+    owner: Trust / Reliability
+    review_date: 2026-06-30
+
+  - id: CLM-016
+    slug: google-provider-certifications-gdpr-terms
+    claim_family: Google Cloud/Gemini/Workspace provide certifications and GDPR processing terms
+    category: security_compliance
+    evidence_class: vendor_evidence
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Confirm exact product, edition, contract and region.
+    safer_wording: Google documents security/compliance controls for eligible products and contracts.
+    owner: Trust / Provider Disclosure
+    review_date: 2026-06-30
+
+  - id: CLM-017
+    slug: google-cloud-compute-engine-sla
+    claim_family: Google Cloud Compute Engine can provide >=99.99 percent SLA
+    category: reliability_sla
+    evidence_class: vendor_sla
+    status: usable_with_caveat
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Only for qualifying multi-zone configurations and applicable service terms.
+    safer_wording: Cloud-provider uptime depends on architecture, region, service and contract.
+    owner: Trust / Reliability
+    review_date: 2026-06-30
+
+  - id: CLM-018
+    slug: azure-provider-certifications-sla
+    claim_family: Microsoft Azure has documented compliance reports and conditional service SLAs
+    category: security_compliance_reliability
+    evidence_class: vendor_evidence
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Do not imply Atlas is Microsoft-certified or that Azure SLA is inherited by Atlas.
+    safer_wording: Azure documents compliance and availability terms for eligible services and architectures.
+    owner: Trust / Azure
+    review_date: 2026-06-30
+
+  - id: CLM-019
+    slug: github-provider-compliance-reports
+    claim_family: GitHub provides enterprise compliance reports to eligible owners
+    category: security_compliance
+    evidence_class: vendor_evidence
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: low
+    mandatory_caveat: Access and report scope depend on enterprise/organization eligibility.
+    safer_wording: GitHub documents compliance reports for eligible enterprise/organization owners.
+    owner: GitHub Governance
+    review_date: 2026-06-30
+
+  - id: CLM-020
+    slug: wix-trust-center-certifications-status
+    claim_family: Wix documents trust/compliance controls and status dashboards
+    category: security_compliance_reliability
+    evidence_class: vendor_evidence
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: No formal public Wix uptime SLA was located; status dashboards are not contractual SLA.
+    safer_wording: Wix documents trust/compliance controls and publishes service-status information.
+    owner: Trust / Wix
+    review_date: 2026-06-30
+
+  - id: CLM-021
+    slug: domeneshop-dpa-no-public-iso-soc-sla
+    claim_family: Domeneshop has DPA terms but no public ISO/SOC/SLA evidence found
+    category: vendor_compliance
+    evidence_class: vendor_terms_limited
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Do not claim public ISO/SOC certification or formal public SLA for Domeneshop.
+    safer_wording: Domeneshop terms include a standard DPA for relevant hosting services; no public ISO/SOC certification or formal SLA evidence is currently registered.
+    owner: Trust / Vendor Register
+    review_date: 2026-06-30
+
+  - id: CLM-022
+    slug: aws-compliance-dpa-compute-sla
+    claim_family: AWS documents compliance, DPA and conditional compute SLA terms
+    category: security_compliance_reliability
+    evidence_class: vendor_evidence
+    status: usable_with_caveat
+    public_allowed: true
+    risk_level: medium
+    mandatory_caveat: Each AWS service has its own SLA; confirm service, region, architecture and contract before using as Atlas evidence.
+    safer_wording: AWS documents compliance, DPA and service-specific availability terms for eligible services.
+    owner: Trust / Provider Disclosure
+    review_date: 2026-06-30
+
+  - id: CLM-023
+    slug: atlas-uptime-guarantee
+    claim_family: Atlas provides guaranteed uptime or a fixed uptime percentage
+    category: reliability_sla
+    evidence_class: atlas_specific_missing
+    status: needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Requires Atlas service definition, monitoring logs, SLA contract and architecture evidence.
+    safer_wording: Atlas reliability commitments depend on the agreed delivery mode, provider stack and contract.
+    owner: Trust / Reliability
+    review_date: 2026-06-30
+
+  - id: CLM-024
+    slug: atlas-data-residency-norway-eea
+    claim_family: Atlas stores all data in Norway or never leaves EEA
+    category: data_residency
+    evidence_class: atlas_specific_missing_conditional_vendor
+    status: needs_evidence
+    public_allowed: false
+    risk_level: high
+    mandatory_caveat: Requires actual service, provider, region, plan, subprocessor and contract mapping.
+    safer_wording: Data residency depends on provider, plan, region, contract and delivery configuration.
+    owner: Privacy / Provider Disclosure
+    review_date: 2026-06-30
+
+  - id: CLM-025
+    slug: managed-secure-evidence-gated
+    claim_family: Managed Secure is secure delivery for confidential/control-sensitive workflows
+    category: managed_secure
+    evidence_class: future_atlas_evidence_required
+    status: future_evidence_gated
+    public_allowed: true
+    risk_level: high
+    mandatory_caveat: Use architecture-review and qualified-path language until identity, logging, revocation, storage, backup/recovery and incident evidence exists.
+    safer_wording: Managed Secure is a qualified architecture-review path for confidential and control-sensitive workflows.
+    owner: Security / Azure / Governance
+    review_date: 2026-06-30
