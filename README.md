@@ -1,6 +1,6 @@
 # Atlas AI Website and Governance Repository
 
-Updated: 13:42, 04.06.2026 Europe/Oslo
+Updated: 12:42, 10.06.2026 Europe/Oslo
 
 This repository contains the GitHub-governed website source, public static pages, CMS schemas, seed packs, QA scripts, governance records, legal/trust drafts, Velo notes, evidence checklists, and future Azure placeholders for the Atlas AI website workstream.
 
@@ -9,6 +9,14 @@ This repository contains the GitHub-governed website source, public static pages
 Atlas AI is a governed AI solution-layer company. Atlas owns problem framing, workflow design, knowledge architecture, onboarding, governance, secure delivery, QA, support, and lifecycle management. Third-party model providers supply the model layer where appropriate.
 
 Atlas AI must not be presented as a proprietary foundation-model company, a generic custom-GPT storefront, or a reseller of vendor subscriptions unless a specific vendor agreement exists.
+
+## Claims and evidence control
+
+ADR-0005 is the active claims-governance overlay for website copy, Wix CMS records, Trust Center content, provider disclosure, pricing language, sales copy, Managed Secure wording and future evidence packs.
+
+Atlas may use external AI research, vendor certifications, vendor DPAs and provider SLAs only as contextual or vendor-attributed evidence. Atlas must not convert them into direct Atlas-specific performance, ROI, accuracy, learning-outcome, compliance, security, uptime, data-residency or reliability claims unless Atlas has documented Atlas-specific evidence under comparable conditions.
+
+Public Atlas copy must avoid unsupported fixed percentages, guaranteed ROI, guaranteed grades, blanket GDPR compliance, Atlas-owned ISO/SOC certification, blanket Norway-only data residency, inherited vendor SLA claims and absolute secure/zero-risk wording.
 
 ## Public website model
 
