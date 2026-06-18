@@ -1,11 +1,29 @@
 (() => {
+  const gallery = document.querySelector('.animation-gallery');
+
+  if (gallery && !document.getElementById('metric-92')) {
+    const section = document.createElement('section');
+    section.id = 'metric-92';
+    section.className = 'metric-card metric-card--ring';
+    section.setAttribute('aria-label', '92 percent circular progress animation');
+    section.innerHTML = `
+      <div class="metric-visual" data-kind="ring" data-target="92" data-duration="2800" data-suffix="%">
+        <svg class="progress-ring" viewBox="0 0 600 600" role="img" aria-label="92 percent circular progress indicator">
+          <circle class="progress-track" cx="300" cy="300" r="250" pathLength="100"></circle>
+          <circle class="progress-value" cx="300" cy="300" r="250" pathLength="100"></circle>
+        </svg>
+        <div class="metric-label" aria-live="polite"><span class="metric-number">0</span><span class="metric-suffix">%</span></div>
+      </div>
+    `;
+    gallery.insertBefore(section, document.getElementById('time-saving'));
+  }
+
   const visuals = Array.from(document.querySelectorAll('[data-target]'));
   if (!visuals.length) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
-  // Strong ease-out curve: fast initial movement with a clear slowdown toward the final state.
   const easeOutQuint = (t) => 1 - Math.pow(1 - t, 5);
 
   const formatNumber = (value, format) => {
