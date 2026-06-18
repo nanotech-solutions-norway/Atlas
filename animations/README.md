@@ -1,36 +1,35 @@
-# Atlas AI Metric Count Animations
+# Atlas AI 92% Circular Progress Animation
 
-This directory contains the Atlas website metric animation assets based on the uploaded visual references:
+This directory currently serves one active animation only:
 
-- `Better_grades_01.png` → circular count animation to `73%`
-- `Active_user_01.png` → text count animation to `12K+`
-- `Faster_work_01.png` → text count animation to `3X`
-- `Satisfied_customers_01.png` → circular count animation to `91%`
-- `Timesaving_01.png` → circular count animation to `87%`
-- `Up-time_01.png` → text count animation to `98%`
-- `User_satifaction_01.png` → text count animation to `94%`
+- `metric-92.js` — Wix Custom Element server file.
+- `metric-92-demo.html` — standalone preview page using the same custom element.
+- `metric-92.svg` — SVG backup/reference version.
+- `index.html` — public demo entry point showing only the 92% animation.
+- `animation-spec.json` — implementation metadata for the active 92% animation.
 
-## Assets
+## Wix Custom Element
 
-- `index.html` — standalone gallery page for preview or iframe embedding.
-- `better-grades-73.css` — shared visual styling for the metric animations.
-- `better-grades-73.js` — shared count-up and circular progress animation logic.
-- `animation-spec.json` — implementation metadata and animation parameters.
+Server URL:
 
-## Behaviour
+`https://nanotech-solutions-norway.github.io/Atlas/animations/metric-92.js`
 
-Each animation starts at `0` and counts up to the designated value from the uploaded reference image. Circular metrics also fill the blue circular progress ring clockwise from the top position. Text-only metrics count the value without a circular bar.
+Tag name:
 
-## Current animation settings
+`atlas-metric-92`
 
-- Maximum duration: `2.8 seconds`
-- Hard JavaScript cap: `3.0 seconds`
-- Easing: `easeOutQuint`, so the count and ring movement slow down toward the end
-- Primary font: `Roboto Slab`, selected as the closest matching web-safe font family for the uploaded reference images
-- Fallback font: `Roboto`
+## Active styling
 
-## Implementation notes
+- Font: Inter Regular
+- Fallback: Roboto
+- Font size: 48px
+- Font weight: 400
+- Bold: false
+- Background: transparent
+- Target value: 92%
+- Circular bar: enabled
+- Duration: 2.8 seconds, capped below 3.0 seconds
 
-- The visuals are HTML/CSS/SVG-based for sharp rendering at large sizes.
-- No new images are generated or required.
-- The animation respects `prefers-reduced-motion` by showing the final state immediately when reduced motion is enabled.
+## Notes
+
+The old multi-animation gallery has been removed from the active demo path. The `/animations/` URL now loads only the current 92% animation.
