@@ -32,7 +32,7 @@ class AtlasMetric92 extends HTMLElement {
           place-items: center;
           background: transparent !important;
           overflow: hidden;
-          font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          font-family: Inter, Roboto, Arial, sans-serif !important;
         }
 
         .metric-visual {
@@ -70,6 +70,21 @@ class AtlasMetric92 extends HTMLElement {
           transition: stroke-dashoffset 90ms ease-out;
         }
 
+        .label,
+        .number,
+        .suffix {
+          font-family: Inter, Roboto, Arial, sans-serif !important;
+          font-size: 48px !important;
+          font-weight: 400 !important;
+          font-style: normal !important;
+          font-variation-settings: 'wght' 400 !important;
+          letter-spacing: 0 !important;
+          line-height: 1 !important;
+          text-rendering: geometricPrecision;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
         .label {
           position: absolute;
           inset: 0;
@@ -77,19 +92,8 @@ class AtlasMetric92 extends HTMLElement {
           align-items: center;
           justify-content: center;
           color: #152243;
-          font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          font-size: 48px;
-          font-weight: 400;
-          letter-spacing: 0;
-          line-height: 1;
           white-space: nowrap;
           transform: translateY(-1px);
-        }
-
-        .number,
-        .suffix {
-          font-size: 48px;
-          font-weight: 400;
         }
 
         .suffix {
