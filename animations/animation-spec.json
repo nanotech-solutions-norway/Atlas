@@ -1,75 +1,18 @@
 {
-  "asset_group": "Atlas AI metric count animations",
+  "asset_group": "Atlas AI current metric animation",
   "directory": "animations",
-  "source_references": [
-    {
-      "file": "Better_grades_01.png",
-      "metric_id": "better-grades",
-      "target": 73,
-      "suffix": "%",
-      "animation_type": "circular_progress"
-    },
-    {
-      "file": "Active_user_01.png",
-      "metric_id": "active-users",
-      "target": 12000,
-      "display_target": "12K+",
-      "suffix": "+",
-      "animation_type": "text_count"
-    },
-    {
-      "file": "Faster_work_01.png",
-      "metric_id": "faster-work",
-      "target": 3,
-      "suffix": "X",
-      "animation_type": "text_count"
-    },
-    {
-      "file": "Satisfied_customers_01.png",
-      "metric_id": "satisfied-customers",
-      "target": 91,
-      "suffix": "%",
-      "animation_type": "circular_progress"
-    },
-    {
-      "file": "Timesaving_01.png",
-      "metric_id": "time-saving",
-      "target": 87,
-      "suffix": "%",
-      "animation_type": "circular_progress"
-    },
-    {
-      "file": "Up-time_01.png",
-      "metric_id": "up-time",
-      "target": 98,
-      "suffix": "%",
-      "animation_type": "text_count"
-    },
-    {
-      "file": "User_satifaction_01.png",
-      "metric_id": "user-satisfaction",
-      "target": 94,
-      "suffix": "%",
-      "animation_type": "text_count"
-    },
-    {
-      "file": "metric-92.svg",
-      "metric_id": "metric-92",
-      "target": 92,
-      "suffix": "%",
-      "animation_type": "circular_progress",
-      "background": "transparent",
-      "typography": {
-        "font_family": "Inter",
-        "fallback_font": "Roboto",
-        "font_weight": 400,
-        "font_size_px": 48,
-        "bold": false
-      }
-    }
-  ],
+  "active_demo_only": true,
+  "active_asset": {
+    "metric_id": "metric-92",
+    "target": 92,
+    "suffix": "%",
+    "animation_type": "circular_progress",
+    "custom_element_tag": "atlas-metric-92",
+    "server_url": "https://nanotech-solutions-norway.github.io/Atlas/animations/metric-92.js"
+  },
   "animation": {
     "start_value": 0,
+    "end_value": 92,
     "duration_ms": 2800,
     "maximum_total_duration_ms": 3000,
     "easing": "easeOutQuint",
@@ -78,18 +21,12 @@
     "ring_start_position": "12 o'clock"
   },
   "typography": {
-    "inferred_reference_font": "Roboto Slab",
+    "font_family": "Inter",
     "fallback_font": "Roboto",
-    "css_font_stack": "Roboto Slab, Roboto, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
-    "font_weight": 700,
-    "metric_92_override": {
-      "font_family": "Inter",
-      "fallback_font": "Roboto",
-      "css_font_stack": "Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
-      "font_weight": 400,
-      "font_size_px": 48,
-      "bold": false
-    }
+    "css_font_stack": "Inter, Roboto, Arial, sans-serif",
+    "font_size_px": 48,
+    "font_weight": 400,
+    "bold": false
   },
   "colors": {
     "background": "transparent",
@@ -97,14 +34,11 @@
     "remaining_track": "#e6eaf2",
     "metric_text": "#152243"
   },
-  "accessibility": {
-    "aria_live_count": true,
-    "prefers_reduced_motion_supported": true
-  },
   "implementation": {
-    "format": "HTML + CSS + JavaScript + SVG",
-    "external_libraries": true,
-    "external_library_note": "metric-92 loads Inter Regular from Google Fonts for exact typography where permitted by the embedding environment",
+    "format": "Wix Custom Element JavaScript + standalone HTML demo + SVG backup",
+    "external_libraries": false,
+    "external_font_import": "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap",
+    "old_gallery_removed_from_active_demo": true,
     "new_images_generated": false,
     "intended_use": "Atlas website visual/animation asset"
   }
