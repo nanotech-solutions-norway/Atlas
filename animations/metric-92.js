@@ -19,6 +19,7 @@ class AtlasMetric92 extends HTMLElement {
           min-width: 120px;
           min-height: 120px;
           contain: content;
+          background: transparent !important;
         }
 
         .atlas-metric {
@@ -27,7 +28,7 @@ class AtlasMetric92 extends HTMLElement {
           min-height: 120px;
           display: grid;
           place-items: center;
-          background: #000000;
+          background: transparent !important;
           overflow: hidden;
           font-family: "Roboto Slab", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
@@ -38,6 +39,7 @@ class AtlasMetric92 extends HTMLElement {
           aspect-ratio: 1 / 1;
           display: grid;
           place-items: center;
+          background: transparent !important;
         }
 
         svg {
@@ -45,6 +47,7 @@ class AtlasMetric92 extends HTMLElement {
           height: 100%;
           overflow: visible;
           transform: rotate(-90deg);
+          background: transparent !important;
         }
 
         .track,
@@ -114,7 +117,7 @@ class AtlasMetric92 extends HTMLElement {
         }
       </style>
 
-      <div class="atlas-metric" role="img" aria-label="92 percent circular progress animation">
+      <div class="atlas-metric" role="img" aria-label="92 percent circular progress animation with transparent background">
         <div class="metric-visual">
           <svg viewBox="0 0 600 600" aria-hidden="true">
             <circle class="track" cx="300" cy="300" r="250" pathLength="100"></circle>
@@ -177,7 +180,7 @@ class AtlasMetric92 extends HTMLElement {
     }
 
     if (this.wrapper) {
-      this.wrapper.setAttribute('aria-label', `${rounded} percent circular progress animation`);
+      this.wrapper.setAttribute('aria-label', `${rounded} percent circular progress animation with transparent background`);
     }
   }
 
