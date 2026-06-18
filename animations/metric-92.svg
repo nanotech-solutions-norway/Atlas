@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="92 percent circular progress animation">
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="92 percent circular progress animation with transparent background">
   <style>
     .metric-text { font-family: 'Roboto Slab', Roboto, system-ui, sans-serif; font-weight: 700; fill: #152243; letter-spacing: -8px; }
     .progress { stroke-dasharray: 100; stroke-dashoffset: 100; animation: fill92 2.8s cubic-bezier(.16,1,.3,1) forwards; }
     @keyframes fill92 { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 8; } }
     @media (prefers-reduced-motion: reduce) { .progress { animation: none; stroke-dashoffset: 8; } }
   </style>
-  <rect width="1024" height="1024" fill="#000000"/>
   <g transform="rotate(-90 512 512)">
     <circle cx="512" cy="512" r="380" fill="none" stroke="#e6eaf2" stroke-width="86" pathLength="100"/>
     <circle class="progress" cx="512" cy="512" r="380" fill="none" stroke="#385bb8" stroke-width="86" pathLength="100"/>
