@@ -51,6 +51,14 @@
       "target": 94,
       "suffix": "%",
       "animation_type": "text_count"
+    },
+    {
+      "file": "metric-92.svg",
+      "metric_id": "metric-92",
+      "target": 92,
+      "suffix": "%",
+      "animation_type": "circular_progress",
+      "background": "transparent"
     }
   ],
   "animation": {
@@ -69,7 +77,7 @@
     "font_weight": 700
   },
   "colors": {
-    "background": "#000000",
+    "background": "transparent",
     "progress_blue": "#385bb8",
     "remaining_track": "#e6eaf2",
     "metric_text": "#152243"
