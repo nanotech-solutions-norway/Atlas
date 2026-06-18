@@ -58,7 +58,14 @@
       "target": 92,
       "suffix": "%",
       "animation_type": "circular_progress",
-      "background": "transparent"
+      "background": "transparent",
+      "typography": {
+        "font_family": "Inter",
+        "fallback_font": "Roboto",
+        "font_weight": 400,
+        "font_size_px": 48,
+        "bold": false
+      }
     }
   ],
   "animation": {
@@ -74,7 +81,15 @@
     "inferred_reference_font": "Roboto Slab",
     "fallback_font": "Roboto",
     "css_font_stack": "Roboto Slab, Roboto, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
-    "font_weight": 700
+    "font_weight": 700,
+    "metric_92_override": {
+      "font_family": "Inter",
+      "fallback_font": "Roboto",
+      "css_font_stack": "Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+      "font_weight": 400,
+      "font_size_px": 48,
+      "bold": false
+    }
   },
   "colors": {
     "background": "transparent",
@@ -88,7 +103,8 @@
   },
   "implementation": {
     "format": "HTML + CSS + JavaScript + SVG",
-    "external_libraries": false,
+    "external_libraries": true,
+    "external_library_note": "metric-92 loads Inter Regular from Google Fonts for exact typography where permitted by the embedding environment",
     "new_images_generated": false,
     "intended_use": "Atlas website visual/animation asset"
   }
