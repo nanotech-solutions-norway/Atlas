@@ -12,6 +12,8 @@ class AtlasMetric92 extends HTMLElement {
   connectedCallback() {
     this.shadowRoot.innerHTML = `
       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
         :host {
           display: block;
           width: 100%;
@@ -30,7 +32,7 @@ class AtlasMetric92 extends HTMLElement {
           place-items: center;
           background: transparent !important;
           overflow: hidden;
-          font-family: "Roboto Slab", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
 
         .metric-visual {
@@ -75,20 +77,23 @@ class AtlasMetric92 extends HTMLElement {
           align-items: center;
           justify-content: center;
           color: #152243;
-          font-weight: 700;
-          letter-spacing: -0.065em;
+          font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          font-size: 48px;
+          font-weight: 400;
+          letter-spacing: 0;
           line-height: 1;
           white-space: nowrap;
           transform: translateY(-1px);
         }
 
-        .number {
-          font-size: clamp(46px, 18vw, 128px);
+        .number,
+        .suffix {
+          font-size: 48px;
+          font-weight: 400;
         }
 
         .suffix {
-          margin-left: 0.02em;
-          font-size: clamp(32px, 12vw, 82px);
+          margin-left: 0.04em;
         }
 
         @media (max-width: 480px) {
@@ -99,14 +104,6 @@ class AtlasMetric92 extends HTMLElement {
           .track,
           .progress {
             stroke-width: 46;
-          }
-
-          .number {
-            font-size: clamp(42px, 20vw, 92px);
-          }
-
-          .suffix {
-            font-size: clamp(28px, 13vw, 62px);
           }
         }
 
