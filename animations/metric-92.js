@@ -4,9 +4,11 @@ class AtlasMetric92 extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.target = 92;
     this.duration = 2800;
+    this.revealThreshold = 0.35;
     this._frame = null;
     this._observer = null;
     this._hasAnimated = false;
+    this._fallbackRevealHandler = null;
   }
 
   connectedCallback() {
@@ -118,7 +120,7 @@ class AtlasMetric92 extends HTMLElement {
         }
       </style>
 
-      <div class="atlas-metric" role="img" aria-label="92 percent circular progress animation with transparent background">
+      <div class="atlas-metric" role="img" aria-label="0 percent circular progress animation with transparent background">
         <div class="metric-visual">
           <svg viewBox="0 0 600 600" aria-hidden="true">
             <circle class="track" cx="300" cy="300" r="250" pathLength="100"></circle>
@@ -134,30 +136,79 @@ class AtlasMetric92 extends HTMLElement {
     this.progressCircle = this.shadowRoot.querySelector('.progress');
     this.numberNode = this.shadowRoot.querySelector('.number');
     this.wrapper = this.shadowRoot.querySelector('.atlas-metric');
-    this._startWhenVisible();
+
+    // Keep the metric at zero until the element is actually revealed in the viewport.
+    this._setValue(0);
+    this._startWhenRevealed();
   }
 
   disconnectedCallback() {
     if (this._frame) cancelAnimationFrame(this._frame);
     if (this._observer) this._observer.disconnect();
+    if (this._fallbackRevealHandler) {
+      window.removeEventListener('scroll', this._fallbackRevealHandler, true);
+      window.removeEventListener('resize', this._fallbackRevealHandler, true);
+    }
   }
 
-  _startWhenVisible() {
-    if (!('IntersectionObserver' in window)) {
-      this._animate();
+  _startWhenRevealed() {
+    if (this._hasAnimated) return;
+
+    if ('IntersectionObserver' in window) {
+      this._observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        const isRevealed = entry.isIntersecting && entry.intersectionRatio >= this.revealThreshold;
+
+        if (isRevealed) this._runOnce();
+      }, {
+        threshold: [0, 0.1, 0.25, this.revealThreshold, 0.5, 0.75, 1],
+        root: null,
+        rootMargin: '0px 0px -8% 0px'
+      });
+
+      this._observer.observe(this);
       return;
     }
 
-    this._observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (entry.isIntersecting && !this._hasAnimated) {
-        this._hasAnimated = true;
-        this._observer.disconnect();
-        this._animate();
-      }
-    }, { threshold: 0.25 });
+    // Fallback for older browsers: do not animate immediately; poll only on scroll/resize.
+    this._fallbackRevealHandler = () => {
+      if (this._isElementRevealed()) this._runOnce();
+    };
 
-    this._observer.observe(this);
+    window.addEventListener('scroll', this._fallbackRevealHandler, true);
+    window.addEventListener('resize', this._fallbackRevealHandler, true);
+    this._fallbackRevealHandler();
+  }
+
+  _isElementRevealed() {
+    const rect = this.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    const visibleWidth = Math.max(0, Math.min(rect.right, viewportWidth) - Math.max(rect.left, 0));
+    const visibleHeight = Math.max(0, Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0));
+    const visibleArea = visibleWidth * visibleHeight;
+    const totalArea = Math.max(rect.width * rect.height, 1);
+
+    return visibleArea / totalArea >= this.revealThreshold;
+  }
+
+  _runOnce() {
+    if (this._hasAnimated) return;
+    this._hasAnimated = true;
+
+    if (this._observer) {
+      this._observer.disconnect();
+      this._observer = null;
+    }
+
+    if (this._fallbackRevealHandler) {
+      window.removeEventListener('scroll', this._fallbackRevealHandler, true);
+      window.removeEventListener('resize', this._fallbackRevealHandler, true);
+      this._fallbackRevealHandler = null;
+    }
+
+    this._animate();
   }
 
   _clamp(value, min, max) {
