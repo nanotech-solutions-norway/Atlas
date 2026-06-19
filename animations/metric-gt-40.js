@@ -24,17 +24,19 @@
           :host {
             display: block;
             width: 100%;
-            height: 100%;
+            height: 80px !important;
             min-width: 90px;
-            min-height: 70px;
+            min-height: 80px;
+            max-height: 80px;
             contain: content;
             background: transparent !important;
           }
 
           .atlas-metric {
             width: 100%;
-            height: 100%;
-            min-height: 70px;
+            height: 80px !important;
+            min-height: 80px;
+            max-height: 80px;
             display: grid;
             place-items: center;
             background: transparent !important;
