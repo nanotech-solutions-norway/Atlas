@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas AI — &gt;40% Text Count Animation</title>
+  <style>
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+
+    body {
+      min-height: 140vh;
+      display: grid;
+      place-items: center;
+      padding: 40vh 24px 32vh;
+      font-family: Inter, Roboto, Arial, sans-serif;
+    }
+
+    .demo-frame {
+      width: min(360px, 90vw);
+      height: 160px;
+      display: grid;
+      place-items: center;
+      background: transparent;
+    }
+
+    atlas-metric-gt-40 {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-frame">
+    <atlas-metric-gt-40></atlas-metric-gt-40>
+  </div>
+
+  <script src="./metric-gt-40.js?v=inter-64-text-reveal"></script>
+</body>
+</html>
