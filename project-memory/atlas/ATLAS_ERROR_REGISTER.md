@@ -1,13 +1,13 @@
 # Atlas Error Register
 
-Updated: 11:35, 11.07.2026 Europe/Oslo
+Updated: 13:55, 11.07.2026 Europe/Oslo
 
 ## ERR-2026-07-11-01 — Duplicate and overlapping active-source files
 - Severity: P2 governance defect
 - Observation: Strategy, Phase 0-6 and SEO documents repeated common content and contained conflicting status language.
 - Root cause: No enforced active-source/supersession register.
 - Correction: Consolidated July active-source set and source disposition register.
-- Status: CORRECTED; archive move remains partially blocked.
+- Status: CORRECTED. Superseded Drive sources were moved into the dated archive folder after reauthorization.
 
 ## ERR-2026-07-11-02 — Missing canonical Atlas learning registers
 - Severity: P2 governance defect
@@ -16,13 +16,13 @@ Updated: 11:35, 11.07.2026 Europe/Oslo
 - Correction: Registers created on branch `atlas-source-refresh-20260711`.
 - Status: CORRECTED_PENDING_MERGE.
 
-## ERR-2026-07-11-03 — Drive archive operation forbidden
+## ERR-2026-07-11-03 — Drive archive operation initially forbidden
 - Severity: P2 operational limitation
-- Observation: Google Drive returned `403 appNotAuthorizedToFile` when attempting to move pre-existing source folders into the new archive folder.
-- Root cause: The connected Google Drive app has upload/create rights for new files but lacks write authorization for the relevant existing files.
-- Correction: New active-source and archive folders were created; new files uploaded; pre-existing files remain in place.
-- Required action: Reconnect/authorize the Drive app for those files or move them manually.
-- Status: OPEN_LIMITATION.
+- Observation: Google Drive initially returned `403 appNotAuthorizedToFile` when attempting to move pre-existing source folders into the new archive folder.
+- Root cause: The connected Google Drive app had not yet been granted write authorization for the relevant existing files.
+- Correction: The user reauthorized Google Drive. The archive operation was retried successfully. Both legacy source folders and all legacy root-level files were moved into `Archive - Superseded 11.07.2026`.
+- Validation: The Atlas AI Project root now contains only `Active Source - 11.07.2026` and `Archive - Superseded 11.07.2026`.
+- Status: RESOLVED.
 
 ## ERR-2026-07-11-04 — ChatGPT Project Sources cannot be programmatically replaced
 - Severity: P3 platform limitation
