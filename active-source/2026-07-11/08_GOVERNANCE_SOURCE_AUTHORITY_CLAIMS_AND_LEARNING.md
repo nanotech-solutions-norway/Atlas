@@ -2,11 +2,11 @@
 
 > **Control status:** Recommended consolidated working baseline. Commercial pricing, provider-delivery rights, legal interpretation, public availability, production routing and site identity remain approval-gated where identified as PENDING_REVIEW.
 
-> **Execution boundary:** No Wix publication, Gamma editing, Azure deployment, subscription activation or production change was performed.
+> **Execution boundary:** No Wix publication, Gamma editing, Azure deployment, subscription activation or production change was performed. Controlled Google Drive and GitHub source-governance write-back was completed.
 
 ## Governance finding
 
-The expected Atlas canonical learning files were not located under their prescribed names in the connected GitHub/Drive searches. The setup playbook exists, but setup instructions are not proof that the registers are operational.
+The expected Atlas canonical learning files were not located initially under their prescribed names. They have now been created on the controlled GitHub branch `atlas-source-refresh-20260711` and remain pending pull-request review and merge.
 
 ## Required canonical files
 
@@ -17,7 +17,7 @@ The expected Atlas canonical learning files were not located under their prescri
 - `ATLAS_SOURCE_AUTHORITY_MAP.md`
 - `ATLAS_SESSION_CLOSE_LOG.md`
 
-Until these files exist and contain approved entries, project memory is advisory rather than canonical.
+The files now exist on the controlled branch. Until the pull request is merged and the applicable entries are approved, project memory remains advisory rather than canonical.
 
 ## Source authority order
 
