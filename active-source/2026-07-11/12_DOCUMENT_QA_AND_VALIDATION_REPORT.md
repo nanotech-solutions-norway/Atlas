@@ -1,6 +1,8 @@
 # Atlas AI Document QA and Validation Report — 11:35, 11.07.2026
 
-> **Status:** PASS for generated-document integrity and layout. This does not validate Wix, Gamma, GitHub production merge, Azure, provider, billing or production behavior.
+Updated write-back validation: 13:55, 11.07.2026 Europe/Oslo
+
+> **Status:** PASS for generated-document integrity, layout and the documented Drive/GitHub write-back actions. This does not validate Wix, Gamma, GitHub production merge, Azure, provider, billing or production behavior.
 
 ## Validation performed
 
@@ -22,7 +24,10 @@
 ## Drive/GitHub write-back validation
 
 - Google Drive active-source folder creation and new-file uploads: PASS.
-- Google Drive move/replace of pre-existing files: BLOCKED by `403 appNotAuthorizedToFile`.
+- Initial Google Drive archive move: BLOCKED by `403 appNotAuthorizedToFile`.
+- Google Drive retry after reauthorization: PASS.
+- Drive root readback: PASS — exactly two direct children remain: Active Source and Archive.
+- Archive readback: PASS — both legacy source folders and all former root-level legacy files are present.
 - GitHub controlled replacement branch creation and file writes: PASS.
 - Main-branch activation: PENDING pull-request review and merge.
 
