@@ -1,6 +1,6 @@
 # Atlas Validation Register
 
-Updated: 13:55, 11.07.2026 Europe/Oslo
+Updated: 14:20, 11.07.2026 Europe/Oslo
 
 ## VAL-2026-07-11-01 — Source inventory
 - Procedure: Extract and inventory supplied DOCX and Markdown sources from direct files and ZIP archives.
@@ -30,6 +30,15 @@ Updated: 13:55, 11.07.2026 Europe/Oslo
 - Azure deployment: NOT PERFORMED.
 - Billing/entitlement/provider runtime: NOT PERFORMED.
 - Production release: NOT PERFORMED.
+
+## VAL-2026-07-11-06 — ChatGPT Atlas Website Project Sources upload
+- Procedure: Search the manually uploaded project-source corpus for the numbered active-source set, both file formats, and supplemental registers.
+- Expected: 13 numbered Markdown files, 13 matching DOCX files, deliverable manifest, source disposition register and web source bibliography.
+- Presence result: PASS — all 29 expected artifacts are discoverable in project context.
+- Naming/version result: PASS — numbered files use the `1135_11072026` version identifier.
+- Content-currentness result: CONDITIONAL/FAIL — documents 00, 08, 09 and 11 still describe the pre-write-back state; document 12 contains the earlier 12-DOCX/56-page self-excluding QA total rather than the later 13-DOCX/59-page consolidated total.
+- Required correction: Replace both Markdown and DOCX variants of documents 00, 08, 09, 11 and 12 with post-write-back revisions, then repeat readback validation.
+- Scope limitation: File search confirms discoverability of expected artifacts but cannot conclusively distinguish Project Sources panel membership from historical attachments when checking for unwanted legacy extras.
 
 ## Validation rule
 A PASS applies only to the exact version, environment and procedure tested. Pricing, routing, terms, provider delivery or architecture changes reopen affected gates.
