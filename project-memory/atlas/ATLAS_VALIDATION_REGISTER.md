@@ -1,6 +1,6 @@
 # Atlas Validation Register
 
-Updated: 11:35, 11.07.2026 Europe/Oslo
+Updated: 13:55, 11.07.2026 Europe/Oslo
 
 ## VAL-2026-07-11-01 — Source inventory
 - Procedure: Extract and inventory supplied DOCX and Markdown sources from direct files and ZIP archives.
@@ -13,10 +13,12 @@ Updated: 11:35, 11.07.2026 Europe/Oslo
 - Result: PASS — 13 DOCX files, 59 rendered pages, no reported clipping, overflow, blank-page or accessibility-audit defects.
 - Evidence: `12_Atlas_AI_Document_QA_and_Validation_Report_1135_11072026.docx` in Google Drive active source.
 
-## VAL-2026-07-11-03 — Google Drive active-source upload
-- Procedure: Create `Atlas AI Project / Active Source - 11.07.2026` and upload the consolidated DOCX set and ZIP bundle.
-- Result: PASS for folder creation and new-file uploads.
-- Limitation: Pre-existing files could not be moved because the app was not authorized to write to them.
+## VAL-2026-07-11-03 — Google Drive active-source upload and archive replacement
+- Procedure: Create `Atlas AI Project / Active Source - 11.07.2026`, upload the consolidated DOCX set and ZIP bundle, create `Archive - Superseded 11.07.2026`, and move the former root-level source set into the archive.
+- Initial result: BLOCKED by `403 appNotAuthorizedToFile`.
+- Corrective action: User reauthorized the Google Drive connection.
+- Retry result: PASS.
+- Readback evidence: The Atlas AI Project root now contains exactly two direct children: `Active Source - 11.07.2026` and `Archive - Superseded 11.07.2026`. The archive contains the two legacy source folders and all former root-level legacy source files.
 
 ## VAL-2026-07-11-04 — GitHub controlled replacement branch
 - Procedure: Create `atlas-source-refresh-20260711`; add active-source index, governing documents and memory registers.
