@@ -1,5 +1,7 @@
 # ATLAS PROJECT LOG UPDATE PACK — 11:35, 11.07.2026
 
+Updated operational status: 13:55, 11.07.2026 Europe/Oslo
+
 ## Session/task
 
 Controlled consolidation and replacement of Atlas AI website strategy, phase, launch, pricing, SEO, market, governance and Custom GPT source files.
@@ -72,8 +74,9 @@ Controlled consolidation and replacement of Atlas AI website strategy, phase, la
 | Source extraction | PASS — 67 records inventoried |
 | Duplicate detection | PASS — duplicate/equivalent strategy copies identified |
 | Google Drive active-source folder | PASS — created and populated with the consolidated DOCX set and ZIP bundle |
-| Google Drive archive folder | PASS — folder created |
-| Move/replace pre-existing Drive files | BLOCKED — `403 appNotAuthorizedToFile` |
+| Google Drive archive folder | PASS — created and populated |
+| Move pre-existing Drive files | PASS after reauthorization — all legacy root-level files and both legacy source folders moved into the archive |
+| Drive root readback | PASS — only Active Source and Archive remain as direct children |
 | GitHub replacement branch | PASS — `atlas-source-refresh-20260711` created and populated |
 | Atlas canonical memory registers | PASS_PENDING_MERGE — created on replacement branch |
 | ChatGPT Project Sources replacement | NOT AVAILABLE through current tool surface |
@@ -84,12 +87,11 @@ Controlled consolidation and replacement of Atlas AI website strategy, phase, la
 ## Unresolved actions
 
 1. Review and merge the GitHub pull request.
-2. Reauthorize Drive write access or manually move the superseded files into the archive folder.
-3. Remove superseded attachments from the ChatGPT Atlas Website Project Sources panel and upload the new active-source DOCX files.
-4. Resolve Wix site identity.
-5. Approve or revise proposed prices and provider-delivery mechanism.
-6. Commission legal/accounting/consumer review.
-7. Run early-access launch gates and subscription pilot before scale.
+2. Remove superseded attachments from the ChatGPT Atlas Website Project Sources panel and upload the new active-source DOCX files.
+3. Resolve Wix site identity.
+4. Approve or revise proposed prices and provider-delivery mechanism.
+5. Commission legal/accounting/consumer review.
+6. Run early-access launch gates and subscription pilot before scale.
 
 ## Classification summary
 
