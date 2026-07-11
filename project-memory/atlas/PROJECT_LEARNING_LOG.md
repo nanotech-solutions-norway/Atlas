@@ -1,6 +1,6 @@
 # Atlas Project Learning Log
 
-Updated: 11:35, 11.07.2026 Europe/Oslo
+Updated: 13:55, 11.07.2026 Europe/Oslo
 
 ## 2026-07-11 — Consolidated source refresh
 
@@ -17,17 +17,18 @@ Successive updates were generated as standalone reports without one active-sourc
 4. Require evidence and sign-off before status claims.
 5. Keep public forms low risk and separate from secure intake.
 6. Classify commercial, legal, provider-policy, public-availability and production decisions as PENDING_REVIEW.
+7. After connector reauthorization, retry the exact blocked operation and perform readback before closing the error.
 
 ### Evidence
 - `active-source/2026-07-11/`
 - Google Drive folder `Atlas AI Project / Active Source - 11.07.2026`
+- Google Drive folder `Atlas AI Project / Archive - Superseded 11.07.2026`
 - Consolidated source disposition register and document QA report.
 
 ### Action taken
-Created the consolidated active-source set in Google Drive and a controlled GitHub replacement branch. Created missing Atlas authority, decisions, learning, error, validation and session-close registers.
+Created the consolidated active-source set in Google Drive and a controlled GitHub replacement branch. Created missing Atlas authority, decisions, learning, error, validation and session-close registers. After the user reauthorized Google Drive, retried the archive operation, moved both legacy source folders and all former root-level legacy source files into the dated archive, and validated the resulting folder structure by readback.
 
 ### Unresolved items
-- Existing Drive files could not be moved into the archive folder because the connected app lacks write authorization for those pre-existing files.
 - ChatGPT Project Source attachments cannot be replaced through the available connector surface.
 - GitHub replacement remains on a review branch until the pull request is approved and merged.
 
