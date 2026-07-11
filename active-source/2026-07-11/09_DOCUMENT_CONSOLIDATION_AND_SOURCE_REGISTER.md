@@ -1,5 +1,7 @@
 # Atlas AI Document Consolidation, Supersession and Source Register — 11:35, 11.07.2026
 
+Updated operational status: 13:55, 11.07.2026 Europe/Oslo
+
 ## Inventory result
 
 - Reviewed source records: 67.
@@ -45,10 +47,13 @@ No source is deleted solely because it is superseded. Move it to a dated archive
 
 ## Google Drive state
 
-- Active folder created: `Atlas AI Project / Active Source - 11.07.2026`.
-- Archive folder created: `Atlas AI Project / Archive - Superseded 11.07.2026`.
+- Active folder: `Atlas AI Project / Active Source - 11.07.2026`.
+- Archive folder: `Atlas AI Project / Archive - Superseded 11.07.2026`.
 - Consolidated DOCX active-source set and ZIP bundle uploaded successfully.
-- Moving pre-existing source files was blocked by `403 appNotAuthorizedToFile`; the old files therefore remain in their original locations until the connection is reauthorized or they are moved manually.
+- The initial archive attempt was blocked by `403 appNotAuthorizedToFile`.
+- After Google Drive reauthorization, the archive operation was retried successfully.
+- Both legacy source folders and every former root-level legacy source file were moved into the archive folder.
+- Readback validation confirms that the Atlas AI Project root now contains only the Active Source and Archive folders.
 
 ## Full file-by-file register
 
