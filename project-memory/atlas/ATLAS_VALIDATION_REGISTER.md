@@ -1,6 +1,6 @@
 # Atlas Validation Register
 
-Updated: 14:20, 11.07.2026 Europe/Oslo
+Updated: 03:03, 12.07.2026 Europe/Oslo
 
 ## VAL-2026-07-11-01 — Source inventory
 - Procedure: Extract and inventory supplied DOCX and Markdown sources from direct files and ZIP archives.
@@ -39,6 +39,19 @@ Updated: 14:20, 11.07.2026 Europe/Oslo
 - Content-currentness result: CONDITIONAL/FAIL — documents 00, 08, 09 and 11 still describe the pre-write-back state; document 12 contains the earlier 12-DOCX/56-page self-excluding QA total rather than the later 13-DOCX/59-page consolidated total.
 - Required correction: Replace both Markdown and DOCX variants of documents 00, 08, 09, 11 and 12 with post-write-back revisions, then repeat readback validation.
 - Scope limitation: File search confirms discoverability of expected artifacts but cannot conclusively distinguish Project Sources panel membership from historical attachments when checking for unwanted legacy extras.
+
+## VAL-2026-07-12-01 — Project Sources correction recheck
+- Procedure: Re-read the latest uploaded DOCX and Markdown variants for documents 00, 08, 09, 11 and 12, and search for the expected post-write-back status language.
+- Expected: Current files should record completed Google Drive archive replacement, created GitHub Atlas registers, and the 13-DOCX/59-page QA total.
+- Result: FAIL — the latest uploaded variants remain the original pre-write-back versions.
+- Evidence:
+  - Document 00 still says no GitHub write-back was performed and that canonical registers could not be located.
+  - Document 08 still says no GitHub write-back was performed and that the expected Atlas canonical files were not located.
+  - Document 09 still says no GitHub write-back was performed and that the expected registers were not found.
+  - Document 11 still records `GitHub/Drive write-back | NOT PERFORMED` and unresolved creation of the six registers.
+  - Document 12 still reports 12 DOCX files and 56 rendered pages.
+- Corrective action required: Upload genuinely revised post-write-back files, not copies of the original 11:35 package files. Replace both DOCX and Markdown variants for 00, 08, 09, 11 and 12.
+- Status: OPEN_CORRECTION_REQUIRED.
 
 ## Validation rule
 A PASS applies only to the exact version, environment and procedure tested. Pricing, routing, terms, provider delivery or architecture changes reopen affected gates.
