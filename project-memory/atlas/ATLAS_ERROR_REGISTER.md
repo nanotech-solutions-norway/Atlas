@@ -1,6 +1,6 @@
 # Atlas Error Register
 
-Updated: 14:20, 11.07.2026 Europe/Oslo
+Updated: 03:03, 12.07.2026 Europe/Oslo
 
 ## ERR-2026-07-11-01 — Duplicate and overlapping active-source files
 - Severity: P2 governance defect
@@ -41,4 +41,5 @@ Updated: 14:20, 11.07.2026 Europe/Oslo
 - Observation: All expected active-source artifacts are present, but documents 00, 08, 09 and 11 still state that GitHub/Drive write-back or canonical-register creation had not occurred. Document 12 reports the earlier 12-DOCX/56-page validation total rather than the later 13-DOCX/59-page consolidated total.
 - Root cause: The manual upload used the original 11:35 package generated before the subsequent Drive reauthorization, archive completion and GitHub register creation were written back.
 - Correction: Replace both Markdown and DOCX variants of documents 00, 08, 09, 11 and 12 with post-write-back revisions and repeat source readback.
+- Recheck at 03:03, 12.07.2026: The newly uploaded files were re-read and still contain the original pre-write-back wording and totals. The attempted correction did not replace the content with revised versions.
 - Status: OPEN_CORRECTION_REQUIRED.
