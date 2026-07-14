@@ -1,0 +1,65 @@
+Page,Slide #,Semantic slide name,Gamma source IDs / section IDs,Disposition,Figma storage
+Consumers,1,01 Hero — Practical everyday AI support,g_8er3liuqy9be299:l0shbj6qqqin177; g_mszbmaxrqvfvjlg:xfn9qbag2vtxq2v,"Best-of synthesis; prices, units and activation excluded.",Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,2,02 Use areas — Four practical jobs,g_8er3liuqy9be299:02pzbr1p10y8flv; g_mszbmaxrqvfvjlg:9dq58o867qz8yu8,Condensed six use areas to four.,Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,3,03 Safe-use workflow,g_8er3liuqy9be299:qk7ygcnbiwbclh6; g_mszbmaxrqvfvjlg:487wd3ieybyvoap; g_mszbmaxrqvfvjlg:2qjjpjmhelsyftc,Dashboard implementation excluded.,Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,4,04 Family responsibility,g_8er3liuqy9be299:zm19swtxkgmjznk; g_mszbmaxrqvfvjlg:9rjovm40syfrro5; g_mszbmaxrqvfvjlg:0muekfggsxdaqne,Family terms remain proposed.,Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,5,05 Plan entry points,g_8er3liuqy9be299:9peyhjp5ebtfarq; g_mszbmaxrqvfvjlg:a2wup9lxzni1u70; g_mszbmaxrqvfvjlg:3s5uwsvcblim0x6,Prices/units/checkout excluded.,Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,6,06 Provider lanes,g_8er3liuqy9be299:jz8ge5b4iunqh1w; g_mszbmaxrqvfvjlg:a2wup9lxzni1u70,Conditional provider language.,Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,7,07 Safety limits,g_8er3liuqy9be299:ku43b4x213zb1ua; g_mszbmaxrqvfvjlg:0muekfggsxdaqne; g_mszbmaxrqvfvjlg:2qjjpjmhelsyftc,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Consumers,8,08 CTA,g_8er3liuqy9be299:1rr1qkw97ns7q0w; g_mszbmaxrqvfvjlg:3s5uwsvcblim0x6,Interest-only CTA.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,1,01 Hero — Pricing by audience,g_kfoy2fc7p5akvh2:32iatjs26jh7sy0; g_16ag7yuqbp5y916:9a0946ncavdxgw3,No approved amounts.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,2,02 Entry points,g_kfoy2fc7p5akvh2:qjsjytgqb5lcpjo; g_kfoy2fc7p5akvh2:s5hdepg3048h72t; g_kfoy2fc7p5akvh2:ru0khatcalz05l9; g_16ag7yuqbp5y916:c6vbj5yoh4yqznm; g_16ag7yuqbp5y916:geht1gkjh0rgrmm; g_16ag7yuqbp5y916:bmsf93d13oy2bp9,Audience structure only.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,3,03 Comparison,g_kfoy2fc7p5akvh2:lykv63of989t85d; g_16ag7yuqbp5y916:aq4f5dtgqle9bkw,No numeric comparison.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,4,04 Included controls,g_kfoy2fc7p5akvh2:t6lhnpvgqsj74rr; g_16ag7yuqbp5y916:iqttcmr23a8fvp1,"Intended controls, not implementation.",Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,5,05 Cost model,g_kfoy2fc7p5akvh2:vme9m1p8v99vsu5; g_16ag7yuqbp5y916:bbo0z9gqk5ubdlg,Provider/licence separation.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,6,06 Managed Secure,g_kfoy2fc7p5akvh2:qjsjytgqb5lcpjo; g_16ag7yuqbp5y916:c6vbj5yoh4yqznm,Qualification only.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,7,07 Status and FAQ,g_kfoy2fc7p5akvh2:ihh5zbjvpqmjnxc; g_kfoy2fc7p5akvh2:vsb01d6bhjw2yl8; g_16ag7yuqbp5y916:6imgrfdh1lnt71t,Conditional status.,Stored in Figma shared plugin data: atlas/sourceMap
+Pricing,8,08 CTA,g_kfoy2fc7p5akvh2:lykv63of989t85d; g_16ag7yuqbp5y916:kc3i7fqdu8mke4w,Review/interest only.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,1,01 Hero — Legal centre,g_1n1texxcslm7raj:mtaajxckhba9n1k; g_yjywnk4hkdlio1h:514yi6nizdoa46i,Draft status.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,2,02 Document status,g_1n1texxcslm7raj:u85km1k7tg90lgh; g_yjywnk4hkdlio1h:qqpr8crilvx5df7,Fabricated dates/status excluded.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,3,03 Privacy/data,g_1n1texxcslm7raj:2401f9c5i3ypumv; g_yjywnk4hkdlio1h:ftr38r7fyt69nfs,Legal details pending.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,4,04 Terms/subscription,g_1n1texxcslm7raj:lok0gqnprabo0y0; g_1n1texxcslm7raj:6z51okdcci5jnb4; g_yjywnk4hkdlio1h:8s4436ipl1tvgr0,Terms pending.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,5,05 Acceptable use,g_1n1texxcslm7raj:knd4aamwcmjp1oc; g_yjywnk4hkdlio1h:s37kw6rwh5jprpw,Boundaries retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,6,06 Cookies/accessibility,g_1n1texxcslm7raj:0hhvv9vx0vz4g3s; g_yjywnk4hkdlio1h:jkzvbx62sbss58m,"Targets, not compliance.",Stored in Figma shared plugin data: atlas/sourceMap
+Legal,7,07 Providers/disclaimer,g_1n1texxcslm7raj:z2caim70q8ze0ez; g_yjywnk4hkdlio1h:x8iqwhop9k1qz7c; g_yjywnk4hkdlio1h:mk0796oriwmlmx7,Provider rights pending.,Stored in Figma shared plugin data: atlas/sourceMap
+Legal,8,08 Version control,g_1n1texxcslm7raj:u85km1k7tg90lgh; g_yjywnk4hkdlio1h:qqpr8crilvx5df7,No effective date/approval claim.,Stored in Figma shared plugin data: atlas/sourceMap
+About,1,01 Hero,g_kiqopadptv013eb:8pwyobqv7va1mrg; g_zom6o9oqoh7qbz8:r59jilrqx7dqvmb,Core positioning.,Stored in Figma shared plugin data: atlas/sourceMap
+About,2,02 Atlas role,g_kiqopadptv013eb:ulawh61m4ononzi; g_zom6o9oqoh7qbz8:szxqwxuqvzdhf78,Provider boundary.,Stored in Figma shared plugin data: atlas/sourceMap
+About,3,03 Audiences,g_kiqopadptv013eb:5m6g32zv8cnrj6w; g_zom6o9oqoh7qbz8:4abdd1mzwd36u4y,Availability remains proposed.,Stored in Figma shared plugin data: atlas/sourceMap
+About,4,04 Delivery model,g_kiqopadptv013eb:sazkqtg6lu0upkn; g_zom6o9oqoh7qbz8:i643b2ej0ue1ugo,"Method, not runtime proof.",Stored in Figma shared plugin data: atlas/sourceMap
+About,5,05 System roles,g_kiqopadptv013eb:eb6m8154j58kynq; g_zom6o9oqoh7qbz8:fy86h0yuq8z5p3t,Qualified backend only.,Stored in Figma shared plugin data: atlas/sourceMap
+About,6,06 Principles,g_kiqopadptv013eb:1tlj04wcka9piu0; g_zom6o9oqoh7qbz8:5h6p08eio7148yh,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+About,7,07 Boundaries,g_kiqopadptv013eb:1tlj04wcka9piu0; g_zom6o9oqoh7qbz8:5h6p08eio7148yh,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+About,8,08 CTA,g_kiqopadptv013eb:hd7c1hnfukguv60; g_zom6o9oqoh7qbz8:q5ph66kqo0couz2,Low-risk CTA.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,1,01 Hero,g_bmerv921kvzpk2a:mliigfi5cc3hhs5; g_fwaj3xz5yq9oryg:m3j86lqo78l4ces,Task-first.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,2,02 Library,g_bmerv921kvzpk2a:rj8vj6bf416ghp1; g_bmerv921kvzpk2a:nrqcv8mmiboyala; g_bmerv921kvzpk2a:55d0dj9qsqwt2yv; g_bmerv921kvzpk2a:u12a8vle0qc93z1; g_fwaj3xz5yq9oryg:a720kpajyustqci,Four categories.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,3,03 Navigation,g_fwaj3xz5yq9oryg:v103m8t912p229b; g_fwaj3xz5yq9oryg:a720kpajyustqci,No auto routing.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,4,04 Student guide,g_bmerv921kvzpk2a:nrqcv8mmiboyala; g_fwaj3xz5yq9oryg:zndrpvt22pvo05x,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,5,05 Consumer guide,g_bmerv921kvzpk2a:55d0dj9qsqwt2yv; g_fwaj3xz5yq9oryg:zndrpvt22pvo05x,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,6,06 Business guide,g_bmerv921kvzpk2a:rj8vj6bf416ghp1; g_fwaj3xz5yq9oryg:v103m8t912p229b,Downloads not assumed published.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,7,07 Provider guide,g_bmerv921kvzpk2a:u12a8vle0qc93z1; g_fwaj3xz5yq9oryg:fz0t21rkzwuejio,Validate current providers.,Stored in Figma shared plugin data: atlas/sourceMap
+Resources,8,08 CTA/publication rule,g_bmerv921kvzpk2a:5nexn3cfddcwqcy; g_fwaj3xz5yq9oryg:6e1005bflekqwxl,Versioning retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,1,01 Hero,g_t46ugbfiriun5z9:fh70dv7kp3pw2ko; g_2qfyyxeeem6qqjz:gjgzuacc542149t,Low-risk.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,2,02 Process,g_t46ugbfiriun5z9:p3mpzbgb8o4k7u4; g_2qfyyxeeem6qqjz:4524krkw6ci4hrx,Time claim excluded.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,3,03 Routes,g_t46ugbfiriun5z9:p3mpzbgb8o4k7u4; g_2qfyyxeeem6qqjz:ron5e9l8w1mk230; g_2qfyyxeeem6qqjz:cxqp0l1q60bqf3d,No auto scoring.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,4,04 Low-risk form,g_t46ugbfiriun5z9:vgl060gdhy0wfev; g_t46ugbfiriun5z9:um64b1s30osyyzq; g_2qfyyxeeem6qqjz:3ik56ujgjsw9rss; g_2qfyyxeeem6qqjz:9h69rnb5ere9hb1,No sensitive data.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,5,05 Business intake,g_t46ugbfiriun5z9:vgl060gdhy0wfev; g_2qfyyxeeem6qqjz:9h69rnb5ere9hb1,Proposed form contract.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,6,06 Student/consumer,g_t46ugbfiriun5z9:kebd02ediccqhzz; g_t46ugbfiriun5z9:pnses03lpy7o5sp; g_2qfyyxeeem6qqjz:cxqp0l1q60bqf3d,Plan interest only.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,7,07 Outcomes,g_t46ugbfiriun5z9:bggflmrq6k70or7; g_t46ugbfiriun5z9:s7qirpks1empti7; g_2qfyyxeeem6qqjz:jgfy3kcult8izm2,Future workflow.,Stored in Figma shared plugin data: atlas/sourceMap
+Onboarding,8,08 CTA,g_t46ugbfiriun5z9:fh70dv7kp3pw2ko; g_2qfyyxeeem6qqjz:xdelcmdb36npc22,Submission is not approval.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,1,01 Hero,g_1yn5vvwnmsuz5hn:zg2u8mpudbs1jms; g_5mp3861owfb8xd9:7wcmzip9zbizdp0,Evidence-led.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,2,02 Six questions,g_1yn5vvwnmsuz5hn:1gxeg19tmnhrk51; g_5mp3861owfb8xd9:3s46zpife1yex67,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,3,03 Data routes,g_1yn5vvwnmsuz5hn:gcu3xfnkakr2w8p; g_5mp3861owfb8xd9:1fonhxjfcg3q6s3,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,4,04 Human control/status,g_1yn5vvwnmsuz5hn:q038hc133fik8dq; g_5mp3861owfb8xd9:calywxz8ts7a9z3; g_5mp3861owfb8xd9:v8hia1le5cp4u3f,Retained.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,5,05 Provider disclosure,g_1yn5vvwnmsuz5hn:q038hc133fik8dq; g_5mp3861owfb8xd9:3s46zpife1yex67,Rights pending.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,6,06 Limitations,g_1yn5vvwnmsuz5hn:0x4a67ecuiq2pbt; g_1yn5vvwnmsuz5hn:750frw8kof4ufow; g_5mp3861owfb8xd9:nj7r8erhffn3e4b; g_5mp3861owfb8xd9:calywxz8ts7a9z3,No blanket guarantees.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,7,07 Safe entry/incidents,g_5mp3861owfb8xd9:1fonhxjfcg3q6s3; g_5mp3861owfb8xd9:pzr65qirzqku9ly; g_1yn5vvwnmsuz5hn:pasn85q9rh9pzhh,Active process claims excluded.,Stored in Figma shared plugin data: atlas/sourceMap
+Trust,8,08 CTA,g_1yn5vvwnmsuz5hn:slu05s35e76e74a; g_5mp3861owfb8xd9:v8hia1le5cp4u3f,Documentation/review.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,1,01 Hero,g_dim2e6wjazg0m0s:b88zixujqlx91fa; g_nw171vmdevl5ix2:fev8icdxbyrfahf,Need/data first.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,2,02 Decision guide,g_dim2e6wjazg0m0s:cootyz56zbpivz1; g_nw171vmdevl5ix2:jx5yc6536itf00d,No auto selection.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,3,03 Provider lanes,g_dim2e6wjazg0m0s:srmf1wshqfm2m6z; g_dim2e6wjazg0m0s:6uihnji5w41ao6s; g_dim2e6wjazg0m0s:535w36sl534jday; g_nw171vmdevl5ix2:5bgydlwvwj30x3q; g_nw171vmdevl5ix2:jeg35s6v2u2mtjn; g_nw171vmdevl5ix2:aevcfwm53eo3jot; g_nw171vmdevl5ix2:01y1t9hdhy9ql8t,Third-party lanes.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,4,04 Roles,g_dim2e6wjazg0m0s:ca9l9k9wq7uczul; g_nw171vmdevl5ix2:xgz9mrtc1rsdt0i,Atlas not model owner.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,5,05 Data/account/licence,g_dim2e6wjazg0m0s:ca9l9k9wq7uczul; g_nw171vmdevl5ix2:xgz9mrtc1rsdt0i,Document per customer.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,6,06 Change control,g_dim2e6wjazg0m0s:bgwehhp9n369r5r; g_nw171vmdevl5ix2:wvhr8lw7dk21he4,No permanent model.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,7,07 Azure/secure route,g_r0j5t1a1u9gr39c; g_ex6i1o8z2zyjlk5; g_nw171vmdevl5ix2:jeg35s6v2u2mtjn,Future qualified architecture.,Stored in Figma shared plugin data: atlas/sourceMap
+Platform Lanes,8,08 CTA,g_dim2e6wjazg0m0s:bgwehhp9n369r5r; g_nw171vmdevl5ix2:wvhr8lw7dk21he4,Assessment CTA.,Stored in Figma shared plugin data: atlas/sourceMap
