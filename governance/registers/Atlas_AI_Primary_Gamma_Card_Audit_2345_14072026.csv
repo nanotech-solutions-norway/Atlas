@@ -1,0 +1,129 @@
+Page,Version,Gamma ID,Card #,Section ID,Card title/purpose,Score /100,Hard gates,Disposition,Review note
+Consumers,v1,g_8er3liuqy9be299,1,l0shbj6qqqin177,Hero — practical everyday planning,78,C2,KEEP_WITH_EDITS,Retain positioning; remove final price/access implication.
+Consumers,v1,g_8er3liuqy9be299,2,9peyhjp5ebtfarq,Proposed plans,42,"C2,C5,C7",EXCLUDE_PENDING_APPROVAL,"Prices, units, users and provider inclusion are unapproved."
+Consumers,v1,g_8er3liuqy9be299,3,02pzbr1p10y8flv,Six use areas,88,,KEEP,Strong low-risk use-case inventory.
+Consumers,v1,g_8er3liuqy9be299,4,qk7ygcnbiwbclh6,Usage model,62,C3,REWRITE_FUTURE_STATE,"Pause/units logic is intended, not validated runtime."
+Consumers,v1,g_8er3liuqy9be299,5,zm19swtxkgmjznk,Family plan,55,"C2,C4,C6",KEEP_WITH_EDITS,"Plan, privacy and family rules remain proposed."
+Consumers,v1,g_8er3liuqy9be299,6,ku43b4x213zb1ua,Safety boundaries,92,,KEEP,"Clear emergency, advice and sensitive-data limits."
+Consumers,v1,g_8er3liuqy9be299,7,jz8ge5b4iunqh1w,Provider validation,70,C5,KEEP_WITH_EDITS,Conditional provider access only.
+Consumers,v1,g_8er3liuqy9be299,8,1rr1qkw97ns7q0w,Interest CTA,45,"C2,C7",REWRITE_FUTURE_STATE,Interest only; remove price/unit activation framing.
+Consumers,v2,g_mszbmaxrqvfvjlg,1,xfn9qbag2vtxq2v,Hero — everyday tasks,78,C2,KEEP_WITH_EDITS,Retain tasks; keep plans proposed.
+Consumers,v2,g_mszbmaxrqvfvjlg,2,9dq58o867qz8yu8,Jobs to be done,88,,KEEP,Strong task-oriented structure.
+Consumers,v2,g_mszbmaxrqvfvjlg,3,a2wup9lxzni1u70,Plans and providers,38,"C2,C5,C7",EXCLUDE_PENDING_APPROVAL,Commercial and provider rights unresolved.
+Consumers,v2,g_mszbmaxrqvfvjlg,4,9rjovm40syfrro5,Family model,52,"C2,C4,C6",KEEP_WITH_EDITS,Named users/privacy need approval.
+Consumers,v2,g_mszbmaxrqvfvjlg,5,487wd3ieybyvoap,Usage dashboard,35,C3,REWRITE_FUTURE_STATE,Dashboard and enforcement are not implemented.
+Consumers,v2,g_mszbmaxrqvfvjlg,6,0muekfggsxdaqne,Important limits,92,,KEEP,Strong safety boundaries.
+Consumers,v2,g_mszbmaxrqvfvjlg,7,2qjjpjmhelsyftc,Privacy and control,82,C4,KEEP_WITH_EDITS,Retain minimisation; avoid final legal promises.
+Consumers,v2,g_mszbmaxrqvfvjlg,8,3s5uwsvcblim0x6,Comparison and CTA,40,"C2,C7",REWRITE_FUTURE_STATE,No activation or final commercial comparison.
+Pricing,v1,g_kfoy2fc7p5akvh2,1,32iatjs26jh7sy0,Hero — audience pricing logic,72,C2,KEEP_WITH_EDITS,All values remain proposed.
+Pricing,v1,g_kfoy2fc7p5akvh2,2,qjsjytgqb5lcpjo,Business pricing,48,C2,EXCLUDE_PENDING_APPROVAL,Commercial scope and amounts need approval.
+Pricing,v1,g_kfoy2fc7p5akvh2,3,s5hdepg3048h72t,Student pricing,30,"C2,C5,C7",EXCLUDE_PENDING_APPROVAL,"Price, units, provider access and launch status unresolved."
+Pricing,v1,g_kfoy2fc7p5akvh2,4,ru0khatcalz05l9,Consumer pricing,30,"C2,C5,C7",EXCLUDE_PENDING_APPROVAL,"Price, units, family entitlement and launch unresolved."
+Pricing,v1,g_kfoy2fc7p5akvh2,5,t6lhnpvgqsj74rr,Usage controls,55,C3,REWRITE_FUTURE_STATE,Control principles may be retained as intended design.
+Pricing,v1,g_kfoy2fc7p5akvh2,6,vme9m1p8v99vsu5,Licences and vendor cost,68,C5,KEEP_WITH_EDITS,Retain separation; validate rights and actual costs.
+Pricing,v1,g_kfoy2fc7p5akvh2,7,vsb01d6bhjw2yl8,Pricing FAQ,60,"C2,C5",KEEP_WITH_EDITS,Rewrite answers as conditional.
+Pricing,v1,g_kfoy2fc7p5akvh2,8,ihh5zbjvpqmjnxc,Early-access status,74,C7,KEEP_WITH_EDITS,Strong status framing; no launch promise.
+Pricing,v1,g_kfoy2fc7p5akvh2,9,lykv63of989t85d,Pricing CTA,50,"C2,C7",REWRITE_FUTURE_STATE,Review/interest CTA only.
+Pricing,v2,g_16ag7yuqbp5y916,1,9a0946ncavdxgw3,Hero — plans by audience,72,C2,KEEP_WITH_EDITS,"Retain logic, not amounts."
+Pricing,v2,g_16ag7yuqbp5y916,2,c6vbj5yoh4yqznm,Business plans,38,C2,EXCLUDE_PENDING_APPROVAL,Commercial scope unresolved.
+Pricing,v2,g_16ag7yuqbp5y916,3,geht1gkjh0rgrmm,Student plans,28,"C2,C5,C7",EXCLUDE_PENDING_APPROVAL,"Unapproved price, units and providers."
+Pricing,v2,g_16ag7yuqbp5y916,4,bmsf93d13oy2bp9,Consumer plans,28,"C2,C5,C7",EXCLUDE_PENDING_APPROVAL,"Unapproved price, family terms and providers."
+Pricing,v2,g_16ag7yuqbp5y916,5,iqttcmr23a8fvp1,Included controls,40,C3,REWRITE_FUTURE_STATE,Portal/status/enforcement claims unsupported.
+Pricing,v2,g_16ag7yuqbp5y916,6,bbo0z9gqk5ubdlg,Provider-cost difference,55,"C3,C5",KEEP_WITH_EDITS,Remove active routing/architecture claims.
+Pricing,v2,g_16ag7yuqbp5y916,7,aq4f5dtgqle9bkw,Plan comparison,20,"C2,C4,C7",EXCLUDE_PENDING_APPROVAL,Multiple final commercial/legal claims.
+Pricing,v2,g_16ag7yuqbp5y916,8,6imgrfdh1lnt71t,FAQ,50,"C2,C3,C5",REWRITE_FUTURE_STATE,Conditional answers only.
+Pricing,v2,g_16ag7yuqbp5y916,9,kc3i7fqdu8mke4w,CTA,45,"C2,C7",REWRITE_FUTURE_STATE,No purchase or activation CTA.
+Legal,v1,g_1n1texxcslm7raj,1,mtaajxckhba9n1k,Legal centre hero,80,C4,KEEP_WITH_EDITS,Keep explicit draft status.
+Legal,v1,g_1n1texxcslm7raj,2,u85km1k7tg90lgh,Document register,20,C4,EXCLUDE_PENDING_APPROVAL,"Invented dates, versions and status."
+Legal,v1,g_1n1texxcslm7raj,3,2401f9c5i3ypumv,Privacy,45,C4,REWRITE_FUTURE_STATE,Legal-basis/controller assertions need counsel.
+Legal,v1,g_1n1texxcslm7raj,4,lok0gqnprabo0y0,Terms,68,C4,KEEP_WITH_EDITS,Summary only; full legal review required.
+Legal,v1,g_1n1texxcslm7raj,5,6z51okdcci5jnb4,Subscription terms,35,"C2,C4",EXCLUDE_PENDING_APPROVAL,"Billing, cancellation and refunds unresolved."
+Legal,v1,g_1n1texxcslm7raj,6,knd4aamwcmjp1oc,Acceptable use,78,C6,KEEP_WITH_EDITS,Strong boundaries; enforcement process pending.
+Legal,v1,g_1n1texxcslm7raj,7,z2caim70q8ze0ez,Providers and AI disclaimer,62,"C4,C5",KEEP_WITH_EDITS,Provider list and legal wording need validation.
+Legal,v1,g_1n1texxcslm7raj,8,0hhvv9vx0vz4g3s,Cookies/accessibility/contact,60,C4,KEEP_WITH_EDITS,Consent and WCAG claims require evidence.
+Legal,v2,g_yjywnk4hkdlio1h,1,514yi6nizdoa46i,Legal hero,82,C4,KEEP_WITH_EDITS,Conservative status framing.
+Legal,v2,g_yjywnk4hkdlio1h,2,ftr38r7fyt69nfs,Privacy and data,35,C4,REWRITE_FUTURE_STATE,"DPA, retention and controller details unsupported."
+Legal,v2,g_yjywnk4hkdlio1h,3,s37kw6rwh5jprpw,Terms and acceptable use,75,C6,KEEP_WITH_EDITS,Boundaries useful; legal review required.
+Legal,v2,g_yjywnk4hkdlio1h,4,8s4436ipl1tvgr0,Subscription,40,"C2,C4",EXCLUDE_PENDING_APPROVAL,Commercial/legal terms unresolved.
+Legal,v2,g_yjywnk4hkdlio1h,5,x8iqwhop9k1qz7c,Provider disclosure,68,C5,KEEP_WITH_EDITS,Conditional supplier disclosure.
+Legal,v2,g_yjywnk4hkdlio1h,6,mk0796oriwmlmx7,AI output disclaimer,88,,KEEP,Strong non-reliance language.
+Legal,v2,g_yjywnk4hkdlio1h,7,jkzvbx62sbss58m,Cookies and accessibility,75,C4,KEEP_WITH_EDITS,"Targets, not compliance proof."
+Legal,v2,g_yjywnk4hkdlio1h,8,qqpr8crilvx5df7,Document register,5,C4,EXCLUDE_PENDING_APPROVAL,"False approved statuses, dates and owners."
+About,v1,g_kiqopadptv013eb,1,8pwyobqv7va1mrg,Hero,84,,KEEP,Clear controlled-layer positioning.
+About,v1,g_kiqopadptv013eb,2,ulawh61m4ononzi,Atlas role,88,,KEEP,Strong provider boundary.
+About,v1,g_kiqopadptv013eb,3,5m6g32zv8cnrj6w,Three audiences,72,C2,KEEP_WITH_EDITS,Availability remains proposed.
+About,v1,g_kiqopadptv013eb,4,sazkqtg6lu0upkn,Delivery process,80,,KEEP,Good method structure.
+About,v1,g_kiqopadptv013eb,5,eb6m8154j58kynq,System roles,66,C3,KEEP_WITH_EDITS,Runtime/backend status must remain qualified.
+About,v1,g_kiqopadptv013eb,6,1tlj04wcka9piu0,Principles and limits,92,,KEEP,Canonical governance principles.
+About,v1,g_kiqopadptv013eb,7,hd7c1hnfukguv60,CTA,84,,KEEP,Low-risk CTA.
+About,v2,g_zom6o9oqoh7qbz8,1,r59jilrqx7dqvmb,Hero,90,,KEEP,Strong core message.
+About,v2,g_zom6o9oqoh7qbz8,2,szxqwxuqvzdhf78,Problem definition,90,,KEEP,Concrete accountability questions.
+About,v2,g_zom6o9oqoh7qbz8,3,i643b2ej0ue1ugo,Five-phase method,82,,KEEP,Good operating model.
+About,v2,g_zom6o9oqoh7qbz8,4,4abdd1mzwd36u4y,Three offers,70,C2,KEEP_WITH_EDITS,Student/consumer status must remain proposed.
+About,v2,g_zom6o9oqoh7qbz8,5,fy86h0yuq8z5p3t,Governance control plane,86,,KEEP,Accurate system-role separation.
+About,v2,g_zom6o9oqoh7qbz8,6,5h6p08eio7148yh,What Atlas does not promise,92,,KEEP,Excellent claims governance.
+About,v2,g_zom6o9oqoh7qbz8,7,q5ph66kqo0couz2,CTA,88,,KEEP,Low-risk CTA.
+Resources,v1,g_bmerv921kvzpk2a,1,mliigfi5cc3hhs5,Hero,88,,KEEP,Task-first and non-advisory framing.
+Resources,v1,g_bmerv921kvzpk2a,2,rj8vj6bf416ghp1,Business guides,82,,KEEP,Useful guide inventory.
+Resources,v1,g_bmerv921kvzpk2a,3,nrqcv8mmiboyala,Student guides,88,,KEEP,Strong integrity and source-control language.
+Resources,v1,g_bmerv921kvzpk2a,4,55d0dj9qsqwt2yv,Consumer guides,88,,KEEP,Strong safety boundaries.
+Resources,v1,g_bmerv921kvzpk2a,5,u12a8vle0qc93z1,Platform introduction,72,C5,KEEP_WITH_EDITS,Keep neutral and current.
+Resources,v1,g_bmerv921kvzpk2a,6,ak7lcg1rqcge8ft,Usage framework,50,"C2,C3",REWRITE_FUTURE_STATE,Quota/runtime controls unvalidated.
+Resources,v1,g_bmerv921kvzpk2a,7,mqemet94dgymm9v,Trust and legal links,80,C4,KEEP_WITH_EDITS,Links/documents must exist and be approved.
+Resources,v1,g_bmerv921kvzpk2a,8,5nexn3cfddcwqcy,CTA,84,,KEEP,Audience-based routing.
+Resources,v2,g_fwaj3xz5yq9oryg,1,m3j86lqo78l4ces,Hero,90,,KEEP,Excellent task-first framing.
+Resources,v2,g_fwaj3xz5yq9oryg,2,v103m8t912p229b,Define need,90,,KEEP,Strong page-contract content.
+Resources,v2,g_fwaj3xz5yq9oryg,3,a720kpajyustqci,Choose solution,72,C2,KEEP_WITH_EDITS,Plans remain proposed.
+Resources,v2,g_fwaj3xz5yq9oryg,4,zndrpvt22pvo05x,Responsible use,92,,KEEP,Strong safety guidance.
+Resources,v2,g_fwaj3xz5yq9oryg,5,xutbjzznksmb9xg,Price and use,45,"C2,C3",REWRITE_FUTURE_STATE,Usage enforcement and commercial claims unresolved.
+Resources,v2,g_fwaj3xz5yq9oryg,6,fz0t21rkzwuejio,Provider guides,70,C5,KEEP_WITH_EDITS,Validate current features and rights.
+Resources,v2,g_fwaj3xz5yq9oryg,7,0teztijch7tidcj,Trust and templates,60,"C3,C4",KEEP_WITH_EDITS,Do not imply unpublished templates/documents exist.
+Resources,v2,g_fwaj3xz5yq9oryg,8,6e1005bflekqwxl,Publication rule and CTA,86,,KEEP,Strong governance rule.
+Onboarding,v1,g_t46ugbfiriun5z9,1,fh70dv7kp3pw2ko,Hero,90,,KEEP,Clear low-risk qualification.
+Onboarding,v1,g_t46ugbfiriun5z9,2,p3mpzbgb8o4k7u4,Four routes,88,,KEEP,Strong route structure.
+Onboarding,v1,g_t46ugbfiriun5z9,3,vgl060gdhy0wfev,Business intake,90,,KEEP,Good minimised fields.
+Onboarding,v1,g_t46ugbfiriun5z9,4,kebd02ediccqhzz,Student intake,75,C2,KEEP_WITH_EDITS,Plan interest only.
+Onboarding,v1,g_t46ugbfiriun5z9,5,pnses03lpy7o5sp,Consumer intake,72,C2,KEEP_WITH_EDITS,Plan and family terms proposed.
+Onboarding,v1,g_t46ugbfiriun5z9,6,bggflmrq6k70or7,Architecture review,88,,KEEP,Strong no-file controlled escalation.
+Onboarding,v1,g_t46ugbfiriun5z9,7,um64b1s30osyyzq,Privacy message,92,,KEEP,Strong prohibited-data list.
+Onboarding,v1,g_t46ugbfiriun5z9,8,s7qirpks1empti7,Status after submission,62,C3,REWRITE_FUTURE_STATE,Statuses/process must be implemented before claim.
+Onboarding,v2,g_2qfyyxeeem6qqjz,1,gjgzuacc542149t,Hero,90,,KEEP,Strong minimised qualification.
+Onboarding,v2,g_2qfyyxeeem6qqjz,2,4524krkw6ci4hrx,Four-step process,68,C3,KEEP_WITH_EDITS,Remove under-two-minute claim.
+Onboarding,v2,g_2qfyyxeeem6qqjz,3,ron5e9l8w1mk230,Audience selection,88,,KEEP,Clear routing choices.
+Onboarding,v2,g_2qfyyxeeem6qqjz,4,9h69rnb5ere9hb1,Need and data class,90,,KEEP,Strong high-level classification.
+Onboarding,v2,g_2qfyyxeeem6qqjz,5,cxqp0l1q60bqf3d,Next step,72,"C2,C3",KEEP_WITH_EDITS,Manual recommendation and plan interest only.
+Onboarding,v2,g_2qfyyxeeem6qqjz,6,3ik56ujgjsw9rss,Data collected/not collected,92,,KEEP,Strong form contract.
+Onboarding,v2,g_2qfyyxeeem6qqjz,7,jgfy3kcult8izm2,After submission,55,C3,REWRITE_FUTURE_STATE,Manual review/status workflow not yet evidenced.
+Onboarding,v2,g_2qfyyxeeem6qqjz,8,xdelcmdb36npc22,CTA,86,,KEEP,No automatic access claim.
+Trust,v1,g_1yn5vvwnmsuz5hn,1,zg2u8mpudbs1jms,Hero,90,,KEEP,Evidence-led trust framing.
+Trust,v1,g_1yn5vvwnmsuz5hn,2,1gxeg19tmnhrk51,Six questions,92,,KEEP,Excellent trust structure.
+Trust,v1,g_1yn5vvwnmsuz5hn,3,q038hc133fik8dq,Provider role,82,C5,KEEP_WITH_EDITS,Disclose only validated providers.
+Trust,v1,g_1yn5vvwnmsuz5hn,4,gcu3xfnkakr2w8p,Data and responsibility,92,,KEEP,Strong public-data and human-control limits.
+Trust,v1,g_1yn5vvwnmsuz5hn,5,0x4a67ecuiq2pbt,Early access and Managed Secure,82,C7,KEEP_WITH_EDITS,Keep conditional status.
+Trust,v1,g_1yn5vvwnmsuz5hn,6,pasn85q9rh9pzhh,Incident handling,45,C3,REWRITE_FUTURE_STATE,Active processes are not evidenced.
+Trust,v1,g_1yn5vvwnmsuz5hn,7,750frw8kof4ufow,Audience boundaries,92,,KEEP,Strong safety rules.
+Trust,v1,g_1yn5vvwnmsuz5hn,8,slu05s35e76e74a,Documents and CTA,84,C4,KEEP_WITH_EDITS,Only link approved/available documents.
+Trust,v2,g_5mp3861owfb8xd9,1,7wcmzip9zbizdp0,Hero,90,,KEEP,Clear boundaries and status language.
+Trust,v2,g_5mp3861owfb8xd9,2,3s46zpife1yex67,Provider roles,82,C5,KEEP_WITH_EDITS,Validate rights and delivery form.
+Trust,v2,g_5mp3861owfb8xd9,3,1fonhxjfcg3q6s3,Data boundaries,92,,KEEP,Strong minimisation.
+Trust,v2,g_5mp3861owfb8xd9,4,calywxz8ts7a9z3,Human control,88,,KEEP,Appropriate non-reliance warning.
+Trust,v2,g_5mp3861owfb8xd9,5,v8hia1le5cp4u3f,Status vocabulary,92,,KEEP,Canonical evidence language.
+Trust,v2,g_5mp3861owfb8xd9,6,nj7r8erhffn3e4b,Audience limits,92,,KEEP,Strong boundaries.
+Trust,v2,g_5mp3861owfb8xd9,7,mdrg3tuz3u3y72v,Managed Secure controls,52,"C3,C7",REWRITE_FUTURE_STATE,"Architecture/logging/storage are required controls, not present facts."
+Trust,v2,g_5mp3861owfb8xd9,8,pzr65qirzqku9ly,Contact and incidents,65,C3,KEEP_WITH_EDITS,Contact categories required; process claims remain conditional.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,1,b88zixujqlx91fa,Hero,88,,KEEP,Task-led provider selection.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,2,cootyz56zbpivz1,Delivery lanes,82,C5,KEEP_WITH_EDITS,Conditional routing only.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,3,srmf1wshqfm2m6z,OpenAI lane,70,C5,KEEP_WITH_EDITS,Validate current rights and delivery model.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,4,6uihnji5w41ao6s,Claude lane,72,C5,KEEP_WITH_EDITS,"Validate model class, cost and data terms."
+Platform Lanes,v1,g_dim2e6wjazg0m0s,5,535w36sl534jday,Copilot and Gemini,68,C5,KEEP_WITH_EDITS,Tenant/licence/current availability required.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,6,pncx76aayjqn9eo,Multi-engine research,70,"C3,C5",KEEP_WITH_EDITS,No active routing claim.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,7,ca9l9k9wq7uczul,Selection criteria,80,,KEEP,Strong decision factors.
+Platform Lanes,v1,g_dim2e6wjazg0m0s,8,bgwehhp9n369r5r,Provider-lane disclaimer,92,,KEEP,Excellent no-permanent-model principle.
+Platform Lanes,v2,g_nw171vmdevl5ix2,1,fev8icdxbyrfahf,Hero,90,,KEEP,Excellent need-first framing.
+Platform Lanes,v2,g_nw171vmdevl5ix2,2,jx5yc6536itf00d,Five questions,90,,KEEP,Strong selection contract.
+Platform Lanes,v2,g_nw171vmdevl5ix2,3,5bgydlwvwj30x3q,Four lanes,72,C5,KEEP_WITH_EDITS,Validate current providers and capabilities.
+Platform Lanes,v2,g_nw171vmdevl5ix2,4,jeg35s6v2u2mtjn,Microsoft lane,72,C5,KEEP_WITH_EDITS,Licence/admin prerequisites required.
+Platform Lanes,v2,g_nw171vmdevl5ix2,5,aevcfwm53eo3jot,Google lane,68,C5,KEEP_WITH_EDITS,Validate terms and features.
+Platform Lanes,v2,g_nw171vmdevl5ix2,6,01y1t9hdhy9ql8t,Assistant and research lanes,70,C5,KEEP_WITH_EDITS,Conditional provider and research claims.
+Platform Lanes,v2,g_nw171vmdevl5ix2,7,xgz9mrtc1rsdt0i,Audience delivery models,62,"C2,C5",KEEP_WITH_EDITS,Student/consumer routing and rights pending.
+Platform Lanes,v2,g_nw171vmdevl5ix2,8,wvhr8lw7dk21he4,No permanent engine promise,92,,KEEP,Canonical change-control principle.
