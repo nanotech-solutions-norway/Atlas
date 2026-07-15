@@ -40,6 +40,7 @@ A deck is not reference-aligned until:
 - Added missing Students `atlas/sourceMap` records.
 - Ran 72-slide structural validation and reviewed all nine full-row screenshots.
 - Created canonical v3 recreation specification and updated validation registers.
+- Created native Google Docs for the validation report and recreation specification and moved both to the Atlas active-source folder.
 
 ## Validation result
 
@@ -48,6 +49,26 @@ A deck is not reference-aligned until:
 - Source maps: 72/72 PASS.
 - Reference metadata: 72/72 PASS.
 - Complete row screenshot reviews: 9/9 PASS.
+- Google Drive report/specification write-back: PASS after recovery.
+
+## Provider / connector limitation observed — 02:09, 15.07.2026
+
+The first Google Drive DOCX conversion attempt failed because `import_document` required a structured connector-file object rather than a raw local path, despite the visible action schema accepting a string.
+
+### Root cause
+Connector runtime file-reference rewriting did not convert the local path into the required `GoogleDocsImportSourceFile` object.
+
+### Corrective rule
+When a generated local DOCX cannot be passed as a connector file reference, do not repeat the same upload call. Create a native Google Doc, insert the validated report text through `batch_update_document`, and move it into the canonical folder through `update_file`.
+
+### Recovery action
+
+- Created report Doc ID `1dHuPtjYhlB8TJ6cQ9pawnBYQhhIMJi-WxtXwd7cQFbQ`.
+- Created specification Doc ID `1Aed2qn1svX2AvKO25bMKKM5xxzQbwaBA7NbFE8Hdv_A`.
+- Inserted the validated content and moved both to folder `1VUOFbzGcAXWjzQLDcPfXfbxhsVjMHUJ3`.
+
+### Classification
+AUTO_APPROVED — non-sensitive connector recovery and workflow improvement.
 
 ## Unresolved items
 
@@ -63,6 +84,7 @@ A deck is not reference-aligned until:
 - Exact design corrections and reusable visual specification.
 - Source traceability and validation-register updates.
 - Structural and visual validation results.
+- Google Drive native-document recovery procedure.
 
 ### PENDING_REVIEW
 
