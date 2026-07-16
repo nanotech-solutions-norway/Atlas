@@ -1,0 +1,10 @@
+{
+  "revision": "2",
+  "timestamp": "2026-07-13T21:16:00+02:00",
+  "canvas": {"width": 1920, "height": 1080, "aspect": "16:9"},
+  "tokens": {"sideMargin": 104, "contentWidth": 1712, "gridGap": 32, "cardPadding": 32, "displayH1": 72, "denseH1": 54, "ctaHeight": 78, "ctaText": 36, "ctaGap": 16, "labelPaddingX": 14, "stroke": 1, "strokeAccent": 2},
+  "colors": {"navy": "#15213F", "blue": "#3257B8", "gammaPanel": "#476FD6", "panel": "#E9ECF2", "border": "#CFD2D8", "white": "#FFFFFF"},
+  "sourceAuthority": ["Gamma content/layout/source-specific colors", "Atlas measurement profile", "Explicit user overrides"],
+  "figma": "https://www.figma.com/slides/QjAYZsGDVS2qxrCzj8TZIA",
+  "gammaId": "g_1fwdlwasdw96se3"
+}
