@@ -1,0 +1,53 @@
+{
+  "revision": "3",
+  "timestamp": "2026-07-17T12:32:00+02:00",
+  "scope": "Atlas AI v3 Figma Slides presentations",
+  "supersedes": {
+    "ctaText": 36,
+    "ctaLineHeight": 44
+  },
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "aspect": "16:9"
+  },
+  "tokens": {
+    "sideMargin": 104,
+    "contentWidth": 1712,
+    "gridGap": 32,
+    "cardPadding": 32,
+    "displayH1": 72,
+    "denseH1": 54,
+    "ctaHeight": 78,
+    "ctaText": 24,
+    "ctaLineHeight": 30,
+    "ctaFontFamily": "Roboto",
+    "ctaFontStyle": "SemiBold",
+    "ctaAlignHorizontal": "CENTER",
+    "ctaAlignVertical": "CENTER",
+    "ctaGap": 16,
+    "ctaRadius": 4,
+    "ctaStroke": 2,
+    "labelPaddingX": 14,
+    "stroke": 1,
+    "strokeAccent": 2
+  },
+  "colors": {
+    "navy": "#15213F",
+    "blue": "#3257B8",
+    "gammaPanel": "#476FD6",
+    "panel": "#E9ECF2",
+    "border": "#CFD2D8",
+    "white": "#FFFFFF"
+  },
+  "filesUpdated": [
+    "About v3 — YJrRudQSlemarUGuby5s4w",
+    "Trust v3 — 7QKfZugfK821aN8pKb9TZU",
+    "Student v3 — I8mk7h7D2RtaRVoaZkPNRt"
+  ],
+  "sourceAuthority": [
+    "Explicit user correction dated 2026-07-17",
+    "Atlas canonical Figma recreation specification",
+    "Gamma content and CTA wording"
+  ]
+}
