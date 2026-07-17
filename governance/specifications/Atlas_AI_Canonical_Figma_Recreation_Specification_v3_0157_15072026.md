@@ -1,9 +1,14 @@
 # Atlas AI Canonical Figma Recreation Specification v3
 
-**Timestamp:** 01:57, 15.07.2026 Europe/Oslo  
+**Original timestamp:** 01:57, 15.07.2026 Europe/Oslo  
+**Operational revision:** 12:32, 17.07.2026 Europe/Oslo  
 **Approved reference:** https://www.figma.com/slides/QjAYZsGDVS2qxrCzj8TZIA  
 **Reference Gamma:** Business v1 (`g_1fwdlwasdw96se3`)  
-**Measurement authority:** `Atlas_AI_Business_v1_Validated_Figma_Slides_Measurement_Profile_2116_13072026.md`
+**Measurement authority:** `Atlas_AI_Business_v1_Validated_Figma_Slides_Measurement_Profile_2116_13072026.md` plus the approved 24 px button-token override recorded 17.07.2026.
+
+## Current supersession
+
+The explicit user correction dated 17.07.2026 supersedes the former 36 px CTA-text rule. The current operational default for Atlas AI v3 presentations is **Roboto SemiBold 24 px with 30 px line height**, vertically and horizontally centred. Existing button frames, source wording and content-fit widths remain unchanged unless a separate instruction requires resizing.
 
 ## Source hierarchy
 
@@ -42,7 +47,7 @@ A conflict must be recorded. Do not silently merge it.
 - Card title: Roboto Slab SemiBold, 27–30 px, 125% line height.
 - Card body: Roboto Regular, 20–22 px, 125–135% line height.
 - Labels: Roboto SemiBold, 18 px, #3257B8.
-- CTA: Roboto SemiBold, 36 px, vertically and horizontally centred.
+- CTA: Roboto SemiBold, **24 px**, 30 px line height, vertically and horizontally centred.
 
 Do not use the former grey body color `#4A5770`. Do not use Roboto Slab Bold for the normal page hierarchy.
 
@@ -88,7 +93,9 @@ Do not use the former grey body color `#4A5770`. Do not use Roboto Slab Bold for
 - Primary: #3257B8 fill/border, white text.
 - Secondary: white fill, 2 px #3257B8 border, blue text.
 - Radius: 4 px.
-- Text: Roboto SemiBold 36 px, centred.
+- Text: Roboto SemiBold **24 px**, 30 px line height, centred vertically and horizontally.
+- Preserve source-specific or content-fit widths when CTA wording requires more space.
+- Do not reduce the default text below 24 px without explicit approval.
 - Links are excluded from design acceptance unless explicitly required.
 
 ## Hero variants
@@ -151,6 +158,7 @@ A slide passes only when:
 - it is 1920 × 1080 with no out-of-bounds object;
 - no clipping or overlap is visible in the full-row screenshot review;
 - typography, palette, label, border, card and CTA measurements match this profile;
+- all button text uses Roboto SemiBold 24 px with 30 px line height unless a later explicit instruction overrides it;
 - Gamma hierarchy and source visual location are preserved;
 - source metadata is present;
 - text and shapes remain editable;
