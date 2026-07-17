@@ -1,9 +1,14 @@
 # Atlas AI Student v3 - Hybrid Reconstruction Specification
 
-**Timestamp:** 10:32, 17.07.2026 Europe/Oslo  
+**Original timestamp:** 10:32, 17.07.2026 Europe/Oslo  
+**Button-token revision:** 12:32, 17.07.2026 Europe/Oslo  
 **Figma:** https://www.figma.com/slides/I8mk7h7D2RtaRVoaZkPNRt  
 **Gamma:** https://gamma.app/docs/8n0a8sr0yuuy672  
 **Classification:** AUTO_APPROVED for design reconstruction; commercial, provider and public-availability gates remain PENDING_REVIEW.
+
+## Current supersession
+
+The explicit 17.07.2026 correction supersedes the former 36 px button-text value. Student v3 buttons now use Roboto SemiBold 24 px with 30 px line height, vertically and horizontally centred. Existing content-fit widths are retained.
 
 ## Source authority
 
@@ -40,7 +45,7 @@
 - Labels: transparent fill, 2 px #3257B8 stroke, 4 px radius, 44 px height, text width plus 28 px.
 - Standard cards: white or #E9ECF2, 1 px #CFD2D8, 6 px radius.
 - Manual-validation caution: #FFFBF5 / #B45309 / #15213F.
-- Buttons: Roboto SemiBold 36 px, 78 px height, 2 px border, 4 px radius and 16 px gap.
+- Buttons: Roboto SemiBold **24 px**, 30 px line height, 78 px height, 2 px border, 4 px radius and 16 px gap.
 
 ## Spacing rules
 
@@ -60,9 +65,9 @@ Final image placeholder:
 
 Gamma icons are represented as editable icon boxes containing only icon where original vector insertion is pending.
 
-## CTA content-fit correction
+## CTA content-fit rule
 
-The canonical 36 px button typography was preserved. Widths were expanded where the source CTA wording could not fit in the standard 320 px secondary width:
+The current 24 px button typography is preserved. Source-specific content-fit widths remain:
 
 - Slide 1 primary: 480 px.
 - Slide 1 secondary: 420 px.
@@ -70,7 +75,7 @@ The canonical 36 px button typography was preserved. Widths were expanded where 
 - Slide 8 secondary: 600 px.
 - All CTA gaps remain 16 px.
 
-This is a content-fit override and does not change the global default button widths.
+This is a content-fit override and does not change the global default widths for shorter CTA wording.
 
 ## Governance boundary
 
