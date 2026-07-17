@@ -1,6 +1,7 @@
 # Atlas AI About v3 — Wix Color, Placeholder and Typography Corrections v1
 
-**Timestamp:** 23:38, 16.07.2026 Europe/Oslo  
+**Original timestamp:** 23:38, 16.07.2026 Europe/Oslo  
+**Button-token revision:** 12:32, 17.07.2026 Europe/Oslo  
 **Live Figma:** https://www.figma.com/slides/YJrRudQSlemarUGuby5s4w  
 **Gamma source:** https://gamma.app/docs/4r2wl5rog25safl  
 **Classification:** AUTO_APPROVED
@@ -8,6 +9,10 @@
 ## Purpose
 
 Record the user-directed corrections applied to `About v3`: correct subheading colors, Wix-aligned caution boxes, transparent labels, unique non-icon image placeholders, approved button typography, measured text spacing and content-fit internal box heights.
+
+## Current supersession
+
+The 17.07.2026 explicit correction supersedes the former 36 px button-text value in this record. Current About v3 buttons use Roboto SemiBold 24 px with 30 px line height, vertically and horizontally centred. Button frames, source wording, widths, height, border and gap remain unchanged.
 
 ## Source authority
 
@@ -51,7 +56,7 @@ Placeholder styling is `#E9ECF2` fill, 1 px `#CFD2D8` border, 6 px radius and ce
 
 ### Buttons
 
-Slides 1 and 7 use 480/320 px button widths, 78 px height, 16 px gap, 4 px radius, 2 px blue border and centered Roboto SemiBold 36 px text with 44 px line height. Text remains `Se hvordan Atlas arbeider` and `Les Trust`.
+Slides 1 and 7 use 480/320 px button widths, 78 px height, 16 px gap, 4 px radius, 2 px blue border and centred Roboto SemiBold **24 px** text with **30 px** line height. Text remains `Se hvordan Atlas arbeider` and `Les Trust`.
 
 ### Spacing
 
@@ -74,7 +79,7 @@ Figma Slides canvases remain fixed at 1920 × 1080. Content-fit height was appli
 - Zero label background fills.
 - Zero out-of-bounds nodes.
 - CTA gaps: 16 px.
-- Button typography: PASS.
+- Button typography: PASS — Roboto SemiBold 24 px / 30 px line height.
 - Required subheading color: `#3257B8`.
 - Warning palette: `#FFFBF5`, `#B45309`, `#15213F`.
 - Visual review of all seven slides: PASS.
