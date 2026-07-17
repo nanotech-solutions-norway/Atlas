@@ -23,7 +23,7 @@
 | CTA alignment | PASS - centred horizontally and vertically |
 | Source metadata | PASS on all slides |
 | Hero title wrapping | PASS after width correction |
-| Screenshot review | PASS for Slides 1, 3, 5 and 8 |
+| Screenshot review | PASS - all 8 slides reviewed |
 
 ## Live-node evidence
 
@@ -37,9 +37,13 @@
 
 ## Visual assessment
 
-- Slide 1 retains the Gamma right-image hero and now wraps the title cleanly without crossing the visual column.
-- Slide 3 preserves the source blue needs panel, four data-class cards and red stop-condition notice.
-- Slide 5 preserves the source blue/white intake comparison with readable list rhythm.
+- Slide 1 retains the Gamma right-image hero and wraps the title cleanly without crossing the visual column.
+- Slide 2 preserves four audience cards and the age/qualification validation warning.
+- Slide 3 preserves the blue needs panel, four data-class cards and red stop-condition notice.
+- Slide 4 preserves four next-step cards and the submission boundary.
+- Slide 5 preserves the blue/white intake comparison with readable list rhythm.
+- Slide 6 preserves the three-step architecture-review sequence and attachment warning.
+- Slide 7 preserves the collect/do-not-collect comparison and low-risk boundary.
 - Slide 8 preserves five status cards, the manual-validation warning and the submission boundary.
 
 ## Manual validation gates
@@ -56,6 +60,6 @@ The following source statements remain PENDING_REVIEW and must not be treated as
 
 ## Result
 
-**PASS** for design reconstruction, content fidelity, hierarchy, typography, spacing, labels, CTA tokens, bounds and visual QA.
+**PASS** for design reconstruction, content fidelity, hierarchy, typography, spacing, labels, CTA tokens, bounds and full-deck visual QA.
 
 **PENDING_REVIEW** remains for operational, age, provider, process and public-availability claims.
