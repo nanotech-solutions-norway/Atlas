@@ -1,19 +1,27 @@
-# Atlas AI Phase 1 Presentation Deployment Readiness Report — 22:07, 18.07.2026
+# Atlas AI Phase 1 Presentation Deployment Readiness Report — corrected 01:33, 19.07.2026
 
-**Scope:** Business v1 plus the nine canonical final v3 presentations.  
+**Original report:** 22:07, 18.07.2026.  
+**Scope:** Business v1 plus the nine canonical final v3 Figma presentations, reconciled with the existing Wix shell and Gamma/Drive content sources.  
 **Slides reviewed:** 78.  
-**Phase 1 page-presentation coverage:** 10 of 14 pages (71.4%).  
-**Classification:** Verified evaluation findings and non-claim-changing workflow recommendations are **AUTO_APPROVED**. Pricing, provider, Family, age, legal, privacy, accessibility, public-availability and production decisions remain **PENDING_REVIEW**.
+**Classification:** Verified inventory correction and non-claim-changing workflow recommendations are **AUTO_APPROVED**. Pricing, provider, Family, age, legal, privacy, accessibility, security, public availability and production decisions remain **PENDING_REVIEW**.
 
-## Executive result
+## Executive correction
 
-- **Presentation portfolio quality:** PASS.
-- **Business v1:** 9.18/10, fifth overall; PASS WITH CONDITIONS.
+The earlier report incorrectly labelled Home, Solutions, Managed Secure and Contact as missing standalone presentations.
+
+Current Wix CMS, Gamma, Drive and approved project records show that all four already have substantive content sources and existing Wix shell/CMS records. They were intentionally excluded from the later ten-deck Figma reconstruction batch because they were already represented in Wix.
+
+The correct portfolio status is:
+
+- **Content/source coverage:** 14 of 14 top-level Phase 1 pages.
+- **Canonical final Figma Slides coverage:** 10 of 14 pages.
+- **Existing Wix shell/CMS pages directly reconciled:** Home, Solutions, Managed Secure and Contact.
+- **Pages with complete public-deployment evidence:** 0 of 14.
 - **Complete Phase 1 public deployment:** **NO-GO**.
 
-A polished presentation is not deployment evidence. Phase 1 requires route, CMS, CTA, bilingual, accessibility, SEO, legal, operational and claims evidence in addition to design quality.
+A content draft, a Figma deck or a Wix CMS record is not deployment evidence. Phase 1 still requires route, CMS binding, CTA, bilingual, accessibility, SEO, legal, operational and claims evidence.
 
-## Complete ranking
+## Complete presentation ranking
 
 | Rank | Presentation | Claims | Visuals | Readability | Sales | Overall |
 |---:|---|---:|---:|---:|---:|---:|
@@ -31,7 +39,7 @@ A polished presentation is not deployment evidence. Phase 1 requires route, CMS,
 ## Business v1 slide ranking
 
 | Rank | Slide | Title | Claims | Visuals | Readability | Sales | Overall |
-|---:|---:|---|---:|---:|---:|---:|---:|
+|---:|---:|---|---:|---:|---:|---:|---:|---:|
 | 1 | 8 | Be om løsningsgjennomgang | 9.80 | 8.80 | 9.30 | 9.50 | **9.47** |
 | 2 | 7 | Tydelige grenser for ansvarlig bruk | 9.90 | 9.00 | 9.20 | 8.50 | **9.34** |
 | 3 | 2 | Resultatbaserte arbeidsområder | 9.60 | 8.80 | 9.10 | 9.20 | **9.29** |
@@ -41,23 +49,18 @@ A polished presentation is not deployment evidence. Phase 1 requires route, CMS,
 | 7 | 3 | Slik leveres bedriftsløsninger | 9.70 | 8.10 | 9.10 | 8.80 | **9.11** |
 | 8 | 5 | Velg riktig pakke | 8.20 | 8.80 | 9.20 | 9.40 | **8.71** |
 
-## Business v1 assessment
+## Corrected Phase 1 coverage
 
-Business v1 remains the approved design and measurement benchmark and is one of the strongest sales-oriented decks. Its sequence is coherent: business problem, working areas, delivery method, commercial model, packages, platform fit, responsible-use boundaries and conversion.
+### Existing Wix shell pages with content sources
 
-### Deployment blockers
+| Page | Wix evidence | Gamma/Drive evidence | Canonical Figma | Current result |
+|---|---|---|---|---|
+| Home | CMS seeded; binding or manual mapping required | Gamma Home draft; `010 - Hjem.pptx`; `Home - Complete.pptx` | Not found | Existing draft; build and QA required |
+| Solutions | CMS seeded; Studio layout binding required | Gamma solution-hub candidates; `020 - Tjenester.pptx` | Not found | Existing draft; canonical selection and build required |
+| Managed Secure | CMS seeded; future-state wording required | Gamma `Managed Secure` | Not found | Existing draft; evidence-gated and non-public |
+| Contact | CMS seeded; form and notification routing incomplete | Gamma Contact draft; Wix low-risk form evidence | Not found | Existing draft; form and routing validation required |
 
-- Slide 5 contains specific package prices that are not confirmed in the current approved commercial baseline.
-- Slides 1, 3 and 6 retain source-asset placeholders.
-- CTA destinations and route behaviour require site-level validation.
-- Bokmål/English parity is not evidenced by the deck alone.
-- CMS, accessibility, SEO, form handling and operational qualification tests are not evidenced.
-
-**Recommendation:** use Business v1 as the business-page implementation source and design benchmark. Do not publish Slide 5 pricing as-is. Replace the amounts with approved scoped/quote-based wording or obtain explicit commercial approval.
-
-## Phase 1 presentation coverage
-
-Covered:
+### Pages with canonical final Figma decks
 
 - Business — Business v1
 - Students — Student v3
@@ -70,16 +73,9 @@ Covered:
 - About — About v3
 - Legal — Legal v3
 
-Missing:
+## Revised deployment-readiness tiers
 
-- Home
-- Solutions
-- Managed Secure
-- Contact
-
-## Deployment-readiness tiers
-
-### Tier 1 — implement in staging first
+### Tier 1 — staging implementation candidates
 
 - About v3
 - Platform lanes v3
@@ -87,43 +83,52 @@ Missing:
 
 ### Tier 2 — controlled staging after correction
 
+- Home
+- Solutions
 - Business v1
 - Onboarding v3
 - Resources v3
+- Contact
 
 ### Tier 3 — keep non-public until blocking decisions are approved
 
+- Managed Secure
 - Student v3
 - Consumer v3
 - Prices v3
 - Legal v3
 
-## Blocking launch-gate findings
+## Blocking findings
 
-- **G02:** public pricing and claims blocked.
-- **G12:** privacy, retention and disclosure blocked.
-- **G17:** support and operational readiness blocked.
-- **G21:** provider commercial/delivery eligibility blocked.
-- **G22:** consumer, age and education readiness blocked.
-- G01, G03, G15 and G16 are not evidenced by presentations alone.
+- Public pricing and claims remain blocked.
+- Privacy, retention and disclosure remain blocked.
+- Support and operational readiness remain incomplete.
+- Provider commercial and delivery eligibility remains unresolved.
+- Consumer, Family, age and education readiness remains unresolved.
+- Route, CMS, responsive, bilingual, accessibility, SEO and form evidence is not complete.
 
 ## Required corrective actions
 
-1. Complete Home, Solutions, Managed Secure and Contact presentations.
-2. Remove or approve Business v1 specific package prices.
-3. Resolve provider delivery rights and API/seat/BYOL route.
-4. Resolve Student/Consumer/Family age, terms, entitlement, usage, billing and cancellation.
-5. Complete the approved legal document register and public links.
-6. Replace unresolved image/icon placeholders.
-7. Validate CTA routes, locale parity, accessibility, SEO and indexing.
-8. Record gate evidence, defects, approver and rollback reference.
+1. Do not recreate Home, Solutions, Managed Secure and Contact blindly; reconcile and bind their existing content.
+2. Freeze canonical Home and Solutions sources and route contracts.
+3. Remove or approve Business v1 specific package prices.
+4. Implement the ten canonical Figma decks in Wix Studio.
+5. Complete Contact form, consent, routing, notification and submission tests.
+6. Preserve future-state qualification language for Managed Secure.
+7. Resolve provider, commercial, Family, age, entitlement, legal and privacy gates.
+8. Replace unresolved image/icon placeholders.
+9. Validate CTAs, responsive layouts, locale parity, accessibility, SEO and indexing.
+10. Record gate evidence, defects, approver and rollback reference.
 
 ## Final decision
 
-**Portfolio quality:** PASS.  
-**Business v1:** PASS WITH CONDITIONS.  
-**Complete Phase 1 public deployment:** **NO-GO** until missing page presentations and blocking gate evidence are resolved.
+- **Portfolio quality:** PASS.
+- **Previously labelled missing pages:** FOUND.
+- **Content/source coverage:** 14/14.
+- **Canonical Figma coverage:** 10/14.
+- **Business v1:** PASS WITH CONDITIONS.
+- **Complete Phase 1 public deployment:** **NO-GO** because Wix implementation and launch evidence remain incomplete.
 
-## Detailed DOCX deliverable
+## Reconciliation record
 
-`Atlas_AI_Phase1_Presentation_Deployment_Readiness_Report_2207_18072026.docx`
+See `governance/validation/PHASE1_WIX_GAMMA_FIGMA_PAGE_RECONCILIATION_0133_19072026.md`.
