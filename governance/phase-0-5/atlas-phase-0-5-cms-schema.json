@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Phase 0.5 Product Contract",
+  "type": "object",
+  "required": ["plan_id", "version", "segment", "status", "approval_status", "public_allowed", "purchase_allowed"],
+  "properties": {
+    "plan_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "version": {"type": "string"},
+    "segment": {"enum": ["BUSINESS", "STUDENT", "CONSUMER", "CONSUMER_FAMILY", "MANAGED_SECURE"]},
+    "status": {"type": "string"},
+    "effective_date": {"type": ["string", "null"], "format": "date"},
+    "gross_price_nok": {"type": ["number", "null"], "minimum": 0},
+    "net_price_nok": {"type": ["number", "null"], "minimum": 0},
+    "mva_treatment": {"type": "string"},
+    "billing_period": {"type": "string"},
+    "cancellation_refund_rule": {"type": "string"},
+    "capability_classes": {"type": "array", "items": {"enum": ["STANDARD", "ADVANCED", "PREMIUM", "RESTRICTED"]}},
+    "allowance_unit": {"type": ["string", "number", "null"]},
+    "premium_use_unit": {"type": ["string", "number", "null"]},
+    "named_user_limit": {"type": ["integer", "string", "null"]},
+    "shared_pool_rule": {"type": ["string", "null"]},
+    "hard_cap": {"type": "boolean"},
+    "warning_thresholds": {"type": ["string", "array", "null"]},
+    "reset_rule": {"type": ["string", "null"]},
+    "rollover": {"type": "boolean"},
+    "overage": {"type": "string"},
+    "downgrade": {"type": ["string", "null"]},
+    "suspension": {"type": ["string", "null"]},
+    "terms_version": {"type": "string"},
+    "provider_disclosure_version": {"type": "string"},
+    "claim_references": {"type": "array", "items": {"type": "string"}},
+    "owner": {"type": "string"},
+    "approval_status": {"enum": ["AUTO_APPROVED", "APPROVED", "CANONICAL", "PENDING_REVIEW"]},
+    "routing_policy_version": {"type": "string"},
+    "meter_unit": {"type": ["string", "null"]},
+    "fallback": {"type": ["string", "null"]},
+    "outage_behavior": {"type": ["string", "null"]},
+    "ledger_mapping": {"type": ["string", "null"]},
+    "public_allowed": {"type": "boolean"},
+    "purchase_allowed": {"type": "boolean"},
+    "delivery_mode": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"approval_status": {"const": "PENDING_REVIEW"}}},
+      "then": {"properties": {"public_allowed": {"const": false}, "purchase_allowed": {"const": false}}}
+    },
+    {
+      "if": {"properties": {"purchase_allowed": {"const": true}}},
+      "then": {
+        "required": ["effective_date", "gross_price_nok", "terms_version", "provider_disclosure_version"],
+        "properties": {
+          "approval_status": {"enum": ["APPROVED", "CANONICAL"]},
+          "public_allowed": {"const": true}
+        }
+      }
+    }
+  ],
+  "x-atlas-rules": [
+    "No unlimited-use promise",
+    "No permanent model-version promise",
+    "No purchase where purchase_allowed=false",
+    "No public provider inclusion claim without approved delivery mechanism",
+    "No frontend provider tokens",
+    "No silent overage or negative balance"
+  ]
+}
