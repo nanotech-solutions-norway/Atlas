@@ -32,6 +32,18 @@ Maintain one versioned product contract in GitHub and mirror it to Drive. A plan
 - Preserved proposed prices and allowances as `PENDING_REVIEW`.
 - Preserved Managed Secure as qualification/architecture-review only.
 - Did not create a production provider mapping, checkout object or entitlement.
+- Created private Drive mirror: https://drive.google.com/drive/folders/1j-2Zq57oSpgoSY4ct1gpLc6vuTlXTIUw
+- Created stacked draft PR #4: https://github.com/nanotech-solutions-norway/Atlas/pull/4
+- Updated canonical decisions, learning, validation and session-close records in both GitHub and Drive.
+
+## Validation performed
+
+- GitHub PR #4 readback: mergeable, draft, 18 changed files.
+- Drive folder readback: six private native Google Docs, all not shared.
+- Required object and field groups: `PASS`.
+- Safe default locks: `PASS`.
+- Phase 0.5 operational exit: `FAIL / NOT MET`.
+- Download ZIP SHA-256: `8bb507014fbec2b99234ae64684825435a2b5ac11e2522c33effaf842054a4bb`.
 
 ## Unresolved items
 
@@ -39,7 +51,7 @@ Commercial approval; MVA and consumer-law treatment; provider delivery rights; a
 
 ## Classification
 
-- `AUTO_APPROVED`: stable IDs, schema completeness, safe defaults, capability classes, checkout lock and exact-reconciliation rule.
+- `AUTO_APPROVED`: stable IDs, schema completeness, safe defaults, capability classes, checkout lock, exact-reconciliation rule and verified controlled writeback.
 - `PENDING_REVIEW`: prices, allowances, MVA, provider rights, legal terms, Family/minor conditions, production routing and public availability.
 
 ## Release state
