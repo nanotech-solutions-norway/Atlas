@@ -1,0 +1,35 @@
+register_version: 0.5.0
+active_policy: rp-0.5-blocked-v1
+policies:
+- routing_policy_version: rp-0.5-blocked-v1
+  status: NON_PRODUCTION_BLOCKED
+  effective_date: null
+  approved_providers: []
+  provider_delivery_mode: UNDECIDED
+  public_provider_claim_allowed: false
+  rules:
+    STANDARD: BLOCK_SUBSCRIPTION_RUNTIME; business route requires customer-owned licence
+      or itemized provider cost
+    ADVANCED: BLOCK_SUBSCRIPTION_RUNTIME; business route requires customer-owned licence
+      or itemized provider cost
+    PREMIUM: BLOCK_SUBSCRIPTION_RUNTIME; premium unit definition and provider route
+      not approved
+    RESTRICTED: BLOCK_OR_QUALIFIED_ESCALATION
+  fallback: NONE_FOR_SUBSCRIPTION; approved business alternative only after scope
+    review
+  outage_behavior: PAUSE; no silent provider substitution
+  logging: Correlation ID and route decision only; no prompt content
+  ledger_mapping: TBD_PHASE_3
+  owner: RUNTIME_OWNER_TBD
+  approval_status: AUTO_APPROVED_SAFE_BLOCK; provider mapping PENDING_REVIEW
+activation_requirements:
+- actual provisioning route
+- applicable provider terms
+- API/seat/resale restrictions
+- age and account requirements
+- data-processing roles
+- model availability
+- billing owner
+- service interruption and fallback
+- customer-facing disclosure
+- dated commercial/legal approval
