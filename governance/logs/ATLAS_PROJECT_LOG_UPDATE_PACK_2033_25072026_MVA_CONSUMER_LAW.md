@@ -33,13 +33,29 @@ Rate, transaction treatment, accounting implementation and sign-off were grouped
 
 - Created `governance/tax/` with the MVA finalisation register and offer/jurisdiction CSV.
 - Created `governance/legal/` with the consumer-law deep research prompt and checkout-readiness matrix.
-- Updated the Phase 0.5 terms/disclosure register.
-- Updated the pricing validation and release gate.
+- Updated the Phase 0.5 terms/disclosure register and pricing release gate.
 - Added canonical decisions ATL-DEC-20260725-015 through -018.
-- Added validation entries ATL-VAL-20260725-018 through -021.
-- Added learning entries ATL-LRN-20260725-008 and -009.
+- Added validations ATL-VAL-20260725-018 through -021.
+- Added learnings ATL-LRN-20260725-008 and -009.
 - Added session-close entry ATL-CLS-20260725-003.
-- Prepared Drive and Wix controlled mirrors/readiness metadata.
+- Created Drive folder `02_MVA_and_Consumer_Law_Readiness` with README, MVA register, research prompt, readiness matrix and project log.
+- Updated the approved pricing document, financial-model validation gate and canonical Drive mirrors.
+- Added eight private tax/legal readiness fields to Wix `AtlasPricingContract`.
+- Patched and read back all 13 v0.5.1 pricing records.
+- Confirmed `professionalSignoffRequired=true` for all 13 records.
+- Confirmed `publicAllowed=false` and `purchaseAllowed=false` for all 13 records.
+- Confirmed Wix Pricing Plans count remains zero.
+- Created `governance/validation/WIX_MVA_CONSUMER_LAW_READINESS_25072026.md`.
+
+## Validation result
+
+- GitHub artifact coverage: `PASS`.
+- Drive folder/file creation and controlled mirrors: `PASS`.
+- Wix schema update: `PASS`.
+- Wix record update: `PASS` — 13/13.
+- Consumer checkout activation: `NOT_PERFORMED`.
+- Public/purchase lock preservation: `PASS`.
+- Overall release: `NO_GO`.
 
 ## Unresolved items
 
@@ -60,6 +76,10 @@ Rate, transaction treatment, accounting implementation and sign-off were grouped
 - `APPROVED_CONTROL`: domestic 25% working rate, not universal final tax treatment.
 - `AUTO_APPROVED`: research mandate, control structure, readiness matrices and safe private metadata.
 - `PENDING_REVIEW`: final MVA treatment, legal conclusions, terms, checkout, paid commencement and public activation.
+
+## Next executable workstream
+
+Execute the consumer-law deep research mandate and create the complete Bokmål/English legal implementation pack. In parallel, obtain accountant/tax-adviser approval for the launch-country and offer-level MVA matrix.
 
 ## Release state
 
