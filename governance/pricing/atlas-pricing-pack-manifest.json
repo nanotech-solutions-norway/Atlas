@@ -1,0 +1,19 @@
+{
+  "pack_id": "atlas-pricing-financial-model-20260725-v1",
+  "created": "2026-07-25T17:39:00+02:00",
+  "classification": "MIXED_AUTO_APPROVED_CONTROLS_PENDING_REVIEW_COMMERCIAL",
+  "release_state": "NO_GO",
+  "public_allowed": false,
+  "purchase_allowed": false,
+  "production_routing_allowed": false,
+  "managed_secure_allowed": false,
+  "drive_folder_id": "1_a4EdORiA4hJy3eRYE6efLxwIAx1frwK",
+  "drive_document_id": "1AddLvkg8Zva79ExspX7hJgzyoq4NFoGygpZ3p6o0-EY",
+  "drive_spreadsheet_id": "10qAYWdRNLNgx6XGHLOTwd9o46HFxH6PAHgpr8Tl1pgE",
+  "files": [
+    "ATLAS_PRICING_EXECUTIVE_SUMMARY_25072026.md",
+    "ATLAS_RECOMMENDED_PRICE_BOOK_25072026.csv",
+    "ATLAS_PRICING_DECISION_PROPOSALS_25072026.md",
+    "ATLAS_PRICING_VALIDATION_AND_RELEASE_GATE_25072026.md"
+  ]
+}
