@@ -43,3 +43,12 @@ These values remain `PENDING_REVIEW` and are not approved for public sale.
 Phase 0.5 contract structure: `PASS`.  
 Phase 0.5 operational exit criteria: `FAIL / NOT MET`.  
 Program release state: `NO_GO`.
+
+## Final integration addendum
+
+- Google Drive mirror: https://drive.google.com/drive/folders/1j-2Zq57oSpgoSY4ct1gpLc6vuTlXTIUw
+- GitHub draft PR: https://github.com/nanotech-solutions-norway/Atlas/pull/4
+- GitHub readback: `PASS`; draft PR mergeable, 18 changed files.
+- Drive readback: `PASS`; six private human-readable control documents.
+- Download ZIP SHA-256: `8bb507014fbec2b99234ae64684825435a2b5ac11e2522c33effaf842054a4bb`.
+- Public mutation: none.
