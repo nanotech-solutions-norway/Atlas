@@ -1,12 +1,21 @@
 version: 0.5.1
 overall_status: PENDING_LEGAL_APPROVAL
+research_mandate:
+  id: consumer-law-deep-research-25072026
+  status: CREATED_NOT_EXECUTED
+  path: governance/legal/ATLAS_CONSUMER_TERMS_WITHDRAWAL_CANCELLATION_REFUNDS_RESEARCH_PROMPT_25072026.md
+  authority: AUTO_APPROVED_WORKFLOW
 required:
-  - {id: service-terms, status: PENDING}
+  - {id: service-terms, status: PENDING_LEGAL_RESEARCH_AND_APPROVAL}
   - {id: privacy, status: PENDING}
   - {id: acceptable-use, status: PENDING}
   - {id: provider-disclosure, status: PENDING}
   - {id: ai-output-disclaimer, status: PENDING}
-  - {id: cancellation-withdrawal-refund, status: PENDING}
+  - {id: cancellation-withdrawal-refund, status: RESEARCH_MANDATE_CREATED_PENDING_LEGAL_APPROVAL}
+  - {id: digital-service-commencement, status: RESEARCH_MANDATE_CREATED_PENDING_LEGAL_APPROVAL}
+  - {id: electronic-checkout-payment-obligation, status: REQUIREMENT_VALIDATED_IMPLEMENTATION_PENDING}
+  - {id: durable-medium-confirmation, status: RESEARCH_MANDATE_CREATED_IMPLEMENTATION_PENDING}
+  - {id: topup-boost-terms, status: PENDING_CLASSIFICATION}
   - {id: cookies, status: PENDING}
   - {id: accessibility, status: PENDING}
   - {id: retention-deletion, status: PENDING}
@@ -14,9 +23,20 @@ required:
   - {id: family-age-guardian, status: PENDING}
   - {id: managed-secure-disclosure, status: PENDING}
 consumer_checkout_requirements:
-  - pre-contract service characteristics
-  - total price including taxes
-  - billing duration and cancellation
-  - right-of-withdrawal information
+  - pre-contract service characteristics and supplier identity
+  - total price including taxes and recurring billing information
+  - allowance caps topups rollover and material limitations
+  - billing duration renewal cancellation and pause treatment
+  - right-of-withdrawal notice and statutory form
+  - express request for paid service commencement during withdrawal period where applicable
+  - correct acknowledgement for loss of withdrawal rights based on legal classification
   - payment button explicitly acknowledges obligation to pay
-  - digital service start and consent treatment where applicable
+  - durable-medium contract confirmation before service begins
+  - bilingual Bokmal and English parity
+  - accessible presentation and evidence logging
+locks:
+  public_allowed: false
+  purchase_allowed: false
+  checkout_enabled: false
+  pricing_plans_creation_allowed: false
+  immediate_paid_activation_allowed: false
