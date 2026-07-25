@@ -1,0 +1,39 @@
+metadata:
+  project: Atlas Website / Atlas AI
+  version: 0.5.1
+  created: '2026-07-25T19:02:14+02:00'
+  authority: Explicit current user instruction adopting the 13:01 pricing report
+  commercial_status: APPROVED
+  activation_status: NO_GO
+  source_report: Atlas AI Pricing, Budget, Unit Economics and Turnover Report — 13:01, 25.07.2026
+global_controls:
+  public_allowed_default: false
+  purchase_allowed_default: false
+  checkout_enabled: false
+  topups_commercially_approved: true
+  topups_technically_enabled: false
+  annual_discount_pct: 10
+  standard_rollover_pct: 25
+  standard_rollover_months: 1
+  premium_rollover: false
+  unlimited_use_allowed: false
+  silent_overage_allowed: false
+  negative_balance_allowed: false
+  retail_vendor_seat_resale_allowed: false
+  frontend_provider_tokens_allowed: false
+  active_routing_policy: rp-0.5-blocked-v1
+  candidate_routing_policy: rp-0.5-api-balanced-v1
+offers:
+  - {offer_id: student-basic, price_gross_nok: 129, price_net_nok: 103.20, users: 1, standard_units: 300, premium_boosts: 6, delivery_mode: ATLAS_MANAGED_API_RUNTIME, commercial_status: APPROVED, activation_status: BLOCKED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: student-plus, price_gross_nok: 169, price_net_nok: 135.20, users: 1, standard_units: 500, premium_boosts: 12, delivery_mode: ATLAS_MANAGED_API_RUNTIME, commercial_status: APPROVED, activation_status: BLOCKED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: everyday-basic, price_gross_nok: 159, price_net_nok: 127.20, users: 1, standard_units: 400, premium_boosts: 8, delivery_mode: ATLAS_MANAGED_API_RUNTIME, commercial_status: APPROVED, activation_status: BLOCKED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: family, price_gross_nok: 399, price_net_nok: 319.20, users: 4, standard_units: 1000, premium_boosts: 20, delivery_mode: ATLAS_MANAGED_API_RUNTIME, commercial_status: APPROVED, activation_status: BLOCKED_FAMILY_CONTROLS, public_allowed: false, purchase_allowed: false}
+  - {offer_id: ai-readiness-assessment, price_net_nok: 19000, delivery_mode: FIXED_SCOPE_BYOL, commercial_status: APPROVED, activation_status: QUOTE_CONTROLLED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: agent-workflow-mapping-sprint, price_net_nok: 39000, delivery_mode: FIXED_SCOPE_BYOL, commercial_status: APPROVED, activation_status: QUOTE_CONTROLLED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: platform-setup-pack, price_net_nok: 29000, delivery_mode: FIXED_SCOPE_CUSTOMER_OWNED_LICENSE, commercial_status: APPROVED, activation_status: QUOTE_CONTROLLED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: atlas-ai-starter, price_net_nok: 69000, delivery_mode: FIXED_SCOPE_BYOL, commercial_status: APPROVED, activation_status: QUOTE_CONTROLLED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: atlas-ai-professional, price_net_nok: 129000, delivery_mode: FIXED_SCOPE_BYOL_OR_ITEMIZED_API, commercial_status: APPROVED, activation_status: QUOTE_CONTROLLED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: research-multi-engine, price_net_nok: 159000, delivery_mode: FIXED_SCOPE_PLUS_ITEMIZED_USAGE, commercial_status: APPROVED, activation_status: QUOTE_CONTROLLED, public_allowed: false, purchase_allowed: false}
+  - {offer_id: managed-workflow-lite, setup_price_net_nok: 39000, monthly_price_net_nok: 19000, delivery_mode: CONTROLLED_MANAGED_WORKFLOW, commercial_status: APPROVED, activation_status: CONTROLLED_ROLLOUT_BLOCKED_UNTIL_METERING, public_allowed: false, purchase_allowed: false}
+  - {offer_id: managed-secure-standard, setup_price_net_nok: 175000, monthly_price_net_nok: 85000, delivery_mode: DEDICATED_SECURE_RUNTIME, commercial_status: APPROVED_PRICE_FLOOR, activation_status: QUALIFICATION_ONLY, public_allowed: false, purchase_allowed: false}
+  - {offer_id: managed-secure-enterprise, setup_price_net_nok: 300000, monthly_price_net_nok: 125000, delivery_mode: DEDICATED_SECURE_RUNTIME_ENTERPRISE, commercial_status: APPROVED_PRICE_FLOOR, activation_status: QUALIFICATION_ONLY, public_allowed: false, purchase_allowed: false}
