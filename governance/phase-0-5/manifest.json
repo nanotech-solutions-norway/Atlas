@@ -1,0 +1,13 @@
+{
+  "created": "2026-07-25T12:10:10+02:00",
+  "project": "Atlas Website / Atlas AI",
+  "workstream": "Phase 0.5 — Product, pricing and CMS/runtime contract",
+  "repository": "nanotech-solutions-norway/Atlas",
+  "branch": "agent/phase-0-5-contract-20260725",
+  "path": "governance/phase-0-5",
+  "release_state": "NO_GO",
+  "plan_count": 10,
+  "subscription_proposal_count": 4,
+  "business_package_count": 5,
+  "managed_secure_count": 1
+}

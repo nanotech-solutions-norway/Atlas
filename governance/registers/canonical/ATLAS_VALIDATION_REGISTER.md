@@ -35,14 +35,14 @@
 | ATL-VAL-20260725-010 | 25.07.2026 | Phase 5 productization | Publishing, QA, analytics and support evidence review | `PARTIAL` / planned | CMS governance and resource drafts exist | Create SOPs, taxonomy, Help Center and drift checks | `AUTO_APPROVED` |
 | ATL-VAL-20260725-011 | 25.07.2026 | Phase 6 final acceptance | Security/privacy/accessibility/incident/release evidence review | `NO_GO` | Draft legal/trust content; no complete evidence pack or sign-off | Complete hardening, tabletop, tests and written release approval | `AUTO_APPROVED` |
 | ATL-VAL-20260725-012 | 25.07.2026 | Public release decision | Aggregate of Phase 0–6 gates | `NO_GO` | Open P0/P1 blockers; no explicit written release approval | Preserve draft/non-public state | `CANONICAL` |
+| ATL-VAL-20260725-013 | 25.07.2026 | Canonical register/reference writeback | GitHub, Drive, Gamma, Wix and Figma readback | `PASS` for controlled reference scope | Draft PR #3, Drive mirror, private references | Merge PR and maintain drift control | `AUTO_APPROVED` |
+| ATL-VAL-20260725-014 | 25.07.2026 | Phase 0.5 contract structure | Schema and record validation against consolidated guide | `PASS` | Ten stable plan/package records; required field groups; capability, routing, terms and reconciliation controls | Resolve approval and implementation blockers | `AUTO_APPROVED` |
+| ATL-VAL-20260725-015 | 25.07.2026 | Phase 0.5 operational exit | Compare public matrix, CMS, checkout, approved terms and runtime evidence | `FAIL / NOT MET` | Checkout absent/disabled; terms/provider mapping unapproved; entitlement/ledger not implemented | Complete commercial/legal/provider decisions and exact implementation reconciliation | `AUTO_APPROVED` |
+| ATL-VAL-20260725-016 | 25.07.2026 | Phase 0.5 safety defaults | Validate all plan records and routing policy | `PASS` | `public_allowed=false`; `purchase_allowed=false`; blocked routing; no unlimited/permanent-model promise | Preserve locks until approved activation record | `CANONICAL` |
 
-## Register-write validation checklist
+## Current register-write validation
 
-After this workstream, record:
-
-- GitHub exact-path readback for all six files.
-- Drive folder listing showing all six files.
-- Gamma reference-document URL.
-- Wix private CMS record readback.
-- Figma governance-index file/page readback.
-- ZIP manifest hash or file-size check.
+- GitHub Phase 0.5 exact-path readback required after PR creation.
+- Drive Phase 0.5 folder listing required after mirror creation.
+- ZIP SHA-256: `c00c98d2152179f8a7a2aed461096e934d8644d9fbeaea25df4e2117af99615d`.
+- Repository-normalized text files do not use the local-package checksum list; ZIP checksums remain authoritative for the downloadable package.

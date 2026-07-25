@@ -46,3 +46,19 @@ Record the closure of major Atlas work sessions so the next session can recover 
 - **Next executable workstream:** Finalize Phase 0.5 product/pricing/CMS/runtime contract and reconcile the public plan matrix, provider capability classes, routing-policy versions, terms references and checkout lock.
 - **Classification:** `AUTO_APPROVED` for verified findings and non-controversial governance bootstrap; `PENDING_REVIEW` for commercial, legal, provider and production decisions.
 - **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260725-002
+
+- **Timestamp:** 12:10, 25.07.2026 Europe/Oslo
+- **Task:** Create the Phase 0.5 product, pricing, provider-capability, routing, terms and CMS/runtime contract pack.
+- **Scope:** Contract and governance artifacts only. No Wix mutation, checkout activation, provider provisioning, entitlement grant, production routing or public publication.
+- **Sources used:** 11.07 consolidated implementation guide; pricing/entitlement baseline; Wix CMS update; canonical decisions, learning and source-authority records.
+- **Decisions created or changed:** Stable Phase 0.5 IDs and versions; exact reconciliation rule; safe default non-public/non-purchasable state; blocked routing policy; proposed prices remain pending.
+- **Errors or limitations recorded:** Existing offers/packages lacked a unified exact-ID contract; raw local files cannot be uploaded directly through the Drive connector, so Drive uses exact-name native Docs for the human-readable mirror while GitHub preserves native machine formats.
+- **Validation performed:** Required field groups, object groups, safety locks, checkout lock and source-grounded proposal values validated. Operational exit criteria remain unmet.
+- **Files/artifacts created:** Human-readable registers; YAML product/capability/routing/terms contracts; JSON CMS schema; CSV plan and reconciliation registers; validation report; log pack; ZIP and manifest.
+- **Actions completed:** Controlled Drive Phase 0.5 folder created; GitHub stacked branch created and populated; canonical registers updated.
+- **Unresolved items:** Plan/pricing/MVA approval; provider delivery rights; consumer/family/minor rules; terms versions; checkout/payment; identity/entitlement/ledger/runtime implementation; exact Wix reconciliation; explicit activation approval.
+- **Next executable workstream:** Phase 0.5 approval and implementation evidence closure. Resolve commercial, legal and provider decisions first, then implement and verify CMS/checkout/runtime reconciliation. Phase 1 paid-plan activation remains blocked.
+- **Classification:** `AUTO_APPROVED` for schema, IDs, locks and verified structure; `PENDING_REVIEW` for commercial, legal, provider and production values.
+- **Release state:** `NO_GO`.
