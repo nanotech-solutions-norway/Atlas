@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Commercial Offer Contract v0.5.1",
+  "type": "object",
+  "required": ["offer_id", "display_name", "segment", "commercial_status", "activation_status", "public_allowed", "purchase_allowed", "delivery_mode"],
+  "properties": {
+    "offer_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "display_name": {"type": "string"},
+    "segment": {"type": "string"},
+    "commercial_status": {"enum": ["APPROVED", "APPROVED_PRICE_FLOOR", "REJECTED"]},
+    "activation_status": {"type": "string"},
+    "public_allowed": {"const": false},
+    "purchase_allowed": {"const": false},
+    "delivery_mode": {"type": "string"},
+    "price_gross_nok": {"type": ["number", "null"]},
+    "price_net_nok": {"type": ["number", "null"]},
+    "monthly_price_net_nok": {"type": ["number", "null"]},
+    "setup_price_net_nok": {"type": ["number", "null"]},
+    "standard_units": {"type": ["integer", "null"]},
+    "premium_boosts": {"type": ["integer", "null"]}
+  },
+  "x-atlas-locks": [
+    "Commercial approval does not authorize purchase",
+    "No unlimited use",
+    "No retail-seat resale",
+    "No frontend provider keys",
+    "No Managed Secure availability before evidence"
+  ]
+}
