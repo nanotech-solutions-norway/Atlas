@@ -4,7 +4,6 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled branch:** `agent/canonical-governance-registers-20260725`  
 **Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
@@ -35,8 +34,13 @@
 | ATL-DEC-20260725-007 | 25.07.2026 | Ordinary public Wix forms may collect low-risk qualification data only and must not request confidential or restricted files. | Phase 1, 2, 4, 6 | Atlas safety and privacy lock. | Privacy/security owner | Approved controlled secure-intake implementation | `CANONICAL` |
 | ATL-DEC-20260725-008 | 25.07.2026 | No real-money betting, auto-betting, bookmaker execution, public write endpoint, frontend provider token or unapproved production availability is permitted. | Entire Atlas program | Preserved Atlas safety locks. | Project owner | Only explicit user-approved safety-posture change | `CANONICAL` |
 | ATL-DEC-20260725-009 | 25.07.2026 | Content/design status must be reported separately from implementation, validation and release approval. | All audits and registers | Prevent false completion claims. | Validation owner | None; permanent quality-control rule | `AUTO_APPROVED` |
-| ATL-DEC-20260725-010 | 25.07.2026 | Public prices, MVA treatment, provider-delivery rights, plan allowances, Family conditions, legal interpretation, production routing and Managed Secure activation remain unresolved. | Phase 0.5–6 | Current evidence does not support approval. | Project owner / legal / commercial | Explicit approval with evidence | `PENDING_REVIEW` |
+| ATL-DEC-20260725-011 | 25.07.2026 | Adopt the 13:01 pricing report as the approved commercial baseline: B2C 129/169/159/399 and the business/managed price book recorded in `governance/pricing/`. | Phase 0.5–5 | Explicit current user instruction. | Project owner | New explicit pricing approval or material provider/economic trigger | `APPROVED` |
+| ATL-DEC-20260725-012 | 25.07.2026 | Public B2C delivery uses Atlas-managed APIs with hard caps; retail-seat resale/pass-through is prohibited. Copilot and Workspace Gemini are customer-owned licence lanes. | Phase 0.5–3 | Provider terms and current commercial evidence. | Product/legal owner | Provider terms change | `APPROVED` |
+| ATL-DEC-20260725-013 | 25.07.2026 | Commercial price approval is separate from `publicAllowed`, `purchaseAllowed` and production activation. All remain false until evidence gates pass. | Phase 0.5–6 | Prevent approval-state conflation. | Release owner | Passed activation gate and written release approval | `CANONICAL` |
+| ATL-DEC-20260725-014 | 25.07.2026 | Wix is the public/CMS/plan/order/member surface; provider routing, usage ledger, caps, reconciliation and secure controls remain external. | Phase 0–6 | Current Wix capability boundary. | Architecture owner | Approved architecture change | `APPROVED` |
 
 ## Superseded decisions
 
-None recorded in this initial canonical version. When a decision changes, preserve the old row and set its status to `SUPERSEDED`; do not delete it.
+| ID | Superseded decision | Replacement | Status |
+|---|---|---|---|
+| ATL-DEC-20260725-010 | Public prices, MVA treatment, provider-delivery rights, plan allowances, Family conditions, legal interpretation, production routing and Managed Secure activation were collectively unresolved. | Prices and commercial controls are now approved by ATL-DEC-20260725-011–014. Legal, provider contracting, Family/minor implementation, publication, checkout, routing and Managed Secure activation remain pending. | `SUPERSEDED` |
