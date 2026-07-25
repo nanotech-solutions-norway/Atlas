@@ -1,0 +1,16 @@
+{
+  "created": "2026-07-25T19:02:14+02:00",
+  "source_report": "Atlas AI Pricing, Budget, Unit Economics and Turnover Report — 13:01, 25.07.2026",
+  "authority": "Explicit current user instruction",
+  "commercial_status": "APPROVED",
+  "activation_status": "NO_GO",
+  "contract_version": "0.5.1",
+  "offer_count": 13,
+  "files": [
+    "ATLAS_PRICING_EXECUTIVE_SUMMARY_25072026.md",
+    "ATLAS_RECOMMENDED_PRICE_BOOK_25072026.csv",
+    "ATLAS_PRICING_DECISION_PROPOSALS_25072026.md",
+    "ATLAS_PRICING_VALIDATION_AND_RELEASE_GATE_25072026.md",
+    "README.md"
+  ]
+}
