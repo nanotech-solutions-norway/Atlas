@@ -41,3 +41,14 @@ Create the versioned product, pricing, entitlement, provider-capability, routing
 ## Exit criteria still outstanding
 
 Phase 0.5 is not complete until the public plan matrix, CMS objects, checkout object, approved terms and runtime configuration reconcile exactly; unapproved plans cannot be purchased; provider commercial rights are documented; and no plan promises unlimited use or a permanent model version.
+
+## Final integration addendum
+
+- **Google Drive mirror:** https://drive.google.com/drive/folders/1j-2Zq57oSpgoSY4ct1gpLc6vuTlXTIUw
+- **GitHub draft PR:** https://github.com/nanotech-solutions-norway/Atlas/pull/4
+- **GitHub branch:** `agent/phase-0-5-contract-20260725`
+- **GitHub base:** `agent/canonical-governance-registers-20260725`
+- **Drive mirror format:** six private native Google Docs for the human-readable control pack.
+- **Canonical machine-readable format:** native Markdown, YAML, JSON and CSV in GitHub and the downloadable ZIP.
+- **Public mutation:** none.
+- **Release state:** `NO_GO`.
