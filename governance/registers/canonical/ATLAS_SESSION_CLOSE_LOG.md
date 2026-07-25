@@ -4,45 +4,31 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled branch:** `agent/canonical-governance-registers-20260725`  
 **Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
 
-> **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
-
-## Purpose
-
-Record the closure of major Atlas work sessions so the next session can recover decisions, evidence, actions, unresolved items and the correct next executable workstream.
-
-## Session-close template
-
-### Session ID and title
-
-- **Timestamp:**
-- **Task:**
-- **Scope:**
-- **Sources used:**
-- **Decisions created or changed:**
-- **Errors or limitations recorded:**
-- **Validation performed:**
-- **Files/artifacts created:**
-- **Actions completed:**
-- **Unresolved items:**
-- **Next executable workstream:**
-- **Classification:**
-- **Release state:**
+> Only entry classifications `CANONICAL`, `APPROVED` and `AUTO_APPROVED` govern execution.
 
 ## Session entry — ATL-CLS-20260725-001
 
 - **Timestamp:** 02:29, 25.07.2026 Europe/Oslo
-- **Task:** Create the six canonical Atlas governance registers and final-tree compliance matrix; write back across connected project systems.
-- **Scope:** Phase 0 governance bootstrap only. No public website publication, checkout activation, production routing or Managed Secure activation.
-- **Sources used:** 11.07 consolidated implementation guide; 23.07 page roadmap and Wix correction; 22–24.07 CMS/design/legal status records; GitHub/Drive inventories; Gamma/Figma/Wix connector evidence.
-- **Decisions created or changed:** GitHub is the canonical register source; Drive is the controlled mirror; Gamma/Wix/Figma copies are non-public references; July phase model controls.
-- **Errors or limitations recorded:** Missing exact-name registers; stale Wix page inference pattern; phase-numbering conflict; artifact-state conflation; Wix/Figma connector inventory limitations; zero Wix Pricing Plans.
-- **Validation performed:** Register schema review; source-authority reconciliation; safety-lock check; cross-platform readback required before final closure.
-- **Files/artifacts created:** Six exact-name Markdown registers; canonical-register index; final-tree compliance matrix in Markdown and CSV; downloadable ZIP.
-- **Actions completed:** Drive governance folder created; controlled GitHub branch created. Remaining writeback links are recorded in the final project-log pack.
-- **Unresolved items:** GitHub PR merge approval; current Contact page; Phase 0.5 commercial/runtime contract; all Phase 1 release evidence; Phase 2–6 operational implementation.
-- **Next executable workstream:** Finalize Phase 0.5 product/pricing/CMS/runtime contract and reconcile the public plan matrix, provider capability classes, routing-policy versions, terms references and checkout lock.
-- **Classification:** `AUTO_APPROVED` for verified findings and non-controversial governance bootstrap; `PENDING_REVIEW` for commercial, legal, provider and production decisions.
+- **Task:** Create the six canonical Atlas governance registers and final-tree compliance matrix.
+- **Scope:** Phase 0 governance bootstrap.
+- **Next executable workstream:** Phase 0.5 product/pricing/CMS/runtime contract.
+- **Classification:** `AUTO_APPROVED`; commercial/legal/production items `PENDING_REVIEW`.
+- **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260725-002
+
+- **Timestamp:** 19:32, 25.07.2026 Europe/Oslo
+- **Task:** Adopt approved pricing v0.5.1, map Wix responsibilities by phase, validate unresolved questions and execute the locked Wix pricing-contract workstream.
+- **Scope:** GitHub/Drive/Wix contract and evidence updates only. No public plan, checkout, provider provisioning, production routing or Managed Secure activation.
+- **Sources used:** Explicit user instruction; uploaded 13:01 pricing report; merged GitHub baseline; controlled Drive pricing model; live Wix CMS/apps/Pricing Plans; official OpenAI, Anthropic, Google, Wix and Norwegian legal/MVA sources.
+- **Decisions created or changed:** 129/169/159/399 B2C; approved B2B/managed price book; Atlas-managed B2C API; customer-owned Copilot/Workspace lanes; separate commercial/activation state; Wix interface vs external runtime boundary.
+- **Errors or limitations recorded:** conflicting price states; Phase 0.5 branch-merge ordering gap; PR #5 conflict; Wix Pricing Plans count 0; Members Area absent; first oversized Wix seed rejected before execution.
+- **Validation performed:** GitHub/Drive price readback; Wix app and plan inventory; private collection creation; 13/13 Wix records read back at v0.5.1 with both public and purchase flags false; official external validation register.
+- **Files/artifacts created:** approved pricing pack; Phase 0.5 v0.5.1; Wix phase matrix; external validation register; Wix pricing-contract validation; active-source addendum; Drive document/workbook/source report; downloadable reconciliation pack.
+- **Actions completed:** updated GitHub and Drive canonical controls; created and populated private Wix `AtlasPricingContract`; preserved checkout and release locks.
+- **Unresolved items:** legal/accounting review; provider accounts/DPA; Members Area and Family controls; payment/tax; Phase 3 ledger/caps/reset/reconciliation; Managed Workflow Lite pilot; Managed Secure evidence; Wix Studio/Contact/bilingual/accessibility/production validation.
+- **Next executable workstream:** Phase 2 prerequisite design and implementation — install/validate Members Area, define identity/RBAC/Family/session/portal contracts, while keeping paid entitlement disabled.
+- **Classification:** pricing `APPROVED`; workflow and evidence corrections `AUTO_APPROVED`; activation/legal/provider/minor/production decisions `PENDING_REVIEW`.
 - **Release state:** `NO_GO`.

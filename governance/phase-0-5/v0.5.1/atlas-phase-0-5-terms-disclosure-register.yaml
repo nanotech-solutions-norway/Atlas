@@ -1,0 +1,22 @@
+version: 0.5.1
+overall_status: PENDING_LEGAL_APPROVAL
+required:
+  - {id: service-terms, status: PENDING}
+  - {id: privacy, status: PENDING}
+  - {id: acceptable-use, status: PENDING}
+  - {id: provider-disclosure, status: PENDING}
+  - {id: ai-output-disclaimer, status: PENDING}
+  - {id: cancellation-withdrawal-refund, status: PENDING}
+  - {id: cookies, status: PENDING}
+  - {id: accessibility, status: PENDING}
+  - {id: retention-deletion, status: PENDING}
+  - {id: student-integrity, status: PENDING}
+  - {id: family-age-guardian, status: PENDING}
+  - {id: managed-secure-disclosure, status: PENDING}
+consumer_checkout_requirements:
+  - pre-contract service characteristics
+  - total price including taxes
+  - billing duration and cancellation
+  - right-of-withdrawal information
+  - payment button explicitly acknowledges obligation to pay
+  - digital service start and consent treatment where applicable

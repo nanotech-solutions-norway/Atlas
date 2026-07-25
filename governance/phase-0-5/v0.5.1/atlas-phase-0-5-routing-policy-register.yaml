@@ -1,0 +1,23 @@
+register_version: 0.5.1
+active_policy: rp-0.5-blocked-v1
+candidate_policy: rp-0.5-api-balanced-v1
+candidate_status: APPROVED_DESIGN_NOT_DEPLOYED
+delivery_architecture:
+  public_subscriptions: ATLAS_MANAGED_API
+  business_native_lanes: CUSTOMER_OWNED_LICENSE_OR_ITEMIZED_API
+  copilot: CUSTOMER_OWNED_LICENSE
+  google_workspace_gemini: CUSTOMER_OWNED_LICENSE
+  managed_workflow_lite: CONTROLLED_API_RUNTIME_AFTER_METERING_GATE
+  managed_secure: DEDICATED_QUOTE_ONLY_RUNTIME_AFTER_G20_G21
+capability_classes:
+  STANDARD: {rule: cost-controlled approved route}
+  ADVANCED: {rule: budget-aware stronger-reasoning route}
+  PREMIUM: {rule: premium-boost reservation required}
+  RESTRICTED: {rule: block or qualified escalation}
+production_controls:
+  provider_accounts_approved: false
+  api_keys_server_side_only: true
+  frontend_tokens: false
+  usage_reservation_required: true
+  no_silent_fallback: true
+  prompt_content_in_audit_log: false
