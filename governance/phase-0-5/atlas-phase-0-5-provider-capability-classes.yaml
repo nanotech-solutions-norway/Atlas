@@ -1,0 +1,34 @@
+schema_version: 0.5.0
+status: AUTO_APPROVED_STRUCTURE_PENDING_PROVIDER_MAPPING
+classes:
+- id: STANDARD
+  purpose: Routine chat, rewrite, summary and planning
+  public_wording: Standard capability
+  routing_rule: Lowest-cost approved provider route
+  premium_unit_required: false
+  safety_action: NORMAL_POLICY_CONTROLS
+  provider_mapping: UNASSIGNED_PENDING_REVIEW
+- id: ADVANCED
+  purpose: Longer documents and stronger reasoning
+  public_wording: Advanced capability
+  routing_rule: Budget-aware approved route
+  premium_unit_required: false
+  safety_action: NORMAL_POLICY_CONTROLS
+  provider_mapping: UNASSIGNED_PENDING_REVIEW
+- id: PREMIUM
+  purpose: High-cost frontier reasoning or tool-intensive task
+  public_wording: Premium-use capacity for more demanding tasks
+  routing_rule: Premium-use unit required before reservation
+  premium_unit_required: true
+  safety_action: COST_AND_POLICY_PRECHECK
+  provider_mapping: UNASSIGNED_PENDING_REVIEW
+- id: RESTRICTED
+  purpose: Unsupported, high-risk or regulated action
+  public_wording: Unavailable or requires qualified review
+  routing_rule: Block or qualified escalation
+  premium_unit_required: false
+  safety_action: BLOCK_OR_QUALIFIED_ESCALATION
+  provider_mapping: NONE
+permanent_model_promise_prohibited: true
+model_change_rule: Any model/provider change requires a new routing_policy_version
+  and must not silently change the customer promise.
