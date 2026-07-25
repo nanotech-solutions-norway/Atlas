@@ -1,0 +1,19 @@
+offer_id,offer_name,segment,price_display,mva_basis,billing_method,public_status,purchase_status,approval_status,notes
+student-basic,Student Basic,STUDENT,NOK 119/month incl. MVA,INCLUDED,MONTHLY,BLOCKED,BLOCKED,RECOMMENDED_FOR_APPROVAL,Hard cap; API route only
+student-plus,Student Plus,STUDENT,NOK 179/month incl. MVA,INCLUDED,MONTHLY,BLOCKED,BLOCKED,RECOMMENDED_FOR_APPROVAL,Supersedes NOK 169 proposal if approved
+everyday-basic,Everyday Basic,CONSUMER,NOK 159/month incl. MVA,INCLUDED,MONTHLY,BLOCKED,BLOCKED,RECOMMENDED_FOR_APPROVAL,Supersedes NOK 149 proposal if approved
+family,Family,CONSUMER_FAMILY,NOK 399/month incl. MVA,INCLUDED,MONTHLY,BLOCKED,BLOCKED,PENDING_REVIEW,Four named users; pilot only
+ai-agent-readiness-assessment,AI Agent Readiness Assessment,BUSINESS_OR_MANAGED,"NOK 29,000",EXCLUDED,One-time,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,Public from price; excl. MVA
+agent-workflow-mapping-sprint,Agent Workflow Mapping Sprint,BUSINESS_OR_MANAGED,"NOK 55,000",EXCLUDED,One-time,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,Public from price; excl. MVA
+platform-setup-package,Platform Setup Package,BUSINESS_OR_MANAGED,"NOK 75,000",EXCLUDED,One-time,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"ChatGPT, Copilot or Gemini lane; BYOL"
+agent-governance-pack,Agent Governance Pack,BUSINESS_OR_MANAGED,"NOK 45,000",EXCLUDED,One-time,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Policy, approvals, lifecycle and controls"
+agent-evaluation-and-qa-pack,Agent Evaluation and QA Pack,BUSINESS_OR_MANAGED,"NOK 60,000",EXCLUDED,One-time,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Test set, UAT, defect and regression pack"
+training-workshop,Training Workshop,BUSINESS_OR_MANAGED,"NOK 20,000",EXCLUDED,Per workshop,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,Role-based; excl. MVA
+atlas-starter-executive,Atlas Starter / Executive,BUSINESS_OR_MANAGED,"NOK 75,000",EXCLUDED,One-time / annual scope,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Minimum NOK 60,000"
+atlas-professional,Atlas Professional,BUSINESS_OR_MANAGED,"NOK 150,000",EXCLUDED,One-time / annual scope,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Minimum NOK 120,000"
+research-multi-engine,Research / Multi-Engine,BUSINESS_OR_MANAGED,"NOK 180,000 + usage",EXCLUDED,Annual / project,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,API/search budget prepaid or pass-through
+business-workspace,Business Workspace,BUSINESS_OR_MANAGED,"NOK 360,000/year",EXCLUDED,Annual,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,Vendor seats customer-owned
+managed-workflow-lite,Managed Workflow Lite,BUSINESS_OR_MANAGED,"NOK 125,000 setup + NOK 25,000/month",EXCLUDED,Managed service,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,Quote-only; not branded Managed Secure
+managed-secure-standard,Managed Secure Standard,BUSINESS_OR_MANAGED,"NOK 600,000 setup + NOK 95,000/month",EXCLUDED,Managed service,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Minimum setup NOK 500,000; qualification gate"
+managed-secure-enterprise,Managed Secure Enterprise,BUSINESS_OR_MANAGED,"NOK 1,200,000 setup + NOK 200,000/month",EXCLUDED,Managed service,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Custom scope, SLA and integrations"
+custom-implementation,Custom implementation,BUSINESS_OR_MANAGED,"NOK 2,250/hour",EXCLUDED,Time and materials,QUOTE_ONLY,BLOCKED,RECOMMENDED_FOR_APPROVAL,"Minimum approval floor NOK 1,950/hour"
