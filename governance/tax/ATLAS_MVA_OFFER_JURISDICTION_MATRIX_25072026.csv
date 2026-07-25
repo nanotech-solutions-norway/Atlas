@@ -1,0 +1,20 @@
+offer_group,offer_id,customer_location,customer_type,working_rate,treatment_status,finalisation_requirement,public_allowed,purchase_allowed
+consumer_subscription,student-basic,Norway,B2C,25%,PENDING_FINAL_REVIEW,Confirm taxable digital/remotely deliverable service and domestic invoice treatment,False,False
+consumer_subscription,student-plus,Norway,B2C,25%,PENDING_FINAL_REVIEW,Confirm taxable digital/remotely deliverable service and domestic invoice treatment,False,False
+consumer_subscription,everyday-basic,Norway,B2C,25%,PENDING_FINAL_REVIEW,Confirm taxable digital/remotely deliverable service and domestic invoice treatment,False,False
+consumer_subscription,family,Norway,B2C,25%,PENDING_FINAL_REVIEW,Confirm taxable supply plus household/minor controls,False,False
+consumer_topup,standard-topup,Norway,B2C,25%,PENDING_CLASSIFICATION,Classify additional service/prepayment/voucher and tax point,False,False
+consumer_topup,premium-boost-topup,Norway,B2C,25%,PENDING_CLASSIFICATION,Classify additional service/prepayment/voucher and tax point,False,False
+business_service,ai-readiness-assessment,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm consultancy classification and invoice timing,False,False
+business_service,agent-workflow-mapping-sprint,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm consultancy classification and invoice timing,False,False
+business_service,platform-setup-pack,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm setup/licence/support bundle treatment,False,False
+business_service,atlas-ai-starter,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm project bundle and provider recharge treatment,False,False
+business_service,atlas-ai-professional,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm project bundle and provider recharge treatment,False,False
+business_service,research-multi-engine,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm service plus itemized usage treatment,False,False
+managed_service,managed-workflow-lite,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm setup/monthly service treatment and tax points,False,False
+managed_service,managed-secure-standard,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm setup/monthly service treatment; qualification only,False,False
+managed_service,managed-secure-enterprise,Norway,B2B,25%,PENDING_FINAL_REVIEW,Confirm setup/monthly service treatment; qualification only,False,False
+all,all,Outside Norway,B2B,TBD,PENDING_EXPORT_REVIEW,Customer status/location evidence and export/reverse-charge analysis,False,False
+all,all,EU/EEA outside Norway,B2C,Destination rate,PENDING_OSS_REVIEW,Determine place of supply non-Union OSS and customer-location evidence,False,False
+all,all,Non-EU outside Norway,B2C,TBD,PENDING_COUNTRY_REVIEW,Determine destination-country indirect-tax obligations,False,False
+provider_purchase,foreign-api-cloud-software,Foreign supplier,B2B purchase,25% working baseline,PENDING_REVERSE_CHARGE_REVIEW,Configure imported-service reverse-charge and input VAT posting,False,False
