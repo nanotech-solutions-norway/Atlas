@@ -102,3 +102,15 @@ Do not store secrets, API keys, credentials, customer-sensitive data, bank/accou
 - **Validation performed:** No public page, checkout plan or production route was created by this workstream.
 - **Unresolved items:** All outstanding P0/P1 release blockers.
 - **Classification:** `CANONICAL`.
+
+### ATL-LRN-20260725-007 — Product contract must precede checkout and runtime activation
+
+- **Timestamp/task:** 12:10, 25.07.2026 Europe/Oslo; Phase 0.5 contract workstream.
+- **Issue observed:** Package and offer records existed without one exact-ID contract joining commercial, entitlement, legal, provider, checkout and runtime values.
+- **Root cause:** Content and CMS planning advanced before provider delivery, checkout, entitlement and usage systems were approved or implemented.
+- **Corrective rule:** Define stable IDs, versions and machine-readable fields first; require exact reconciliation and keep all unapproved records non-public and non-purchasable.
+- **Evidence/source:** 11.07 implementation guide; pricing baseline; Wix CMS update; Phase 0.5 contract pack.
+- **Action taken:** Created ten plan/package records, capability classes, blocked routing policy, terms register, schema, reconciliation matrix and checkout gate.
+- **Validation performed:** All records checked for `public_allowed=false`, `purchase_allowed=false`, no unlimited-use promise and no permanent-model promise.
+- **Unresolved items:** Commercial/legal/provider approvals and operational implementation remain outstanding.
+- **Classification:** `AUTO_APPROVED`.
