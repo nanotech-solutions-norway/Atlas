@@ -1,0 +1,81 @@
+register_version: 0.5.0
+status: PENDING_REVIEW
+references:
+- id: service-terms
+  title_no: Tjenestevilkår
+  title_en: Service Terms
+  version: UNAPPROVED
+  required_for:
+  - ALL_PAID_PLANS
+  - BUSINESS_WHERE_APPLICABLE
+- id: privacy
+  title_no: Personvernerklæring
+  title_en: Privacy Notice
+  version: UNAPPROVED
+  required_for:
+  - ALL
+- id: acceptable-use
+  title_no: Retningslinjer for akseptabel bruk
+  title_en: Acceptable Use Policy
+  version: UNAPPROVED
+  required_for:
+  - ALL
+- id: provider-disclosure
+  title_no: Tredjeparts- og AI-leverandørinformasjon
+  title_en: Third-party and AI Provider Information
+  version: UNAPPROVED
+  required_for:
+  - ALL_PROVIDER_ENABLED_OFFERS
+- id: ai-output-disclaimer
+  title_no: Ansvarsbegrensning for KI-output
+  title_en: AI Output Disclaimer
+  version: UNAPPROVED
+  required_for:
+  - ALL
+- id: cancellation-refund
+  title_no: Kansellering, angrerett og refusjon
+  title_en: Cancellation, Withdrawal and Refund
+  version: UNAPPROVED
+  required_for:
+  - CONSUMER
+  - STUDENT
+  - FAMILY
+- id: cookies
+  title_no: Informasjonskapsler
+  title_en: Cookies
+  version: UNAPPROVED
+  required_for:
+  - PUBLIC_SITE
+- id: accessibility
+  title_no: Tilgjengelighetsinformasjon
+  title_en: Accessibility Information
+  version: UNAPPROVED
+  required_for:
+  - PUBLIC_SITE
+- id: retention-deletion
+  title_no: Oppbevaring og sletting
+  title_en: Retention and Deletion
+  version: UNAPPROVED
+  required_for:
+  - ALL_DATA_PROCESSING
+- id: student-integrity
+  title_no: Akademisk integritet og studentbruk
+  title_en: Academic Integrity and Student Use
+  version: UNAPPROVED
+  required_for:
+  - STUDENT
+- id: family-age-guardian
+  title_no: Familie, alder og foresatt
+  title_en: Family, Age and Guardian Terms
+  version: UNAPPROVED
+  required_for:
+  - FAMILY
+  - STUDENT_WHERE_MINOR
+- id: managed-secure-disclosure
+  title_no: Managed Secure kvalifikasjons- og leveranseinformasjon
+  title_en: Managed Secure Qualification and Delivery Information
+  version: UNAPPROVED
+  required_for:
+  - MANAGED_SECURE
+publication_rule: No checkout or paid activation until all applicable references have
+  an approved version and exact version IDs are bound to the plan and checkout object.
