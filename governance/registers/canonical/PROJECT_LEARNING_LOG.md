@@ -39,3 +39,27 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** Cross-file offer IDs/prices checked; Wix plan count refreshed.
 - **Unresolved items:** Legal, provider, identity, entitlement and release evidence.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260725-008 — A tax rate is not a complete tax treatment
+
+- **Timestamp/task:** 20:33, 25.07.2026 Europe/Oslo; MVA finalisation workstream.
+- **Issue observed:** The standard 25% rate could be mistaken for final treatment across domestic, export, OSS, top-up, refund and provider-purchase cases.
+- **Root cause:** Rate, place-of-supply, supply classification, tax point and accounting implementation were discussed as one issue.
+- **Corrective rule:** Separate the domestic working rate from offer classification, customer/jurisdiction treatment, billing/refund events and professional sign-off.
+- **Evidence/source:** Official Skatteetaten guidance and the Atlas MVA finalisation register.
+- **Action taken:** Created MVA-001–MVA-020 and an offer/jurisdiction matrix.
+- **Validation performed:** Domestic category support checked; final treatment explicitly remains pending.
+- **Unresolved items:** Accountant/tax-adviser opinion, OSS, reverse charge, invoices, credit notes, Wix tax and reconciliation.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260725-009 — Legal research, legal approval and checkout implementation are separate states
+
+- **Timestamp/task:** 20:33, 25.07.2026 Europe/Oslo; consumer terms and checkout readiness.
+- **Issue observed:** A complete research prompt or draft terms could be misreported as legal compliance.
+- **Root cause:** Research scope, legal interpretation, copy drafting, Wix implementation and acceptance testing were not separated.
+- **Corrective rule:** Record `RESEARCH_MANDATE_CREATED`, `RESEARCH_COMPLETED`, `LEGAL_APPROVED`, `IMPLEMENTED`, `TESTED` and `RELEASE_APPROVED` separately.
+- **Evidence/source:** Angrerettloven payment-obligation, commencement, withdrawal and durable-medium requirements; LEG-001–LEG-020.
+- **Action taken:** Created the deep research mandate and legal readiness matrix; preserved checkout lock.
+- **Validation performed:** Prompt coverage checked against the complete consumer contract lifecycle and Wix implementation surfaces.
+- **Unresolved items:** Execute research, obtain legal sign-off, implement and test.
+- **Classification:** `AUTO_APPROVED`.
