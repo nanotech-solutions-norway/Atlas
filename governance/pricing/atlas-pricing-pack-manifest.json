@@ -1,16 +1,26 @@
 {
   "created": "2026-07-25T19:02:14+02:00",
+  "updated": "2026-07-26T03:14:42+02:00",
   "source_report": "Atlas AI Pricing, Budget, Unit Economics and Turnover Report — 13:01, 25.07.2026",
+  "source_markdown_path": "evidence/research/2026-07-25/ATLAS_PRICING_BUDGET_UNIT_ECONOMICS_REPORT_1301_25072026_RAW.md.gz.b64",
+  "source_docx_sha256": "8d9d35d97705daa94b6a35edbb97855d5ed6522eebe8e982dc30d39ce7a3cc9b",
+  "source_markdown_sha256": "e2375d9ea5b7ce8ce4fd612cf13648b978cbd78a0774f9c1d1b32c925c624948",
+  "source_gzip_sha256": "e7eecebc3db00e4da1c82625f701f22e71915dda2e5a1ea3ed56f60706be00ed",
+  "source_encoding": "deterministic gzip mtime=0, Base64",
+  "integrity_manifest": "evidence/research/2026-07-25/ATLAS_RESEARCH_ARTIFACT_INTEGRITY_MANIFEST_0314_26072026.json",
+  "artifact_validation": "governance/pricing/ATLAS_ORIGINAL_PRICING_REPORT_ARTIFACT_VALIDATION_0314_26072026.md",
   "authority": "Explicit current user instruction",
   "commercial_status": "APPROVED",
   "activation_status": "NO_GO",
   "contract_version": "0.5.1",
   "offer_count": 13,
+  "citation_portability": "NONPORTABLE_CHAT_REFERENCE_TOKENS_RECONCILED_SEPARATELY",
   "files": [
     "ATLAS_PRICING_EXECUTIVE_SUMMARY_25072026.md",
     "ATLAS_RECOMMENDED_PRICE_BOOK_25072026.csv",
     "ATLAS_PRICING_DECISION_PROPOSALS_25072026.md",
     "ATLAS_PRICING_VALIDATION_AND_RELEASE_GATE_25072026.md",
+    "ATLAS_ORIGINAL_PRICING_REPORT_ARTIFACT_VALIDATION_0314_26072026.md",
     "README.md"
   ]
 }
