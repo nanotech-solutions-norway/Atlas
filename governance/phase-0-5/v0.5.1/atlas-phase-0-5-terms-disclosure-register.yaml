@@ -2,23 +2,28 @@ version: 0.5.1
 overall_status: PENDING_LEGAL_APPROVAL
 research_mandate:
   id: consumer-law-deep-research-25072026
-  status: REPORT_REFERENCED_NOT_INGESTED
+  status: RESEARCH_COMPLETED_ORIGINAL_AND_INDEPENDENT_PACKS_CONTROLLED
   path: governance/legal/ATLAS_CONSUMER_TERMS_WITHDRAWAL_CANCELLATION_REFUNDS_RESEARCH_PROMPT_25072026.md
   authority: AUTO_APPROVED_WORKFLOW
 report_review:
   title: Atlas AI Consumer Terms Withdrawal Cancellation Refunds Digital-Service Commencement and Checkout Compliance Report 20:37 25.07.2026
-  artifact_status: NOT_FOUND_IN_CANONICAL_GITHUB_OR_CONTROLLED_DRIVE
-  controlled_review_status: PRIMARY_SOURCE_REVIEW_PARTIAL_EXACT_REPORT_REVIEW_BLOCKED
-  review_path: governance/legal/ATLAS_CONSUMER_LAW_REPORT_REVIEW_0208_26072026.md
+  artifact_status: ORIGINAL_DOCX_AND_MARKDOWN_INGESTED_WITH_SHA256
+  controlled_review_status: INTEGRITY_PASS_PRIMARY_SOURCE_RECONCILIATION_COMPLETE_PENDING_LEGAL_APPROVAL
+  raw_path: evidence/research/2026-07-25/ATLAS_CONSUMER_LAW_CHECKOUT_REPORT_2037_25072026_RAW.md.gz.b64
+  integrity_manifest_path: evidence/research/2026-07-25/ATLAS_RESEARCH_ARTIFACT_INTEGRITY_MANIFEST_0314_26072026.json
+  persistent_source_path: governance/legal/ATLAS_CONSUMER_LAW_PERSISTENT_SOURCE_RECONCILIATION_0314_26072026.md
+  review_path: governance/legal/ATLAS_ORIGINAL_CONSUMER_LAW_REPORT_VALIDATION_AND_RECONCILIATION_0314_26072026.md
+  independent_report_path: governance/legal/ATLAS_CONSUMER_LAW_AND_CHECKOUT_DEEP_RESEARCH_REPORT_0206_26072026.md
   legal_classification: PENDING_LEGAL_REVIEW
+  citation_portability: NONPORTABLE_CHAT_REFERENCE_TOKENS_RECONCILED_SEPARATELY
   release_effect: NONE
 required:
-  - {id: service-terms, status: PRIMARY_SOURCE_REVIEW_PARTIAL_PENDING_LEGAL_APPROVAL}
+  - {id: service-terms, status: DRAFT_COMPLETE_PENDING_LEGAL_APPROVAL}
   - {id: privacy, status: PENDING}
   - {id: acceptable-use, status: PENDING}
   - {id: provider-disclosure, status: PENDING}
   - {id: ai-output-disclaimer, status: PENDING}
-  - {id: cancellation-withdrawal-refund, status: PRIMARY_SOURCE_REVIEW_PARTIAL_PENDING_LEGAL_APPROVAL}
+  - {id: cancellation-withdrawal-refund, status: DRAFT_COMPLETE_PENDING_LEGAL_APPROVAL_AND_IMPLEMENTATION}
   - {id: digital-service-commencement, status: REQUIREMENT_VALIDATED_IMPLEMENTATION_AND_LEGAL_APPROVAL_PENDING}
   - {id: electronic-checkout-payment-obligation, status: REQUIREMENT_VALIDATED_IMPLEMENTATION_PENDING}
   - {id: durable-medium-confirmation, status: REQUIREMENT_VALIDATED_IMPLEMENTATION_PENDING}
@@ -41,7 +46,7 @@ consumer_checkout_requirements:
   - durable-medium contract confirmation before service begins
   - bilingual Bokmal and English parity
   - accessible presentation and evidence logging
-  - report artifact ingestion versioning and checksum
+  - report artifact ingestion versioning checksum and portable source reconciliation
   - Norwegian lawyer approval
 locks:
   public_allowed: false
