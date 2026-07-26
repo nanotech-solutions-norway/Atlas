@@ -4,7 +4,7 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > Only `CANONICAL`, `APPROVED` and `AUTO_APPROVED` entries govern execution. Do not store secrets or customer-sensitive material.
 
@@ -62,4 +62,16 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Action taken:** Created the deep research mandate and legal readiness matrix; preserved checkout lock.
 - **Validation performed:** Prompt coverage checked against the complete consumer contract lifecycle and Wix implementation surfaces.
 - **Unresolved items:** Execute research, obtain legal sign-off, implement and test.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-010 — Generated research is not controlled evidence until ingested
+
+- **Timestamp/task:** 02:08, 26.07.2026 Europe/Oslo; consumer-law report review.
+- **Issue observed:** A generated report was referenced in the project thread but absent from canonical GitHub and the controlled Drive folder.
+- **Root cause:** The research output was not ingested after generation, while report generation and controlled completion were treated as one event.
+- **Corrective rule:** Store the complete artifact with stable filename, version and checksum before recording `RESEARCH_COMPLETED`; then perform source review, legal approval, implementation and release approval as separate states.
+- **Evidence/source:** GitHub and Drive searches; primary-source checkpoint review.
+- **Action taken:** Created a controlled partial review, added an ingestion gate and preserved all release locks.
+- **Validation performed:** Report absence verified; statutory checkpoints re-verified independently.
+- **Unresolved items:** Ingest and review the report, obtain counsel approval, implement and test.
 - **Classification:** `AUTO_APPROVED`.
