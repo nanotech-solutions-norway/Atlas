@@ -76,3 +76,19 @@
 - **Next executable workstream:** Professional legal and MVA review, followed by implementation only for the explicitly approved launch scope. No checkout gate may be relaxed before written release approval.
 - **Classification:** verified research execution, reconciliation, status write-back and validation `AUTO_APPROVED`; legal copy/classification `PENDING_LEGAL_REVIEW`; tax and launch-scope recommendations `PENDING_REVIEW`.
 - **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260726-006
+
+- **Timestamp:** 03:14, 26.07.2026 Europe/Oslo
+- **Task:** Ingest and validate the original 20:37 consumer-law and 13:01 pricing report artifacts supplied as DOCX and Markdown.
+- **Scope:** Artifact integrity, format parity, primary-source reconciliation, pricing authority reconciliation, canonical evidence/register updates and private Drive archival. No legal/tax approval, Wix implementation, plan creation, checkout or release action.
+- **Sources used:** Supplied DOCX/Markdown report pairs; approved Atlas v0.5.1 pricing records; existing legal/MVA/Wix packs; current official Norwegian legislation, CJEU and Wix documentation.
+- **Integrity evidence:** Consumer pair SHA-256 recorded with 29/29 heading parity and 0.963915 normalized similarity. Pricing pair SHA-256 recorded with 27/27 heading parity and 0.976388 normalized similarity.
+- **Contradictions resolved:** The original pricing report’s “launch now” recommendation is superseded for activation by canonical `publicAllowed=false`, `purchaseAllowed=false` and checkout `NO_GO`. Original report availability blocker is closed; professional and implementation blockers remain open.
+- **Errors or limitations recorded:** Conversation-local citation tokens are non-portable; full citation-by-citation reconstruction remains incomplete.
+- **Actions completed:** Stored raw Markdown evidence, checksums, integrity manifest, persistent official-source reconciliation and report-specific validations; updated legal/pricing indexes, terms register and canonical validation/error/learning/authority records; mirrored source DOCX and review records to controlled Drive.
+- **Validation performed:** Byte hashes, structural parity, content equivalence, secret scan, statutory/effective-date/platform checks, GitHub/Drive readback and lock preservation.
+- **Unresolved items:** Norwegian counsel, accountant/tax adviser, contracting entity, annual/semester/top-up/Family classifications, final bilingual approval, Wix/Velo/backend implementation, identity, payment, durable-medium, ledger, refund/accounting, privacy, accessibility/localisation and acceptance tests.
+- **Next executable workstream:** Professional legal and MVA review using the exact controlled artifacts; implementation only after written approval of the selected launch scope.
+- **Classification:** ingestion/integrity/source reconciliation and status recording `AUTO_APPROVED`; legal/tax conclusions `PENDING_REVIEW`.
+- **Release state:** `NO_GO`.
