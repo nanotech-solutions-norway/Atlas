@@ -1,4 +1,4 @@
-# Atlas AI Original Pricing Report Artifact Validation — 03:14, 26.07.2026
+# Atlas AI Original Pricing Report Artifact Validation — 04:08, 26.07.2026
 
 **Project:** Atlas Website / Atlas AI  
 **Source artifact:** `Atlas AI Pricing, Budget, Unit Economics and Turnover Report — 13:01, 25.07.2026`  
@@ -37,8 +37,24 @@ The source report states that Atlas should “launch now” with public subscrip
 - the report’s immediate-launch recommendation is `SUPERSEDED_FOR_ACTIVATION`;
 - no public pricing publication, Wix Pricing Plan, checkout, provider provisioning, entitlement activation, production routing or Managed Secure activation is authorized.
 
-## 4. Remaining financial evidence
+## 4. Arithmetic audit
+
+A reproducible arithmetic audit is stored in `ATLAS_ORIGINAL_PRICING_REPORT_ARITHMETIC_AUDIT_0408_26072026.md`.
+
+| Area | Result | Finding |
+|---|---|---|
+| Ex-MVA revenue, direct cost, gross profit and gross margin for four public plans | `PASS_WITH_ROUNDING` | Printed calculations reconcile |
+| Everyday Basic LTV:CAC and payback | `FAIL_INTERNAL_CONSISTENCY` | Printed 6.0x LTV:CAC implies approximately 2.33 months payback, not 1.9 months; 1.9 months implies approximately 7.37x |
+| Lean monthly operating budget | `PASS` | Components total NOK 120,000 |
+| Small-team monthly operating budget | `FAIL` | Listed components total NOK 285,000, while the printed total is NOK 265,000 |
+| Scaled monthly operating budget | `PASS` | Components total NOK 525,000 |
+| Pre-launch budget | `PASS` | Components total NOK 376,000 |
+| Scenario forecasts, break-even and runway | `NOT_REPRODUCIBLE_FROM_REPORT_ALONE` | Complete underlying monthly/cohort model is absent |
+
+The raw report remains unchanged. The two inconsistencies do not change the approved public price book, but the affected unit-economics and operating-budget values must not be represented as validated until corrected and approved.
+
+## 5. Remaining financial evidence
 
 The report’s provider prices, FX assumptions, acquisition/churn assumptions, support costs, forecasts and scenario outputs remain dated evidence as of 25.07.2026. They require trigger-based refresh before release or material investment decisions. Final MVA treatment, OSS, reverse charge, top-up tax point, refunds/credit notes and accounting reconciliation remain `PENDING_ACCOUNTING_AND_TAX_REVIEW`.
 
-**Control outcome:** original pricing artifact ingested; approved values reconcile to v0.5.1; activation remains `NO_GO`.
+**Control outcome:** original pricing artifact ingested; approved values reconcile to v0.5.1; arithmetic validation is `PARTIAL / TWO_CONFIRMED_INTERNAL_INCONSISTENCIES`; activation remains `NO_GO`.

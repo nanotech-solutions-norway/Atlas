@@ -107,3 +107,16 @@
 - **Next executable workstream:** Professional legal and MVA review using the exact controlled artifacts; implementation only after written approval of the selected launch scope.
 - **Classification:** ingestion/integrity/source reconciliation and status recording `AUTO_APPROVED`; legal/tax conclusions `PENDING_REVIEW`.
 - **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260726-008
+
+- **Timestamp:** 04:08, 26.07.2026 Europe/Oslo
+- **Task:** Perform a reproducible arithmetic audit of the original 13:01 pricing report after source-artifact ingestion.
+- **Scope:** Printed plan unit economics, operating-budget totals, pre-launch budget and forecast-reproducibility boundary. No change to raw artifacts, approved prices, commercial architecture or release state.
+- **Validation performed:** Four plan direct-cost and gross-margin calculations reconciled within rounding; Everyday Basic LTV:CAC/payback failed internal consistency; small-team operating-budget components totaled NOK 285,000 rather than NOK 265,000; lean/scaled totals and NOK 376,000 pre-launch budget passed.
+- **Evidence limitation:** Scenario forecasts, runway and break-even outputs are not fully reproducible without the underlying monthly/cohort model.
+- **Actions completed:** Created arithmetic audit; updated pricing validation/manifest/index, error register, validation register, learning log and project log.
+- **Unresolved items:** Finance-owner correction, intended source assumptions and complete forecast model.
+- **Next executable workstream:** Obtain professional legal/tax decisions and finance-owner correction before implementing or relying on affected planning metrics.
+- **Classification:** arithmetic observations and evidence-state updates `AUTO_APPROVED`; corrected values `PENDING_REVIEW`.
+- **Release state:** `NO_GO`.
