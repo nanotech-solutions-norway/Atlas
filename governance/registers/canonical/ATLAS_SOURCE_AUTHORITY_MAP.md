@@ -55,6 +55,9 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | `ATLAS_EXTERNAL_SOURCE_VALIDATION_UPDATE_0308_26072026.md` | 26.07.2026 | Verified current-source facts `AUTO_APPROVED`; Atlas decisions remain pending | Current legal, tax, Wix, minor/privacy and accessibility validation |
 | `ATLAS_PROFESSIONAL_LEGAL_TAX_DECISION_PACK_0308_26072026.md` | 26.07.2026 | `AUTO_APPROVED` as review-preparation workflow; answers absent | Version-specific professional decision request |
 | `ATLAS_FAIL_CLOSED_CONSUMER_CHECKOUT_IMPLEMENTATION_BACKLOG_0308_26072026.md` and schemas/test vectors | 26.07.2026 | Non-public design/workflow `AUTO_APPROVED`; runtime/release not approved | Next executable implementation foundation |
+| Original 20:37 consumer-law raw report plus `ATLAS_ORIGINAL_CONSUMER_LAW_REPORT_VALIDATION_AND_RECONCILIATION_0314_26072026.md` | 25–26.07.2026 | Raw artifact `EVIDENCE_ONLY`; integrity/source validation `AUTO_APPROVED`; legal application pending | Original research evidence and cross-report reconciliation |
+| Original 13:01 pricing raw report plus `ATLAS_ORIGINAL_PRICING_REPORT_ARTIFACT_VALIDATION_0314_26072026.md` | 25–26.07.2026 | Approved values governed by `ATL-DEC-20260725-011`; other recommendations `EVIDENCE_ONLY` | Commercial-source integrity and activation-conflict reconciliation |
+| `ATLAS_CONSUMER_LAW_PERSISTENT_SOURCE_RECONCILIATION_0314_26072026.md` | 26.07.2026 | `AUTO_APPROVED` evidence mapping; legal conclusions pending | Persistent official locations/identifiers for load-bearing requirements |
 
 ## Conflict protocol
 
@@ -70,11 +73,13 @@ A lower source cannot silently override a higher source. Contradictions must be 
 ## Report-ingestion protocol
 
 1. Store the complete report artifact in canonical GitHub and controlled Drive.
-2. Record stable title, generation timestamp, version and checksum.
-3. Verify citations, effective dates and statutory wording against primary sources.
-4. Record contradictions and unresolved interpretations.
-5. Classify each resulting rule or decision independently.
-6. Do not mark legal, implementation or release gates passed solely because a report exists.
+2. Record stable title, generation timestamp, version, filename and checksum.
+3. Compare equivalent supplied formats and state whether they are byte-identical, content-equivalent or materially different.
+4. Verify citations, effective dates and statutory wording against primary sources.
+5. Replace conversation-local citation tokens in canonical validation with persistent official URLs or stable identifiers; preserve the raw artifact unchanged.
+6. Record contradictions and unresolved interpretations.
+7. Classify each resulting rule or decision independently.
+8. Do not mark legal, implementation or release gates passed solely because a report exists.
 
 ## Professional-review ingestion protocol
 
