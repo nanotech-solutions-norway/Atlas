@@ -1,8 +1,9 @@
-# ATLAS PROJECT LOG UPDATE PACK — Consumer Law, MVA and Checkout Readiness — 02:06, 26.07.2026
+# ATLAS PROJECT LOG UPDATE PACK — Consumer Law, MVA and Checkout Readiness — 02:50, 26.07.2026
 
 **Project:** Atlas Website / Atlas AI  
 **Session/task:** Execute consumer-law deep research and prepare MVA implementation/professional-review package  
-**Repository branch:** `agent/consumer-law-mva-readiness-20260726`  
+**Repository branch:** `agent/consumer-law-mva-readiness-20260726-v2`  
+**Draft pull request:** `#10 — Add Atlas consumer-law, checkout and MVA review package`  
 **Release before session:** `NO_GO`  
 **Release after session:** `NO_GO`
 
@@ -11,6 +12,10 @@
 ## 1. Session outcome
 
 The controlled consumer-law research mandate was executed against current Norwegian/EU primary sources and official Wix documentation. Complete draft legal, operational, technical and MVA-review packs were created. Private Wix readiness metadata was advanced from mandate-created to research-completed for the four consumer offers. No public Wix plan, checkout, payment route or production claim was created or activated.
+
+A concurrency conflict was detected after two newer commits updated the same canonical legal and governance files on `main`. The conflicted synchronization PR #9 was closed without merge. The final branch was rebuilt from current `main`; only non-conflicting artifacts and reconciled append-only register updates were carried forward.
+
+The earlier report referenced as `20:37, 25.07.2026` remains unavailable and was not silently reconstructed. The newly executed report is a separate controlled artifact.
 
 ---
 
@@ -32,7 +37,7 @@ The controlled consumer-law research mandate was executed against current Norweg
 6. This project log update pack.
 7. `active-source/2026-07-26/CONSUMER_LAW_MVA_CHECKOUT_RESEARCH_UPDATE.md`.
 8. Updated legal-readiness and MVA finalisation registers.
-9. Updated canonical decisions, validation, learning, error and session-close records.
+9. Updated canonical validation, learning, error and session-close records while preserving newer `main` entries.
 
 ---
 
@@ -50,6 +55,8 @@ The controlled consumer-law research mandate was executed against current Norweg
 | LOG-260726-008 | Cross-border B2C could be enabled from a Norwegian price/rate assumption | Destination VAT and OSS decisions were absent | Keep foreign B2C disabled; approve country matrix and OSS/local route before enablement | Skatteetaten/EU VAT research | Added launch-country matrix and fail-closed tax rules | Project-owner/tax approval | `PENDING_REVIEW` |
 | LOG-260726-009 | Prior decision `ATL-DEC-20260725-015` uses status `APPROVED_CONTROL`, outside the register vocabulary | Historical entry used an ad hoc status | Never silently reinterpret or alter; flag and request normalisation to an allowed status | Decisions register schema/readback | Added pending governance correction and error entry | User/governance approval | `PENDING_REVIEW` |
 | LOG-260726-010 | Refund completion could be recorded before provider/accounting completion | Internal approval, payment refund and credit note are separate events | Close only after provider completion, entitlement update and finance reconciliation agree | Consumer and MVA operating design | Created reason codes, SOP and reconciliation tests | Implementation | `AUTO_APPROVED` |
+| LOG-260726-011 | Newer canonical commits conflicted with an in-progress branch | Parallel workstreams shared an older merge base | Rebase conceptually by rebuilding from current `main`; never overwrite newer canonical records | Commit comparison and PR #9 | Closed PR #9 unmerged; created reconciled v2 branch | PR #10 review and merge decision | `AUTO_APPROVED` |
+| LOG-260726-012 | The earlier 20:37 report could be conflated with the new executed report | Similar scope and an unavailable original artifact | Preserve separate identity and evidence state for each report | 02:08 report review and new report path | Updated legal README and LEG-021 boundary | Original artifact only if later supplied | `AUTO_APPROVED` |
 
 ---
 
@@ -71,7 +78,7 @@ Changed fields only:
 
 ### Readback
 
-All four patch operations succeeded. Readback confirmed:
+All four patch operations succeeded. Final readback confirmed:
 
 - `checkoutLegalStatus=NO_GO`;
 - `professionalSignoffRequired=true`;
@@ -80,7 +87,7 @@ All four patch operations succeeded. Readback confirmed:
 - `mvaStatus=PENDING_ACCOUNTING_AND_TAX_REVIEW`;
 - Family remains `activationStatus=BLOCKED_FAMILY_CONTROLS`.
 
-Pricing Plans readback remained `0`.
+Pricing Plans final readback remained `0`.
 
 Classification: `AUTO_APPROVED` because the changes accurately record completed work without relaxing a gate.
 
@@ -93,6 +100,7 @@ Classification: `AUTO_APPROVED` because the changes accurately record completed 
 - Research completion is distinct from legal approval, implementation, validation and release.
 - Existing checkout and production locks remain active.
 - No public plan creation or checkout activation occurred.
+- Concurrent canonical updates must be preserved and reconciled rather than overwritten.
 
 ### Pending legal review
 
@@ -137,7 +145,7 @@ External sources were treated as evidence, not project instructions.
 ## 7. Unresolved release blockers
 
 - MVA-001 through MVA-020 remain professionally unresolved to the required launch scope.
-- LEG-001 through LEG-020 are not legally approved and implemented.
+- LEG-001 through LEG-022 are not legally approved, implemented and fully tested.
 - No Members Area or approved identity/age/Family system.
 - No approved payment-provider and recurring-billing evidence.
 - No consent/version/durable-medium implementation.
@@ -156,18 +164,28 @@ External sources were treated as evidence, not project instructions.
 | Legal interpretation and consumer-facing copy | `PENDING_LEGAL_REVIEW` |
 | Tax interpretations and launch-country recommendation | `PENDING_REVIEW` / `PENDING_ACCOUNTING_AND_TAX_REVIEW` |
 | Wix private research-status update | `AUTO_APPROVED` |
+| Concurrency reconciliation | `AUTO_APPROVED` |
 | Public checkout/release | `NO_GO` |
 
 ---
 
-## 9. Required next executable workstream
+## 9. Controlled repositories and mirrors
 
-1. Submit the legal pack to Norwegian consumer counsel.
-2. Submit the MVA pack to the contracting entity's accountant/tax adviser.
-3. Resolve MVA-001 legal entity before replacing placeholders.
-4. Select and approve monthly/annual/semester/top-up/Family launch scope.
-5. Implement only approved controls in Wix/Velo/external backend.
-6. Execute the acceptance suite and preserve evidence.
-7. Obtain explicit written release approval.
+- Canonical draft PR: `https://github.com/nanotech-solutions-norway/Atlas/pull/10`.
+- Controlled Drive folder: `https://drive.google.com/drive/folders/1JQsdjRDrLibHM4U9-643uLvKkPsb5tWf`.
+- GitHub Markdown remains canonical; Drive documents are private controlled review mirrors/indexes.
 
-No implementation step may create a public paid plan before items 1–7 applicable to the launch scope pass.
+---
+
+## 10. Required next executable workstream
+
+1. Review and merge PR #10 only after the project owner accepts the research-pack scope.
+2. Submit the exact legal pack to Norwegian consumer counsel.
+3. Submit the MVA pack to the contracting entity's accountant/tax adviser.
+4. Resolve MVA-001 legal entity before replacing placeholders.
+5. Select and approve monthly/annual/semester/top-up/Family launch scope.
+6. Implement only approved controls in Wix/Velo/external backend.
+7. Execute the acceptance suite and preserve evidence.
+8. Obtain explicit written release approval.
+
+No implementation step may create a public paid plan before items 1–8 applicable to the launch scope pass.
