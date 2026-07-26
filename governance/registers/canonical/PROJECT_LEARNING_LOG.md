@@ -122,3 +122,51 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Action taken:** Created reason codes, approval controls and end-to-end test cases.
 - **Unresolved items:** System implementation and professional approval.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-015 — Enacted law is not the same as law in force
+
+- **Timestamp/task:** 03:08, 26.07.2026 Europe/Oslo; current-source validation.
+- **Issue observed:** The enacted electronic withdrawal function could be implemented or described as a current statutory requirement without a commencement decision.
+- **Root cause:** Enactment date and effective date are separate legal states.
+- **Corrective rule:** Record `ENACTED`, `IN_FORCE` and `IMPLEMENTED` separately; recheck official commencement before build completion and launch.
+- **Evidence/source:** Law 19.06.2026 no. 34 and Prop. 38 LS (2025–2026).
+- **Action taken:** Preserved the function as a forward requirement and added a launch revalidation trigger.
+- **Validation performed:** No official commencement decision was identified in this validation run.
+- **Unresolved items:** Counsel confirmation and future effective-date monitoring.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-016 — Wix request state is not transaction completion
+
+- **Timestamp/task:** 03:08, 26.07.2026 Europe/Oslo; Wix cancellation validation.
+- **Issue observed:** A cancellation request or `PENDING_CANCELLATION` state could be mistaken for completed cancellation/refund.
+- **Root cause:** Wix order state, provider payment/refund state, entitlement state and accounting state progress asynchronously.
+- **Corrective rule:** Use a state machine and close only after all required states reconcile.
+- **Evidence/source:** Official Wix cancellation/order documentation and Atlas refund controls.
+- **Action taken:** Created a cancellation/refund state schema and negative-path vectors.
+- **Validation performed:** Schema forbids closure before matched reconciliation and terminal states.
+- **Unresolved items:** Runtime orchestration and provider/accounting tests.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-017 — Wix tax metadata is not charged-tax evidence
+
+- **Timestamp/task:** 03:08, 26.07.2026 Europe/Oslo; tax/platform validation.
+- **Issue observed:** CMS MVA metadata or Pricing Plans order fields could be mistaken for proof of the site-level tax actually charged.
+- **Root cause:** Wix Pricing Plans tax is configured at site level and is not controlled through the Orders API.
+- **Corrective rule:** Require dashboard configuration evidence, transaction tests and accounting reconciliation for every approved tax route.
+- **Evidence/source:** Official Wix Pricing Plans Orders introduction and Atlas MVA-019/MVA-020 controls.
+- **Action taken:** Added a fail-closed tax-configuration reason and professional decision requirements.
+- **Validation performed:** No live tax or checkout configuration was created.
+- **Unresolved items:** Professional mapping, dashboard configuration and transaction testing.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-018 — Legal minimum and internal quality target must remain distinct
+
+- **Timestamp/task:** 03:08, 26.07.2026 Europe/Oslo; accessibility validation.
+- **Issue observed:** A stronger WCAG target could be described as the exact statutory private-sector baseline.
+- **Root cause:** Compliance minimum and voluntary project target were not explicitly separated.
+- **Corrective rule:** Record the current legal baseline and any stronger approved internal target as separate fields and validate each against its own evidence.
+- **Evidence/source:** Current Norwegian IKT accessibility regulation.
+- **Action taken:** Recorded WCAG 2.0 A/AA with stated exceptions as the current private-sector source baseline; WCAG 2.1 AA remains a pending internal target decision.
+- **Validation performed:** Readiness and professional decision packs updated.
+- **Unresolved items:** Counsel confirmation, target approval and executed UI/assistive-technology tests.
+- **Classification:** `AUTO_APPROVED`.
