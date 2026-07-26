@@ -56,6 +56,7 @@
 | ATL-VAL-20260726-038 | 26.07.2026 | Fail-closed consumer-checkout contract foundation | JSON schema and negative-vector review | `PASS_DESIGN / RUNTIME_NOT_IMPLEMENTED` | Gate, consent and cancellation/refund schemas plus negative-path vectors created | Add schema validation/contract tests and controlled services | `AUTO_APPROVED` |
 | ATL-VAL-20260726-039 | 26.07.2026 | Exact accessibility baseline distinction | Current Norwegian IKT regulation review | `PASS_REQUIREMENT / UI_TESTS_NOT_RUN` | Private-sector WCAG 2.0 A/AA baseline with exceptions separated from stronger internal target | Legal confirmation, target approval and documented UI/assistive-technology tests | `AUTO_APPROVED` |
 | ATL-VAL-20260726-040 | 26.07.2026 | Overall state after next-workstream foundation | Aggregate source, review-preparation, schema and release-gate review | `NO_GO` | Evidence and design advanced; no professional approval, customer flow, payment, entitlement or release approval | Preserve all locks and complete pending gates | `CANONICAL` |
+| ATL-VAL-20260726-041 | 26.07.2026 | Static checkout contracts and repository governance | GitHub Actions PR #14 runs `Validate consumer checkout contracts` and `Validate Atlas AI governance artifacts` | `PASS` | JSON schemas valid; deny-path safeguards, non-preselected consent, non-premature case closure and governance validation passed | Add runtime unit/contract tests only after approved architecture | `AUTO_APPROVED` |
 
 ## Aggregate control outcome
 
