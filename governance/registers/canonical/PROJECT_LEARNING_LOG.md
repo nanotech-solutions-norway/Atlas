@@ -4,14 +4,14 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > Only `CANONICAL`, `APPROVED` and `AUTO_APPROVED` entries govern execution. Do not store secrets or customer-sensitive material.
 
 ## Learning entries
 
 ### ATL-LRN-20260725-001 — Canonical register layer must exist as files
-The six prescribed filenames must exist in GitHub and be mirrored to Drive. Setup instructions or historical branches are not substitutes. `AUTO_APPROVED`.
+The prescribed filenames must exist in GitHub and be mirrored to Drive. Setup instructions or historical branches are not substitutes. `AUTO_APPROVED`.
 
 ### ATL-LRN-20260725-002 — Current Wix page existence requires current editor evidence
 Use authenticated Wix Studio page-tree evidence for current page existence. CMS, translation, Gamma and Figma records are supporting evidence. `AUTO_APPROVED`.
@@ -61,5 +61,63 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Evidence/source:** Angrerettloven payment-obligation, commencement, withdrawal and durable-medium requirements; LEG-001–LEG-020.
 - **Action taken:** Created the deep research mandate and legal readiness matrix; preserved checkout lock.
 - **Validation performed:** Prompt coverage checked against the complete consumer contract lifecycle and Wix implementation surfaces.
-- **Unresolved items:** Execute research, obtain legal sign-off, implement and test.
+- **Unresolved items:** Research, sign-off, implementation and testing.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-010 — Service and digital-content withdrawal models must not be silently combined
+
+- **Timestamp/task:** 02:06, 26.07.2026 Europe/Oslo; consumer-law deep research.
+- **Issue observed:** A continuing subscription could be treated as losing withdrawal rights at activation by importing a digital-content waiver model.
+- **Root cause:** The legal exceptions apply to different supply types and performance states.
+- **Corrective rule:** Classify every offer/component first; use a separate early-start request and do not infer full loss of withdrawal for continuing access.
+- **Evidence/source:** Current Angrerettloven, Digitalytelsesloven and preparatory works.
+- **Action taken:** Created offer/component matrix, consent design and proportional-payment model.
+- **Validation performed:** Draft pack coverage mapped to LEG-001–LEG-020.
+- **Unresolved items:** Norwegian legal opinion.
+- **Classification:** `AUTO_APPROVED` as a research/quality-control method; substantive classification remains pending legal review.
+
+### ATL-LRN-20260726-011 — Native platform capability is not compliance evidence
+
+- **Timestamp/task:** 02:06, 26.07.2026 Europe/Oslo; Wix implementation mapping.
+- **Issue observed:** Native plan, order and cancellation features could be treated as a complete legal checkout solution.
+- **Root cause:** Platform capability and Atlas evidence obligations were conflated.
+- **Corrective rule:** Allocate each requirement to `NATIVE_WIX`, `WIX_PLUS_VELO`, `EXTERNAL_BACKEND` or `MANUAL_ADMIN_PROCESS`, then test the complete journey.
+- **Evidence/source:** Official Wix Pricing Plans/CMS documentation and live site readback.
+- **Action taken:** Created the implementation and acceptance-test matrix.
+- **Validation performed:** Pricing Plans count 0 and four consumer lock records read back.
+- **Unresolved items:** Implementation, provider validation and tests.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-012 — Status write-back must be limited to exact evidence
+
+- **Timestamp/task:** 02:06, 26.07.2026 Europe/Oslo; Wix readiness metadata.
+- **Issue observed:** Completing research could accidentally relax checkout or publication gates.
+- **Root cause:** Multiple readiness dimensions coexist in the same records.
+- **Corrective rule:** Patch only fields directly supported by completed evidence and read back every lock after the write.
+- **Evidence/source:** Four successful Wix CMS patches/readbacks.
+- **Action taken:** Updated research and terms-draft fields only.
+- **Validation performed:** `NO_GO`, purchase/public false and professional sign-off true all preserved.
+- **Unresolved items:** None for this status update.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-013 — A refund is complete only after payment, entitlement and accounting agree
+
+- **Timestamp/task:** 02:06, 26.07.2026 Europe/Oslo; cancellation/refund and MVA operations.
+- **Issue observed:** Internal approval could be mistaken for completed reimbursement and tax correction.
+- **Root cause:** Legal decision, provider transaction, credit note and ledger posting are separate events.
+- **Corrective rule:** Keep the case open until provider completion, entitlement adjustment, credit note/accounting and reconciliation agree.
+- **Evidence/source:** Consumer refund SOP and MVA reconciliation design.
+- **Action taken:** Created immutable reason codes and end-to-end test scenarios.
+- **Unresolved items:** System implementation.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-014 — Cross-border tax must fail closed
+
+- **Timestamp/task:** 02:06, 26.07.2026 Europe/Oslo; MVA implementation pack.
+- **Issue observed:** A Norwegian 25% working rate could be applied to foreign consumers or unsupported business evidence.
+- **Root cause:** Domestic rate, customer status and destination VAT are separate decisions.
+- **Corrective rule:** Block unsupported countries and conflicting evidence; enable a jurisdiction only after signed tax logic and reconciliation exist.
+- **Evidence/source:** Skatteetaten and EU VAT/OSS research.
+- **Action taken:** Created launch-country, evidence-conflict and Wix tax decision tables.
+- **Unresolved items:** Project-owner launch scope and tax-adviser approval.
+- **Classification:** `AUTO_APPROVED` as a fail-closed control rule.
