@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-ai.no/schemas/atlas-consent-event.schema.json",
+  "title": "Atlas Consent and Acknowledgement Event",
+  "description": "Append-only evidence contract for explicit user actions. It contains no consent text beyond hashes and version references unless stored in a separately approved private evidence system.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "eventType",
+    "eventAction",
+    "occurredAt",
+    "memberId",
+    "orderCorrelationId",
+    "locale",
+    "copyVersion",
+    "copyHash",
+    "affirmativeAction",
+    "preselected",
+    "evidenceState"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "eventId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "eventType": {
+      "type": "string",
+      "enum": [
+        "TERMS_ACCEPTANCE",
+        "RECURRING_PAYMENT_ACKNOWLEDGEMENT",
+        "EARLY_START_REQUEST",
+        "DELAYED_START_SELECTION",
+        "PROPORTIONAL_PAYMENT_ACKNOWLEDGEMENT",
+        "MARKETING_CONSENT",
+        "COOKIE_CONSENT"
+      ]
+    },
+    "eventAction": {"type": "string", "enum": ["GRANTED", "WITHDRAWN", "REJECTED"]},
+    "occurredAt": {"type": "string", "format": "date-time"},
+    "memberId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "orderCorrelationId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "sessionCorrelationId": {"type": ["string", "null"], "maxLength": 128},
+    "offerId": {"type": ["string", "null"], "maxLength": 128},
+    "commercialContractVersion": {"type": ["string", "null"], "maxLength": 64},
+    "locale": {"type": "string", "enum": ["nb-NO", "en"]},
+    "copyVersion": {"type": "string", "minLength": 1, "maxLength": 128},
+    "copyHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "affirmativeAction": {"type": "boolean"},
+    "preselected": {"type": "boolean", "const": false},
+    "identityAssuranceLevel": {"type": ["string", "null"], "maxLength": 64},
+    "sourceChannel": {"type": "string", "enum": ["WIX_CHECKOUT", "MEMBER_PORTAL", "SUPPORT", "ADMIN_EXCEPTION"]},
+    "ipEvidenceRef": {"type": ["string", "null"], "maxLength": 512},
+    "userAgentEvidenceRef": {"type": ["string", "null"], "maxLength": 512},
+    "evidenceState": {"type": "string", "enum": ["RECORDED", "SUPERSEDED", "REVOKED", "INVALID"]},
+    "supersedesEventId": {"type": ["string", "null"], "maxLength": 128},
+    "evidenceRefs": {
+      "type": "array",
+      "items": {"type": "string", "maxLength": 512},
+      "default": []
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"eventAction": {"const": "GRANTED"}}},
+      "then": {"properties": {"affirmativeAction": {"const": true}}}
+    },
+    {
+      "if": {"properties": {"eventType": {"const": "EARLY_START_REQUEST"}}},
+      "then": {
+        "required": ["offerId", "commercialContractVersion"],
+        "properties": {
+          "eventAction": {"const": "GRANTED"},
+          "affirmativeAction": {"const": true}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"eventType": {"const": "DELAYED_START_SELECTION"}}},
+      "then": {
+        "required": ["offerId", "commercialContractVersion"],
+        "properties": {
+          "eventAction": {"const": "GRANTED"},
+          "affirmativeAction": {"const": true}
+        }
+      }
+    }
+  ]
+}

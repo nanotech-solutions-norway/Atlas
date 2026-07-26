@@ -76,3 +76,18 @@
 - **Next executable workstream:** Professional legal and MVA review, followed by implementation only for the explicitly approved launch scope. No checkout gate may be relaxed before written release approval.
 - **Classification:** verified research execution, reconciliation, status write-back and validation `AUTO_APPROVED`; legal copy/classification `PENDING_LEGAL_REVIEW`; tax and launch-scope recommendations `PENDING_REVIEW`.
 - **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260726-006
+
+- **Timestamp:** 03:08, 26.07.2026 Europe/Oslo
+- **Task:** Refresh current external evidence, update controlled records, prepare professional legal/tax decisions and execute the next non-public fail-closed implementation foundation.
+- **Scope:** Official-source validation, professional decision questions, static schemas, negative-path vectors, governance and private Drive mirrors only. No public Wix plan, checkout, payment, entitlement, customer activation or production endpoint.
+- **Sources used:** Current canonical GitHub/Drive records; Lovdata and preparatory works; Datatilsynet; Skatteetaten; European Commission/Your Europe OSS guidance; official Wix Pricing Plans documentation; Norwegian IKT accessibility regulation.
+- **Current-source conclusions:** Core payment, durable-medium, early-start, proportional-payment, cancellation, minor/privacy, reverse-charge, OSS, member identity, asynchronous cancellation, Wix tax and accessibility requirements were revalidated. New electronic withdrawal functionality remains enacted but not verified in force; revised OSS guidance published 24.07.2026 creates a pre-2027 revalidation trigger.
+- **Workstream completed:** Created a version-specific professional decision pack, fail-closed implementation backlog, checkout-gate schema, consent-event schema, cancellation/refund state schema and negative-path vectors.
+- **Governance updates:** Refreshed decisions, validation, learning, source-authority, legal/tax indexes, readiness matrix, project log and active-source record.
+- **Drive updates:** Appended the validation and implementation status to the controlled README, Wix implementation mirror, MVA mirror and project-log mirror; all remain private.
+- **Unresolved items:** Signed legal and tax memoranda; contracting entity; project-owner launch scope; Members Area/identity; approved test environment; runtime consent/durable medium/entitlement/refund/tax/reconciliation services; bilingual/accessibility evidence; effective-date and OSS rechecks; explicit release approval.
+- **Next executable workstream:** Submit professional pack and add CI/schema contract validation; then implement only approved runtime controls in a non-public environment.
+- **Classification:** current-source facts, review preparation, static schemas, negative tests and workflow updates `AUTO_APPROVED`; legal/tax/launch-scope decisions remain pending.
+- **Release state:** `NO_GO`.

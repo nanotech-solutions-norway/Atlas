@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-ai.no/schemas/atlas-cancellation-refund-state.schema.json",
+  "title": "Atlas Cancellation, Withdrawal and Refund Case State",
+  "description": "Fail-closed orchestration contract. A request receipt is not final cancellation, refund or accounting completion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "caseId",
+    "caseType",
+    "createdAt",
+    "updatedAt",
+    "memberId",
+    "orderId",
+    "currentState",
+    "legalDecision",
+    "wixOrderState",
+    "paymentRefundState",
+    "entitlementState",
+    "accountingState",
+    "closed"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "caseId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "caseType": {"type": "string", "enum": ["CANCELLATION", "WITHDRAWAL", "REMEDY", "DUPLICATE_CHARGE", "CHARGEBACK"]},
+    "createdAt": {"type": "string", "format": "date-time"},
+    "updatedAt": {"type": "string", "format": "date-time"},
+    "memberId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "orderId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "offerId": {"type": ["string", "null"], "maxLength": 128},
+    "effectiveDate": {"type": ["string", "null"], "format": "date-time"},
+    "requestChannel": {"type": "string", "enum": ["MEMBER_PORTAL", "EMAIL", "SUPPORT", "ELECTRONIC_WITHDRAWAL_FUNCTION", "ADMIN_EXCEPTION"]},
+    "currentState": {
+      "type": "string",
+      "enum": [
+        "REQUEST_RECEIVED",
+        "IDENTITY_VERIFIED",
+        "LEGAL_REVIEW_REQUIRED",
+        "APPROVED_NO_REFUND",
+        "APPROVED_FULL_REFUND",
+        "APPROVED_PARTIAL_REFUND",
+        "WIX_CANCELLATION_PENDING",
+        "WIX_CANCELED",
+        "PAYMENT_REFUND_PENDING",
+        "PAYMENT_REFUNDED",
+        "ENTITLEMENT_UPDATED",
+        "ACCOUNTING_CORRECTION_PENDING",
+        "RECONCILED",
+        "CLOSED",
+        "EXCEPTION"
+      ]
+    },
+    "legalDecision": {"type": "string", "enum": ["PENDING", "NO_REFUND", "FULL_REFUND", "PARTIAL_REFUND", "NOT_APPLICABLE"]},
+    "legalReasonCode": {"type": ["string", "null"], "maxLength": 128},
+    "approvedRefundAmount": {"type": ["number", "null"], "minimum": 0},
+    "currency": {"type": ["string", "null"], "pattern": "^[A-Z]{3}$"},
+    "wixOrderState": {"type": "string", "enum": ["NOT_REQUESTED", "PENDING_CANCELLATION", "CANCELED", "FAILED", "NOT_APPLICABLE"]},
+    "paymentRefundState": {"type": "string", "enum": ["NOT_REQUESTED", "PENDING", "SUCCEEDED", "FAILED", "CHARGEBACK_PENDING", "CHARGEBACK_COMPLETED", "NOT_APPLICABLE"]},
+    "entitlementState": {"type": "string", "enum": ["UNCHANGED", "SCHEDULED_END", "SUSPENDED", "ENDED", "REVERSED", "FAILED", "NOT_APPLICABLE"]},
+    "accountingState": {"type": "string", "enum": ["NOT_STARTED", "CREDIT_NOTE_PENDING", "CORRECTED", "FAILED", "NOT_APPLICABLE"]},
+    "reconciliationState": {"type": "string", "enum": ["NOT_RUN", "MATCHED", "EXCEPTION"]},
+    "closed": {"type": "boolean", "default": false},
+    "closedAt": {"type": ["string", "null"], "format": "date-time"},
+    "evidenceRefs": {
+      "type": "array",
+      "items": {"type": "string", "maxLength": 512},
+      "default": []
+    },
+    "exceptionCode": {"type": ["string", "null"], "maxLength": 128}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"closed": {"const": true}}},
+      "then": {
+        "required": ["closedAt"],
+        "properties": {
+          "currentState": {"const": "CLOSED"},
+          "reconciliationState": {"const": "MATCHED"},
+          "wixOrderState": {"enum": ["CANCELED", "NOT_APPLICABLE"]},
+          "paymentRefundState": {"enum": ["SUCCEEDED", "CHARGEBACK_COMPLETED", "NOT_APPLICABLE"]},
+          "entitlementState": {"enum": ["ENDED", "REVERSED", "NOT_APPLICABLE"]},
+          "accountingState": {"enum": ["CORRECTED", "NOT_APPLICABLE"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"legalDecision": {"const": "PARTIAL_REFUND"}}},
+      "then": {"required": ["approvedRefundAmount", "currency", "legalReasonCode"]}
+    },
+    {
+      "if": {"properties": {"legalDecision": {"const": "FULL_REFUND"}}},
+      "then": {"required": ["approvedRefundAmount", "currency", "legalReasonCode"]}
+    }
+  ]
+}

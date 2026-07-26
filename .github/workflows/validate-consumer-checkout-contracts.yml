@@ -1,0 +1,48 @@
+name: Validate consumer checkout contracts
+
+on:
+  pull_request:
+    paths:
+      - "governance/implementation/contracts/**"
+      - "governance/implementation/test-vectors/**"
+      - "scripts/validate_consumer_checkout_contracts.py"
+      - ".github/workflows/validate-consumer-checkout-contracts.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "governance/implementation/contracts/**"
+      - "governance/implementation/test-vectors/**"
+      - "scripts/validate_consumer_checkout_contracts.py"
+      - ".github/workflows/validate-consumer-checkout-contracts.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-contract-validation:
+    name: Static fail-closed contract validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validation dependency
+        run: python -m pip install --disable-pip-version-check "jsonschema==4.23.0"
+
+      - name: Validate schemas and negative paths
+        run: python scripts/validate_consumer_checkout_contracts.py
+
+      - name: Confirm non-deployment scope
+        run: |
+          echo "Static validation only."
+          echo "No Wix, payment, provider, entitlement, customer, deployment or production action is performed."
+          echo "Atlas consumer checkout remains NO-GO."

@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-ai.no/schemas/atlas-consumer-checkout-gate.schema.json",
+  "title": "Atlas Consumer Checkout Gate Decision",
+  "description": "Non-public fail-closed contract. This schema does not expose or authorize a public endpoint.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "decisionId",
+    "evaluatedAt",
+    "action",
+    "offerId",
+    "commercialContractVersion",
+    "decision",
+    "reasonCodes",
+    "dependencyState"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "0.1.0"},
+    "decisionId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "evaluatedAt": {"type": "string", "format": "date-time"},
+    "action": {
+      "type": "string",
+      "enum": ["DISCOVER", "QUOTE", "ORDER", "ACTIVATE", "RENEW", "TOP_UP", "REFUND"]
+    },
+    "offerId": {"type": "string", "minLength": 1, "maxLength": 128},
+    "commercialContractVersion": {"type": "string", "const": "0.5.1"},
+    "releaseCandidateId": {"type": ["string", "null"], "maxLength": 128},
+    "customerContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "customerType": {"type": ["string", "null"], "enum": ["B2C", "B2B", null]},
+        "countryCode": {"type": ["string", "null"], "pattern": "^[A-Z]{2}$"},
+        "memberIdPresent": {"type": "boolean", "default": false},
+        "adultContractHolderVerified": {"type": "boolean", "default": false},
+        "studentEligibilityValid": {"type": "boolean", "default": false},
+        "familyControlsValid": {"type": "boolean", "default": false}
+      }
+    },
+    "decision": {"type": "string", "enum": ["ALLOW", "DENY"]},
+    "reasonCodes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "ALL_REQUIRED_CONTROLS_PASSED",
+          "RELEASE_NOT_APPROVED",
+          "PUBLIC_NOT_ALLOWED",
+          "PURCHASE_NOT_ALLOWED",
+          "LEGAL_APPROVAL_MISSING",
+          "TAX_APPROVAL_MISSING",
+          "UNSUPPORTED_JURISDICTION",
+          "IDENTITY_REQUIRED",
+          "AGE_OR_GUARDIAN_BLOCK",
+          "STUDENT_ELIGIBILITY_MISSING",
+          "FAMILY_CONTROLS_MISSING",
+          "LEGAL_COPY_VERSION_MISSING",
+          "CONSENT_STORE_UNAVAILABLE",
+          "TAX_PREVIEW_UNAVAILABLE",
+          "PAYMENT_CONFIGURATION_UNAVAILABLE",
+          "DURABLE_MEDIUM_UNAVAILABLE",
+          "ENTITLEMENT_CONTROL_UNAVAILABLE",
+          "RECONCILIATION_UNAVAILABLE",
+          "TOP_UP_NOT_APPROVED",
+          "ANNUAL_OR_SEMESTER_NOT_APPROVED",
+          "UNKNOWN_DEPENDENCY_STATE"
+        ]
+      }
+    },
+    "dependencyState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "releaseApproved",
+        "publicAllowed",
+        "purchaseAllowed",
+        "legalApproved",
+        "taxApproved",
+        "legalCopyApproved",
+        "consentStoreAvailable",
+        "taxPreviewAvailable",
+        "paymentConfigured",
+        "durableMediumAvailable",
+        "entitlementControlAvailable",
+        "reconciliationAvailable"
+      ],
+      "properties": {
+        "releaseApproved": {"type": "boolean", "default": false},
+        "publicAllowed": {"type": "boolean", "default": false},
+        "purchaseAllowed": {"type": "boolean", "default": false},
+        "legalApproved": {"type": "boolean", "default": false},
+        "taxApproved": {"type": "boolean", "default": false},
+        "legalCopyApproved": {"type": "boolean", "default": false},
+        "consentStoreAvailable": {"type": "boolean", "default": false},
+        "taxPreviewAvailable": {"type": "boolean", "default": false},
+        "paymentConfigured": {"type": "boolean", "default": false},
+        "durableMediumAvailable": {"type": "boolean", "default": false},
+        "entitlementControlAvailable": {"type": "boolean", "default": false},
+        "reconciliationAvailable": {"type": "boolean", "default": false}
+      }
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "items": {"type": "string", "maxLength": 512},
+      "default": []
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["decision"],
+        "properties": {"decision": {"const": "ALLOW"}}
+      },
+      "then": {
+        "properties": {
+          "reasonCodes": {"contains": {"const": "ALL_REQUIRED_CONTROLS_PASSED"}},
+          "dependencyState": {
+            "properties": {
+              "releaseApproved": {"const": true},
+              "legalApproved": {"const": true},
+              "taxApproved": {"const": true},
+              "legalCopyApproved": {"const": true},
+              "consentStoreAvailable": {"const": true},
+              "taxPreviewAvailable": {"const": true},
+              "paymentConfigured": {"const": true},
+              "durableMediumAvailable": {"const": true},
+              "entitlementControlAvailable": {"const": true},
+              "reconciliationAvailable": {"const": true}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["decision", "action"],
+        "properties": {
+          "decision": {"const": "ALLOW"},
+          "action": {"enum": ["ORDER", "ACTIVATE", "RENEW", "TOP_UP"]}
+        }
+      },
+      "then": {
+        "properties": {
+          "dependencyState": {
+            "properties": {
+              "purchaseAllowed": {"const": true}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["decision", "action"],
+        "properties": {
+          "decision": {"const": "ALLOW"},
+          "action": {"const": "DISCOVER"}
+        }
+      },
+      "then": {
+        "properties": {
+          "dependencyState": {
+            "properties": {
+              "publicAllowed": {"const": true}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "suiteVersion": "0.1.0",
+  "commercialContractVersion": "0.5.1",
+  "executionMode": "NON_PUBLIC_CONTRACT_TESTS_ONLY",
+  "releaseState": "NO_GO",
+  "description": "Negative-path vectors for the Atlas fail-closed checkout foundation. These vectors must never create orders, payments, entitlements or public plans.",
+  "vectors": [
+    {
+      "id": "NEG-GATE-001",
+      "action": "DISCOVER",
+      "condition": "publicAllowed=false",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["PUBLIC_NOT_ALLOWED"]
+    },
+    {
+      "id": "NEG-GATE-002",
+      "action": "ORDER",
+      "condition": "purchaseAllowed=false",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["PURCHASE_NOT_ALLOWED"]
+    },
+    {
+      "id": "NEG-GATE-003",
+      "action": "ORDER",
+      "condition": "legal approval reference absent",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["LEGAL_APPROVAL_MISSING"]
+    },
+    {
+      "id": "NEG-GATE-004",
+      "action": "ORDER",
+      "condition": "tax approval reference absent",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["TAX_APPROVAL_MISSING"]
+    },
+    {
+      "id": "NEG-GATE-005",
+      "action": "ORDER",
+      "condition": "consumer jurisdiction is outside approved launch countries",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["UNSUPPORTED_JURISDICTION"]
+    },
+    {
+      "id": "NEG-GATE-006",
+      "action": "ORDER",
+      "condition": "member identity absent",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["IDENTITY_REQUIRED"]
+    },
+    {
+      "id": "NEG-GATE-007",
+      "action": "ORDER",
+      "condition": "purchaser is under 18 or adult status cannot be verified",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["AGE_OR_GUARDIAN_BLOCK"]
+    },
+    {
+      "id": "NEG-GATE-008",
+      "action": "ORDER",
+      "condition": "Student plan selected and student eligibility absent or expired",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["STUDENT_ELIGIBILITY_MISSING"]
+    },
+    {
+      "id": "NEG-GATE-009",
+      "action": "ORDER",
+      "condition": "Family plan selected and household/guardian controls are unavailable",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["FAMILY_CONTROLS_MISSING"]
+    },
+    {
+      "id": "NEG-GATE-010",
+      "action": "ORDER",
+      "condition": "approved paired Bokmal and English legal-copy version unavailable",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["LEGAL_COPY_VERSION_MISSING"]
+    },
+    {
+      "id": "NEG-GATE-011",
+      "action": "ORDER",
+      "condition": "consent event store unavailable or rendered text hash changed",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["CONSENT_STORE_UNAVAILABLE"]
+    },
+    {
+      "id": "NEG-GATE-012",
+      "action": "ORDER",
+      "condition": "tax preview unavailable or site tax configuration differs from approved rule",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["TAX_PREVIEW_UNAVAILABLE"]
+    },
+    {
+      "id": "NEG-GATE-013",
+      "action": "ORDER",
+      "condition": "payment provider is not configured for the exact release candidate",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["PAYMENT_CONFIGURATION_UNAVAILABLE"]
+    },
+    {
+      "id": "NEG-GATE-014",
+      "action": "ACTIVATE",
+      "condition": "durable-medium contract snapshot missing or delivery failed",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["DURABLE_MEDIUM_UNAVAILABLE"]
+    },
+    {
+      "id": "NEG-GATE-015",
+      "action": "ACTIVATE",
+      "condition": "entitlement ledger unavailable",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["ENTITLEMENT_CONTROL_UNAVAILABLE"]
+    },
+    {
+      "id": "NEG-GATE-016",
+      "action": "RENEW",
+      "condition": "order/payment/entitlement/accounting reconciliation unavailable",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["RECONCILIATION_UNAVAILABLE"]
+    },
+    {
+      "id": "NEG-GATE-017",
+      "action": "TOP_UP",
+      "condition": "top-up legal or tax classification is not approved",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["TOP_UP_NOT_APPROVED"]
+    },
+    {
+      "id": "NEG-GATE-018",
+      "action": "ORDER",
+      "condition": "annual or semester offer selected without approved legal model",
+      "expectedDecision": "DENY",
+      "expectedReasonCodes": ["ANNUAL_OR_SEMESTER_NOT_APPROVED"]
+    },
+    {
+      "id": "NEG-CONSENT-001",
+      "eventType": "TERMS_ACCEPTANCE",
+      "condition": "checkbox is preselected",
+      "expectedSchemaResult": "INVALID"
+    },
+    {
+      "id": "NEG-CONSENT-002",
+      "eventType": "EARLY_START_REQUEST",
+      "condition": "affirmativeAction=false",
+      "expectedSchemaResult": "INVALID"
+    },
+    {
+      "id": "NEG-CONSENT-003",
+      "eventType": "EARLY_START_REQUEST",
+      "condition": "copyHash missing or not SHA-256",
+      "expectedSchemaResult": "INVALID"
+    },
+    {
+      "id": "NEG-CASE-001",
+      "caseType": "CANCELLATION",
+      "condition": "request received but Wix order is PENDING_CANCELLATION",
+      "expectedClosed": false
+    },
+    {
+      "id": "NEG-CASE-002",
+      "caseType": "WITHDRAWAL",
+      "condition": "internal approval exists but payment refund remains PENDING",
+      "expectedClosed": false
+    },
+    {
+      "id": "NEG-CASE-003",
+      "caseType": "WITHDRAWAL",
+      "condition": "payment refund succeeded but entitlement update failed",
+      "expectedClosed": false
+    },
+    {
+      "id": "NEG-CASE-004",
+      "caseType": "DUPLICATE_CHARGE",
+      "condition": "refund and chargeback are both active",
+      "expectedClosed": false,
+      "expectedState": "EXCEPTION"
+    },
+    {
+      "id": "NEG-CASE-005",
+      "caseType": "WITHDRAWAL",
+      "condition": "case marked closed while reconciliationState is not MATCHED",
+      "expectedSchemaResult": "INVALID"
+    },
+    {
+      "id": "NEG-SEC-001",
+      "condition": "frontend bundle or CMS contains provider/payment secret",
+      "expectedResult": "FAIL_AND_BLOCK_RELEASE"
+    },
+    {
+      "id": "NEG-ACC-001",
+      "condition": "statutory price, renewal or payment information is hidden at a responsive breakpoint",
+      "expectedResult": "FAIL_AND_BLOCK_RELEASE"
+    },
+    {
+      "id": "NEG-LANG-001",
+      "condition": "Bokmal and English legal-copy hashes do not belong to the same approved version pair",
+      "expectedResult": "FAIL_AND_BLOCK_RELEASE"
+    }
+  ]
+}

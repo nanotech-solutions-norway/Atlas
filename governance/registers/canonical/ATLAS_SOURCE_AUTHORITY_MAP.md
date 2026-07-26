@@ -36,6 +36,8 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | Azure or other secure backend | Identity, private storage, runtime, audit, entitlement and controlled delivery after implementation | Public marketing source | Not operationally validated for Atlas Website current phase |
 | Current official external sources | Provider, legal, standards, regulator and market facts | Atlas-specific implementation or approvals | External evidence only |
 | Generated external research report | Source-cited research evidence after complete artifact ingestion and verification | Canonical decision, legal approval, implemented control or release approval by itself | `EVIDENCE_ONLY` until stored, versioned, reviewed and classified |
+| Professional legal or tax memorandum | Version-specific professional advice within its stated scope, assumptions and effective date | General project release approval or implementation evidence by itself | `PENDING_REVIEW` until received, sanitized, classified and accepted |
+| Static schema or test vector | Interface and negative-path design when versioned and reviewed | Operational endpoint, runtime control, acceptance evidence or release approval | Non-public implementation foundation only |
 
 ## Current controlling Atlas sources
 
@@ -49,6 +51,10 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | Trust/Contact/Legal Workstream Status | 24.07.2026 | Mixed: technical findings `AUTO_APPROVED`; claims `PENDING_REVIEW` | Gamma/Figma/Wix trust/legal work |
 | These six canonical register files | 25.07.2026 | Canonical containers; entry status governs | Ongoing project memory and control |
 | `ATLAS_CONSUMER_LAW_REPORT_REVIEW_0208_26072026.md` | 26.07.2026 | Verified checkpoints `AUTO_APPROVED`; interpretations `PENDING_LEGAL_REVIEW` | Consumer-law evidence boundary and readiness |
+| `ATLAS_CONSUMER_LAW_AND_CHECKOUT_DEEP_RESEARCH_REPORT_0206_26072026.md` and associated legal/MVA packs | 26.07.2026 | Research/draft evidence; interpretations require professional review | Consumer terms, checkout, withdrawal, cancellation, refunds and MVA design |
+| `ATLAS_EXTERNAL_SOURCE_VALIDATION_UPDATE_0308_26072026.md` | 26.07.2026 | Verified current-source facts `AUTO_APPROVED`; Atlas decisions remain pending | Current legal, tax, Wix, minor/privacy and accessibility validation |
+| `ATLAS_PROFESSIONAL_LEGAL_TAX_DECISION_PACK_0308_26072026.md` | 26.07.2026 | `AUTO_APPROVED` as review-preparation workflow; answers absent | Version-specific professional decision request |
+| `ATLAS_FAIL_CLOSED_CONSUMER_CHECKOUT_IMPLEMENTATION_BACKLOG_0308_26072026.md` and schemas/test vectors | 26.07.2026 | Non-public design/workflow `AUTO_APPROVED`; runtime/release not approved | Next executable implementation foundation |
 
 ## Conflict protocol
 
@@ -69,6 +75,15 @@ A lower source cannot silently override a higher source. Contradictions must be 
 4. Record contradictions and unresolved interpretations.
 5. Classify each resulting rule or decision independently.
 6. Do not mark legal, implementation or release gates passed solely because a report exists.
+
+## Professional-review ingestion protocol
+
+1. Store the complete professional deliverable privately in controlled Drive.
+2. Record title, reviewer, date, scope, assumptions, covered versions and confidentiality classification.
+3. Store only a sanitized approval record in GitHub unless explicit approval permits the full document.
+4. Separate approved, conditional, rejected and outside-scope conclusions.
+5. Do not generalize a version-specific or conditional conclusion.
+6. Re-run source, implementation and release validation after applying accepted decisions.
 
 ## Sensitive-data boundary
 
