@@ -4,7 +4,7 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > Only entry classifications `CANONICAL`, `APPROVED` and `AUTO_APPROVED` govern execution.
 
@@ -43,4 +43,21 @@
 - **Unresolved items:** Execute the deep research prompt; obtain Norwegian lawyer and accountant/tax-adviser sign-off; configure and test Wix tax/checkout; implement Members Area, consent logging, durable-medium confirmation, cancellation/refund flows and Phase 3 controls.
 - **Next executable workstream:** Execute the consumer-law deep research mandate and prepare the complete Bokmål/English legal implementation pack, in parallel with professional MVA finalisation for the approved launch countries and offers.
 - **Classification:** workflow, scope and control records `AUTO_APPROVED`; 25% domestic baseline `APPROVED_CONTROL`; final tax and legal conclusions `PENDING_REVIEW`.
+- **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260726-004
+
+- **Timestamp:** 02:06, 26.07.2026 Europe/Oslo
+- **Task:** Execute the Atlas AI consumer-law deep research mandate and prepare the MVA implementation/professional-review package.
+- **Scope:** Legal/tax research, bilingual draft terms, checkout/withdrawal/cancellation/refund operations, Wix/Velo/backend implementation design, acceptance tests, private Wix readiness metadata and controlled Drive/GitHub records. No public plan, checkout, payment activation or production release.
+- **Sources used:** Explicit transfer pack; current approved/canonical GitHub records; controlled Drive folder; verified Wix APIs; current Norwegian statutes/preparatory works; Skatteetaten, Forbrukertilsynet and Datatilsynet guidance; EU consumer/VAT sources; official Wix documentation.
+- **Principal research conclusion:** The four subscriptions are most defensibly continuing digital services; activation alone should not remove the withdrawal right; early commencement requires a separate express request and supports only a lawful proportional-payment model. All substantive conclusions remain `PENDING_LEGAL_REVIEW`.
+- **MVA conclusion:** 25% remains a Norwegian domestic working baseline. Norway-only self-service is recommended for review; foreign B2C, top-ups and unresolved cross-border cases remain blocked. MVA-001–MVA-020 are decision-ready but not professionally closed.
+- **Files/artifacts created:** Five principal legal/tax/implementation files, active-source update, project log, updated readiness registers and seven private Drive mirror documents.
+- **Wix action:** Patched only `consumerLawResearchStatus` and `termsStatus` for Student Basic, Student Plus, Everyday Basic and Family. Four successes, zero failures.
+- **Validation performed:** Four consumer records read back with `checkoutLegalStatus=NO_GO`, professional sign-off true and purchase/public false; Family block preserved; Pricing Plans count zero; Drive folder contains seven native Docs, all private; document text readback passed; GitHub canonical registers updated.
+- **Errors/limitations recorded:** Non-standard `APPROVED_CONTROL` status in ATL-DEC-20260725-015; native Wix capability is not complete compliance evidence; legal entity and professional sign-offs are absent.
+- **Unresolved items:** Norwegian legal opinion; accountant/tax-adviser sign-off; MVA-001 entity; annual/semester/top-up/Family decisions; identity/member controls; payment, consent, durable medium, entitlement, refund/accounting, localisation and accessibility implementation/tests.
+- **Next executable workstream:** Professional legal and tax review, followed by approved launch-scope implementation and acceptance testing. No checkout implementation may relax the existing locks before written approval.
+- **Classification:** verified research execution, status write-back, architecture mapping and validation `AUTO_APPROVED`; legal copy/classification `PENDING_LEGAL_REVIEW`; tax/launch recommendations `PENDING_REVIEW`.
 - **Release state:** `NO_GO`.
