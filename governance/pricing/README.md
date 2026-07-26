@@ -9,10 +9,11 @@ The active approved commercial baseline is `ATLAS_PRICING_EXECUTIVE_SUMMARY_2507
 - `ATLAS_PRICING_DECISION_PROPOSALS_25072026.md`
 - `ATLAS_PRICING_VALIDATION_AND_RELEASE_GATE_25072026.md`
 - `ATLAS_ORIGINAL_PRICING_REPORT_ARTIFACT_VALIDATION_0314_26072026.md`
+- `ATLAS_ORIGINAL_PRICING_REPORT_ARITHMETIC_AUDIT_0408_26072026.md`
 - `atlas-pricing-pack-manifest.json`
 - `../../evidence/research/2026-07-25/ATLAS_PRICING_BUDGET_UNIT_ECONOMICS_REPORT_1301_25072026_RAW.md.gz.b64`
 - `../../evidence/research/2026-07-25/ATLAS_RESEARCH_ARTIFACT_INTEGRITY_MANIFEST_0314_26072026.json`
 
-The original DOCX/Markdown report is now ingested with checksums. Its approved price values reconcile to contract v0.5.1. Forecasts, provider prices, FX and other dated assumptions remain evidence subject to refresh triggers. The report’s “launch now” recommendation is superseded for activation by the canonical separation between commercial approval and release.
+The original DOCX/Markdown report is ingested with checksums. Its approved price values reconcile to contract v0.5.1. A separate arithmetic audit identified two internal inconsistencies in non-price planning figures: the Everyday Basic LTV:CAC/payback pair and the small-team operating-budget total. The raw report remains unchanged; corrected financial values require finance-owner approval. Forecasts, provider prices, FX and other dated assumptions remain evidence subject to refresh triggers, and the scenario forecast is not fully reproducible without its underlying model.
 
-Commercial values are approved. Public publication, checkout, provider provisioning, entitlement, production routing and Managed Secure activation remain blocked by the Phase 0.5 and G00–G22 gates.
+The report’s “launch now” recommendation is superseded for activation by the canonical separation between commercial approval and release. Commercial values are approved. Public publication, checkout, provider provisioning, entitlement, production routing and Managed Secure activation remain blocked by the Phase 0.5 and G00–G22 gates.
