@@ -111,7 +111,10 @@
   },
   "allOf": [
     {
-      "if": {"properties": {"decision": {"const": "ALLOW"}}},
+      "if": {
+        "required": ["decision"],
+        "properties": {"decision": {"const": "ALLOW"}}
+      },
       "then": {
         "properties": {
           "reasonCodes": {"contains": {"const": "ALL_REQUIRED_CONTROLS_PASSED"}},
@@ -133,12 +136,36 @@
       }
     },
     {
-      "if": {"properties": {"action": {"enum": ["ORDER", "ACTIVATE", "RENEW", "TOP_UP"]}}},
+      "if": {
+        "required": ["decision", "action"],
+        "properties": {
+          "decision": {"const": "ALLOW"},
+          "action": {"enum": ["ORDER", "ACTIVATE", "RENEW", "TOP_UP"]}
+        }
+      },
       "then": {
         "properties": {
           "dependencyState": {
             "properties": {
               "purchaseAllowed": {"const": true}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["decision", "action"],
+        "properties": {
+          "decision": {"const": "ALLOW"},
+          "action": {"const": "DISCOVER"}
+        }
+      },
+      "then": {
+        "properties": {
+          "dependencyState": {
+            "properties": {
+              "publicAllowed": {"const": true}
             }
           }
         }
