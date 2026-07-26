@@ -14,91 +14,96 @@ When sources conflict, apply this order:
 
 1. **Explicit current user approval or correction.**
 2. **`CANONICAL` or `APPROVED` entry in `ATLAS_DECISIONS_REGISTER.md`.**
-3. **Approved Atlas governance records in the canonical GitHub repository.**
-4. **Current implementation evidence from the system being assessed.**
-5. **Current official provider, regulator, standards or statistical sources.**
+3. **Approved Atlas governance records in canonical GitHub.**
+4. **Current implementation evidence from the system assessed.**
+5. **Current official provider, regulator, register, standards or statistical sources.**
 6. **Controlled Drive source-pack documents and approved reports.**
 7. **Gamma and Figma drafts as content/design evidence.**
 8. **Prior chats and transfer packs as historical context.**
 9. **Inference, clearly labelled.**
 
-A lower source cannot silently override a higher source. Contradictions must be recorded in the decision or error register.
+A lower source cannot silently override a higher source. Contradictions must be recorded.
 
-## Platform roles
+## Platform and source roles
 
 | Platform/source | Authoritative for | Not authoritative for | Current role |
 |---|---|---|---|
-| GitHub | Canonical machine-readable governance registers, ADRs, controlled specifications, validation records and release history | Current Wix editor page existence without implementation evidence | Primary canonical governance source |
-| Google Drive | Controlled source-pack mirror, human-readable documents, evidence archives and approved exports | Git branch state or live Wix runtime state | Controlled mirror and evidence archive |
-| Wix | Current website/CMS/forms/business-entity implementation state when verified through authoritative APIs/editor evidence | Canonical governance policy or design intent by itself | Public/commercial implementation plane; currently Draft / NO-GO |
-| Gamma | Copy, hierarchy, alternative drafts and design-content evidence | Current Wix implementation, operational runtime or approved legal status | Draft/content evidence |
-| Figma | Visual design, geometry, section/page composition and validation evidence | Current Wix implementation, runtime availability or legal approval | Design evidence |
-| Azure or other secure backend | Identity, private storage, runtime, audit, entitlement and controlled delivery after implementation | Public marketing source | Not operationally validated for Atlas Website current phase |
-| Current official external sources | Provider, legal, standards, regulator and market facts | Atlas-specific implementation or approvals | External evidence only |
-| Generated external research report | Source-cited research evidence after complete artifact ingestion and verification | Canonical decision, legal approval, implemented control or release approval by itself | `EVIDENCE_ONLY` until stored, versioned, reviewed and classified |
-| Professional legal or tax memorandum | Version-specific professional advice within its stated scope, assumptions and effective date | General project release approval or implementation evidence by itself | `PENDING_REVIEW` until received, sanitized, classified and accepted |
-| Static schema or test vector | Interface and negative-path design when versioned and reviewed | Operational endpoint, runtime control, acceptance evidence or release approval | Non-public implementation foundation only |
+| GitHub | Canonical governance, specifications, validation, decisions and release history | Current Wix page existence without live evidence | Primary canonical source |
+| Google Drive | Controlled source mirrors, private evidence, professional deliverables and exports | Git state or live Wix runtime | Controlled mirror/evidence archive |
+| Wix | Current site, CMS, apps, forms, plans and business implementation when verified | Canonical governance or legal approval by itself | Implementation plane; Draft/NO_GO |
+| Gamma | Copy/hierarchy/alternative draft evidence | Runtime or approved legal status | Draft evidence |
+| Figma | Visual design and geometry evidence | Runtime or legal approval | Design evidence |
+| Secure backend | Identity, storage, audit, entitlement and delivery after implementation | Public marketing source | Not yet operationally validated |
+| Current official external sources | Legal, tax, register, provider and standards facts | Atlas-specific approval or implementation | External evidence |
+| Brønnøysund Register Centre | Current registered company identity, roles, signature authority and MVA-register status | Atlas internal organisation or tax treatment | Authoritative public company source |
+| Generated research report | Research after ingestion/verification | Decision, approval or runtime evidence by itself | `EVIDENCE_ONLY` until classified |
+| Professional legal/tax memorandum | Version-specific professional advice within scope and date | General release approval or implementation evidence | Pending until received/accepted |
+| Static schema/test vector | Interface and negative-path design | Operational runtime or acceptance evidence | Non-public foundation only |
 
 ## Current controlling Atlas sources
 
 | Source | Date | Authority | Scope |
 |---|---:|---|---|
-| Explicit Atlas project protocol in current project instructions | Current | `CANONICAL` | Memory, classifications, safety locks, contradiction handling |
-| `02_Atlas_AI_Phase_by_Phase_Implementation_Guide_1135_11072026` | 11.07.2026 | Approved consolidated working baseline | Active Phase 0–6 execution sequence |
-| `Atlas AI Website Phase Page Roadmap` | 23.07.2026 | Approved/AUTO_APPROVED | Final page roles by phase |
-| `Atlas AI Wix Page-Tree Correction` | 23.07.2026 | `AUTO_APPROVED` | Current visible Wix page inventory |
-| `Atlas AI Wix CMS, Discovery and Navigation Update` | 22.07.2026 | `AUTO_APPROVED` for verified CMS state | CMS records, locks and manual work |
-| Trust/Contact/Legal Workstream Status | 24.07.2026 | Mixed: technical findings `AUTO_APPROVED`; claims `PENDING_REVIEW` | Gamma/Figma/Wix trust/legal work |
-| These six canonical register files | 25.07.2026 | Canonical containers; entry status governs | Ongoing project memory and control |
-| `ATLAS_CONSUMER_LAW_REPORT_REVIEW_0208_26072026.md` | 26.07.2026 | Verified checkpoints `AUTO_APPROVED`; interpretations `PENDING_LEGAL_REVIEW` | Consumer-law evidence boundary and readiness |
-| `ATLAS_CONSUMER_LAW_AND_CHECKOUT_DEEP_RESEARCH_REPORT_0206_26072026.md` and associated legal/MVA packs | 26.07.2026 | Research/draft evidence; interpretations require professional review | Consumer terms, checkout, withdrawal, cancellation, refunds and MVA design |
-| `ATLAS_EXTERNAL_SOURCE_VALIDATION_UPDATE_0308_26072026.md` | 26.07.2026 | Verified current-source facts `AUTO_APPROVED`; Atlas decisions remain pending | Current legal, tax, Wix, minor/privacy and accessibility validation |
-| `ATLAS_PROFESSIONAL_LEGAL_TAX_DECISION_PACK_0308_26072026.md` | 26.07.2026 | `AUTO_APPROVED` as review-preparation workflow; answers absent | Version-specific professional decision request |
-| `ATLAS_FAIL_CLOSED_CONSUMER_CHECKOUT_IMPLEMENTATION_BACKLOG_0308_26072026.md` and schemas/test vectors | 26.07.2026 | Non-public design/workflow `AUTO_APPROVED`; runtime/release not approved | Next executable implementation foundation |
-| Original 20:37 consumer-law raw report plus `ATLAS_ORIGINAL_CONSUMER_LAW_REPORT_VALIDATION_AND_RECONCILIATION_0314_26072026.md` | 25–26.07.2026 | Raw artifact `EVIDENCE_ONLY`; integrity/source validation `AUTO_APPROVED`; legal application pending | Original research evidence and cross-report reconciliation |
-| Original 13:01 pricing raw report plus `ATLAS_ORIGINAL_PRICING_REPORT_ARTIFACT_VALIDATION_0314_26072026.md` | 25–26.07.2026 | Approved values governed by `ATL-DEC-20260725-011`; other recommendations `EVIDENCE_ONLY` | Commercial-source integrity and activation-conflict reconciliation |
-| `ATLAS_CONSUMER_LAW_PERSISTENT_SOURCE_RECONCILIATION_0314_26072026.md` | 26.07.2026 | `AUTO_APPROVED` evidence mapping; legal conclusions pending | Persistent official locations/identifiers for load-bearing requirements |
+| Explicit Atlas project protocol | Current | `CANONICAL` | Memory, classifications, safety locks and conflict handling |
+| `02_Atlas_AI_Phase_by_Phase_Implementation_Guide_1135_11072026` | 11.07.2026 | Approved baseline | Active phase sequence |
+| Atlas Website Phase Page Roadmap | 23.07.2026 | Approved/AUTO_APPROVED | Page roles by phase |
+| Atlas Wix Page-Tree Correction | 23.07.2026 | `AUTO_APPROVED` | Current page inventory evidence |
+| Atlas Wix CMS, Discovery and Navigation Update | 22.07.2026 | `AUTO_APPROVED` for verified state | CMS locks/manual work |
+| Trust/Contact/Legal Workstream Status | 24.07.2026 | Mixed | Draft and pending claim state |
+| Six canonical register files | 25.07.2026 | Canonical containers | Project memory/control |
+| `ATLAS_CONSUMER_LAW_REPORT_REVIEW_0208_26072026.md` | 26.07.2026 | Checkpoints `AUTO_APPROVED`; interpretations pending | Evidence/readiness |
+| Consumer-law research and associated legal/MVA packs | 26.07.2026 | Research/draft evidence | Terms, checkout and MVA design |
+| `ATLAS_EXTERNAL_SOURCE_VALIDATION_UPDATE_0308_26072026.md` | 26.07.2026 | Verified facts `AUTO_APPROVED` | Current legal/tax/Wix validation |
+| `ATLAS_PROFESSIONAL_LEGAL_TAX_DECISION_PACK_0308_26072026.md` | 26.07.2026 | Review-preparation workflow | Professional questions |
+| `ATLAS_FAIL_CLOSED_CONSUMER_CHECKOUT_IMPLEMENTATION_BACKLOG_0308_26072026.md` and schemas | 26.07.2026 | Non-public design `AUTO_APPROVED` | Implementation foundation |
+| Original consumer-law raw report and reconciliation | 25–26.07.2026 | Raw `EVIDENCE_ONLY`; validation `AUTO_APPROVED` | Original research evidence |
+| Original pricing raw report and validation/audit | 25–26.07.2026 | Approved values governed separately; other content evidence only | Pricing evidence |
+| `ATLAS_CONSUMER_LAW_PERSISTENT_SOURCE_RECONCILIATION_0314_26072026.md` | 26.07.2026 | `AUTO_APPROVED` mapping | Stable legal source identifiers |
+| `ATLAS_CONTRACTING_ENTITY_AND_PUBLIC_COMPANY_FACTS_26072026.md` | 26.07.2026 | Public facts `AUTO_APPROVED`; Atlas relation `APPROVED_OWNER_FACT` | Contracting entity, MVA identity, management/signature boundary |
+| `ATLAS_PROFESSIONAL_PACK_V061_COMPANY_AND_AGE_AMENDMENT_26072026.md` | 26.07.2026 | Exact corrections `APPROVED`; professional conclusions pending | Supersedes age-18/entity placeholders in professional packs |
+| Four v0.6.1 professional/owner/operator documents | 26.07.2026 | Management facts/workflow approved; fields remain pending by operator | Submission, decisions and test workflow |
 
 ## Conflict protocol
 
-1. Identify the exact conflicting statements.
+1. Identify exact conflicting statements.
 2. Record source name, date, owner and classification.
 3. Prefer the most recent higher-authority approved source.
 4. Do not combine incompatible values into a synthetic compromise.
-5. Mark the displaced record `SUPERSEDED` or `EVIDENCE_ONLY`.
-6. Add a `PENDING_REVIEW` decision when approval is required.
-7. Update affected claims, routes, pages, designs and release gates only after the governing entry is approved.
+5. Mark displaced records `SUPERSEDED` or `EVIDENCE_ONLY`.
+6. Add a `PENDING_REVIEW` decision where approval is required.
+7. Update claims, routes, pages, designs and gates only after approval.
 8. Preserve historical evidence.
 
 ## Report-ingestion protocol
 
-1. Store the complete report artifact in canonical GitHub and controlled Drive.
-2. Record stable title, generation timestamp, version, filename and checksum.
-3. Compare equivalent supplied formats and state whether they are byte-identical, content-equivalent or materially different.
-4. Verify citations, effective dates and statutory wording against primary sources.
-5. Replace conversation-local citation tokens in canonical validation with persistent official URLs or stable identifiers; preserve the raw artifact unchanged.
+1. Store complete artifact in canonical GitHub and controlled Drive.
+2. Record title, generation timestamp, version, filename and checksum.
+3. Compare formats and state byte/content equivalence.
+4. Verify citations, dates and wording against primary sources.
+5. Replace conversation-local tokens in canonical validation with persistent identifiers; preserve raw artifacts.
 6. Record contradictions and unresolved interpretations.
-7. Classify each resulting rule or decision independently.
-8. Do not mark legal, implementation or release gates passed solely because a report exists.
+7. Classify each resulting rule separately.
+8. Do not pass legal/implementation/release gates solely because a report exists.
 
 ## Professional-review ingestion protocol
 
 1. Store the complete professional deliverable privately in controlled Drive.
-2. Record title, reviewer, date, scope, assumptions, covered versions and confidentiality classification.
-3. Store only a sanitized approval record in GitHub unless explicit approval permits the full document.
+2. Record title, reviewer, date, scope, assumptions, covered versions and confidentiality.
+3. Store only a sanitized approval record in GitHub unless explicitly authorised.
 4. Separate approved, conditional, rejected and outside-scope conclusions.
-5. Do not generalize a version-specific or conditional conclusion.
-6. Re-run source, implementation and release validation after applying accepted decisions.
+5. Do not generalise a version-specific or conditional conclusion.
+6. Re-run source, implementation and release validation after accepted decisions.
+7. Separate management authorisation from professional attestation.
 
 ## Sensitive-data boundary
 
 Never store or expose:
 
-- API keys, access tokens, passwords or credentials;
-- bank/accounting data;
-- confidential customer or supplier data;
+- API keys, tokens, passwords or credentials;
+- bank/account numbers or private accounting details;
+- confidential customer/supplier data;
 - protected artifacts or private commercial logic;
-- customer prompts or submitted files;
-- secrets in screenshots, URLs, frontend JavaScript, GitHub, Drive logs, Gamma or Figma.
+- customer prompts/submitted files;
+- secrets in screenshots, URLs, frontend JavaScript, GitHub, public docs, Gamma or Figma.
 
-Sanitized evidence must reference the existence and result of a test without reproducing sensitive content.
+Sanitized evidence may identify the existence and result of a test without reproducing sensitive content.
