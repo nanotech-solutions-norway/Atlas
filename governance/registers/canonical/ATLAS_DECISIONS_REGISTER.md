@@ -4,7 +4,7 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
 
@@ -42,6 +42,15 @@
 | ATL-DEC-20260725-016 | 25.07.2026 | Final MVA treatment requires completion of the offer/jurisdiction matrix, OSS decision, reverse-charge procedure, invoice/credit-note mapping, Wix tax tests and professional sign-off. | Phase 0.5, 3, 5 and 6 | Prevent a general rate assumption from being treated as complete tax implementation. | Tax/accounting owner | All applicable MVA-001–MVA-020 controls pass | `CANONICAL` |
 | ATL-DEC-20260725-017 | 25.07.2026 | Adopt the consumer-law deep research prompt as the mandatory research scope for Norwegian consumer terms, withdrawal, cancellation, refunds, digital-service commencement and checkout. | Legal, pricing, Wix and release | Ensures complete primary-source and implementation analysis before drafting final terms. | Legal owner | Research pack completed and reviewed | `AUTO_APPROVED` |
 | ATL-DEC-20260725-018 | 25.07.2026 | No Norwegian consumer checkout, paid immediate commencement or Wix Pricing Plan creation is permitted until the consumer-law pack, MVA treatment, Wix implementation and acceptance evidence are approved. | Phase 0.5–6 | Angrerettloven payment-obligation, commencement, withdrawal and durable-medium requirements are implementation gates. | Release/legal owner | LEG-001–LEG-020 and applicable MVA gates pass with written release approval | `CANONICAL` |
+| ATL-DEC-20260726-019 | 26.07.2026 | Research completion may update only the private research/draft status. It must not change legal approval, professional-signoff, checkout, purchase, publication, activation or release states. | GitHub, Drive and Wix readiness metadata | Validated separation of research, implementation and release states. | Governance/release owner | Explicit approved state-model change | `AUTO_APPROVED` |
+| ATL-DEC-20260726-020 | 26.07.2026 | Treat the four consumer subscriptions as continuing digital services and use the early-start/proportional-payment model drafted in the research pack. | Consumer terms and checkout | Primary-law research supports the model, but no Norwegian legal opinion exists. | Legal owner | Norwegian counsel approval or contrary authority | `PENDING_REVIEW` |
+| ATL-DEC-20260726-021 | 26.07.2026 | Restrict initial self-service consumer checkout to Norway and keep all foreign consumer checkout disabled until destination-VAT and OSS/local-registration controls are approved. | Tax, checkout and launch countries | Reduces unresolved cross-border tax exposure; not yet explicitly approved as launch scope. | Project owner + tax adviser | Explicit scope approval and signed tax position | `PENDING_REVIEW` |
+| ATL-DEC-20260726-022 | 26.07.2026 | Structure paid top-ups and boosts as fixed non-transferable Atlas service entitlements rather than generic stored-value credit. | Product, tax and refunds | Reduces ambiguity but still requires legal and tax classification. | Product/legal/tax owners | Signed top-up classification | `PENDING_REVIEW` |
+| ATL-DEC-20260726-023 | 26.07.2026 | Future-proof checkout for the enacted electronic withdrawal function, but do not represent it as a current in-force requirement until commencement is verified. | Consumer portal and legal monitoring | 2026 amendment enacted; commencement not effective at research date. | Legal/product owner | Official commencement date | `PENDING_REVIEW` |
+
+## Pending governance correction
+
+`ATL-DEC-20260725-015` uses `APPROVED_CONTROL`, which is not one of the statuses defined by this register. The explicit current user instruction independently preserves the 25% working baseline for this session. Normalising the stored entry to `APPROVED` or another allowed status is `PENDING_REVIEW`; no silent change has been made.
 
 ## Superseded decisions
 
