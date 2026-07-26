@@ -4,8 +4,7 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled branch:** `agent/canonical-governance-registers-20260725`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
 
@@ -27,7 +26,7 @@ A lower source cannot silently override a higher source. Contradictions must be 
 
 ## Platform roles
 
-| Platform | Authoritative for | Not authoritative for | Current role |
+| Platform/source | Authoritative for | Not authoritative for | Current role |
 |---|---|---|---|
 | GitHub | Canonical machine-readable governance registers, ADRs, controlled specifications, validation records and release history | Current Wix editor page existence without implementation evidence | Primary canonical governance source |
 | Google Drive | Controlled source-pack mirror, human-readable documents, evidence archives and approved exports | Git branch state or live Wix runtime state | Controlled mirror and evidence archive |
@@ -36,6 +35,7 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | Figma | Visual design, geometry, section/page composition and validation evidence | Current Wix implementation, runtime availability or legal approval | Design evidence |
 | Azure or other secure backend | Identity, private storage, runtime, audit, entitlement and controlled delivery after implementation | Public marketing source | Not operationally validated for Atlas Website current phase |
 | Current official external sources | Provider, legal, standards, regulator and market facts | Atlas-specific implementation or approvals | External evidence only |
+| Generated external research report | Source-cited research evidence after complete artifact ingestion and verification | Canonical decision, legal approval, implemented control or release approval by itself | `EVIDENCE_ONLY` until stored, versioned, reviewed and classified |
 
 ## Current controlling Atlas sources
 
@@ -48,6 +48,7 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | `Atlas AI Wix CMS, Discovery and Navigation Update` | 22.07.2026 | `AUTO_APPROVED` for verified CMS state | CMS records, locks and manual work |
 | Trust/Contact/Legal Workstream Status | 24.07.2026 | Mixed: technical findings `AUTO_APPROVED`; claims `PENDING_REVIEW` | Gamma/Figma/Wix trust/legal work |
 | These six canonical register files | 25.07.2026 | Canonical containers; entry status governs | Ongoing project memory and control |
+| `ATLAS_CONSUMER_LAW_REPORT_REVIEW_0208_26072026.md` | 26.07.2026 | Verified checkpoints `AUTO_APPROVED`; interpretations `PENDING_LEGAL_REVIEW` | Consumer-law evidence boundary and readiness |
 
 ## Conflict protocol
 
@@ -59,6 +60,15 @@ A lower source cannot silently override a higher source. Contradictions must be 
 6. Add a `PENDING_REVIEW` decision when approval is required.
 7. Update affected claims, routes, pages, designs and release gates only after the governing entry is approved.
 8. Preserve historical evidence.
+
+## Report-ingestion protocol
+
+1. Store the complete report artifact in canonical GitHub and controlled Drive.
+2. Record stable title, generation timestamp, version and checksum.
+3. Verify citations, effective dates and statutory wording against primary sources.
+4. Record contradictions and unresolved interpretations.
+5. Classify each resulting rule or decision independently.
+6. Do not mark legal, implementation or release gates passed solely because a report exists.
 
 ## Sensitive-data boundary
 

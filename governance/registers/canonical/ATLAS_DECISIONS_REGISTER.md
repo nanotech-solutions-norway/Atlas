@@ -4,7 +4,7 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
 
@@ -42,6 +42,8 @@
 | ATL-DEC-20260725-016 | 25.07.2026 | Final MVA treatment requires completion of the offer/jurisdiction matrix, OSS decision, reverse-charge procedure, invoice/credit-note mapping, Wix tax tests and professional sign-off. | Phase 0.5, 3, 5 and 6 | Prevent a general rate assumption from being treated as complete tax implementation. | Tax/accounting owner | All applicable MVA-001–MVA-020 controls pass | `CANONICAL` |
 | ATL-DEC-20260725-017 | 25.07.2026 | Adopt the consumer-law deep research prompt as the mandatory research scope for Norwegian consumer terms, withdrawal, cancellation, refunds, digital-service commencement and checkout. | Legal, pricing, Wix and release | Ensures complete primary-source and implementation analysis before drafting final terms. | Legal owner | Research pack completed and reviewed | `AUTO_APPROVED` |
 | ATL-DEC-20260725-018 | 25.07.2026 | No Norwegian consumer checkout, paid immediate commencement or Wix Pricing Plan creation is permitted until the consumer-law pack, MVA treatment, Wix implementation and acceptance evidence are approved. | Phase 0.5–6 | Angrerettloven payment-obligation, commencement, withdrawal and durable-medium requirements are implementation gates. | Release/legal owner | LEG-001–LEG-020 and applicable MVA gates pass with written release approval | `CANONICAL` |
+| ATL-DEC-20260726-019 | 26.07.2026 | A generated research report is not controlled Atlas evidence until the complete artifact is stored in canonical GitHub and controlled Drive with a stable version, reviewed against primary sources and classified. | Research, governance, legal and release records | The 20:37 consumer-law report was referenced but not present in either controlled repository. | Governance/legal owner | Report ingested and validated | `AUTO_APPROVED` |
+| ATL-DEC-20260726-020 | 26.07.2026 | Working view: Atlas consumer subscriptions are continuing digital services and activation does not automatically remove withdrawal rights; top-ups and component classifications require separate analysis. | Consumer offers and checkout design | Current Angrerettloven and digitalytelsesloven review. | Legal owner | Norwegian counsel approval or contradictory authoritative source | `PENDING_REVIEW` |
 
 ## Superseded decisions
 
