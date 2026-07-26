@@ -170,3 +170,15 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** Readiness and professional decision packs updated.
 - **Unresolved items:** Counsel confirmation, target approval and executed UI/assistive-technology tests.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-019 — Conversation citation tokens are not archival evidence
+
+- **Timestamp/task:** 03:14, 26.07.2026 Europe/Oslo; original report evidence ingestion.
+- **Issue observed:** The supplied research reports contain citation tokens such as `turn...search...` and `turn...view...` that do not resolve outside the originating research session.
+- **Root cause:** Chat-rendered citation references were preserved as if they were portable document citations.
+- **Corrective rule:** Preserve the raw report unchanged, but create a persistent official-source reconciliation using stable statute, case and provider identifiers before relying on report propositions in canonical validation.
+- **Evidence/source:** Original 20:37 consumer-law and 13:01 pricing DOCX/Markdown pairs; checksum and citation scan; official-source recheck.
+- **Action taken:** Added raw evidence, integrity manifest, persistent source reconciliation and report-specific validation records.
+- **Validation performed:** Exact heading parity, normalized content equivalence, load-bearing primary-source checks and lock readback.
+- **Unresolved items:** Full citation-by-citation reconstruction, professional legal/tax review, implementation and acceptance evidence.
+- **Classification:** `AUTO_APPROVED`.
