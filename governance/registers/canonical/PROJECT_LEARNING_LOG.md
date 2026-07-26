@@ -75,3 +75,50 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** Report absence verified; statutory checkpoints re-verified independently.
 - **Unresolved items:** Ingest and review the report, obtain counsel approval, implement and test.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-011 — Concurrent canonical updates require reconciliation, not overwrite
+
+- **Timestamp/task:** 02:50, 26.07.2026 Europe/Oslo; research-pack ingestion.
+- **Issue observed:** Two newer commits modified the same legal and canonical records while the research branch was being prepared.
+- **Root cause:** Parallel workstreams used a shared baseline.
+- **Corrective rule:** Re-read current `main`, preserve the newer canonical entries, carry forward only non-conflicting artifacts and explicitly reconcile affected matrices.
+- **Evidence/source:** Commit comparison and the closed, unmerged synchronization PR #9.
+- **Action taken:** Created a fresh branch from current `main`, transferred exact new artifact blobs and excluded stale canonical-file versions.
+- **Validation performed:** New branch is based on current main; conflicted sync PR was closed without merge.
+- **Unresolved items:** Draft PR review and merge decision.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-012 — Native platform capability is not complete compliance evidence
+
+- **Timestamp/task:** 02:50, 26.07.2026 Europe/Oslo; Wix/Velo/backend mapping.
+- **Issue observed:** Native plan, order and cancellation features could be treated as a complete legal/tax solution.
+- **Root cause:** Platform functions were conflated with Atlas consent, version, entitlement, location, refund and accounting evidence.
+- **Corrective rule:** Allocate every requirement to native Wix, Wix+Velo, external backend or manual administration and validate the complete journey.
+- **Evidence/source:** Official Wix capability review, current site readback and implementation matrix.
+- **Action taken:** Created the requirement-level architecture and acceptance suite.
+- **Validation performed:** Pricing Plans remained zero and all four consumer release locks remained active.
+- **Unresolved items:** Implementation and test evidence.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-013 — Status write-back must be limited to exact evidence
+
+- **Timestamp/task:** 02:50, 26.07.2026 Europe/Oslo; Wix readiness metadata.
+- **Issue observed:** Completing research could accidentally relax legal, checkout or release gates.
+- **Root cause:** Multiple readiness dimensions coexist in the same offer records.
+- **Corrective rule:** Patch only fields directly supported by completed evidence and read back every safety/release field after the write.
+- **Evidence/source:** Four successful Wix CMS patches and filtered readback.
+- **Action taken:** Updated research and draft-terms status only.
+- **Validation performed:** `NO_GO`, professional sign-off true, purchase/public false and Family block all preserved.
+- **Unresolved items:** None for this status write; all substantive gates remain open.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-014 — Refund completion requires payment, entitlement and accounting agreement
+
+- **Timestamp/task:** 02:50, 26.07.2026 Europe/Oslo; cancellation/refund and MVA operations.
+- **Issue observed:** Internal approval could be mistaken for completed reimbursement and tax correction.
+- **Root cause:** Legal decision, provider transaction, entitlement adjustment, credit note and accounting posting are separate events.
+- **Corrective rule:** Keep a refund case open until provider completion, entitlement/usage adjustment, accounting correction and reconciliation agree.
+- **Evidence/source:** Consumer refund SOP and MVA reconciliation design.
+- **Action taken:** Created reason codes, approval controls and end-to-end test cases.
+- **Unresolved items:** System implementation and professional approval.
+- **Classification:** `AUTO_APPROVED`.
