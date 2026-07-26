@@ -182,3 +182,15 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** Exact heading parity, normalized content equivalence, load-bearing primary-source checks and lock readback.
 - **Unresolved items:** Full citation-by-citation reconstruction, professional legal/tax review, implementation and acceptance evidence.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260726-020 — Artifact parity does not validate arithmetic
+
+- **Timestamp/task:** 04:08, 26.07.2026 Europe/Oslo; original pricing report arithmetic audit.
+- **Issue observed:** DOCX/Markdown content equivalence could be mistaken for validation of the calculations reproduced in both formats.
+- **Root cause:** Integrity/parity validation and arithmetic/model validation were not separately reported.
+- **Corrective rule:** Treat byte integrity, format equivalence, arithmetic reconciliation, forecast reproducibility and commercial approval as separate evidence states.
+- **Evidence/source:** Recalculation of the original pricing report’s printed unit-economics, operating-budget and pre-launch-budget figures.
+- **Action taken:** Recorded two confirmed inconsistencies and marked scenario forecasts not reproducible from the report alone.
+- **Validation performed:** Everyday Basic LTV:CAC/payback and small-team budget failed reconciliation; other printed plan margins and listed pre-launch budget passed within rounding.
+- **Unresolved items:** Finance-owner correction, intended source inputs and underlying forecast model.
+- **Classification:** `AUTO_APPROVED`.
