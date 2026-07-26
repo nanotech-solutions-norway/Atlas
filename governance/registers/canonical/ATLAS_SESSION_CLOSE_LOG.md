@@ -59,3 +59,20 @@
 - **Next executable workstream:** Ingest the report artifact, perform exact source reconciliation and prepare the final lawyer-review pack while preserving all locks.
 - **Classification:** evidence-control and verified statutory checkpoints `AUTO_APPROVED`; Atlas-specific legal interpretations `PENDING_LEGAL_REVIEW`.
 - **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260726-005
+
+- **Timestamp:** 02:50, 26.07.2026 Europe/Oslo
+- **Task:** Execute the controlled consumer-law research mandate, create the complete lawyer-review and MVA implementation packages, update private Wix evidence and reconcile concurrent canonical changes.
+- **Scope:** Primary-source research, offer/right matrix, bilingual draft terms, checkout/withdrawal/cancellation/refund copy and SOPs, Wix/Velo/backend design, acceptance tests, MVA-001–MVA-020 review package, private Wix metadata, controlled Drive mirrors and GitHub governance. No public plan, checkout, payment activation or production release.
+- **Sources used:** Explicit transfer pack; current approved/canonical GitHub and Drive records; verified Wix API readback; Norwegian legislation and preparatory works; official Norwegian tax, consumer and privacy guidance; EU consumer/VAT sources; official Wix documentation.
+- **Evidence reconciliation:** The earlier 20:37 report remains unavailable and was not reconstructed. A new independently executed report and full implementation pack were stored separately. Two newer `main` commits were preserved; conflicted PR #9 was closed unmerged and the deliverables were rebuilt on a fresh current-main branch.
+- **Principal research position:** Consumer subscriptions are most defensibly continuing digital services; activation alone does not remove withdrawal; early commencement requires a separate express request and only a lawful proportional-payment model. All Atlas-specific legal conclusions remain `PENDING_LEGAL_REVIEW`.
+- **MVA position:** 25% remains a domestic planning baseline only. Entity, offer/bundle, foreign B2B, foreign B2C/OSS, top-up, reverse-charge, accounting, invoice/credit-note and reconciliation decisions remain professionally unresolved.
+- **Wix actions and validation:** Four consumer records were patched only for completed research/draft status. Readback preserved checkout `NO_GO`, professional sign-off true, purchase/public false and the Family block. Pricing Plans remained zero.
+- **Drive actions and validation:** Created the private `03_Consumer_Terms_Checkout_Research_26072026` folder with seven native Google Docs; folder listing, sharing state and document readback passed. GitHub remains canonical.
+- **Files/artifacts created:** New research report, full Bokmål/English terms draft, checkout/operations pack, Wix/Velo/backend matrix, MVA professional-review pack, active-source update, project log and updated readiness/governance records.
+- **Unresolved items:** Norwegian legal approval; accountant/tax-adviser sign-off; MVA-001 entity; annual/semester/top-up/Family decisions; Members Area/identity; payment, consent, durable medium, entitlement, refund/accounting, localisation, accessibility and end-to-end acceptance evidence.
+- **Next executable workstream:** Professional legal and MVA review, followed by implementation only for the explicitly approved launch scope. No checkout gate may be relaxed before written release approval.
+- **Classification:** verified research execution, reconciliation, status write-back and validation `AUTO_APPROVED`; legal copy/classification `PENDING_LEGAL_REVIEW`; tax and launch-scope recommendations `PENDING_REVIEW`.
+- **Release state:** `NO_GO`.
