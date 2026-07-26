@@ -4,7 +4,7 @@
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
+**Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
 
 > Only entry classifications `CANONICAL`, `APPROVED` and `AUTO_APPROVED` govern execution.
 
@@ -43,4 +43,19 @@
 - **Unresolved items:** Execute the deep research prompt; obtain Norwegian lawyer and accountant/tax-adviser sign-off; configure and test Wix tax/checkout; implement Members Area, consent logging, durable-medium confirmation, cancellation/refund flows and Phase 3 controls.
 - **Next executable workstream:** Execute the consumer-law deep research mandate and prepare the complete Bokmål/English legal implementation pack, in parallel with professional MVA finalisation for the approved launch countries and offers.
 - **Classification:** workflow, scope and control records `AUTO_APPROVED`; 25% domestic baseline `APPROVED_CONTROL`; final tax and legal conclusions `PENDING_REVIEW`.
+- **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260726-004
+
+- **Timestamp:** 02:08, 26.07.2026 Europe/Oslo
+- **Task:** Review the generated 20:37 consumer-law report, summarize controlled conclusions and update GitHub/Drive records.
+- **Scope:** Evidence control, primary-source legal checkpoints, readiness registers and mirror correction only. No public plan, checkout, paid activation or production change.
+- **Sources used:** Project-thread report reference; canonical GitHub legal/governance files; controlled Drive legal/governance folders; current Angrerettloven, digitalytelsesloven, law 19.06.2026 no. 34 and relevant preparatory works.
+- **Decisions created or changed:** Generated reports require controlled ingestion before they become project evidence; working digital-service classification remains `PENDING_LEGAL_REVIEW`; existing checkout lock remains controlling.
+- **Errors or limitations recorded:** Complete report artifact absent from GitHub/Drive; Drive decisions mirror contained duplicate/stale IDs.
+- **Validation performed:** Report-title search; statutory payment, commencement, withdrawal, cancellation, price/service-change and 2026 effective-date checks; GitHub/Drive register comparison.
+- **Files/artifacts created or updated:** Controlled report review, legal readiness matrix, terms/disclosure status, active-source update, project log and six canonical registers.
+- **Unresolved items:** Ingest and review the complete report; legal and MVA sign-off; final bilingual pack; Wix/Velo/backend implementation and acceptance evidence; explicit release approval.
+- **Next executable workstream:** Ingest the report artifact, perform exact source reconciliation and prepare the final lawyer-review pack while preserving all locks.
+- **Classification:** evidence-control and verified statutory checkpoints `AUTO_APPROVED`; Atlas-specific legal interpretations `PENDING_LEGAL_REVIEW`.
 - **Release state:** `NO_GO`.
