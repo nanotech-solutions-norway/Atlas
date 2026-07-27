@@ -29,7 +29,7 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | Platform/source | Authoritative for | Not authoritative for | Current role |
 |---|---|---|---|
 | GitHub | Canonical governance, specifications, validation, decisions and release history | Current Wix page existence without live evidence | Primary canonical source |
-| Google Drive | Controlled source mirrors, private evidence, professional deliverables and exports | Git state or live Wix runtime | Controlled mirror/evidence archive |
+| Google Drive | Controlled source mirrors, private evidence, professional deliverables and exports stored in approved project/vault folders | Git state, live Wix runtime or a file’s authority merely because it exists in My Drive root | Controlled mirror/evidence archive; explicit parent and readback required |
 | Wix | Current site, CMS, apps, forms, plans and business implementation when verified | Canonical governance or legal approval by itself | Implementation plane; Draft/NO_GO |
 | Gamma | Copy/hierarchy/alternative draft evidence | Runtime or approved legal status | Draft evidence |
 | Figma | Visual design and geometry evidence | Runtime or legal approval | Design evidence |
@@ -37,6 +37,7 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | Current official external sources | Legal, tax, register, provider and standards facts | Atlas-specific approval or implementation | External evidence |
 | Brønnøysund Register Centre | Current registered company identity, roles, signature authority and MVA-register status | Atlas internal organisation or tax treatment | Authoritative public company source |
 | Generated research report | Research after ingestion/verification | Decision, approval or runtime evidence by itself | `EVIDENCE_ONLY` until classified |
+| Management memorandum | Owner-approved internal policy/specification within exact scope/version | Independent professional opinion or production evidence | Controlling when approved and listed in decisions register |
 | Professional legal/tax memorandum | Version-specific professional advice within scope and date | General release approval or implementation evidence | Pending until received/accepted |
 | Static schema/test vector | Interface and negative-path design | Operational runtime or acceptance evidence | Non-public foundation only |
 
@@ -62,6 +63,9 @@ A lower source cannot silently override a higher source. Contradictions must be 
 | `ATLAS_CONTRACTING_ENTITY_AND_PUBLIC_COMPANY_FACTS_26072026.md` | 26.07.2026 | Public facts `AUTO_APPROVED`; Atlas relation `APPROVED_OWNER_FACT` | Contracting entity, MVA identity, management/signature boundary |
 | `ATLAS_PROFESSIONAL_PACK_V061_COMPANY_AND_AGE_AMENDMENT_26072026.md` | 26.07.2026 | Exact corrections `APPROVED`; professional conclusions pending | Supersedes age-18/entity placeholders in professional packs |
 | Four v0.6.1 professional/owner/operator documents | 26.07.2026 | Management facts/workflow approved; fields remain pending by operator | Submission, decisions and test workflow |
+| `ATLAS_MANAGEMENT_CONSUMER_LAW_COMPLIANCE_MEMORANDUM_V070_26072026.md` | 26.07.2026 | `APPROVED` management memorandum | Restricted consumer-law internal policy; external opinion not claimed |
+| `ATLAS_MANAGEMENT_MVA_ACCOUNTING_POSITION_MEMORANDUM_V080_26072026.md` | 26–27.07.2026 | `APPROVED` by ATL-DEC-20260727-031 | Controlling restricted domestic MVA/accounting policy and source-supported specifications; runtime evidence open |
+| `ATLAS_MVA_V080_SOURCE_RECONCILIATION_AND_DRIVE_ORGANISATION_VALIDATION_27072026.md` | 27.07.2026 | Validation facts `AUTO_APPROVED` | Memorandum replacement, source boundary and Drive organisation evidence |
 
 ## Conflict protocol
 
@@ -94,6 +98,16 @@ A lower source cannot silently override a higher source. Contradictions must be 
 5. Do not generalise a version-specific or conditional conclusion.
 6. Re-run source, implementation and release validation after accepted decisions.
 7. Separate management authorisation from professional attestation.
+
+## Drive placement and supersession protocol
+
+1. Specify the destination parent folder for every Drive create, import, upload, copy or move operation.
+2. Read back the file metadata and confirm the parent after every write.
+3. Do not use My Drive root as an Atlas project, evidence or AI-memory archive.
+4. Atlas working records belong under `Atlas AI Project` and its controlled subfolders; memory files belong under the numbered AI-Memory-Vault folder matching their function/status.
+5. When replacing a controlled raw Office file, preserve the Drive file ID where possible, replace bytes in place, rename to the new version and record the supersession in GitHub.
+6. A checklist or pending-requirements overview does not supersede the memorandum it describes unless explicitly approved as the controlling document.
+7. Root-folder drift is a validation error and must be logged and corrected without deleting historical evidence.
 
 ## Sensitive-data boundary
 
