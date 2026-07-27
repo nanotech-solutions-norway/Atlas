@@ -194,3 +194,15 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** Everyday Basic LTV:CAC/payback and small-team budget failed reconciliation; other printed plan margins and listed pre-launch budget passed within rounding.
 - **Unresolved items:** Finance-owner correction, intended source inputs and underlying forecast model.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260727-021 — Canonical mirror completion requires content and child readback
+
+- **Timestamp/task:** 22:33, 27.07.2026 Europe/Oslo; document inventory and publication-readiness continuation.
+- **Issue observed:** Four Drive register mirrors remained stale after GitHub updates, while a newly created current-snapshot folder was empty.
+- **Root cause:** File/folder creation was treated as completion without full content replacement and expected-child verification.
+- **Corrective rule:** After every canonical GitHub update, replace each changed Drive mirror in full, use revision/write controls where available, list expected folder children and preserve a dated snapshot. A folder or file name alone is not evidence that its contents are current.
+- **Evidence/source:** GitHub/Drive content comparison and post-write readback.
+- **Action taken:** Replaced four stale mirrors and populated the six-file current snapshot.
+- **Validation performed:** Current register content and six private snapshot children read back successfully.
+- **Unresolved items:** Apply this sequence after the publication-readiness PR is merged.
+- **Classification:** `AUTO_APPROVED`.
