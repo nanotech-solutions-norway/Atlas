@@ -1,0 +1,81 @@
+control_id,family,title,phase,priority,release_profiles,owner_role,current_status,classification
+GOV-01,GOV,Security/privacy programme charter,0-6,P0,A/B/C,Project owner,DESIGN_BASELINE,APPROVED
+GOV-02,GOV,Canonical control register,0-6,P0,A/B/C,Governance owner,CONTROLLED,AUTO_APPROVED
+GOV-03,GOV,Release-state separation,0-6,P0,A/B/C,Release owner,CANONICAL_CONTROL,CANONICAL
+GOV-04,GOV,Risk and exception register,0-6,P1,B/C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+GOV-05,GOV,Quarterly governance review,5-6,P2,A/B/C,Project owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+IAM-01,IAM,Administrative MFA/passkeys,0-6,P0,A/B/C,Security owner,EVIDENCE_PENDING,AUTO_APPROVED
+IAM-02,IAM,Named accounts and least privilege,0-6,P0,A/B/C,Security owner,EVIDENCE_PENDING,AUTO_APPROVED
+IAM-03,IAM,Periodic access review,5-6,P1,B/C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+IAM-04,IAM,Offboarding and revocation,2-6,P0,B/C,Operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+IAM-05,IAM,Customer CIAM architecture,2,P1,B/C,Architecture owner,PENDING_REVIEW,PENDING_REVIEW
+DAT-01,DAT,Data classification,0-6,P0,A/B/C,Privacy owner,DESIGN_BASELINE,APPROVED
+DAT-02,DAT,System placement rules,0-6,P0,A/B/C,Architecture owner,CANONICAL_CONTROL,CANONICAL
+DAT-03,DAT,Encryption in transit and at rest,3-6,P0,B/C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+DAT-04,DAT,Deletion verification,2-6,P1,B/C,Privacy owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+PRV-01,PRV,Record of processing activities,0-6,P0,A/B/C,Privacy owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+PRV-02,PRV,Controller/processor role analysis,0-4,P0,A/B/C,Privacy/legal owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+PRV-03,PRV,Lawful basis and purpose limitation,0-6,P0,A/B/C,Privacy/legal owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+PRV-04,PRV,Privacy notices and transparency,1-2,P0,A/B/C,Privacy/legal owner,DRAFTED,AUTO_APPROVED
+PRV-05,PRV,Cookie and tracker consent,1,P0,A/B/C,Website/privacy owner,EVIDENCE_PENDING,AUTO_APPROVED
+PRV-06,PRV,DPIA screening and execution,0-4,P0,B/C,Privacy owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+PRV-07,PRV,Rights request workflow,2-6,P1,B/C,Privacy owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+APP-01,APP,Server-side input validation,1-4,P0,A/B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+APP-02,APP,Output encoding and XSS controls,1-4,P0,A/B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+APP-03,APP,Session security,2-4,P0,B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+APP-04,APP,Secure file handling,3-4,P0,C,Security/engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+API-01,API,Server-side provider proxy,3-4,P0,B/C,Architecture owner,CANONICAL_CONTROL,CANONICAL
+API-02,API,Authentication and authorization,2-4,P0,B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+API-03,API,Rate and cost limits,3-4,P0,B/C,Operations owner,DESIGN_BASELINE,APPROVED
+API-04,API,Idempotency and replay protection,3,P0,B,Engineering owner,DESIGN_BASELINE,AUTO_APPROVED
+AI-01,AI,Approved provider/model register,0.5-6,P0,B/C,AI governance owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+AI-02,AI,Human review for consequential use,1-6,P0,A/B/C,Product owner,CONTROLLED,APPROVED
+AI-03,AI,Prompt-injection resistance,3-4,P0,B/C,AI security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+AI-04,AI,No secrets in prompts,0-6,P0,A/B/C,Security owner,CANONICAL_CONTROL,CANONICAL
+AI-05,AI,Structured output validation,3-4,P1,B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+AI-06,AI,Tool and egress allowlists,3-4,P0,C,AI security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+AI-07,AI,Provider kill switch and fallback,3-4,P1,B/C,Operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+RAG-01,RAG,Source provenance,3-4,P1,C,Knowledge owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+RAG-02,RAG,Tenant isolation,3-4,P0,C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+RAG-03,RAG,Ingestion quarantine,3-4,P0,C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+RAG-04,RAG,Deletion propagation,3-6,P1,C,Privacy/knowledge owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+SDLC-01,SDLC,Protected branches and required review,0-6,P0,A/B/C,Engineering owner,EVIDENCE_PENDING,AUTO_APPROVED
+SDLC-02,SDLC,CODEOWNERS and sensitive-path review,0-6,P1,A/B/C,Engineering/governance owner,EVIDENCE_PENDING,AUTO_APPROVED
+SDLC-03,SDLC,Secret scanning and push protection,0-6,P0,A/B/C,Security owner,EVIDENCE_PENDING,AUTO_APPROVED
+SDLC-04,SDLC,Dependency and code scanning,3-6,P1,B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+SDLC-05,SDLC,Least-privilege workflow permissions,3-6,P0,B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+SDLC-06,SDLC,OIDC deployment identity,3-6,P1,B/C,Architecture owner,PENDING_REVIEW,PENDING_REVIEW
+SUP-01,SUP,Supplier due diligence,0.5-6,P0,A/B/C,Supplier/privacy owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+SUP-02,SUP,DPA and transfer assessment,0.5-6,P0,B/C,Privacy/legal owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+SUP-03,SUP,Provider change monitoring,5-6,P1,A/B/C,Supplier owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+SUP-04,SUP,Supplier access control,3-6,P1,B/C,Operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+LOG-01,LOG,Metadata-first logging,3-6,P0,B/C,Privacy/security owner,PENDING_REVIEW,PENDING_REVIEW
+LOG-02,LOG,Centralized security logs,3-6,P1,B/C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+LOG-03,LOG,Alerting and escalation,3-6,P1,B/C,Security/operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+LOG-04,LOG,Log retention and access,3-6,P1,B/C,Privacy/security owner,PENDING_REVIEW,PENDING_REVIEW
+IR-01,IR,Incident response plan,0-6,P0,A/B/C,Incident owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+IR-02,IR,Personal-data breach decision tree,0-6,P0,A/B/C,Privacy/legal owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+IR-03,IR,Credential/session rotation runbooks,3-6,P0,B/C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+IR-04,IR,Tabletop exercises,4-6,P1,B/C,Incident owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+BCM-01,BCM,Backup policy,3-6,P1,B/C,Operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+BCM-02,BCM,Restore testing,4-6,P0,C,Operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+BCM-03,BCM,Provider outage continuity,3-6,P1,B/C,Operations owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+BCM-04,BCM,Recovery objectives,4-6,P2,C,Operations owner,PENDING_REVIEW,PENDING_REVIEW
+WIX-01,WIX,Public-plane limitation,0-6,P0,A/B/C,Website/architecture owner,APPROVED_CONTROL,APPROVED
+WIX-02,WIX,Collaborator and form access,1-6,P0,A/B/C,Website owner,EVIDENCE_PENDING,AUTO_APPROVED
+WIX-03,WIX,No confidential public upload,1,P0,A/B/C,Website/privacy owner,CANONICAL_CONTROL,CANONICAL
+GIT-01,GIT,Repository data boundary,0-6,P0,A/B/C,Governance/security owner,CANONICAL_CONTROL,CANONICAL
+GIT-02,GIT,Canonical governance source,0-6,P0,A/B/C,Governance owner,CANONICAL_CONTROL,CANONICAL
+GIT-03,GIT,Artifact provenance,3-6,P1,B/C,Engineering owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+GIT-04,GIT,Security policy and reporting,1-6,P2,A/B/C,Security owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+AZR-01,AZR,Secure runtime candidate,3-4,P1,B/C,Architecture owner,PENDING_REVIEW,PENDING_REVIEW
+AZR-02,AZR,Managed identity and Key Vault,3-4,P0,B/C,Cloud owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+AZR-03,AZR,WAF/API gateway boundary,3-4,P0,B/C,Cloud owner,PENDING_REVIEW,PENDING_REVIEW
+AZR-04,AZR,Private networking and diagnostics,3-4,P0,C,Cloud owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+DB-01,DB,Private database exposure,3-4,P0,B/C,Database owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+DB-02,DB,Least-privilege database roles,3-4,P0,B/C,Database owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+DB-03,DB,Parameterized queries and audit,3-4,P0,B/C,Engineering/database owner,IMPLEMENTATION_PENDING,AUTO_APPROVED
+REL-01,REL,Exact release-candidate binding,0-6,P0,A/B/C,Release owner,DESIGN_BASELINE,APPROVED
+REL-02,REL,Fail-closed promotion,0-6,P0,A/B/C,Release owner,DESIGN_BASELINE,APPROVED
+TRU-01,TRU,Claims evidence gate,1-6,P0,A/B/C,Claims owner,APPROVED_CONTROL,APPROVED
+TRU-02,TRU,Prohibited absolute claims,1-6,P0,A/B/C,Claims owner,APPROVED_CONTROL,APPROVED
