@@ -195,14 +195,14 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Unresolved items:** Finance-owner correction, intended source inputs and underlying forecast model.
 - **Classification:** `AUTO_APPROVED`.
 
-### ATL-LRN-20260727-021 — Canonical mirror completion requires content and child readback
+### ATL-LRN-20260727-021 — Canonical mirror completion requires full-set comparison and child readback
 
 - **Timestamp/task:** 22:33, 27.07.2026 Europe/Oslo; document inventory and publication-readiness continuation.
-- **Issue observed:** Four Drive register mirrors remained stale after GitHub updates, while a newly created current-snapshot folder was empty.
-- **Root cause:** File/folder creation was treated as completion without full content replacement and expected-child verification.
-- **Corrective rule:** After every canonical GitHub update, replace each changed Drive mirror in full, use revision/write controls where available, list expected folder children and preserve a dated snapshot. A folder or file name alone is not evidence that its contents are current.
-- **Evidence/source:** GitHub/Drive content comparison and post-write readback.
-- **Action taken:** Replaced four stale mirrors and populated the six-file current snapshot.
-- **Validation performed:** Current register content and six private snapshot children read back successfully.
-- **Unresolved items:** Apply this sequence after the publication-readiness PR is merged.
+- **Issue observed:** All six Drive canonical-register mirrors were stale or structurally inconsistent with merged GitHub `main`; the current-snapshot folder was also empty.
+- **Root cause:** File/folder creation and partial mirror updates were treated as completion without full six-file content comparison and expected-child verification.
+- **Corrective rule:** After every canonical GitHub update, compare the complete six-register set, fully replace every divergent Drive mirror, use revision/write controls where available, remove malformed duplicate structures, list expected folder children and preserve a dated final snapshot. A folder or filename alone is not evidence that content is current.
+- **Evidence/source:** GitHub/Drive full-set comparison and post-write readback.
+- **Action taken:** Reconciled all six canonical mirrors, replaced the stale working-records index, and rebuilt the final six-file snapshot.
+- **Validation performed:** Current mirror content, functional parent placement and six private snapshot children read back successfully.
+- **Unresolved items:** Apply the same full-set sequence after every future canonical change.
 - **Classification:** `AUTO_APPROVED`.
