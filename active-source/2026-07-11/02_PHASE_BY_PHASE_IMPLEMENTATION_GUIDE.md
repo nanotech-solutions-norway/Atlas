@@ -1,243 +1,330 @@
-# Atlas AI Phase-by-Phase Implementation Guide — 11:35, 11.07.2026
+# Atlas AI Phase-by-Phase Implementation Guide — Security, Privacy and Trust Integrated — 23:55, 27.07.2026
 
-> **Control status:** Recommended consolidated working baseline. Commercial pricing, provider-delivery rights, legal interpretation, public availability, production routing and site identity remain approval-gated where identified as PENDING_REVIEW.
+> **Control status:** Active implementation baseline. Existing approved commercial and governance decisions apply. Legal interpretations, architecture selection, public availability and production activation remain approval-gated where marked `PENDING_REVIEW`.
 
-> **Execution boundary:** No Wix publication, Gamma editing, Azure deployment, subscription activation or production change was performed.
+> **Execution boundary:** This update modifies controlled project records only. It does not publish Wix, activate checkout, deploy a production secure runtime or relax release locks.
 
 ## Program rule
 
-A phase is complete only when its exit criteria are evidenced, tested against the relevant release profile and signed by the designated owner. The existence of pages, code or configuration is not evidence of operational readiness.
+A phase is complete only when:
+
+1. required controls are implemented for the exact scope;
+2. evidence is captured and linked;
+3. defects and exceptions are recorded;
+4. validation passes;
+5. the designated owner approves the exact release candidate.
+
+Security, privacy, GDPR and trust controls begin in Phase 0 and continue through all phases. Phase 6 closes and assures the programme; it is not the first security phase.
 
 ## Integrated dependency sequence
 
-| Phase | Objective | Main output | Blocking dependency |
+| Phase | Objective | Security/privacy output | Blocking dependency |
 |---|---|---|---|
-| 0 | Architecture, source authority and route lock | Approved operating model, route map, claims and data boundaries | None |
-| 0.5 | Product and commercial object contract | Versioned plan/package records and CMS/runtime schema | Phase 0 |
-| 1 | Public commercial shell and early access | Canonical bilingual website with checkout disabled | Phase 0 and 0.5 |
-| 2 | Account, portal and structured handoff | Identity, role, plan, intake and customer-status layer | Phase 0.5 |
-| 3 | Entitlement, usage and routing control plane | Provider routing, ledger, caps, reset and reconciliation | Phase 2 |
-| 4 | Pilot and Managed Secure MVP | One evidenced pilot and one qualified secure journey | Phase 3 where runtime applies |
-| 5 | Productization and optimization | Repeatable content, delivery, analytics and support operations | Stable Phase 1-4 workflows |
-| 6 | Security, privacy, incident and final acceptance | Cross-cutting hardening and release approval | Runs throughout; closes last |
+| 0 | Architecture, source authority and route lock | Security/privacy charter, data classes, platform boundaries, control register | None |
+| 0.5 | Product and commercial object contract | Lane risk class, provider/role/retention fields, release-state separation | Phase 0 |
+| 1 | Public informational shell | Admin-IAM evidence, privacy/cookie/trust pages, low-risk forms, claims validation | Phase 0 and 0.5 |
+| 2 | Identity, account and structured handoff | CIAM, roles, sessions, age/payer controls, DSAR/deletion paths | Approved Phase 2 architecture |
+| 3 | Entitlement, routing and secure control plane | Server-side proxy, secrets, authorization, caps, logs, private storage | Phase 2 |
+| 4 | Pilot and Managed Secure MVP | Secure intake, tenant isolation, incident/restore evidence, one named journey | Phase 3 where runtime applies |
+| 5 | Productization and operations | Repeated reviews, drift checks, supplier/claims control, support security | Stable Phase 1-4 workflows |
+| 6 | Assurance and release closure | Complete security/privacy acceptance, tabletop, restore, risk acceptance, GO record | Runs throughout; closes last |
 
-## Phase 0 — Architecture, governance and canonical route lock
+## Cross-cutting control families
+
+Every phase must map work to the controlled catalogue:
+
+- GOV — governance and release control
+- IAM — identity and access
+- DAT — data classification and handling
+- PRV — privacy and GDPR operations
+- APP/API — application and API security
+- AI/RAG — AI, retrieval, tool and agent security
+- SDLC/GIT — secure development and GitHub
+- SUP — suppliers, DPA and transfers
+- LOG — logging and alerting
+- IR/BCM — incidents, continuity and recovery
+- WIX/AZR/DB — platform controls
+- REL/TRU — release and trust claims
+
+## Phase 0 — Architecture, governance and canonical control lock
 
 ### Implementation actions
 
-1. Create a source register with version, date, authority and approval status.
-2. Approve the governed solution-layer positioning.
-3. Verify canonical Wix site identity and deployment destination.
-4. Approve canonical audience routes and the legacy redirect matrix.
-5. Lock the Wix/GitHub/Azure/Gamma role separation.
-6. Define public-form data classes and secure escalation triggers.
-7. Create claims, decision, error, validation and session-close registers.
-8. Preserve Atlas safety locks and repository secret boundaries.
+1. Apply the current source-authority hierarchy and retrieve all six canonical registers.
+2. Approve the governed solution-layer positioning and the three-plane architecture.
+3. Lock Wix to public/low-risk responsibilities.
+4. Lock GitHub to engineering/governance and sanitized evidence.
+5. Require a separate secure execution plane for authenticated, AI-routed, entitled, confidential or restricted workflows.
+6. Define Public, Internal, Confidential, Restricted, Special-category/highly sensitive and Secret classifications.
+7. Create the security/privacy programme charter and 80-control register.
+8. Name security, privacy, incident, release and test-data owners.
+9. Create claims, decision, error, validation, learning, authority and session-close records.
+10. Preserve safety and release locks.
 
 ### Exit criteria
 
-- No unresolved contradiction in route, positioning or system-of-record responsibilities.
-- Current source hierarchy is documented.
-- Pricing/provider/availability items are visibly PENDING_REVIEW.
-- No public or frontend surface is designated as a secure system of record.
+- Three-plane responsibilities are approved and non-conflicting.
+- All controls have an owner role, status and evidence requirement.
+- No public/frontend system is designated as the secure system of record.
+- Named owners and escalation routes exist.
+- `publicAllowed`, `purchaseAllowed`, `releaseApproved` remain false unless a separate exact release decision changes them.
 
-## Phase 0.5 — Product, pricing and CMS/runtime contract
+## Phase 0.5 — Product, pricing, provider and processing contract
 
-### Required objects
+### Required records
 
-- Business package records
-- Student Basic
-- Student Plus
-- Everyday Basic
-- Family
-- Managed Secure quote-only record
-- provider capability classes
-- routing policy versions
-- terms and disclosure references
+- business package records;
+- Student Basic, Student Plus and Everyday Basic;
+- Family blocked/deferred record;
+- Managed Secure qualification-only record;
+- provider capability and approved-provider classes;
+- routing policy versions;
+- controller/processor role;
+- data classification and permitted inputs;
+- DPA/TIA and subprocessor status;
+- retention/deletion reference;
+- terms and disclosure versions;
+- risk and release profile.
 
 ### Minimum fields
 
 | Group | Required fields |
 |---|---|
-| Identity | `plan_id`, `version`, `segment`, `status`, `effective_date` |
-| Commercial | gross price, net price, MVA treatment, billing period, cancellation/refund rule |
-| Entitlement | capability classes, allowance unit, premium-use unit, named-user limit, shared-pool rule |
-| Control | hard cap, warnings, reset, rollover, overage, downgrade, suspension |
-| Governance | terms version, provider disclosure, claim references, owner, approval status |
-| Runtime | routing policy, meter unit, fallback, outage behavior, ledger mapping |
+| Identity | `plan_id`, version, segment, status, effective date |
+| Commercial | gross/net price, MVA treatment, billing period, cancellation/refund |
+| Entitlement | capabilities, allowance, hard cap, named users, reset, no automatic paid overage |
+| Data/privacy | data class, purpose, role, provider, transfer, retention, DPIA status |
+| Security | required auth, storage class, logging, upload policy, incident tier |
+| Governance | terms, claims, owner, evidence, approval and expiry |
+| Runtime | routing policy, meter, fallback, outage, ledger and kill switch |
 
 ### Exit criteria
 
-- The public plan matrix, checkout object, terms and runtime configuration reconcile exactly.
-- Delayed or unapproved plans cannot be purchased.
-- No plan promises “unlimited” use or a permanent model version.
-- Provider commercial rights and delivery mechanism are documented.
+- Public plan, terms, provider, privacy and runtime records reconcile.
+- Unapproved or blocked plans cannot be public or purchased.
+- Provider terms and DPA/TIA status support the intended delivery.
+- No permanent model, unlimited use, Norway-only processing or zero-retention promise is made without evidence.
 
-## Phase 1 — Public commercial shell and early access
+## Phase 1 — Public informational shell and low-risk qualification
 
-### Build scope
+### Canonical page roles
 
-- Home
-- Solutions
-- Business
-- Students
-- Consumers
-- Managed Secure
-- Pricing
-- Trust
-- Platform Lanes
-- Onboarding
-- Resources
-- About
-- Contact
-- Legal
+1. Home
+2. Solutions
+3. Business
+4. Students
+5. Consumers
+6. Managed Secure
+7. Pricing
+8. Trust
+9. Platform Lanes
+10. Onboarding
+11. Resources
+12. FAQ
+13. About
+14. Contact
+15. Legal
 
-### Execution controls
+### Build controls
 
-- Bokmål root and English `/en/` parity.
-- Canonical self-references and reciprocal hreflang.
-- All CTAs point to approved routes.
-- Public forms include no-confidential-upload notice.
-- Checkout disabled.
-- Managed Secure status limited to qualification/architecture review.
-- Claims linked to approved evidence.
-- Mobile, keyboard and screen-reader journeys validated to WCAG 2.2 AA target.
+- Bokmål root and reciprocal English `/en/`.
+- Accurate routes, canonical links, hreflang, sitemap and structured data.
+- Administrative MFA/passkey and collaborator-role evidence.
+- Cookie/tracker inventory and valid consent for non-essential technologies.
+- Privacy, cookie, retention, provider, AI-output and acceptable-use content.
+- Security contact and controlled escalation wording.
+- No-confidential-upload warning on every relevant form.
+- No confidential/restricted file field in ordinary public forms.
+- Claims linked to approved evidence and public-allowed status.
+- Checkout and purchase routes disabled.
+- Managed Secure wording limited to qualification/architecture review.
+- Keyboard, screen-reader, focus, contrast, reflow and responsive validation.
+- Security/privacy page content is not treated as proof of control implementation.
+
+### Blocking validation
+
+- fresh authoritative Wix page tree;
+- Contact and FAQ exist as separate page roles;
+- forms, notifications and collaborator access verified;
+- cookie banner/consent log behavior verified;
+- no secrets or sensitive data in Velo/public assets;
+- claim scan clean;
+- no public plan or production entitlement;
+- explicit Phase 1 release decision.
 
 ### Exit criteria
 
-- Early-access gate PASS.
-- No obsolete route remains in navigation, CMS, Gamma or metadata.
-- No paid or secure-delivery promise is implied.
-- Content, pricing proposal, provider disclosure and legal summaries are version-aligned.
+A Phase 1 PASS authorizes only the approved public informational scope. It does not authorize member service, payment, AI routing, confidential intake or Managed Secure data handling.
 
-## Phase 2 — Identity, portal and structured handoff
+## Phase 2 — Identity, account and structured handoff
+
+### Architecture decision
+
+Select and approve the customer identity model. Microsoft Entra External ID is the preferred candidate for a new dedicated CIAM architecture, but remains `PENDING_REVIEW`. Wix Members may be used only within its approved risk and capability boundary.
 
 ### Components
 
-- Verified account identity and session lifecycle
-- Account owner/member roles
-- Plan state and entitlement request
-- Family invitations/removal
-- Low-risk intake classification
-- Customer status portal
-- Cancellation and data-request links
-- Secure-escalation trigger without public file upload
+- verified account identity;
+- secure sign-up, sign-in, recovery and session lifecycle;
+- account owner/member roles;
+- age-16 minimum and fail-closed age-16/17 payer/contract/privacy model;
+- consent and notice versions;
+- cancellation and data-rights links;
+- low-risk intake classification;
+- secure-escalation trigger;
+- no public confidential upload;
+- revocation and offboarding.
 
 ### Blocking tests
 
-- Duplicate identity
-- session revocation
-- unauthorized plan view
-- family member limit
-- wrong-plan provisioning
-- stale billing state
-- secure-required request blocked from ordinary intake
+- duplicate identity;
+- insecure recovery;
+- session fixation/timeout/revocation;
+- unauthorized plan or object view;
+- age/eligibility bypass;
+- wrong payer/guardian state;
+- wrong-plan provisioning;
+- secure-required request blocked from ordinary intake;
+- deletion and rights-request path.
 
-## Phase 3 — Entitlement, usage, routing and reconciliation
+## Phase 3 — Secure execution, entitlement, routing and reconciliation
 
 ### Required control plane
 
-1. Idempotent billing-event ingestion.
-2. Exactly-once entitlement state transition.
-3. Normalized usage ledger.
-4. Provider event reconciliation.
-5. Hard caps under concurrency.
-6. Monthly reset with timezone and retry rules.
-7. Premium-use unit decrement.
-8. Cost alerts and suspension thresholds.
-9. Provider outage and fallback policy.
-10. Immutable audit references without customer prompt content.
+1. Server-side provider gateway/proxy.
+2. No frontend provider credentials.
+3. Managed secret storage and rotation.
+4. Tenant/object authorization.
+5. Private storage and protected network paths where justified.
+6. Idempotent billing/event ingestion.
+7. Exactly-once entitlement transitions.
+8. Normalized usage/cost ledger.
+9. Hard caps under concurrency.
+10. Deterministic reset and retry.
+11. Provider policy, region, retention and training-use mapping.
+12. Rate limits, cost alarms, suspension and kill switches.
+13. Metadata-first centralized logging.
+14. Prompt-injection, tool/egress and structured-output controls.
+15. Provider outage/fallback.
+16. Deletion propagation and audit evidence.
 
 ### Exit criteria
 
-- No entitlement bypass.
-- Ledger balance reconciles to provider/accounting events within defined tolerance.
-- Hard caps cannot be bypassed by parallel requests.
-- No silent chargeable overage.
-- The customer portal and internal ledger show consistent status.
+- no entitlement or authorization bypass;
+- no exposed secret;
+- no cross-tenant access;
+- hard cap cannot be bypassed;
+- no silent chargeable overage;
+- provider/accounting/entitlement states reconcile;
+- prompt-injection and exfiltration tests pass;
+- data retention/deletion tests pass;
+- current DPA/TIA and provider approvals exist.
 
-## Phase 4 — Pilot validation and Managed Secure MVP
+## Phase 4 — Controlled pilot and Managed Secure MVP
 
 ### Subscription pilot
 
-- Small invited cohort
-- support burden measurement
-- cost per active user
-- p50/p95 usage
-- provider mix
-- refund/cancellation outcomes
-- abuse and cap events
-- cohort conversion and retention
+- invited cohort only;
+- sandbox/non-public or explicitly approved production scope;
+- usage, support, refund, abuse and cost measurement;
+- privacy/security incidents and near misses recorded;
+- one full reset/cancellation/refund cycle where applicable.
 
-### Managed Secure minimum viable journey
+### Managed Secure minimum journey
 
-- qualified architecture review
-- authenticated invitation
-- private storage
-- malware/quarantine treatment where files are accepted
-- least-privilege access
-- audit logging
-- retention and deletion
-- revocation
-- backup/restore test
-- incident workflow
+- qualified architecture review;
+- contract and DPA;
+- authenticated invitation;
+- private storage;
+- per-customer isolation;
+- secure file quarantine/malware scanning;
+- least-privilege support access;
+- audit logging;
+- retention/deletion;
+- revocation;
+- provider kill switch;
+- incident workflow;
+- immutable/protected backup;
+- successful restore test.
 
 ### Exit criteria
 
-No scale decision until economics and support fit the approved envelope. No secure claim until the tested journey matches public wording.
+No general availability until one named journey passes all security, privacy, contractual, incident and recovery gates and public wording exactly matches the implemented scope.
 
-## Phase 5 — Productization, automation and optimization
+## Phase 5 — Productization and secure operations
 
-- Governed CMS publishing workflow
-- bilingual drift checks
-- automated schema/link/claim/secret checks
-- analytics event taxonomy
-- pricing and provider review calendar
-- support knowledge base
-- release tags and rollback records
-- quarterly claim and vendor review
-- package finder and lane comparison only after manual flows stabilize
+- governed CMS and claims publishing;
+- bilingual, privacy and provider drift checks;
+- recurring access review;
+- vulnerability and dependency management;
+- supplier/DPA/subprocessor monitoring;
+- retention and deletion review;
+- incident and near-miss review;
+- support knowledge base with secure handling;
+- release tags, provenance and rollback;
+- security KPIs;
+- quarterly governance review;
+- customer due-diligence response pack.
 
 ## Phase 6 — Security, privacy, incident and final acceptance
 
-### Cross-cutting controls
+### Required closure evidence
 
-- MFA/passkeys and least privilege
-- branch protection and secret scanning
-- no frontend tokens
-- data inventory and retention
-- provider disclosure
-- DPIA/legitimate-interest/legal review triggers
-- incident classification, containment, communication and recovery
-- accessibility and performance
-- vulnerability/dependency review
-- backup/restore
-- production smoke test and rollback
+- security/privacy charter and owner map;
+- complete control register;
+- admin MFA/passkey evidence;
+- access review and offboarding test;
+- clean secret/repository/frontend scan;
+- GitHub ruleset/CODEOWNERS/review/CI evidence;
+- Wix form/cookie/collaborator evidence;
+- ROPA, role matrix, lawful-basis and retention records;
+- DPA, supplier and TIA/SCC packs;
+- DPIA decisions;
+- rights-request test;
+- protected runtime/security test results;
+- prompt-injection and tenant-isolation tests;
+- incident plan and tabletop;
+- backup and restore test;
+- claims register and public-copy validation;
+- exact release-candidate manifest;
+- residual risk/exception record;
+- explicit written GO.
 
 ### Final exit criteria
 
-- No open P0/P1 defect.
-- No exposed secret or customer-sensitive evidence.
-- Current legal/terms/provider documents approved.
-- Relevant launch profile gates pass.
-- Rollback and incident owners acknowledge readiness.
-- Production release has explicit written approval.
+- no open P0/P1 defect;
+- no missing blocking evidence;
+- no exposed secret or customer-sensitive evidence;
+- no unsupported public claim;
+- no unapproved processing or provider route;
+- rollback and incident owners acknowledge readiness;
+- exact release candidate is approved in writing.
 
-## Recommended cadence
+## Evidence format
 
-| Period | Primary work |
-|---|---|
-| Days 1-5 | Phase 0 and site-identity resolution |
-| Days 6-10 | Phase 0.5 product/CMS contract |
-| Days 11-20 | Phase 1 staging and early-access validation |
-| Weeks 4-8 | Phase 2-3 subscription control plane |
-| Weeks 8-12 | Controlled pilot and economics |
-| After pilot | Paid launch decision and selective Managed Secure activation |
+Each control/gate record must contain:
 
-## Evidence structure
+- control/gate ID;
+- release profile;
+- owner and tester;
+- environment;
+- source commit/configuration/legal-copy versions;
+- date and procedure;
+- expected and actual result;
+- sanitized evidence location;
+- defects/exceptions;
+- result and approver.
 
-Use sanitized evidence under versioned release folders: source register, route tests, content export, legal versions, screenshots, machine-readable authorization tests, billing/ledger test results, security scans, accessibility tests, monitoring and sign-off.
+## Current next workstream
 
-## Source basis
+1. Fresh Wix Phase 1 security/privacy/trust audit.
+2. GitHub organization/repository security-settings audit.
+3. Owner appointment.
+4. ROPA, role matrix, supplier register, retention, DSAR and DPIA screening.
+5. Staging trust/legal/privacy copy implementation.
+6. CIAM and secure-runtime ADR preparation.
+7. Preserve `NO_GO` and all release booleans.
 
-This guide supersedes the separate June Phase 0-6 website-strategy files as the active execution plan while retaining them as historical evidence.
+## Release effect
+
+No public checkout, real payment, production entitlement, provider credential, confidential intake or Managed Secure activation is authorized.

@@ -1,29 +1,56 @@
-# Atlas AI Master Strategy and Commercial Baseline — 11:35, 11.07.2026
+# Atlas AI Master Strategy and Commercial Baseline — Security, Privacy and Trust Integrated — 23:55, 27.07.2026
 
-> **Control status:** Recommended consolidated working baseline. Commercial pricing, provider-delivery rights, legal interpretation, public availability, production routing and site identity remain approval-gated where identified as PENDING_REVIEW.
+> **Control status:** Updated active working baseline. Existing approved commercial decisions and canonical release controls apply. Architecture selections, legal interpretations, public claims and production activation remain approval- and evidence-gated where marked `PENDING_REVIEW`.
 
-> **Execution boundary:** No Wix publication, Gamma editing, Azure deployment, subscription activation or production change was performed.
+> **Execution boundary:** This update changes controlled project documents and governance records only. It does not publish Wix, enable checkout, create real-money plans, deploy Azure, activate provider credentials or release Managed Secure.
 
 ## Executive decision
 
-Atlas AI should operate as a **Norway-first governed AI solution layer**. Atlas owns problem framing, workflow design, knowledge architecture, onboarding, governance, QA, secure delivery where qualified, support and lifecycle management. Third-party providers supply model and platform capabilities.
+Atlas AI operates as a **Norway-first governed AI solution and integration layer**. Atlas owns problem framing, workflow design, knowledge architecture, onboarding, data and safety boundaries, provider selection, configuration, QA, support and lifecycle governance. Third-party providers supply model, cloud, website, identity and development capabilities.
 
-Atlas must not be positioned as a proprietary foundation-model company, an unrestricted custom-GPT storefront, a vendor-subscription reseller or a generic AI consultancy.
+Security, privacy, GDPR accountability and trustworthy public claims are part of the business model and delivery method. They are not optional marketing additions and must be evidenced before paid, authenticated, AI-routed or confidential services are released.
+
+Atlas must not be positioned as:
+
+- a proprietary foundation-model company;
+- an unrestricted custom-GPT storefront;
+- a provider-subscription reseller;
+- a generic AI consultancy without defined scope and controls;
+- a certified or guaranteed-secure provider without Atlas-specific evidence.
+
+## Current release posture
+
+The following remain controlling:
+
+- `publicAllowed=false`
+- `purchaseAllowed=false`
+- `releaseApproved=false`
+- public checkout and real-money production charging disabled
+- production provider credentials and automatic production entitlements prohibited
+- public write endpoints and frontend provider tokens prohibited
+- ordinary public forms limited to low-risk qualification
+- Managed Secure limited to qualification and architecture review
+- overall release state `NO_GO`
 
 ## Audience and commercial hierarchy
 
-| Route | Priority | Commercial model | Public status |
+| Lane | Priority | Commercial model | Current status |
 |---|---|---|---|
-| Professional / Business | Primary | Fixed-scope implementation, BYOL or explicitly itemized provider/infrastructure costs | Discovery and scoped delivery |
-| Students | Secondary controlled | Proposed capped Atlas-managed subscription with ChatGPT and Claude capability access | Early access pending validation |
-| Consumers / Families | Secondary controlled | Proposed capped Atlas-managed subscription with named-user controls | Early access pending validation |
-| Managed Secure | Premium qualified | Quote-controlled secure delivery after architecture review | Not “available” until evidence gate passes |
+| Professional / Business | Primary | Fixed-scope implementation, customer-owned licences where applicable, or explicitly itemised provider/infrastructure costs | Discovery and scoped delivery subject to data/provider review |
+| Student Basic | Secondary controlled | NOK 129/month incl. MVA; monthly; Atlas-managed API with hard cap | Approved commercial baseline; hidden/non-public testing only |
+| Student Plus | Secondary controlled | NOK 169/month incl. MVA; monthly; Atlas-managed API with hard cap | Approved commercial baseline; hidden/non-public testing only |
+| Everyday Basic | Secondary controlled | NOK 159/month incl. MVA; monthly; Atlas-managed API with hard cap | Approved commercial baseline; hidden/non-public testing only |
+| Family | Deferred | Earlier price concept retained as historical/commercial evidence only | Blocked from initial restricted launch |
+| Managed Secure | Premium qualified | Quote-controlled architecture and secure-delivery service | Qualification/architecture review only |
+
+Commercial approval is not activation approval. No plan may be public or purchasable until legal, payment, identity, entitlement, privacy, security, accounting and acceptance evidence passes.
 
 ## Canonical public architecture
 
 - Root language: Bokmål.
 - English mirror: `/en/`.
 - Primary navigation: Solutions, Managed Secure, Pricing, Trust, Resources, About, Contact.
+- Phase 1 uses **15 canonical public page roles**, including FAQ under Resources.
 - Canonical audience routes:
   - `/solutions/business-ai/`
   - `/solutions/students/`
@@ -32,99 +59,224 @@ Atlas must not be positioned as a proprietary foundation-model company, an unres
   - `/platform-lanes/`
   - `/onboarding/`
   - `/legal/`
+  - `/resources/faq/`
+  - reciprocal English routes under `/en/`
 
-Legacy routes must not be redirected until the canonical destination is complete, tested and approved. One route per audience must be indexable.
+Legacy routes are redirected only after the destination is complete, tested and approved.
 
-## Product architecture
+## Three-plane operating architecture
 
-### Business packages
+### 1. Wix public-commercial plane
 
-Business offers should be named by the work outcome, not by provider:
+Permitted scope:
 
-- Executive and decision-support workflows
-- Commercial growth workflows
-- Finance and operations support workflows
-- Research and multi-engine workflows
-- Business workspace and team adoption
-- Managed Secure controlled delivery
+- public pages and CMS;
+- low-risk qualification forms;
+- consent and cookie interfaces;
+- legal, trust and provider-disclosure pages;
+- SEO, multilingual and accessible presentation;
+- limited member-facing status or account presentation after separate approval.
 
-Platform names may appear as explanatory lanes, procurement choices or deployment dependencies. They are not Atlas-owned products.
+Prohibited scope:
 
-### Student and consumer plans
+- provider secrets;
+- confidential/restricted customer artifacts;
+- authoritative cross-provider usage or cost ledger;
+- protected entitlement decisions;
+- confidential Managed Secure processing;
+- public or frontend production write credentials.
 
-The July 2026 four-plan structure is retained as a **commercial proposal**:
+### 2. GitHub engineering-governance plane
 
-| Plan | Proposed public price | Users | Public usage wording |
-|---|---:|---:|---|
-| Student Basic | NOK 119/month incl. MVA | 1 | Defined monthly AI usage allowance |
-| Student Plus | NOK 169/month incl. MVA | 1 | Higher monthly allowance and premium-use capacity |
-| Everyday Basic | NOK 149/month incl. MVA | 1 | Defined monthly AI usage allowance |
-| Family | NOK 349/month incl. MVA | Up to 4 named users | Shared household allowance |
+Permitted scope:
 
-The website must not expose internal token values as the primary promise. Internal metering, premium-use units, reset rules and hard caps belong in plan terms and runtime configuration.
+- canonical decisions, controls, specifications and release history;
+- source code and CI/CD;
+- sanitized evidence references;
+- claims, route, schema and validation controls.
 
-## Provider and entitlement interpretation
+Prohibited scope:
 
-“ChatGPT and Claude included” is only publishable after Atlas confirms the actual delivery mechanism:
+- production credentials;
+- customer prompts/files;
+- confidential customer or supplier data;
+- private accounting/banking data;
+- protected artifacts or secret-bearing screenshots/logs.
 
-1. provider seats purchased and assigned lawfully;
-2. Atlas-managed API/runtime access under applicable provider terms; or
-3. customer-owned provider licences with Atlas configuration.
+### 3. Secure execution/control plane
 
-Atlas must not imply that a low-price Atlas plan transfers a provider retail subscription unless that contractual route exists. The capability statement must be tied to a versioned routing policy, not permanent model names.
+Required before authenticated, entitled, AI-routed, confidential or audit-sensitive services:
+
+- dedicated identity and session controls;
+- server-side provider proxy;
+- secrets management and managed identities;
+- private storage and tenant/object authorization;
+- hard caps, cost controls and usage ledger;
+- logging and alerts;
+- secure upload quarantine and malware scanning where files are accepted;
+- deletion, revocation, backup, restore and incident response.
+
+**Architecture candidates:** Microsoft Entra External ID for customer CIAM and Microsoft Azure for the secure runtime are supported candidates but remain `PENDING_REVIEW` until owner, cost, feature, region, contract and implementation decisions are recorded.
+
+## Product and delivery architecture
+
+### Business solutions
+
+Business packages are named by outcomes rather than providers:
+
+- executive and decision-support workflows;
+- commercial growth workflows;
+- finance and operations support;
+- research and multi-engine workflows;
+- team adoption and governance;
+- Managed Secure architecture and controlled delivery.
+
+Provider names are disclosed as dependencies or implementation choices, not as Atlas-owned products.
+
+### Student and consumer solutions
+
+Public wording uses **monthly AI usage allowance**, hard caps and no automatic chargeable overage. Internal token, premium-use, reset and routing details belong in versioned terms and runtime configuration.
+
+Student Basic and Student Plus have a product minimum age of 16. Users under 16 are excluded. Users aged 16-17 require the approved fail-closed identity, adult-payer/contract, privacy and support model before activation. Norway's GDPR child-consent threshold is a separate legal concept and does not replace the Atlas product and contract controls.
+
+## Security, privacy and GDPR operating model
+
+Before a service lane processes personal, confidential or restricted data, Atlas must establish:
+
+- data classification and approved system placement;
+- processing purpose and lawful basis;
+- controller/processor role;
+- provider, DPA, subprocessor and transfer assessment;
+- retention and deletion;
+- rights-request handling;
+- DPIA screening and full DPIA where required;
+- access, logging, incident and backup controls;
+- release-specific evidence and approval.
+
+Public forms must collect only what is necessary for low-risk qualification. Confidential, restricted, special-category or highly sensitive data is not accepted through ordinary public forms.
+
+## AI, RAG and tool-control baseline
+
+Protected AI services require:
+
+- approved provider/model inventory;
+- server-side prompts and provider routing;
+- no secrets in prompts or client code;
+- prompt-injection and data-exfiltration testing;
+- retrieval provenance and tenant isolation;
+- staged/quarantined ingestion and malware scanning;
+- structured-output validation;
+- tool and outbound-domain allowlists;
+- human approval for consequential actions;
+- provider kill switch and fallback;
+- metadata-first, privacy-aware logs.
+
+## Trust and claims position
+
+Atlas may describe its operating model and third-party provider use, but public claims must remain bounded by implementation evidence.
+
+Defensible wording includes:
+
+- governed integration and delivery controls;
+- low-risk public qualification;
+- privacy-by-design or GDPR-aligned workflows **subject to scope, provider, configuration, contract and evidence**;
+- human review for important outputs;
+- processing location and retention depend on the selected lane and provider.
+
+Prohibited without exact evidence:
+
+- fully GDPR compliant;
+- completely secure or zero risk;
+- all data stays in Norway;
+- zero retention;
+- 24/7 monitoring;
+- guaranteed accuracy, uptime, ROI, grades or outcomes;
+- Atlas-owned ISO/SOC certification;
+- inherited vendor certification, SLA or data-residency claims.
 
 ## Release profiles
 
-| Profile | Permitted outcome | Prohibited outcome |
+| Profile | Permitted outcome | Blocking boundary |
 |---|---|---|
-| A — Public early access | Approved pages, pricing proposal, registration and low-risk intake | Paid AI entitlement or secure-delivery claims |
-| B — Paid subscriptions | Payment, account, entitlement, metering, cap, cancellation and support after PASS | Manual or unverifiable usage accounting |
-| C — Managed Secure | One validated secure journey with identity, storage, audit and revocation | Broad “secure/compliant” claims without evidence |
+| A — Public informational | Approved public pages, low-risk qualification, trust/legal/cookie content | No member service, payment, provider routing, confidential intake or secure-delivery claim |
+| B — Controlled non-public testing | Hidden routes/plans, sandbox transactions and sanitized test evidence after entry gates | No public discovery, real charge, production provider credential or automatic production entitlement |
+| C — Paid member/subscription | Identity, payment, entitlement, caps, cancellation, refund and support after complete PASS | No manual/unverifiable ledger, consent, tax or access state |
+| D — Managed Secure pilot | One named, contract-bound secure journey after identity/storage/logging/incident/restore evidence | No general availability or absolute security/compliance claim |
 
-## Trust, claims and data boundaries
+## Phase 1 publication position
 
-- External studies and vendor documents are contextual or attributed evidence only.
-- Atlas-specific performance, accuracy, learning outcome, ROI, compliance, security, uptime or data-residency claims require Atlas-specific evidence.
-- Public forms are low-risk qualification only.
-- Sensitive material is accepted only after qualification through a controlled path.
-- AI outputs require human review for important decisions.
-- Student offers must exclude cheating, ghostwriting, fabricated citations and direct assignment submission.
-- Consumer offers must exclude emergency reliance, emotional-companion dependency and unreviewed regulated advice.
-- Business offers must exclude autonomous legal, tax, accounting, medical or regulated decisions unless separately qualified and governed.
+A limited public informational Phase 1 can be reconsidered only after:
 
-## Current strategic updates from online research
+- fresh authoritative Wix page-tree and implementation evidence;
+- separate Contact and FAQ implementation;
+- Bokmål/English parity;
+- current admin MFA/access evidence;
+- privacy/cookie/form validation;
+- claim and provider-disclosure review;
+- security contact and incident-routing content;
+- responsive/accessibility/SEO validation;
+- explicit release approval for the exact candidate.
 
-- Norway remains a digitally mature market; Statistics Norway records 100% recent internet use among ages 16-79 for 2025 [W1].
-- Statistics Norway records 323,595 higher-education students for 2025; the page was adjusted for rounding in July 2026 [W2].
-- Eurostat reports 20.0% of EU enterprises with at least ten employees used AI in 2025, with Denmark, Finland and Sweden among the leaders [W3].
-- The EU AI Act is approaching major August 2026 transparency obligations, while implementation timelines for some high-risk rules have been adjusted [W4].
-- Norway’s June 2026 school-policy direction materially increases the need for age-aware and institution-aware student controls [W16].
+Until then, Phase 1 and the overall website remain `NO_GO`.
 
-## Contradictions requiring explicit resolution
+## Strategic security roadmap
 
-| Conflict | Recommended treatment | Status |
-|---|---|---|
-| Older “custom GPT / platform-specific product” framing vs governed solution-layer model | Supersede older public framing; retain as internal historical evidence | AUTO_APPROVED workflow correction |
-| Business BYOL-only rule vs managed student/consumer exception | Keep business BYOL; define a separate, tested managed-runtime exception | PENDING_REVIEW |
-| “Approved” four-plan pricing language vs unvalidated economics and delivery rights | Reclassify as proposed controlled baseline until approval | PENDING_REVIEW |
-| Wix site identity references differ across project history | Verify current site ID and staging destination before implementation | PENDING_REVIEW |
-| 14-day launch recommendation vs subscription/secure release gates | Limit 14-day target to public early-access shell only | AUTO_APPROVED risk correction |
-| Bokmål root requirement vs English-only copy artifacts | Require bilingual launch parity and governed locale strings | AUTO_APPROVED quality correction |
+### 0-30 days
 
-## Decision authority
+- appoint security, privacy, incident, release and test-data owners;
+- verify administrative MFA/passkeys and least privilege;
+- verify GitHub rulesets/reviews/secrets/security scans;
+- complete Wix form/cookie/collaborator evidence;
+- create ROPA, role matrix, supplier register, DPA/TIA workflow, retention and rights-request controls;
+- complete DPIA screening;
+- implement approved trust/security/privacy staging copy;
+- create incident and backup policies.
 
-This document becomes canonical only after the project owner approves:
+### 31-90 days
 
-- audience and route baseline;
-- product names and pricing;
-- provider-delivery mechanism;
-- public availability status;
-- legal and consumer terms;
-- canonical Wix site identity;
-- Managed Secure activation criteria.
+Subject to separate architecture approval:
 
-## Source register
+- customer CIAM;
+- secure server-side API gateway/proxy;
+- managed identity/secret storage;
+- private data stores and authorization;
+- secure intake/quarantine/malware scanning;
+- metadata-first logging and alerts;
+- deletion propagation;
+- AI/RAG/tool security tests;
+- OIDC/protected deployment pipeline.
 
-Primary project basis: updated website strategy, Phase 0-6 files, July implementation guide, July launch gates, July Wix/Gamma copy pack, July low-price report, June competitor/SWOT report, claims-evidence report and Atlas GitHub governance README.
+### 3-6 months
 
-Current web references: W1-W4, W12-W16 listed in the package source bibliography.
+- one named Managed Secure pilot;
+- tenant-isolation, revocation and deletion tests;
+- incident tabletop and provider-revocation exercise;
+- restore test;
+- full release-gate rerun.
+
+### 6-12 months
+
+- recurring assurance and customer due-diligence pack;
+- certification business-case review after stable operations;
+- no certification claim unless formally awarded.
+
+## Current unresolved decisions
+
+1. Named security/privacy/incident/release owners.
+2. Entra External ID or alternative CIAM.
+3. Azure or alternative secure runtime.
+4. Exact provider primary/fallback model.
+5. DPA/TIA and transfer decisions for each lane.
+6. Exact retention periods and raw-prompt logging exceptions.
+7. DPO requirement and external specialist support.
+8. Certification roadmap.
+9. Current Wix implementation evidence.
+10. Final public release approval.
+
+## Source and evidence rule
+
+The attached security report is preserved as research evidence. Its recommendations become governing only through explicit classification in Atlas records. Canonical GitHub and current implementation evidence override report assumptions that were caused by unavailable internal connector access.
+
+## Release effect
+
+No public plan, checkout, real-money charge, production entitlement, provider credential, public write endpoint or Managed Secure activation is authorised by this update.
