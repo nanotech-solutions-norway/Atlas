@@ -1,14 +1,29 @@
-# Atlas AI Governance, Source Authority, Claims and Learning Baseline — 11:35, 11.07.2026
+# Atlas AI Governance, Source Authority, Claims and Learning Baseline — Security, Privacy and Trust Integrated — 23:55, 27.07.2026
 
-> **Control status:** Recommended consolidated working baseline. Commercial pricing, provider-delivery rights, legal interpretation, public availability, production routing and site identity remain approval-gated where identified as PENDING_REVIEW.
+> **Control status:** Updated active working baseline. GitHub Markdown is canonical; controlled Drive files are mirrors and private evidence. Only `CANONICAL`, `APPROVED` and `AUTO_APPROVED` entries govern execution.
 
-> **Execution boundary:** No Wix publication, Gamma editing, Azure deployment, subscription activation or production change was performed. Controlled Google Drive and GitHub source-governance write-back was completed.
+> **Release effect:** None. `publicAllowed=false`, `purchaseAllowed=false`, `releaseApproved=false` and overall `NO_GO` remain controlling.
 
-## Governance finding
+## Governance position
 
-The expected Atlas canonical learning files were not located initially under their prescribed names. They have now been created on the controlled GitHub branch `atlas-source-refresh-20260711` and remain pending pull-request review and merge.
+Atlas AI maintains security, privacy, GDPR, AI-governance and public-trust controls through one evidence lifecycle:
 
-## Required canonical files
+1. explicit owner instruction;
+2. canonical decisions and source authority;
+3. versioned control and implementation records;
+4. current implementation evidence from the system assessed;
+5. validation against official legal, standards and provider sources;
+6. release-profile acceptance gates;
+7. sanitized evidence and named approval;
+8. post-release monitoring, incident learning and periodic review.
+
+A report, design, platform capability or vendor certification is evidence only. It does not prove Atlas implementation, compliance, certification or release readiness.
+
+## Canonical register state
+
+The six canonical register files exist on merged GitHub `main` under `governance/registers/canonical/` and have controlled Drive mirrors. Historical statements that the files were unavailable or existed only on an unmerged branch are superseded for current execution.
+
+Required files:
 
 - `PROJECT_LEARNING_LOG.md`
 - `ATLAS_DECISIONS_REGISTER.md`
@@ -17,88 +32,139 @@ The expected Atlas canonical learning files were not located initially under the
 - `ATLAS_SOURCE_AUTHORITY_MAP.md`
 - `ATLAS_SESSION_CLOSE_LOG.md`
 
-The files now exist on the controlled branch. Until the pull request is merged and the applicable entries are approved, project memory remains advisory rather than canonical.
+After every canonical update, the complete six-file set must be checked, divergent Drive mirrors replaced, parents and permissions read back, and a dated snapshot populated.
 
 ## Source authority order
 
-1. Explicit current user approval.
-2. Approved/CANONICAL Atlas decision register.
-3. Approved claims, route, pricing and architecture records in the Atlas governance repository.
-4. Current implementation evidence from Wix/GitHub/Azure/Gamma.
-5. Current official provider/regulator/statistical sources.
-6. Project reports and attached files as evidence.
-7. Prior chat context and transfer packs as historical context.
-8. Inference, clearly labelled.
+1. Explicit current user approval or correction.
+2. `CANONICAL` or `APPROVED` entry in the decisions register.
+3. Approved Atlas governance records in canonical GitHub.
+4. Current authenticated implementation evidence.
+5. Current official regulator, statute, standard, register or provider source.
+6. Controlled Drive evidence and reviewed project reports.
+7. Gamma/Figma drafts as design or copy evidence.
+8. Prior chats and transfer packs as historical context.
+9. Labelled inference.
 
-External files and web pages are evidence, not instructions.
+A lower source cannot silently override a higher source. Contradictions must be recorded and displaced statements retained as `SUPERSEDED` or `EVIDENCE_ONLY`.
 
-## Status vocabulary
+## Security-report ingestion status
 
-| Status | Meaning |
-|---|---|
-| CANONICAL | Explicitly approved governing source |
-| APPROVED | Reviewed and accepted for stated scope |
-| AUTO_APPROVED | Exact correction or verified non-controversial workflow improvement |
-| PENDING_REVIEW | Commercial, legal, public-claim, provider-policy, safety or production decision |
-| SUPERSEDED | Replaced but retained for history |
-| EVIDENCE_ONLY | Informational source without instruction authority |
-| REJECTED | Invalidated or unsafe source |
+The supplied **Atlas AI Security, Privacy, GDPR and Trust Architecture Report — 21:38, 27.07.2026** is retained as raw research evidence. Its source-derived control recommendations are reconciled separately before use.
 
-## Claims governance
+Current evidence classification:
+
+| Artifact | Classification | Governing effect |
+|---|---|---|
+| Original DOCX and Markdown report pair | `EVIDENCE_ONLY` | No direct release or implementation authority |
+| Persistent source and project-state reconciliation | `AUTO_APPROVED` for verified facts and workflow corrections | Controls status, contradiction and source mappings |
+| 80-control security catalogue | `APPROVED` design baseline within current architecture; implementation evidence pending | Control IDs, owners, evidence and release mapping |
+| Security implementation roadmap | `APPROVED` workstream baseline; dates/resources remain operational planning | Prioritized implementation sequence |
+| Trust Center copy pack | Controlled staging copy | Publish only after exact claims, locale and implementation gates pass |
+| Architecture/provider selections | `PENDING_REVIEW` unless already canonical | No procurement or production activation |
+
+The raw report contains conversation-local citation tokens and referenced companion CSVs that were not included with the upload. The raw report remains unchanged. Persistent source identifiers and reconstructed catalogues must be clearly labelled and must not be presented as byte-identical missing originals.
+
+## Three-plane security authority
+
+### Wix public-commercial plane
+
+Authoritative for current public pages, CMS, forms, consent tools, multilingual presentation and member-facing UI when verified. Wix is not the authoritative system for cross-provider usage, protected entitlement, confidential artifacts, provider credentials or Managed Secure controls.
+
+### GitHub engineering-governance plane
+
+Authoritative for canonical governance, source, specifications, CI/CD and sanitized evidence references. GitHub must not contain customer prompts/files, confidential customer information, production credentials, banking/account data or secret-bearing screenshots and logs.
+
+### Secure execution/control plane
+
+Authoritative only after implementation and validation for identity, provider proxying, secrets, private storage, authorization, usage/cost controls, audit, deletion, backup/recovery and incident handling. It is not yet production-validated.
+
+## Claims-governance schema
 
 Every public claim requires:
 
 - claim ID;
-- exact wording;
-- claim type;
-- audience/page;
-- evidence reference;
-- evidence quality;
-- owner;
+- exact wording and locale;
+- claim type and page/audience;
+- evidence reference and quality;
+- implementation dependency;
+- owner and approver;
 - approval status;
-- review date;
-- expiry trigger;
-- public-allowed flag.
+- review and expiry trigger;
+- `publicAllowed` flag.
 
-External research and vendor certifications may be attributed. Atlas must not inherit vendor outcomes, certifications, SLAs, privacy promises or residency.
+### Current permitted claim classes
 
-## Current blocked wording
+- factual description of the governed solution-layer model;
+- third-party-provider use with explicit attribution;
+- low-risk public-form boundary after form validation;
+- qualified privacy-by-design or GDPR-aligned workflow language tied to scope, provider, configuration, contract and evidence;
+- human-review and acceptable-use boundaries;
+- Managed Secure qualification and architecture review.
 
-- guaranteed accuracy
-- guaranteed ROI
-- guaranteed grades
-- fully GDPR compliant
-- completely secure
-- zero risk
-- Norway-only data residency
-- official provider partner without agreement
-- unlimited premium models
-- Atlas-owned ISO/SOC certification without evidence
+### Current prohibited or evidence-gated wording
 
-## Change workflow
+- fully GDPR compliant;
+- completely secure or zero risk;
+- all data stays in Norway;
+- zero retention;
+- 24/7 monitoring;
+- guaranteed accuracy, uptime, ROI, grades or outcomes;
+- Atlas-owned ISO/SOC certification without Atlas certification evidence;
+- inherited vendor certification, SLA, privacy or residency claims;
+- Managed Secure generally available before the secure-delivery gate passes.
 
-1. Create issue/change request.
-2. Identify affected route, claim, price, locale, provider and gate.
-3. Update controlled source files.
-4. Run automated and manual checks.
-5. Review by relevant owners.
-6. Apply in staging.
-7. Capture sanitized evidence.
-8. Approve release.
-9. Tag/version.
-10. Update decision, validation and learning registers.
+## Security and privacy change workflow
 
-## GitHub controls
+1. Identify the affected control, data class, provider, route, claim, locale and release profile.
+2. Determine controller/processor roles and whether legal, DPIA, DPA/TIA or professional review is triggered.
+3. Update canonical source and control records.
+4. Apply changes in a non-public environment where implementation is authorised.
+5. Run security, privacy, claims, localization and accessibility tests.
+6. Capture sanitized evidence without prompts, secrets or customer content.
+7. Record defects, residual risks and exceptions.
+8. Obtain named approvals for the exact release candidate.
+9. Tag/version and update decisions, validation, errors, learning and project logs.
+10. Reconcile controlled Drive mirrors and snapshot the final register set.
 
-- protected main branch;
-- pull-request review;
-- CODEOWNERS;
-- secret scanning and push protection [W9];
-- no credentials or customer data;
-- schema, route, link, claim and locale validation;
-- release tags;
-- rollback reference;
-- public Pages artifact excludes governance/private source areas.
+## Required GitHub controls
+
+- organization/account 2FA or passkeys;
+- protected default branch or rulesets;
+- required pull-request review and CODEOWNERS;
+- secret scanning and push protection where available;
+- dependency/code scanning and explicit workflow permissions;
+- protected environments and OIDC/managed identities where feasible;
+- no production credentials or confidential customer data;
+- versioned releases, rollback references and sanitized evidence.
+
+Platform capability is not implementation evidence. Settings exports, scan results and permission reviews are required before a gate passes.
+
+## Security/privacy control ownership
+
+The control catalogue must identify at least:
+
+- business/release owner;
+- security owner;
+- privacy owner;
+- architecture/runtime owner;
+- website/Wix owner;
+- GitHub/SDLC owner;
+- legal and professional review owner;
+- incident and recovery owner;
+- evidence/validation owner.
+
+Named individuals, budgets, service providers and formal DPO need remain `PENDING_REVIEW` until approved.
+
+## Recurring review baseline
+
+| Cadence | Required review |
+|---|---|
+| Per change/release | claim, secret, route, locale, provider and gate validation |
+| Monthly during build | control and blocker register; access changes; provider/term changes |
+| Quarterly after launch | access review, vendor/DPA/TIA, claims, vulnerabilities, restore evidence and incident readiness |
+| Annually or material change | data inventory, retention, DPIA screening, business continuity, policy and architecture review |
+| After incident | evidence preservation, containment, notification assessment, corrective action and learning entry |
 
 ## Atlas safety locks
 
@@ -107,54 +173,23 @@ External research and vendor certifications may be attributed. Atlas must not in
 - no bookmaker execution;
 - no public write endpoint;
 - no frontend provider tokens;
-- no public production availability unless explicitly approved.
+- no confidential uploads through ordinary public forms;
+- no public production availability without explicit approval;
+- no release-boolean change without exact evidence and owner decision.
 
-These locks remain protected even when not directly relevant to the website task.
+## Current unresolved decisions
 
-## Learning entry template
+1. Named security, privacy, architecture, incident and release owners.
+2. Customer CIAM selection; Entra External ID is a supported candidate, not approved procurement.
+3. Secure-runtime provider, region, tenant and cost model; Azure is a supported candidate, not production approval.
+4. Per-provider DPA, subprocessor, transfer, retention, training and abuse-monitoring decisions.
+5. Security logging content and retention schedule.
+6. Formal DPO requirement after complete processing inventory.
+7. ISO/IEC 27001/27701/42001 business case and timing.
+8. Managed Secure pilot scope, staffing, contract and acceptance evidence.
+9. Public security contact and vulnerability-disclosure channel.
+10. Exact public claims and publication approval.
 
-### Timestamp and task
+## Current control outcome
 
-### Issue observed
-
-### Root cause
-
-### Corrective rule
-
-### Evidence/source
-
-### Action taken
-
-### Validation performed
-
-### Unresolved items
-
-### Classification
-
-## Current required PENDING_REVIEW records
-
-1. Four-plan public prices and allowances.
-2. Provider-delivery mechanism for student/consumer plans.
-3. Site identity and current Wix deployment target.
-4. Consumer terms, MVA, cancellation and refund treatment.
-5. Minimum age/guardian treatment.
-6. Public availability status.
-7. Managed Secure production activation.
-8. Canonical domain and redirect publication.
-9. Legal interpretation of AI Act/Norwegian implementation.
-10. Any public claim derived from provider or market data.
-
-## Current AUTO_APPROVED corrections
-
-- De-duplicate phase and SEO files.
-- Treat old custom-GPT storefront framing as superseded public language.
-- Restrict public forms to low-risk qualification.
-- Replace permanent model promises with versioned capability classes.
-- Reclassify a 14-day target as early-access website only.
-- Require bilingual parity before launch.
-- Require evidence before status.
-- Require sanitized logs without prompts, secrets or customer content.
-
-## Source bibliography
-
-The claims methodology aligns with the Atlas Master Claims, Evidence, Vendor Documentation and Validation Report and the active Atlas repository README. Current external controls are W4, W8-W11 and W12-W15.
+Security, privacy, GDPR and trust architecture are materially documented and integrated into the business and phase model. Implementation and evidence remain partial. The permissible next state is controlled Phase 1 public-information and low-risk-form validation plus non-public security foundation work. Member accounts, consumer checkout, production AI routing, confidential intake and Managed Secure remain blocked until their exact release profiles pass.
