@@ -1,0 +1,10 @@
+# Repository-wide ownership
+* @nanotech-solutions-norway
+
+# Security-sensitive surfaces
+/.github/ @nanotech-solutions-norway
+/.github/workflows/ @nanotech-solutions-norway
+/SECURITY.md @nanotech-solutions-norway
+/docs/security/ @nanotech-solutions-norway
+/governance/ @nanotech-solutions-norway
+/scripts/ @nanotech-solutions-norway
