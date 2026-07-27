@@ -40,14 +40,15 @@ GitHub remains canonical. The controlled Drive folder `00_Canonical_Registers` r
 
 A material cross-platform drift was identified:
 
-- the Drive decisions, validation, error and source-authority documents did not contain the 27.07.2026 GitHub updates;
+- all six Drive canonical-register mirrors were stale or structurally inconsistent with merged GitHub `main`; the learning and session-close mirrors also contained older duplicated structures;
 - the Drive folder `Current Canonical Markdown - 27.07.2026` existed but was empty.
 
 Corrective action completed:
 
-- the four stale Drive mirror documents were fully replaced from current GitHub content while preserving their Drive file IDs;
-- the current six-register snapshot folder was populated with all six register documents;
-- folder readback confirmed six private snapshot files.
+- all six Drive mirror documents were fully replaced or reconciled from current merged GitHub content while preserving the original controlled mirror file IDs;
+- malformed duplicate structures were removed from the learning and session-close mirrors;
+- the current six-register snapshot folder was rebuilt from the final mirrors;
+- folder readback confirmed six private final snapshot files.
 
 ### 2.3 MVA, legal, pricing and checkout records found
 
@@ -88,7 +89,7 @@ The following required specifications and review records are available:
 
 | Phase | Current state | Evidence-backed status | Principal remaining work |
 |---|---|---|---|
-| Phase 0 — Governance and source control | Canonical registers and source hierarchy exist; Drive mirror repaired | `CONTROLLED / PASS` with ongoing maintenance | Merge/read back this audit; continue same-session GitHub/Drive reconciliation |
+| Phase 0 — Governance and source control | Canonical registers and source hierarchy exist; all six Drive mirrors and the final snapshot are reconciled | `CONTROLLED / PASS` with ongoing maintenance | Continue full-set same-session GitHub/Drive comparison, writeback and readback after every canonical change |
 | Phase 0.5 — Product, pricing, legal and accounting contract | Restricted Norway B2C monthly scope, prices and specifications approved | `SPECIFICATION COMPLETE / RUNTIME OPEN / NO_GO` | Provider selection, live Conta mapping, sample documents, sandbox reconciliation and final legal-copy alignment |
 | Phase 1 — Public website and content | Draft coverage exists; last authoritative page-tree evidence showed 13 pages against 14 roles because Contact was absent | `PARTIAL — CONTENT ADVANCED / IMPLEMENTATION NOT FULLY VALIDATED` | Fresh Wix editor audit; create/verify Contact; routes/menus/forms; bilingual, responsive, SEO and accessibility validation |
 | Phase 2 — Identity and member portal | Members Area installation verified | `PARTIAL` | Validate age 16–17 eligibility/payer model, recovery, roles, privacy and portal flows |
