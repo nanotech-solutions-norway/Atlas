@@ -11,20 +11,24 @@
 - Filename: `ATLAS AI Security, Privacy, GDPR and Trust Architecture Report — 21_38, 27.07.2026.docx`
 - Size: 97,164 bytes
 - SHA-256: `3890614e83ac67e6f44a83350a8ba6ad8ca04768de6a2793e19b689b09ec9c8c`
-- Source location: controlled ChatGPT Atlas project attachment
+- Original source: controlled ChatGPT Atlas project attachment
+- Controlled Drive archive ID: `1iMyKWjt_2bkMWnQiYNReKmusmcwuEjTl`
+- Controlled Drive parent: `05_Security_Privacy_GDPR_and_Trust` (`1hlE248D_wSpFreViJhmqDQxhZIaJbA7p`)
 
 ### Markdown
 
 - Filename: `deep-research-report (4).md`
 - Size: 51,398 bytes
 - SHA-256: `24ce97f8a2899d8baa7bc8c8e828f4733a99cc814cd42465ad60bd1743e68a0a`
-- Source location: controlled ChatGPT Atlas project attachment
+- Original source: controlled ChatGPT Atlas project attachment
+- Controlled Drive archive ID: `1_Hp41x48FBNnEKEH4jhwePyvAAXTWD2H`
+- Controlled Drive parent: `05_Security_Privacy_GDPR_and_Trust` (`1hlE248D_wSpFreViJhmqDQxhZIaJbA7p`)
 
 ## Structural validation
 
 - Report title: `ATLAS AI Security, Privacy, GDPR and Trust Architecture Report — 21:38, 27.07.2026`
 - The DOCX and Markdown have the same top-level heading structure: one H1 and six H2 sections.
-- The source artifacts were not modified.
+- The source artifacts were not modified before Drive archival.
 - Byte identity is not expected because the sources use different formats.
 
 ## Evidence boundary
@@ -37,7 +41,7 @@ The report is research evidence, not proof that Atlas controls are implemented, 
 2. The report references an 80-control catalogue CSV and roadmap CSV that were not supplied with the uploaded pair.
 3. The report contains conversation-local citation tokens that are not persistent archival identifiers.
 4. A bibliography reference used NIST SP 800-61 Rev. 2; current canonical incident controls use Rev. 3 while the raw report remains unchanged.
-5. The Drive connector did not accept the local DOCX/Markdown as registered connector file references. The complete source pair remains attached to the controlled ChatGPT project record; Drive stores this manifest, reconciliation and native operational artifacts.
+5. The initial Drive upload attempt failed because a local sandbox path and an incorrect generic DOCX MIME label were not accepted. The follow-up connector workflow passed the original uploaded-file IDs to `Google_Drive.upload_file` with explicit MIME types. Both raw source files are now archived in the controlled Drive folder. The prior binary-archive limitation is closed for this source pair.
 
 ## Reconstructed companions
 
@@ -49,3 +53,11 @@ The following are controlled reconstructions derived from the report and current
 ## Persistent reconciliation
 
 See `../ATLAS_SECURITY_PRIVACY_GDPR_TRUST_RECONCILIATION_2355_27072026.md` for current source corrections, accepted controls, pending decisions and release boundaries.
+
+## Connector archival validation — 14:10, 28.07.2026
+
+- DOCX upload: `PASS`
+- Markdown upload: `PASS`
+- Explicit destination parent: `PASS`
+- Source filenames preserved: `PASS`
+- Release effect: `PASS_NO_RELEASE_EFFECT / NO_GO`
