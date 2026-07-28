@@ -178,7 +178,7 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Root cause:** Chat-rendered citation references were preserved as if they were portable document citations.
 - **Corrective rule:** Preserve the raw report unchanged, but create a persistent official-source reconciliation using stable statute, case and provider identifiers before relying on report propositions in canonical validation.
 - **Evidence/source:** Original 20:37 consumer-law and 13:01 pricing DOCX/Markdown pairs; checksum and citation scan; official-source recheck.
-- **Action taken:** Added raw evidence, integrity manifest, persistent source reconciliation and report-specific validation records.
+- **Action taken:** Added raw evidence, integrity manifest, persistent official-source reconciliation and report-specific validation records.
 - **Validation performed:** Exact heading parity, normalized content equivalence, load-bearing primary-source checks and lock readback.
 - **Unresolved items:** Full citation-by-citation reconstruction, professional legal/tax review, implementation and acceptance evidence.
 - **Classification:** `AUTO_APPROVED`.
@@ -205,4 +205,16 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Action taken:** Reconciled all six canonical mirrors, replaced the stale working-records index, and rebuilt the final six-file snapshot.
 - **Validation performed:** Current mirror content, functional parent placement and six private snapshot children read back successfully.
 - **Unresolved items:** Apply the same full-set sequence after every future canonical change.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260728-022 — Page filtering is not collection-level access control
+
+- **Timestamp/task:** 13:11, 28.07.2026 Europe/Oslo; Phase 1 FAQ CMS hardening.
+- **Issue observed:** `AtlasFAQs` allowed anonymous reads while holding working drafts, and the intended frontend `publicAllowed=true` filter was treated as the publication boundary.
+- **Root cause:** Editorial storage, approval workflow and public rendering were combined in one collection; visibility filtering was conflated with authorization.
+- **Corrective rule:** Keep working/editorial collections private. Use a separate least-privilege public rendering collection containing only exact approved promotion copies. Validate collection permissions, public-record count, page binding and release flags independently after each change.
+- **Evidence/source:** Authenticated Wix collection schema, data permissions and item readback; `ATL-DEC-20260728-033`; FAQ CMS hardening addendum.
+- **Action taken:** Made `AtlasFAQs` editor-only, created `AtlasFAQsPublic`, kept it empty and required both locale pages to bind only to the public collection.
+- **Validation performed:** 28 active working records/14 reciprocal pairs, one archived internal record and zero public records; all release flags preserved.
+- **Unresolved items:** Studio binding, final approvals, accessibility, exact promotion and release acceptance.
 - **Classification:** `AUTO_APPROVED`.
