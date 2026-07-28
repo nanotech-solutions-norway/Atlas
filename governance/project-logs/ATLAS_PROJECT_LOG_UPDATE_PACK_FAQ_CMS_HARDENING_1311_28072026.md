@@ -37,7 +37,7 @@ Implement the recommended Phase 1 FAQ CMS corrections in Wix, record the archite
 ## Evidence/source
 
 - Explicit current owner instruction, 28.07.2026.
-- Canonical decision `ATL-DEC-20260727-032`.
+- Canonical decisions `ATL-DEC-20260727-032` and `ATL-DEC-20260728-033`.
 - Active Phase 1 security/privacy implementation and copy baselines dated 27.07.2026.
 - Live authenticated Wix collection schema, data permissions, data items and discovery metadata.
 - Existing Gamma FAQ v1.0/v1.1 draft validation record.
@@ -73,14 +73,16 @@ Implement the recommended Phase 1 FAQ CMS corrections in Wix, record the archite
 ### GitHub
 
 - Created `active-source/2026-07-28/ATLAS_PHASE_1_FAQ_CMS_HARDENING_ADDENDUM_1311_28072026.md`.
-- Created this project log update pack.
-- Updated the canonical decision and validation registers.
+- Created and closed this project log update pack.
+- Updated the canonical decision, validation, error and learning registers.
+- Added `ATL-DEC-20260728-033`, `ATL-VAL-20260728-064`, `ATL-VAL-20260728-065`, `ATL-ERR-20260728-024` and `ATL-LRN-20260728-022`.
 
 ### Google Drive
 
-- Updated the controlled FAQ CMS and publication-readiness records.
-- Updated the applicable canonical mirrors.
-- Created a dated six-register snapshot and verified the expected children.
+- Updated the controlled FAQ CMS, page roadmap and publication-readiness records.
+- Updated all changed canonical mirrors and read back the unchanged mirrors.
+- Created the historical 13:11 snapshot and the final post-closure 13:35 six-register snapshot.
+- Verified exactly six private children in the final snapshot.
 
 ## Validation performed
 
@@ -97,6 +99,8 @@ Implement the recommended Phase 1 FAQ CMS corrections in Wix, record the archite
 | Active-record `publicAllowed` | PASS_LOCK — false |
 | Active-record `schemaEligible` | PASS_LOCK — false |
 | Discovery page public flag | PASS_LOCK — false |
+| Canonical decision/error/learning/validation mirrors | PASS — updated and read back |
+| Final canonical snapshot | PASS — six private files |
 | Public checkout or production effect | NONE / NO_GO |
 
 ## Unresolved items
@@ -112,7 +116,7 @@ Implement the recommended Phase 1 FAQ CMS corrections in Wix, record the archite
 
 ## Classification
 
-- Verified schema, access separation, content normalization, reciprocal working inventory, archived editorial record, discovery metadata and readback: `AUTO_APPROVED`.
+- Verified schema, access separation, content normalization, reciprocal working inventory, archived editorial record, discovery metadata, governance writeback and readback: `AUTO_APPROVED`.
 - The private/public collection architecture and Studio binding rule under the explicit owner instruction: `APPROVED`.
 - Final public copy, claim/legal/privacy approvals, structured-data choice, Studio implementation and release: `PENDING_REVIEW` / `NO_GO`.
 
