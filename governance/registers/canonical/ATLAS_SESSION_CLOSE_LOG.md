@@ -120,3 +120,16 @@
 - **Next executable workstream:** Obtain professional legal/tax decisions and finance-owner correction before implementing or relying on affected planning metrics.
 - **Classification:** arithmetic observations and evidence-state updates `AUTO_APPROVED`; corrected values `PENDING_REVIEW`.
 - **Release state:** `NO_GO`.
+
+## Session entry — ATL-CLS-20260731-009
+
+- **Timestamp:** 13:57, 31.07.2026 Europe/Oslo
+- **Task:** Recreate the approved Atlas AI Home Gamma draft as seven separate single-slide Figma Slides files in the original Atlas AI v3 folder and validate the result.
+- **Scope:** Design-handoff artifacts only. No Wix page mutation, deployment, purchase enablement or public release action.
+- **Validation performed:** Reconciled the seven live Gamma sections with the approved source Figma deck and controlled Drive/GitHub mapping; verified one 1920×1080 slide per file, 104 px side margins, 1712 px content width, source text, fonts, sizes, colors, boxes, layout, overflow and screenshots.
+- **Actions completed:** Created and named seven files; preserved the approved blue/white Roboto Slab/Roboto treatment; recorded Gamma, source-Figma, Wix-target and handoff-status metadata; corrected inherited 1807.66 px wrapper drift to the specified 1712 px width; disabled text-wrapper clipping where needed; documented the Figma Slides runtime limitation.
+- **Evidence:** https://www.figma.com/slides/hryHQFz01MX2GLmh56gn8W, https://www.figma.com/slides/h2gM9KumIpXlUXEbV2NBvl, https://www.figma.com/slides/TxSIwCz3B76gPo7qB1rMsI, https://www.figma.com/slides/e2Ov4EANKkHcQ5JAc397ak, https://www.figma.com/slides/5itMwVbvfMFG23CPLKJ6eB, https://www.figma.com/slides/1OOxUHWlsjizH93FmK7Kot, https://www.figma.com/slides/xIiRsFCfKLDwPhrWDfvJ4H.
+- **Unresolved items:** Wix Studio insertion and bindings; responsive/accessibility/link/metadata/performance QA; final approvals and written release acceptance.
+- **Next executable workstream:** Implement the validated sections in the Wix Home page and run the controlled runtime/release checklist when explicitly authorized.
+- **Classification:** Reconstruction and validation `AUTO_APPROVED`; Wix implementation/release remains gated.
+- **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
