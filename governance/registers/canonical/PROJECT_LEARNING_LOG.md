@@ -218,3 +218,15 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** 28 active working records/14 reciprocal pairs, one archived internal record and zero public records; all release flags preserved.
 - **Unresolved items:** Studio binding, final approvals, accessibility, exact promotion and release acceptance.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260731-023 — Figma Slides semantic identity needs stable file-level fallbacks
+
+- **Timestamp/task:** 13:57, 31.07.2026 Europe/Oslo; Atlas AI Home Gamma-to-Figma single-slide reconstruction.
+- **Issue observed:** The Figma Slides runtime preserved content and geometry but rejected SlideNode resizing and theme-property inspection, and semantic SlideNode names reset to the numeric default after reload.
+- **Root cause:** The current Figma Slides execution surface differs from exposed base-node typings for selected SlideNode properties and mutations.
+- **Corrective rule:** Use the semantic Figma file name, visible heading, row name and namespaced shared plugin metadata as the stable identity contract; never claim the SlideNode layer name persisted unless reload readback proves it. Validate dimensions, content, geometry and identity metadata independently.
+- **Evidence/source:** Seven recreated Home files in the original Atlas AI v3 Figma project; source-node measurement comparison; runtime readback; final screenshots: https://www.figma.com/slides/hryHQFz01MX2GLmh56gn8W, https://www.figma.com/slides/h2gM9KumIpXlUXEbV2NBvl, https://www.figma.com/slides/TxSIwCz3B76gPo7qB1rMsI, https://www.figma.com/slides/e2Ov4EANKkHcQ5JAc397ak, https://www.figma.com/slides/5itMwVbvfMFG23CPLKJ6eB, https://www.figma.com/slides/1OOxUHWlsjizH93FmK7Kot, https://www.figma.com/slides/xIiRsFCfKLDwPhrWDfvJ4H.
+- **Action taken:** Created one 1920×1080 Figma Slides file per approved Home section, added source/status metadata, corrected inherited wrapper-width and clipping defects, and retained the controlled visual treatment.
+- **Validation performed:** Seven files each contain exactly one slide and one row; 104 px side margins, 1712 px content width, exact copy, fonts, sizes, colors and box geometry passed stable-field checks and screenshot review.
+- **Unresolved items:** Wix insertion, responsive/accessibility/link/metadata/performance QA and written release approval remain outstanding.
+- **Classification:** `AUTO_APPROVED`.
