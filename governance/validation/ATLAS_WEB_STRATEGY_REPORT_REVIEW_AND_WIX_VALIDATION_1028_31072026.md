@@ -154,11 +154,11 @@ Merged authenticated Wix evidence confirms:
 - Internal claims, legal, trust, release, validation, page-plan and locale collections were hardened to editor-only access.
 - `AtlasFAQs` remains the private authoring collection.
 - `AtlasFAQsPublic` remains the anonymous-read/editor-write rendering collection.
-- The public FAQ collection remained empty in the last approved readback.
+- The public FAQ collection is empty in the fresh API readback (0 records).
 - The stale Process page-plan record was re-categorized as FAQ under Resources.
 - No separate Process page was present.
 
-A fresh CMS API readback in this exact session was blocked by connector safety-status handling before any mutation occurred. No CMS write was attempted. The most recent merged authenticated validation remains the current evidence, and fresh readback remains an open validation action.
+A fresh CMS retry completed successfully on 31.07.2026. The API listed 34 collections; confirmed editor-only permissions for internal governance collections and AtlasFAQs; confirmed AtlasFAQsPublic remains anonymous-read/editor-write with zero records; and confirmed AtlasPagePlan contains 15 records with FAQ under Resources and no separate Process page. Release gate G03 was updated to PARTIAL to record this evidence; page bindings, rendered content, route/configuration diff and runtime testing remain open.
 
 ### 6.5 Engineering and runtime boundary
 
@@ -247,7 +247,7 @@ The following are already approved or exact verified corrections and remain in f
 | Fifteen-role page entity coverage | `PASS` |
 | Separate Process page absence | `PASS` |
 | Non-home Norwegian content alignment | `PASS_DRAFT_DATA_LEVEL` |
-| CMS protection and FAQ boundary | `PASS_LAST_AUTHENTICATED_EVIDENCE / FRESH_READBACK_BLOCKED` |
+| CMS protection and FAQ boundary | `PASS_FRESH_API_READBACK / IMPLEMENTATION_PARTIAL` |
 | Rendered responsive/accessibility acceptance | `NOT_RUN` |
 | English parity, SEO and hreflang | `NOT_VALIDATED` |
 | Public release | `NO_GO` |
