@@ -230,3 +230,28 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Validation performed:** Seven files each contain exactly one slide and one row; 104 px side margins, 1712 px content width, exact copy, fonts, sizes, colors and box geometry passed stable-field checks and screenshot review.
 - **Unresolved items:** Wix insertion, responsive/accessibility/link/metadata/performance QA and written release approval remain outstanding.
 - **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260802-024 — Cross-system image identity must be manifest-first
+
+- **Timestamp/task:** 00:53, 02.08.2026 Europe/Oslo; Phase 1 v4 Figma, Gamma and Wix image validation.
+- **Issue observed:** Gamma contained 144 valid unique images but nine visible variant labels omitted required identity fields, while Wix normalized question marks in nine FAQ filenames.
+- **Root cause:** Provider presentation labels and filename sanitization were treated as if they were the asset identity contract.
+- **Corrective rule:** Use one canonical identity derived from the approved draft name, Gamma page/section title, version and explicit alternative number; attach the source URL and package ID as independent metadata; compare provider-visible names with documented punctuation normalization rather than using them as the sole key.
+- **Evidence/source:** Five Gamma package readbacks, 48 Figma placeholder metadata sets and 15 Wix folder/file readbacks.
+- **Action taken:** Applied the full canonical name and all three source alternatives to every Figma placeholder; verified Wix's 144-file semantic match without regenerating assets.
+- **Validation performed:** 48/48 Figma tags and metadata pass; 144/144 Wix semantic names pass; zero duplicate URLs or hashes.
+- **Unresolved items:** Nine Gamma visible labels remain malformed until an in-place rename surface is available.
+- **Classification:** `AUTO_APPROVED`.
+
+### ATL-LRN-20260802-025 — A validator must prove its expected baseline before classifying failures
+
+- **Timestamp/task:** 00:53, 02.08.2026 Europe/Oslo; Figma placeholder post-write verification.
+- **Issue observed:** The first comparator returned false failures for every placeholder because expected geometry fields were undefined.
+- **Root cause:** The test compared fields that the expected-record builder had not populated.
+- **Corrective rule:** Validate the validator input schema, inspect representative failure objects, and rerun against immutable pre-write evidence before reporting a design failure.
+- **Evidence/source:** Original 48-slot geometry inventory and corrected live readback.
+- **Action taken:** Rebuilt the expected baseline with x, y, width and height and repeated the complete 15-file validation.
+- **Validation performed:** 48/48 exact names, metadata and geometry passed; no copy, fill or layout changes occurred.
+- **Unresolved items:** None for the corrected validation method.
+- **Classification:** `AUTO_APPROVED`.
+
