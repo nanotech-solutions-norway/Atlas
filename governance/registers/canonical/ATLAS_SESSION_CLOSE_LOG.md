@@ -147,3 +147,17 @@
 - **Next executable workstream:** Current Wix Phase 1 implementation and publication-readiness validation using the integrated strategy, without enabling purchase or production services.
 - **Classification:** Report ingestion, reconciliation, archival, workflow corrections and lock preservation `AUTO_APPROVED`; owner-directed non-public business-plan integration `APPROVED`; procurement, architecture and release matters `PENDING_REVIEW`.
 - **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
+
+## Session entry — ATL-CLS-20260801-011
+
+- **Timestamp:** 12:18, 01.08.2026 Europe/Oslo
+- **Task:** Configure and validate the Atlas-AI Wix payments, Members Area, checkout and product-package foundation under the current approved restricted scope.
+- **Scope:** Three private non-buyable monthly Pricing Plans, private member-control fields, private pricing-contract bindings, fail-closed Velo policy, owner-only backend defaults, automated CI validation and controlled governance/Drive evidence. No public checkout, production charge, entitlement, provider secret or publication.
+- **Sources used:** Explicit owner instruction and Wix Payments correction; canonical Atlas decisions; pricing contract v0.5.1; consumer-law memorandum v0.7.0; MVA/accounting memorandum v0.8.0; authenticated Wix API readback; official Wix API documentation; `atlas_wix` PR #3.
+- **Actions completed:** Created Student Basic, Student Plus and Everyday Basic hidden plans; created three private member fields; extended and patched the private pricing contract; hardened Velo wildcard permissions; added fail-closed checkout policy and automated commerce validation; passed GitHub Actions workflow run 5; merged `atlas_wix` PR #3 at `5e53cfe4b17a7a9bc6102b1cf01295ff20e2e9f3`; added canonical implementation, validation and project-log evidence.
+- **Validation performed:** Exactly three plans; correct IDs, revisions, prices, allowances, NOK monthly terms, private visibility, non-buyability, no trials and cancellation capability; three private member fields; correct CMS bindings; public/purchase locks false; owner-only Velo defaults; repository validation and lint pass.
+- **Contradiction recorded:** The owner-confirmed Wix Payments configuration supersedes the older working availability assumption for current site direction. Connected-provider API readback and future memorandum source reconciliation remain open; no credentials or bank data were stored.
+- **Unresolved items:** Dashboard provider/method evidence; sandbox payment, decline, refund and settlement; durable confirmation; member cancellation runtime; invoice/credit-note/Conta/MVA reconciliation; entitlement and usage ledger; age/payer/student-eligibility enforcement; bilingual/accessibility/end-to-end acceptance; signed release approval.
+- **Next executable workstream:** Complete the non-production transaction, cancellation, refund, accounting, entitlement and member-eligibility acceptance evidence while preserving all release locks.
+- **Classification:** owner-directed controlled implementation `APPROVED`; exact implementation and validation facts `AUTO_APPROVED`; provider-policy memorandum update and all production/release matters `PENDING_REVIEW`.
+- **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
