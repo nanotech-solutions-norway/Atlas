@@ -133,3 +133,17 @@
 - **Next executable workstream:** Implement the validated sections in the Wix Home page and run the controlled runtime/release checklist when explicitly authorized.
 - **Classification:** Reconstruction and validation `AUTO_APPROVED`; Wix implementation/release remains gated.
 - **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
+
+## Session entry — ATL-CLS-20260801-010
+
+- **Timestamp:** 02:44, 01.08.2026 Europe/Oslo
+- **Task:** Ingest, reconcile, archive and integrate the completed Atlas AI Web Design and Website Strategy report supplied in PDF, DOCX and Markdown.
+- **Scope:** Controlled business-plan, Phase 1 website strategy, terminology, route, metrics, source, validation, decision and project-log records. No Wix mutation, publication, checkout, payment, production entitlement, provider credential or Managed Secure activation.
+- **Sources used:** The three report formats; current canonical Atlas registers; active-source business, phase, launch-gate, route/copy and SEO/AEO/GEO records; controlled Drive website-strategy research folder; GitHub PR #40.
+- **Decisions applied:** Business/professional remains the primary website lane; Phase 1 focuses on understanding, trust, low-risk qualification and human follow-up; 15 canonical page roles remain; canonical labels remain Solutions and Onboarding; Norwegian public copy uses AI with a one-time Home explanation of KI; Wix Studio remains the Phase 1 publishing plane; WCAG 2.2 AA is the internal design/QA target; consent-aware analytics architecture is approved.
+- **Pending items preserved:** Report budget ranges, analytics-vendor procurement, future secure-runtime selection, any fixed publication date and all release activation remain `PENDING_REVIEW`.
+- **Actions completed:** Merged GitHub PR #40 at commit `2dbe1475192b0795cca1d8acbbe4240116d62db0`; archived all three formats and two controlled mirrors in Drive folder `12_QUImTdlOol1Li77YrCwOd-F1n0fceN`; validated five private folder children and preserved release locks.
+- **Unresolved items:** Wix implementation and page-by-page acceptance; analytics-vendor and budget decisions; exact release-candidate approval.
+- **Next executable workstream:** Current Wix Phase 1 implementation and publication-readiness validation using the integrated strategy, without enabling purchase or production services.
+- **Classification:** Report ingestion, reconciliation, archival, workflow corrections and lock preservation `AUTO_APPROVED`; owner-directed non-public business-plan integration `APPROVED`; procurement, architecture and release matters `PENDING_REVIEW`.
+- **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
