@@ -161,3 +161,18 @@
 - **Next executable workstream:** Complete the non-production transaction, cancellation, refund, accounting, entitlement and member-eligibility acceptance evidence while preserving all release locks.
 - **Classification:** owner-directed controlled implementation `APPROVED`; exact implementation and validation facts `AUTO_APPROVED`; provider-policy memorandum update and all production/release matters `PENDING_REVIEW`.
 - **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
+
+## Session entry — ATL-CLS-20260802-012
+
+- **Timestamp:** 00:53, 02.08.2026 Europe/Oslo
+- **Task:** Maintain v4 Figma image placeholders, rank the 15 current v4 handoff files, validate Gamma image naming and Wix Media Manager organisation, and use the supplied Atlas AI v4 Figma project URL.
+- **Scope:** 15 Figma Slides files / 104 slides / 48 image slots; five Gamma packages / 144 images; 15 Wix root folders / 144 files; canonical GitHub/Drive evidence. No Wix publication, checkout, payment, entitlement, provider credential or release action.
+- **Sources used:** Current canonical GitHub registers and PR #40 baseline; controlled Drive mirror; Technical Drawing and Measurement Report v2.1; live Figma, Gamma and Wix readbacks; owner-supplied Figma project URL.
+- **Actions completed:** Applied canonical names and three-alternative source metadata to all 48 Figma placeholders; preserved geometry; completed weighted 15-file ranking; audited Gamma labels; revalidated all Wix folders and images; created governance/project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_V4_FIGMA_GAMMA_WIX_VALIDATION_0053_02082026.md.
+- **Validation performed:** 48/48 Figma placeholder tags and metadata pass; 104-slide content/structure evidence passes hard-veto controls; Gamma has 144 unique images and 135/144 canonical visible labels; Wix has 15/15 folders and 144/144 ready images with exact parent and variant grouping.
+- **Errors recorded:** Corrected one false-negative validator baseline; recorded nine malformed Gamma labels; recorded the unavailable existing-file move path for Figma project `633513513`.
+- **Unresolved items:** Move the 15 existing Figma files into the supplied Atlas AI v4 project through a supported Figma file browser, then verify project membership. Optional Gamma visible-label repair remains open.
+- **Next executable workstream:** Project-membership readback after the manual Figma move; then image replacement/visual QA only if raster embedding becomes supported or is completed manually.
+- **Classification:** Exact metadata writes and validation `AUTO_APPROVED`; project placement `PENDING_REVIEW` / `BLOCKED`.
+- **Release state:** `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
+
