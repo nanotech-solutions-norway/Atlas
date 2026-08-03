@@ -7,12 +7,14 @@
 | ATL-FIG-ERR-20260803-001 | The first slide in each of the 15 canonical Figma v4 files reproduced the global header/menu/language/mobile configuration card and was counted as a website page slide. | Wix operator configuration instructions from the report/Gamma source were transferred as presentation content without separating implementation guidance from actual page sections. | Classify shared header/menu/language/mobile controls as Wix operator configuration guidance. Do not count a standalone configuration card as public page content. A Figma page deck must begin with the page hero/H1 slide. | Deleted the first slide in all 15 files; post-delete readback passed. |
 | ATL-FIG-ERR-20260803-002 | Earlier manifest slide counts included the non-page configuration slide. | Artifact counts inherited the Gamma card topology instead of the public page-content boundary. | Manifest counts must reflect actual page slides after excluding operator-only configuration guidance. | Updated expected counts from 134 total slides to 119 total page slides. |
 | ATL-COPY-ERR-20260803-003 | Public copy authority was distributed across report files, Gamma, Figma and older active-source examples. | The validated 18:21 report had not yet been explicitly registered as the current paste-ready public-copy baseline. | Register the Drive DOCX/Markdown pair by ID and checksum; use Appendix A for public copy while preserving higher-authority legal, commercial and release controls. | Active-source control, README, source register, validation and manifest updated. |
+| ATL-FIG-ERR-20260803-004 | The initial deletion script called `saveVersionHistoryAsync`, but the current `use_figma` execution environment rejected that API. | General Plugin API capability was assumed to be available in the constrained connector runtime without a runtime capability check. | Do not call unsupported version-history APIs in `use_figma`. Return all affected node IDs and perform an independent post-write readback; rely on native Figma undo/version behavior outside the connector where needed. | The failed write was atomic and caused no partial deletion. The script was corrected and all 15 deletions then passed. |
 
 ## Validation evidence
 
 - All 15 target file keys were resolved from the controlled Drive manifest.
 - Each first slide was inspected before deletion and contained the Wix configuration signature: primary navigation, Managed Secure, Priser, Tillit, Ressurser, `Oppstart` and `English`.
 - Deletion was conditional on that signature.
+- The unsupported API failure was atomic; no file was partially changed.
 - Separate post-delete readback confirmed `firstSlideIsWixConfig=false` for all 15 files.
 - Each new first slide contains the canonical page hero/H1.
 - Gamma was not modified.
