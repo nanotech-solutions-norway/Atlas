@@ -101,3 +101,18 @@ Before any future Figma deletion or other destructive mutation:
 - Gamma and Wix non-modification: `APPROVED` scope preservation.
 - Project-folder membership: `EVIDENCE_LIMITED`.
 - Wix implementation and public release: `NO_GO`.
+
+## Rollback supersession — 11:48, 03.08.2026
+
+The owner subsequently ordered complete rollback and explicitly accepted reintroduction of the Wix configuration slides. That current instruction supersedes the non-restoration disposition above for these 15 files.
+
+A native provider-history rollback could not be executed because the current Figma MCP runtime rejects `triggerUndo` and `saveVersionHistoryAsync`. The operation was therefore completed as controlled content-state restoration:
+
+- one reconstructed Wix configuration slide inserted at position 1 in each controlled file;
+- original hero retained at position 2 with its original node ID;
+- all 119 existing page slides preserved and populated;
+- total restored from 119 to 134 slides;
+- independent readback passed for 15/15 files;
+- Gamma and Wix remained unchanged.
+
+The controlling result is recorded in `ATLAS_V4_COMPLETE_ROLLBACK_RESTORATION_VALIDATION_1148_03082026.md` as `ATL-VAL-20260803-074`.
