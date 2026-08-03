@@ -43,3 +43,11 @@
 ## Release state
 
 `NO_GO`; `publicAllowed=false`; `purchaseAllowed=false`; `releaseApproved=false`.
+
+## Supersession addendum — 11:48, 03.08.2026
+
+The owner explicitly superseded decision items 7 and 10 for the controlled v4 files and ordered complete rollback. Reintroduction of the Wix configuration slide was expressly accepted.
+
+The connector does not support provider-native historical undo. The approved instruction was executed as a controlled content-state restoration: one reconstructed Wix configuration slide was inserted at position 1 in each file, every original hero remained at position 2 with its original node ID, and the aggregate count returned from 119 to 134 populated slides.
+
+The current controlling rollback decision is `ATL-DEC-20260803-034`, recorded in `ATLAS_FIGMA_V4_COMPLETE_ROLLBACK_RESTORATION_DECISION_1148_03082026.md`. The copy baseline, navigation labels, release locks and Gamma/Wix non-modification remain unchanged.
