@@ -1,14 +1,24 @@
 # Atlas AI v4 Copy and Figma First-Slide Validation — 10:54, 03.08.2026
 
+**Corrective revalidation:** 11:22, 03.08.2026 Europe/Oslo.  
 **Validation targets:**
 
 1. Canonical Norwegian Phase 1 copy baseline.
-2. All 15 canonical Figma v4 files in project `633513513`.
+2. The 15 controlled Figma v4 file keys associated with the Atlas AI v4 workstream.
 3. First-slide classification and post-delete file state.
 4. Controlled Drive artifact manifest and validation report.
 
-**Result:** `PASS` for source identity, copy baseline registration, conditional slide deletion and post-delete readback.  
+**Result:** `PASS_KNOWN_FILES` for source identity, conditional first-slide deletion, complete remaining-slide presence and separate live readback.  
+**Project-folder inventory result:** `LIMITED` because the available Figma connector cannot enumerate an existing project folder or prove project membership.  
 **Release result:** `NO_GO`; no Wix implementation or publication approval.
+
+## Corrective owner report and response
+
+At 11:22, 03.08.2026, the owner reported that the v4 drafts appeared completely deleted and instructed that no slide other than the first should be changed.
+
+A new read-only, node-level inspection was immediately run against every controlled file key. No restoration, rollback, regeneration or further Figma mutation was performed because the live files were not empty or corrupted: all 119 expected remaining page slides were present, populated and readable. Reverting the files would have reintroduced the unwanted Wix-configuration slide or risked overwriting intact page content.
+
+The precise cause of the owner’s apparent empty/deleted Figma UI state is not established by the connector evidence. The connector can validate known file keys and their contents, but it cannot provide an authoritative project-folder listing.
 
 ## Source validation
 
@@ -19,9 +29,9 @@
 
 Appendix A is registered as the controlling paste-ready Norwegian public-copy baseline. The report's implementation limitations remain binding: content does not prove Wix route, metadata, form, cookie, accessibility, responsive or release completion.
 
-## Figma validation method
+## Original Figma edit method
 
-For each file:
+For each controlled file:
 
 1. Resolve the exact file key from the controlled Drive manifest.
 2. Read the first slide and collect all text.
@@ -32,42 +42,62 @@ For each file:
 7. Confirm the count decreased by one.
 8. Confirm the new first slide is the canonical page hero and no longer matches the Wix-configuration signature.
 
-## Per-file results
+An initial script attempted to call the unsupported `saveVersionHistoryAsync` method. That call failed atomically, so it made no file change. The corrected script omitted the unsupported method and returned the deleted slide IDs for audit.
 
-| File | Figma key | Before | After | New first slide | Result |
-|---|---|---:|---:|---|---|
-| Home v4 | `yoy0V2adMzWPXn5jJe6R8C` | 10 | 9 | Styrte AI-løsninger for arbeid, studier og hverdagsoppgaver. | PASS |
-| Tjenester v4 | `WkiuLQRrmZwlTCtpKO3cXU` | 8 | 7 | Velg riktig AI-løp for behovet. | PASS |
-| Bedrift v4 | `zOn5VXQY9V74rWqLBeyip7` | 10 | 9 | Konfigurerte AI-arbeidsflyter med tydelige data- og ansvarsgrenser. | PASS |
-| Studenter v4 | `AhGm9skcso2bG2BmHOA5IK` | 11 | 10 | Ansvarlig AI-støtte for planlegging, forståelse og repetisjon. | PASS |
-| Privatpersoner v4 | `H36n74YgmCquksYEgnHI4Z` | 9 | 8 | Praktisk AI-støtte med definerte bruks- og sikkerhetsgrenser. | PASS |
-| Managed Secure v4 | `R4LeFYvy4IQmH91fS7pEQ7` | 9 | 8 | Kontrollert arkitekturgjennomgang for konfidensielle arbeidsflyter. | PASS |
-| Priser v4 | `3qeoaaSEGw90RzYZjSIMa1` | 10 | 9 | Offentlige priser med tydelig leveranse- og aktiveringsstatus. | PASS |
-| Tillit v4 | `nfhkzy4rocsCyg0rjLOrdi` | 9 | 8 | Tydelige grenser for sikkerhet, personvern og ansvarlig AI. | PASS |
-| Plattformer v4 | `V4qys96ma9y2tX74Anwl0E` | 8 | 7 | Fire plattformspor for forskjellige behov og kontrollnivåer. | PASS |
-| Oppstart v4 | `rmm6HkfI7ijGQY9dHH4XZu` | 7 | 6 | Start med behovet – ikke med sensitiv informasjon. | PASS |
-| Ressurser v4 | `pOX06PeOspQdlr8gcGzjA9` | 8 | 7 | Ressurser for bedre AI-beslutninger. | PASS |
-| FAQ v4 | `AkyPe1H2MTpyBfyPYPf9Iw` | 7 | 6 | Ofte stilte spørsmål om Atlas AI. | PASS |
-| Om oss v4 | `RvGNzVri3oHscBnQsconc4` | 8 | 7 | Praktisk AI med styring som en del av leveransen. | PASS |
-| Kontakt v4 | `SjafXw83D5CISHOaKYncSn` | 9 | 8 | Kontakt Atlas AI. | PASS |
-| Juridisk v4 | `LnGmSITkmM0pIad6mV9v55` | 11 | 10 | Juridisk informasjon og ansvarlig bruk. | PASS |
+## Per-file corrective live results
 
-**Total:** 134 slides before; 119 actual page slides after; 15 operator-only configuration slides removed.
+| File | Figma key | Before | Current | Current first slide | Remaining content | Result |
+|---|---|---:|---:|---|---|---|
+| Home v4 | `yoy0V2adMzWPXn5jJe6R8C` | 10 | 9 | Styrte AI-løsninger for arbeid, studier og hverdagsoppgaver. | 9/9 populated | PASS |
+| Tjenester v4 | `WkiuLQRrmZwlTCtpKO3cXU` | 8 | 7 | Velg riktig AI-løp for behovet. | 7/7 populated | PASS |
+| Bedrift v4 | `zOn5VXQY9V74rWqLBeyip7` | 10 | 9 | Konfigurerte AI-arbeidsflyter med tydelige data- og ansvarsgrenser. | 9/9 populated | PASS |
+| Studenter v4 | `AhGm9skcso2bG2BmHOA5IK` | 11 | 10 | Ansvarlig AI-støtte for planlegging, forståelse og repetisjon. | 10/10 populated | PASS |
+| Privatpersoner v4 | `H36n74YgmCquksYEgnHI4Z` | 9 | 8 | Praktisk AI-støtte med definerte bruks- og sikkerhetsgrenser. | 8/8 populated | PASS |
+| Managed Secure v4 | `R4LeFYvy4IQmH91fS7pEQ7` | 9 | 8 | Kontrollert arkitekturgjennomgang for konfidensielle arbeidsflyter. | 8/8 populated | PASS |
+| Priser v4 | `3qeoaaSEGw90RzYZjSIMa1` | 10 | 9 | Offentlige priser med tydelig leveranse- og aktiveringsstatus. | 9/9 populated | PASS |
+| Tillit v4 | `nfhkzy4rocsCyg0rjLOrdi` | 9 | 8 | Tydelige grenser for sikkerhet, personvern og ansvarlig AI. | 8/8 populated | PASS |
+| Plattformer v4 | `V4qys96ma9y2tX74Anwl0E` | 8 | 7 | Fire plattformspor for forskjellige behov og kontrollnivåer. | 7/7 populated | PASS |
+| Oppstart v4 | `rmm6HkfI7ijGQY9dHH4XZu` | 7 | 6 | Start med behovet – ikke med sensitiv informasjon. | 6/6 populated | PASS |
+| Ressurser v4 | `pOX06PeOspQdlr8gcGzjA9` | 8 | 7 | Ressurser for bedre AI-beslutninger. | 7/7 populated | PASS |
+| FAQ v4 | `AkyPe1H2MTpyBfyPYPf9Iw` | 7 | 6 | Ofte stilte spørsmål om Atlas AI. | 6/6 populated | PASS |
+| Om oss v4 | `RvGNzVri3oHscBnQsconc4` | 8 | 7 | Praktisk AI med styring som en del av leveransen. | 7/7 populated | PASS |
+| Kontakt v4 | `SjafXw83D5CISHOaKYncSn` | 9 | 8 | Kontakt Atlas AI. | 8/8 populated | PASS |
+| Juridisk v4 | `LnGmSITkmM0pIad6mV9v55` | 11 | 10 | Juridisk informasjon og ansvarlig bruk. | 10/10 populated | PASS |
 
-## Gamma disposition
+**Total:** 134 slides before; 119 actual page slides after; 15 operator-only configuration slides removed; 119/119 current slides populated.
 
-No Gamma file was modified. The corresponding first Gamma card remains a source/operator reference for Wix header, menu, language and mobile controls. It is not counted as public page content for Figma or Wix page-section implementation.
+## Gamma disposition and validation
+
+No Gamma file was modified. The Gamma inventory still contains all 15 newest v4 drafts under the same IDs, URLs and pre-edit update timestamps. The corresponding first Gamma card remains source/operator guidance for Wix header, menu, language and mobile controls.
+
+## Wix disposition and validation
+
+No Wix write action was executed. Current authenticated Wix context still identifies Atlas-AI site ID `1448ccad-68f0-43ea-8f0e-c9d8c0366082` as a Draft Wix Studio site. This Figma correction did not publish or change the Wix site.
+
+## Mandatory destructive-edit safeguard
+
+Before any future Figma deletion or other destructive mutation:
+
+1. Capture the full pre-write slide grid, slide IDs, names, text digest, child count and expected count.
+2. Create or verify a recoverable Figma version/duplicate where the connector supports it; if it does not, state that limitation before mutation.
+3. Require an exact deletion signature and abort on any mismatch.
+4. Mutate only the specifically authorized node IDs.
+5. Run a separate post-write readback across every remaining slide.
+6. Report the exact per-file before/after counts and all mutated IDs.
+7. Never claim project-folder completeness unless project membership itself has been enumerated and read back.
+8. Do not roll back an intact file merely to address an unverified project-browser or UI discrepancy.
 
 ## Remaining boundaries
 
-- Metadata strings visibly embedded in some remaining Figma/Gamma page slides are a separate previously documented implementation issue and were not changed by this request.
+- The available connector does not enumerate the target Figma project folder; project membership remains unproven by connector readback.
+- Metadata strings visibly embedded in some remaining Figma/Gamma page slides are a separate previously documented implementation issue and were not changed.
 - Functional forms, links, cookie behavior, metadata, routes, responsive states and accessibility require Wix validation.
 - External Gamma image assets and normalized Figma panels retain their prior documented visual-fidelity boundaries.
 
 ## Classification
 
-- Source identity and checksum registration: `AUTO_APPROVED`.
-- Exact owner correction separating Wix operator guidance from page content: `AUTO_APPROVED`.
-- Conditional deletion and post-delete readback: `AUTO_APPROVED`.
-- Gamma non-modification: `APPROVED` owner instruction.
+- Owner instruction that only the first slide may be deleted: `APPROVED`.
+- Corrective live audit, non-restoration decision and destructive-edit safeguards: `AUTO_APPROVED`.
+- Gamma and Wix non-modification: `APPROVED` scope preservation.
+- Project-folder membership: `EVIDENCE_LIMITED`.
 - Wix implementation and public release: `NO_GO`.
