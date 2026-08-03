@@ -1,8 +1,9 @@
 # Atlas AI Norwegian Copy Baseline and Figma Slide-Boundary Decision — 10:54, 03.08.2026
 
+**Corrective revalidation:** 11:22, 03.08.2026 Europe/Oslo.  
 **Decision authority:** Explicit owner instruction.  
 **Source report:** `Atlas AI Norwegian Website Copy Deep Research Report — 18:21, 02.08.2026`.  
-**Classification:** `APPROVED` for exact owner decisions and public copy baseline; `AUTO_APPROVED` for verified artifact corrections; legal implementation and production release remain `PENDING_REVIEW` / `NO_GO`.
+**Classification:** `APPROVED` for exact owner decisions and public copy baseline; `AUTO_APPROVED` for verified artifact corrections and non-rollback decision; legal implementation and production release remain `PENDING_REVIEW` / `NO_GO`.
 
 ## Decisions
 
@@ -12,12 +13,25 @@
 4. The persistent header CTA is `Oppstart`.
 5. Internal English role names and repository paths may remain for implementation, but they must not displace approved Norwegian public labels.
 6. Wix header, navigation, language selector and mobile-menu configuration guidance is operator implementation guidance, not public page content.
-7. The first slide in every canonical Figma v4 file must therefore be the page hero/content slide, not the Wix configuration/menu slide.
-8. The first slide was deleted from all 15 canonical Figma v4 files. Post-delete connector readback confirmed the new first slide is the correct canonical page hero in all files.
-9. Gamma drafts remain unchanged. Their configuration card is retained as source/design evidence and operator guidance, not counted as page content.
-10. Public prices remain visible, but purchase, payment, provisioning and activation remain separately locked.
-11. Family remains `Utsatt`; Managed Secure remains qualification-only and not self-service.
-12. No source or design update authorizes Wix publication or production release.
+7. The first slide in every controlled Figma v4 file must therefore be the page hero/content slide, not the Wix configuration/menu slide.
+8. Exactly the first slide was deleted from each of the 15 controlled Figma v4 files after matching the approved Wix-configuration signature.
+9. Following the owner’s report that the files appeared completely deleted, a complete live audit confirmed all 15 known files and all 119 expected remaining page slides are intact and populated.
+10. No rollback or regeneration is authorized where the live file already matches the approved first-slide-only target. Such a rollback would reintroduce the unwanted configuration slide or risk overwriting intact content.
+11. Gamma drafts remain unchanged. Their configuration card is retained as source/design evidence and operator guidance, not counted as page content.
+12. The available Figma connector can validate known file keys but cannot authoritatively enumerate project-folder membership. Project placement or project-browser state must not be represented as proven without a supported membership readback.
+13. Future destructive Figma edits require a complete pre-write inventory, recoverable version/duplicate where supported, exact-signature mutation, returned mutated IDs and full post-write readback.
+14. Public prices remain visible, but purchase, payment, provisioning and activation remain separately locked.
+15. Family remains `Utsatt`; Managed Secure remains qualification-only and not self-service.
+16. No source or design update authorizes Wix publication or production release.
+
+## Corrective evidence
+
+- 15/15 controlled Figma file keys accessible.
+- 119/119 expected remaining slides present and populated.
+- Every deck count equals its original count minus one.
+- Every current first slide is the canonical hero/H1.
+- All 15 newest Gamma v4 drafts remain present and unchanged.
+- Atlas-AI Wix site remains Draft and was not modified.
 
 ## Source identity
 
