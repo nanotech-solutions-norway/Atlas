@@ -255,3 +255,14 @@ No paid activation, production availability or Managed Secure claim without expl
 - **Unresolved items:** None for the corrected validation method.
 - **Classification:** `AUTO_APPROVED`.
 
+### ATL-LRN-20260803-026 — Destructive Figma edits require recoverable pre-state and full post-state proof
+
+- **Timestamp/task:** 11:22, 03.08.2026 Europe/Oslo; corrective audit after the owner reported that the v4 files appeared completely deleted.
+- **Issue observed:** The approved first-slide-only deletion was technically followed, but the owner could not immediately verify that the remaining v4 decks were intact.
+- **Root cause:** No connector-verifiable immutable backup or duplicate was established, completion reporting did not immediately expose the complete per-file inventory, and project-folder membership cannot be enumerated by the available connector.
+- **Corrective rule:** Before destructive Figma edits, capture every target file key, slide ID, name, text digest, child count and expected count; create or verify a recoverable version/duplicate where supported; state the limitation before mutation when no recovery point is available; mutate only exact signature-matched IDs; return every mutated ID; perform a separate readback of every remaining slide; validate representative or complete renders; disclose project-inventory limits; never roll back intact files solely to resolve an unverified UI discrepancy.
+- **Evidence/source:** Owner correction; live inspection of 15 controlled file keys and all 119 remaining slides; 15/15 first-slide renders at 1920×1080; Gamma inventory; authenticated Wix context.
+- **Action taken:** Performed no additional Figma mutation; recorded 119/119 populated slides and 15/15 rendered first slides; preserved Gamma and Wix unchanged; updated error, validation, decision, manifest and project-log records.
+- **Validation performed:** 15/15 files accessible; every count equals original minus one; every current first slide is the canonical hero; no deck begins with the Wix configuration signature; all first slides render.
+- **Unresolved items:** The Figma project-browser membership/state seen by the owner cannot be authoritatively diagnosed with the available connector.
+- **Classification:** `AUTO_APPROVED`.
