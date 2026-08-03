@@ -13,12 +13,14 @@
 1. The first slide in all 15 canonical Figma v4 files contained global Wix header, navigation, language-selector and mobile-menu configuration guidance rather than actual public page content.
 2. Earlier Figma slide counts therefore included one operator-only configuration slide per file.
 3. The complete 18:21 Norwegian website-copy report had been used for Gamma/Figma generation and validation but was not yet fully registered as the current active public-copy baseline in the repository overview and copy-control files.
+4. An initial Figma write attempted to call `saveVersionHistoryAsync`, which is unsupported in the current `use_figma` execution environment.
 
 ## Root cause
 
 - Report/Gamma component instructions and actual page sections were transferred through the same card/slide pipeline.
 - Artifact topology was treated as page topology without an explicit operator-guidance boundary.
 - Earlier active-source copy controls contained representative samples rather than the complete validated Appendix A authority statement.
+- General Plugin API capability was assumed to be available in the constrained connector runtime without a runtime capability check.
 
 ## Corrective rules
 
@@ -29,6 +31,7 @@
 5. Register report source files by stable Drive ID, size and checksum.
 6. Use Appendix A as the exact Norwegian public-copy baseline while preserving newer explicit owner decisions and approved legal, commercial, security and release controls.
 7. Do not modify Gamma where the owner explicitly instructs that Gamma should remain unchanged.
+8. Do not call unsupported version-history APIs in `use_figma`; return all affected node IDs and perform independent post-write readback.
 
 ## Evidence and sources
 
@@ -38,6 +41,8 @@
 - DOCX SHA-256 `2354c572c5bbdec751c5261f16d559ea9ed05aa8c704198b36146750e7984209`.
 - Controlled Drive artifact manifest `1JR8seQkIw11O2AAEwBsQF2hxV3hSSYluwvrde5d6f_8`.
 - Drive validation report `1xOG4BOZbOzR7XwL4n1a0sbcRvEg6y1AekuKGw2fzIYE`.
+- Drive log mirror `1YKDGzpjw2q1uXTd6aHaD6nBHygioSVIyFRRazqbM_dg`.
+- Drive source-register mirror `1NPpT696lyDFrzJ4pQZtXfZ_0aoE-VBXJnBywVXGj614`.
 - Live Figma Plugin API inspection, conditional deletion and post-delete readback for all 15 files.
 
 ## Action taken
@@ -48,8 +53,9 @@
 - Left all Gamma drafts unchanged.
 - Updated repository README and the active copy/route/terminology control.
 - Added the 03.08 active-source copy baseline and index.
-- Added decision, error, validation and source-register records.
+- Added decision, error, validation, source-register and report-integrity records.
 - Updated the Drive artifact manifest and appended the correction to the Drive validation report.
+- Created Drive mirrors for the project log and source/artifact register in the controlled report folder.
 - Registered the source report pair and preserved all release locks.
 
 ## Figma count changes
@@ -77,11 +83,13 @@
 - Source pair metadata and checksums verified.
 - All 15 first slides inspected before mutation.
 - All 15 deletions passed the required configuration signature.
-- All 15 decks read back after deletion.
+- The unsupported version-history call failed atomically and caused no partial deletion.
+- All 15 decks read back after successful deletion.
 - Every deck count decreased by one.
 - Every new first slide is the expected canonical page hero.
 - No deck still begins with the Wix configuration signature.
 - Gamma non-modification confirmed by scope; no Gamma write action was executed.
+- Drive manifest, validation report, project log and source register were read back after update.
 
 ## Unresolved items
 
@@ -95,4 +103,5 @@
 
 - Exact owner correction and report baseline: `APPROVED`.
 - Verified source integrity, conditional deletion, count correction and post-delete readback: `AUTO_APPROVED`.
+- Figma connector limitation and corrected workflow: `AUTO_APPROVED`.
 - Legal/transaction implementation and public availability: `PENDING_REVIEW` / `NO_GO`.
