@@ -1,9 +1,10 @@
 # ATLAS FIGMA CORNER-RADIUS STANDARD
 
 **Approved:** 10:57, 05.08.2026 Europe/Oslo  
+**Canonical confirmation:** 11:54, 05.08.2026 Europe/Oslo  
 **Scope:** Atlas AI Figma Slides and Figma Design website-draft preparation  
-**Classification:** `AUTO_APPROVED`  
-**Authority basis:** explicit owner correction plus the approved `Atlas AI Canonical Figma Recreation Specification v3`.
+**Classification:** `CANONICAL`  
+**Authority basis:** explicit owner correction, subsequent explicit owner approval to retain the instructions for future configuration and adjustments, and the approved `Atlas AI Canonical Figma Recreation Specification v3`.
 
 ## 1. Canonical radius taxonomy
 
@@ -49,5 +50,9 @@ The following Tjenester v4.1 nodes establish the validated implementation preced
 - Managed Secure warning callout `0:168` → `6 px`.
 - Closing information callout `0:239` → `6 px`.
 - Labels and CTA controls remain `4 px`.
+
+## 5. Persistence rule
+
+This standard is the default for future Atlas AI Figma configuration and adjustment work. Apply it automatically unless a later explicit owner instruction or a higher-authority approved source supersedes it. Any conflict must be flagged rather than silently merged.
 
 This standard does not change Wix implementation or public-release status. Public release remains `NO_GO` until the controlling runtime gates pass.
