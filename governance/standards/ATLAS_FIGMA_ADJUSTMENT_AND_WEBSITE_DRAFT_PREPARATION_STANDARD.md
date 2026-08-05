@@ -1,6 +1,7 @@
 # ATLAS FIGMA ADJUSTMENT AND WEBSITE-DRAFT PREPARATION STANDARD
 
 **Approved:** 23:05, 04.08.2026 Europe/Oslo  
+**Updated:** 09:56, 05.08.2026 Europe/Oslo  
 **Scope:** Atlas AI website drafts and Gamma/PDF/PPTX-to-Figma adjustments  
 **Classification:** `AUTO_APPROVED`  
 **Release effect:** None; Wix implementation and public release remain separate and `NO_GO` until their controlling gates pass.
@@ -64,9 +65,10 @@ The Figma connector cannot authoritatively enumerate all files in a project fold
 
 1. Load every current and target font before changing text.
 2. Validate font-family replacement across styled text segments, not only the top-level text property.
-3. Inspect imported paragraph-list formatting before adding literal bullet glyphs. Use either Figma list formatting or literal bullets, never both.
-4. Validate text frames for clipping and visible overflow after font replacement.
-5. Preserve paragraph spacing and intentional blank-line separation where the source uses distinct paragraphs.
+3. **Default page-heading rule:** retain the explicitly approved hero heading size for the hero section; set every non-hero page heading to `Roboto Slab Regular, 50 px`, with `118%` line height, unless a later explicit user instruction overrides it. This rule applies to the principal page/section heading only, not card headings, supporting headings, labels or CTA text.
+4. Inspect imported paragraph-list formatting before adding literal bullet glyphs. Use either Figma list formatting or literal bullets, never both.
+5. Validate text frames for clipping and visible overflow after font replacement.
+6. Preserve paragraph spacing and intentional blank-line separation where the source uses distinct paragraphs.
 
 ## 6. Required validation suite
 
@@ -75,6 +77,7 @@ After mutation, perform a separate readback and rendered QA. At minimum validate
 - exact slide count and order;
 - 1920 × 1080 dimensions for every slide;
 - expected heading on every slide;
+- hero heading retains its approved size and every non-hero principal page heading is exactly 50 px unless explicitly overridden;
 - exact controlled line-break samples;
 - required source-copy samples;
 - principal margins and content widths;
@@ -83,6 +86,7 @@ After mutation, perform a separate readback and rendered QA. At minimum validate
 - CTA count, labels, dimensions, fills, borders and editability;
 - absence of raster/image-filled CTA controls;
 - image-fill or approved-placeholder scope;
+- **every image-bearing node on every slide**, including valid `IMAGE` fill, non-empty image hash, visible opacity, approved scale/crop mode, clipping, finite transform, positive dimensions, slide-bound containment and rendered focal-subject/crop inspection;
 - font-family violations and missing fonts;
 - visible nodes outside the slide bounds;
 - text clipping or range-fit warnings;
