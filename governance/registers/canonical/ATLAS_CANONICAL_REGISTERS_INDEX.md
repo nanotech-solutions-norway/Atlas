@@ -17,17 +17,24 @@
 4. `ATLAS_VALIDATION_REGISTER.md` — tests, evidence, results and follow-up.
 5. `ATLAS_SOURCE_AUTHORITY_MAP.md` — hierarchy, platform roles and contradiction protocol.
 6. `ATLAS_SESSION_CLOSE_LOG.md` — major-session closure and continuation state.
+7. `ATLAS_WORKSPACE_UPDATE_REGISTER_1854_05082026.md` — supplemental Workspace decision, learning, error, validation, source-authority and session entries. Apply item-level classifications; architecture remains `PENDING_REVIEW`.
 
 ## Supplemental controls
 
 - `ATLAS_FINAL_TREE_COMPLIANCE_MATRIX.md`
 - `ATLAS_FINAL_TREE_COMPLIANCE_MATRIX.csv`
 - `ATLAS_PROJECT_LOG_UPDATE_PACK_0229_25072026.md`
+- `../../decisions/ATLAS_WORKSPACE_ARCHITECTURE_DECISION_PROPOSAL_1854_05082026.md`
+- `../../security/ATLAS_WORKSPACE_SECURITY_CONTROL_ADDENDUM_1854_05082026.md`
+- `../../validation/ATLAS_WORKSPACE_VALIDATION_AND_LAUNCH_GATES_1854_05082026.md`
+- `../../source-registers/ATLAS_WORKSPACE_REPORT_SOURCE_REGISTER_1854_05082026.md`
+- `../../project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_WORKSPACE_1854_05082026.md`
 
 ## Storage and authority
 
 - **Canonical:** GitHub Markdown in `nanotech-solutions-norway/Atlas/governance/registers/canonical/`.
 - **Controlled mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
+- **Atlas Workspace report:** https://docs.google.com/document/d/1O_bQyBtYtbeTwZ6fSPDObUvSNOXCNfxOvWSMGoP5YhM
 - **Gamma/Wix/Figma:** Non-public reference/index artifacts only.
 - **Public release:** `NO_GO`.
 
