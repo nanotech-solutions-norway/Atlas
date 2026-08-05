@@ -1,9 +1,9 @@
 # ATLAS FIGMA ADJUSTMENT AND WEBSITE-DRAFT PREPARATION STANDARD
 
 **Approved:** 23:05, 04.08.2026 Europe/Oslo  
-**Updated:** 09:56, 05.08.2026 Europe/Oslo  
+**Updated:** 11:54, 05.08.2026 Europe/Oslo  
 **Scope:** Atlas AI website drafts and Gamma/PDF/PPTX-to-Figma adjustments  
-**Classification:** `AUTO_APPROVED`  
+**Classification:** `CANONICAL`  
 **Release effect:** None; Wix implementation and public release remain separate and `NO_GO` until their controlling gates pass.
 
 ## 1. Purpose
@@ -54,7 +54,7 @@ The Figma connector cannot authoritatively enumerate all files in a project fold
    - `Roboto Slab` for display and card headings;
    - `Roboto` for body copy, labels, controls and supporting text;
    - verified italic or semibold variants only where required.
-7. Use a 1920 × 1080 slide canvas. Apply the controlled 104 px principal side margin and 1,712 px principal content width where the section uses the standard full-width contract. Preserve documented source-specific offsets for intentional split layouts, image bleeds and specialist cards.
+7. Use a 1920 × 1080 slide canvas. Apply the controlled 104 px principal side margin and 1,712 px principal content width where the section uses the standard full-width contract. Use a 32 px grid/card rhythm and 32 px card padding as the global default; preserve only documented source-specific exceptions for intentional split layouts, image bleeds and specialist cards.
 8. Reconstruct rasterised controls as editable Figma frames and editable text labels.
 9. Preserve source images and crop intent in Figma Slides. For a Figma Design transfer, use embedded images or explicit user-approved editable placeholders; report which scope is active.
 10. Preserve exact box configuration, including dimensions, padding, alignment, fill, stroke, stroke weight, corner radius, dividers and callout treatment.
@@ -70,7 +70,21 @@ The Figma connector cannot authoritatively enumerate all files in a project fold
 5. Validate text frames for clipping and visible overflow after font replacement.
 6. Preserve paragraph spacing and intentional blank-line separation where the source uses distinct paragraphs.
 
-## 6. Required validation suite
+## 6. Corner-radius taxonomy
+
+Use these values unless a later explicit owner instruction or an approved source visual establishes a documented exception:
+
+- standard content cards and boxes: `6 px` on all corners;
+- highlighted pricing/status panels: `6 px` on all corners;
+- neutral, warning and informational callouts: `6 px` on all corners;
+- category/section label outlines: `4 px` on all corners;
+- primary and secondary CTA buttons: `4 px` on all corners;
+- full-slide backgrounds and edge-to-edge image frames: `0 px`;
+- circular or intentionally shaped image masks: preserve the approved crop geometry.
+
+Do not retain decorative `18–34 px` radii or mechanically scaled values such as approximately `31.694 px` or `40.517 px` merely because they originated from a Gamma/PPTX export. Any radius above `6 px` requires explicit evidence and documented approval.
+
+## 7. Required validation suite
 
 After mutation, perform a separate readback and rendered QA. At minimum validate:
 
@@ -82,11 +96,13 @@ After mutation, perform a separate readback and rendered QA. At minimum validate
 - required source-copy samples;
 - principal margins and content widths;
 - key frame, card, image and callout geometry;
-- label-box fills, strokes, stroke weights and corner radii;
+- box dimensions and internal text margins/padding against the approved baseline;
+- all four individual corner values for every box-like node;
+- cards/callouts/highlighted panels at 6 px, labels/CTAs at 4 px and backgrounds at 0 px;
 - CTA count, labels, dimensions, fills, borders and editability;
 - absence of raster/image-filled CTA controls;
 - image-fill or approved-placeholder scope;
-- **every image-bearing node on every slide**, including valid `IMAGE` fill, non-empty image hash, visible opacity, approved scale/crop mode, clipping, finite transform, positive dimensions, slide-bound containment and rendered focal-subject/crop inspection;
+- every image-bearing node on every slide, including valid `IMAGE` fill, non-empty image hash, visible opacity, approved scale/crop mode, clipping, finite transform, positive dimensions, slide-bound containment and rendered focal-subject/crop inspection;
 - font-family violations and missing fonts;
 - visible nodes outside the slide bounds;
 - text clipping or range-fit warnings;
@@ -96,7 +112,7 @@ After mutation, perform a separate readback and rendered QA. At minimum validate
 
 A validator must prove its expected baseline before classifying a design failure. When a check fails, inspect the node ID, coordinate system and expected-record construction before mutating the design.
 
-## 7. Figma Design handoff
+## 8. Figma Design handoff
 
 When slides are copied to a Figma Design file:
 
@@ -109,7 +125,7 @@ When slides are copied to a Figma Design file:
 7. validate group-relative positions by subtracting the group origin because children of a Figma `GROUP` retain page-relative coordinates;
 8. export and revalidate the resulting `.fig` package when portability is required.
 
-## 8. Evidence and write-back
+## 9. Evidence and write-back
 
 At completion:
 
@@ -117,9 +133,10 @@ At completion:
 2. commit the standard and task-specific log to canonical GitHub through a reviewable branch/PR;
 3. mirror the standard and task log to the controlled Atlas Google Drive folder and verify the destination parent and document readback;
 4. classify exact user corrections, validated design fixes and non-sensitive quality-control rules as `AUTO_APPROVED`;
-5. keep commercial, legal, provider-policy, safety-posture and release changes as `PENDING_REVIEW` unless separately approved.
+5. classify the consolidated rules as `CANONICAL` only when explicitly approved by the owner, as occurred at 11:54, 05.08.2026;
+6. keep commercial, legal, provider-policy, safety-posture and release changes as `PENDING_REVIEW` unless separately approved.
 
-## 9. Completion vocabulary
+## 10. Completion vocabulary
 
 Use separate states:
 
@@ -131,3 +148,20 @@ Use separate states:
 - `APPROVED/RELEASED` — explicit release approval issued.
 
 A Figma pass never implies Wix implementation or public release.
+
+## 11. Canonical saved configuration — 11:54, 05.08.2026
+
+The owner explicitly approved this standard for future Atlas AI Figma configuration and adjustment work.
+
+The following configuration is therefore canonical until superseded by a later explicit instruction:
+
+- hero principal heading: retain the explicitly approved hero size;
+- non-hero principal headings: `Roboto Slab Regular, 50 px, 118%` line height;
+- standard cards, pricing/status panels and callouts: `6 px` radius;
+- labels and CTA controls: `4 px` radius;
+- backgrounds: `0 px` radius;
+- intentional image masks: preserve source geometry;
+- global layout baseline: 1920 × 1080, 104 px side margins, 1,712 px content width, 32 px grid/card rhythm and 32 px card padding, subject to documented approved section-specific exceptions;
+- every image-bearing node must be validated on every slide;
+- box dimensions, outer margins, internal text margins/padding, line breaks, typography, fills, strokes and bounds must be validated before a pass is issued;
+- all corrections remain design-only and do not alter Wix implementation or the `NO_GO` release state.
