@@ -71,6 +71,8 @@ Complete a fresh deterministic validation and rendered QA of the canonical edita
 4. Reran the corrected deterministic validator.
 5. Rendered and inspected all five frames after the deterministic pass.
 6. Created this continuation record from current `main` rather than writing blindly to the diverged PR #53 branch.
+7. Appended the source-key supersession and final validation result to both controlled Drive transfer records and verified each write by exact-text readback.
+8. Linked the final continuation record back to PR #53 without altering or merging its diverged branch.
 
 ## Deterministic validation result
 
@@ -106,11 +108,15 @@ Complete a fresh deterministic validation and rendered QA of the canonical edita
 
 ## Source-key reconciliation
 
-The current validated source is `VRfwAuekUaxqm4YqvSLvCt`. Older `w3sC60Cm6Y4SVbexEk76J8` references are historical and must be marked superseded in the controlled Drive records. The source identities are not equivalent and were not silently merged.
+The current validated source is `VRfwAuekUaxqm4YqvSLvCt`. Older `w3sC60Cm6Y4SVbexEk76J8` references have now been explicitly marked historical and superseded in both controlled Drive transfer records. The source identities are not equivalent and were not silently merged.
+
+Drive writeback/readback validated:
+
+- `https://docs.google.com/document/d/1YLCMwwPCGr2rmM7PQ7qrAkqeFgQSLBlVsaaNLRJ1MIU/edit`
+- `https://docs.google.com/document/d/1d49eRX41hmBc9gQSzSgRirtoskpULN-g8UYDfuvoYBk/edit`
 
 ## Unresolved items
 
-- Append or write back the source-key supersession and final validation result to the controlled Google Drive records.
 - The redundant Design file `LSIuAlOSCIRPPfeK5pLA7L` remains a manual archive/delete task.
 - PR #53 remains an open Slides-reconciliation record and its branch remains behind the current `main` baseline.
 - Wix implementation is not included.
