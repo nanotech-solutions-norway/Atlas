@@ -1,0 +1,24 @@
+control_id,family,title,phase,priority,release_profiles,owner_role,current_status,classification
+GIT-05,GIT,Independent secondary Git control plane,0-6,P0,A/B/C,Governance/security owner,PLATFORM_SELECTION_PENDING,APPROVED_REQUIREMENT
+GIT-06,GIT,Independent signed source/release checkpoint,0-6,P0,A/B/C,Release/security owner,DESIGNED,APPROVED_REQUIREMENT
+GIT-07,GIT,Full Git bundle and integrity manifest,0-6,P0,A/B/C,Engineering/security owner,DESIGNED,APPROVED_REQUIREMENT
+GIT-08,GIT,No destructive mirror as sole recovery copy,0-6,P0,A/B/C,Governance owner,CANONICAL_CONTROL,APPROVED
+GIT-09,GIT,GitHub compromise trust suspension,0-6,P0,A/B/C,Incident/release owner,CANONICAL_CONTROL,APPROVED
+GIT-10,GIT,Break-glass source-authority verification,0-6,P0,A/B/C,Incident/release owner,DESIGNED,APPROVED_REQUIREMENT
+GIT-11,GIT,Independent return-to-GitHub authority gate,0-6,P0,A/B/C,Incident/release owner,DESIGNED,APPROVED_REQUIREMENT
+BCM-05,BCM,Immutable WORM source/release recovery storage,3-6,P0,B/C,Operations/security owner,DESIGNED,APPROVED_REQUIREMENT
+BCM-06,BCM,Encrypted offline source/governance recovery copy,3-6,P1,B/C,Operations/security owner,DESIGNED,APPROVED_REQUIREMENT
+BCM-07,BCM,Quarterly Git-independent restore exercise,4-6,P0,B/C,Operations/validation owner,NOT_RUN,APPROVED_REQUIREMENT
+BCM-08,BCM,Source-control RTO RPO evidence,4-6,P1,B/C,Operations owner,PENDING_REVIEW,AUTO_APPROVED
+IR-05,IR,GitHub account repository App Actions runner compromise playbook,0-6,P0,A/B/C,Incident owner,DOCUMENTED,APPROVED
+IR-06,IR,GitHub platform supply-chain compromise mode,0-6,P0,A/B/C,Incident/security owner,DOCUMENTED,APPROVED
+IR-07,IR,Git history/ref tamper reconciliation,0-6,P0,A/B/C,Governance/security owner,DOCUMENTED,APPROVED
+REL-03,REL,Source-control trust gate before deployment/write activation,0-6,P0,A/B/C,Release owner,CANONICAL_CONTROL,APPROVED
+REL-04,REL,Independent verification before recovery promotion,0-6,P0,A/B/C,Release/validation owner,DESIGNED,APPROVED_REQUIREMENT
+HOST-01,HOST,Recovery host separate admin/provider blast radius,3-6,P0,B/C,Infrastructure/security owner,DESIGNED,APPROVED_REQUIREMENT
+HOST-02,HOST,Domeneshop private server additional recovery node controls,3-6,P1,B/C,Infrastructure/security owner,OPTION_ONLY,APPROVED_CONTROL
+HOST-03,HOST,No sole recovery copy on production DNS hosting account,3-6,P0,B/C,Infrastructure/security owner,CANONICAL_CONTROL,APPROVED
+IAM-06,IAM,Secondary Git independent admin identities and recovery methods,0-6,P0,A/B/C,Security owner,DESIGNED,APPROVED_REQUIREMENT
+IAM-07,IAM,Independent signing key outside GitHub trust domain,0-6,P0,A/B/C,Security/release owner,DESIGNED,APPROVED_REQUIREMENT
+AZR-05,AZR,Azure DevOps Repos secondary Git candidate,0-6,P1,A/B/C,Architecture owner,PENDING_REVIEW,PENDING_REVIEW
+ALT-01,ALT,Forgejo or GitLab provider-diverse secondary candidate,0-6,P2,B/C,Architecture owner,PENDING_REVIEW,PENDING_REVIEW
