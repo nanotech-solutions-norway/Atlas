@@ -1,10 +1,12 @@
-# Atlas AI Security Policy — 00:09, 09.08.2026 Europe/Oslo
+# Atlas AI Security Policy — 02:41, 09.08.2026 Europe/Oslo
 
 ## Scope
 
 This public policy applies to the Atlas AI project, Atlas Workspace, organisation administration, Atlas operator systems, integrations/MCPs and customer-facing Atlas services. It is the public-safe implementation summary of the NTSN Atlas AI & MCP Universal Security Standard.
 
 A policy document does not prove that a control is live. Atlas distinguishes `DESIGNED`, `CONFIGURED`, `IMPLEMENTED`, `TESTED`, `VALIDATED`, `APPROVED`, `RELEASE_APPROVED` and `LIVE` states.
+
+The Atlas source-control continuity overlay is maintained at `docs/security/GITHUB_COMPROMISE_CONTINUITY.md`.
 
 ## Three-plane security boundary
 
@@ -25,11 +27,21 @@ The public website/browser and public GitHub repositories are never authoritativ
 - Provider credentials are attached server-side by the protected credential boundary; an AI model receives capabilities and opaque connector references, not secret values.
 - Every private request is bound server-side to the authenticated tenant and authorized object/action.
 - Customer data, memory, vector indexes, credentials, caches and audit views are isolated by tenant.
-- New integrations and MCPs are read-only first. Write actions are explicit, bounded, risk-classified and independently authorized.
+- New integrations and MCPs are read-only first. Write actions are explicit, bounded, classified by risk and independently authorized.
 - Model output is never authorization. Consequential actions require the appropriate server-side policy and explicit approval controls.
 - High-risk/destructive actions are blocked by default and require a separately approved release path.
 - Production services require rate/resource limits, audit/redaction, monitoring, backup/recovery and incident-response controls.
 - Unexpected security-policy, tool-schema, route or runtime-manifest drift fails closed.
+
+## Source-control compromise and continuity
+
+GitHub is the normal engineering/change-control authority while trusted, but Atlas requires an independent recovery chain. A suspected GitHub account, organization, repository, App, Actions, runner or platform compromise suspends trust in GitHub-triggered deployment/write events until a last-known-good independently verified checkpoint is established.
+
+The recommended continuity model is GitHub primary, Azure DevOps Repos as the preferred managed secondary under independent Microsoft Entra roles, immutable independently signed Git bundles/release manifests, and an encrypted offline recovery copy. An isolated Forgejo/GitLab service on a separately administered provider is an optional provider-diverse alternative.
+
+A simple destructive real-time mirror is not a sufficient security backup because compromised or deleted refs can propagate to the mirror. DNS/routing failover can improve availability but does not establish source integrity and must not automatically grant deployment authority to an unverified mirror.
+
+A Domeneshop/private server may be used as an additional recovery location when independently administered and hardened, but it should not be the only recovery platform if it shares the same provider/account boundary as production DNS or hosting.
 
 ## Customer credentials and connectors
 
@@ -67,6 +79,8 @@ Do not publish secrets, credentials, private keys, customer confidential data, b
 
 Security-sensitive runtime/deployment components and customer data do not belong in the public Atlas repository. Use reviewed changes, minimal CI permissions, secret scanning/push protection and dependency/code security checks appropriate to repository capability. Cloud CI/CD should use workload federation/OIDC instead of long-lived deployment credentials where supported.
 
+Critical release/security checkpoints should be independently verifiable outside GitHub by signed commits/tags and/or signed release manifests stored with immutable recovery evidence.
+
 ## Privacy and regulatory posture
 
 Atlas implements privacy/security by design and risk-based controls. Customer deployments must determine controller/processor roles, processing purposes, data classes, retention, subprocessor/provider terms and DPIA requirements where applicable.
@@ -79,9 +93,11 @@ Do not claim unconditional, universal or absolute GDPR compliance, AI Act compli
 
 Managed Secure is a protected architecture/deployment class, not a marketing label that bypasses release evidence. Before production use with real customer sensitive data it requires, as applicable: customer threat model, data classification, secure tenant architecture, privileged-access controls, retention/deletion, incident runbooks, backup/restore validation, provider/subprocessor review, DPIA/security review, adversarial AI testing and external penetration testing.
 
+Managed Secure also requires independent source-control continuity appropriate to its risk: a secondary Git control plane, independently verifiable release checkpoint, immutable recovery evidence and tested restoration without relying solely on GitHub.
+
 ## Incident handling
 
-If a credential or account may be compromised: revoke/rotate it, suspend the affected capability/tenant when necessary, preserve privacy-minimized evidence, determine scope, reconcile provider/customer state, remediate the root cause and rerun relevant security tests before re-enable. A secret committed to Git is treated as compromised even if rapidly removed.
+If a credential, account or source-control authority may be compromised: suspend the affected deployment/action trust, revoke/rotate credentials, preserve privacy-minimized evidence, determine scope, identify the last independently verified source checkpoint, reconcile provider/customer state, remediate the root cause and rerun relevant security tests before re-enable. A secret committed to Git is treated as compromised even if rapidly removed.
 
 ## Vulnerability reporting
 
@@ -89,4 +105,4 @@ Do not disclose suspected vulnerabilities, credentials or customer-sensitive evi
 
 ## Security limitation statement
 
-No architecture eliminates all risk. Short-lived credentials, encryption, WAFs, prompt filters and tenant controls reduce specific risks but do not make authorized misuse, compromised workloads, provider failures or incorrect model outputs impossible. Security and compliance remain dependent on the deployed controls, customer use case, provider behavior, applicable law and continuing validation.
+No architecture eliminates all risk. Short-lived credentials, encryption, WAFs, prompt filters, tenant controls and independent Git recovery reduce specific risks but do not make authorized misuse, compromised workloads, provider failures or incorrect model outputs impossible. Security and compliance remain dependent on the deployed controls, customer use case, provider behavior, applicable law and continuing validation.
