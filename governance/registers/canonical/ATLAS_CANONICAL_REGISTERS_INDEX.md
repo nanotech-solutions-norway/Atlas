@@ -2,10 +2,10 @@
 
 **Project:** Atlas Website / Atlas AI  
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
-**Last controlled update:** 15:45, 06.08.2026 Europe/Oslo  
+**Last controlled update:** 02:56, 09.08.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled update branch:** `agent/full-deployment-report-integration-20260806`  
+**Controlled update branch:** `agent/security-continuity-propagation-20260809`  
 **Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
@@ -18,8 +18,9 @@
 4. `ATLAS_VALIDATION_REGISTER.md` — tests, evidence, results and follow-up.
 5. `ATLAS_SOURCE_AUTHORITY_MAP.md` — hierarchy, platform roles and contradiction protocol.
 6. `ATLAS_SESSION_CLOSE_LOG.md` — major-session closure and continuation state.
-7. `ATLAS_WORKSPACE_UPDATE_REGISTER_1854_05082026.md` — supplemental Workspace decision, learning, error, validation, source-authority and session entries. Apply item-level classifications; architecture remains `PENDING_REVIEW`.
-8. `ATLAS_FULL_DEPLOYMENT_UPDATE_REGISTER_1545_06082026.md` — supplemental full-deployment decision, learning, error, validation, source-authority and task entries. Apply item-level classifications; architecture, platform and procurement choices remain `PENDING_REVIEW`.
+7. `ATLAS_WORKSPACE_UPDATE_REGISTER_1854_05082026.md` — supplemental Workspace decision, learning, error, validation, source-authority and session entries. Apply item-level classifications; architecture remains `PENDING_REVIEW` where not subsequently approved.
+8. `ATLAS_FULL_DEPLOYMENT_UPDATE_REGISTER_1545_06082026.md` — supplemental full-deployment decision, learning, error, validation, source-authority and task entries. Apply item-level classifications; architecture, platform and procurement choices remain `PENDING_REVIEW` unless a later approved decision supersedes them.
+9. `ATLAS_SECURITY_CONTINUITY_UPDATE_REGISTER_0256_09082026.md` — supplemental universal-security and source-control-continuity decision, learning, risk, validation, source-authority, implementation-task and session entries. Mandatory security requirements are item-classified `APPROVED`/`AUTO_APPROVED`; secondary-platform procurement remains `PENDING_REVIEW`.
 
 ## Supplemental controls
 
@@ -48,14 +49,24 @@
 - `../../project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_FULL_DEPLOYMENT_1545_06082026.md`
 - `../../../project-memory/atlas/ATLAS_FULL_DEPLOYMENT_MEMORY_UPDATE_1545_06082026.md`
 
+### Security continuity package — 09.08.2026
+
+- `ATLAS_SECURITY_CONTINUITY_UPDATE_REGISTER_0256_09082026.md`
+- `../../../docs/security/GITHUB_COMPROMISE_CONTINUITY.md`
+- `../../../docs/security/incident-response-runbook.md`
+- `../../../docs/security/security-control-matrix.md`
+- `../../project-logs/ATLAS_PROJECT_LOG_SECURITY_CONTINUITY_0256_09082026.md`
+- `../../../project-memory/atlas/ATLAS_SECURITY_CONTINUITY_MEMORY_UPDATE_0256_09082026.md`
+
 ## Storage and authority
 
-- **Canonical:** GitHub Markdown in `nanotech-solutions-norway/Atlas/governance/registers/canonical/` and its linked controlled package records.
+- **Canonical during normal trusted operation:** GitHub Markdown in `nanotech-solutions-norway/Atlas/governance/registers/canonical/` and its linked controlled package records.
 - **Controlled mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz
+- **GitHub-compromise recovery authority:** only an independently verified last-known-good signed checkpoint after the approved break-glass conditions in `ATLAS_SECURITY_CONTINUITY_UPDATE_REGISTER_0256_09082026.md`; a mirror is not automatically authoritative.
 - **Atlas Workspace report:** controlled Google Drive report/memory records dated 05.08.2026.
 - **Full deployment report:** DOCX/PDF report artifacts plus the controlled GitHub integration record dated 06.08.2026.
 - **Gamma/Wix/Figma:** Non-public reference/index artifacts only and not competing canonical sources.
-- **Public release:** `NO_GO`.
+- **Public release:** `NO_GO` unless/until the applicable current release gates are explicitly passed and approved.
 
 ## Maintenance rules
 
@@ -68,3 +79,6 @@
 - Validate GitHub and Drive readback after each substantive update.
 - Store full report artifacts and controlled summaries with stable filenames and provenance.
 - Keep architecture/procurement recommendations separate from implementation and release evidence.
+- Never use a destructive live Git mirror as the only recovery copy.
+- Preserve independently verifiable source checkpoints, immutable/offline recovery evidence and a tested break-glass source-authority procedure.
+- A source-control outage or compromise does not relax Atlas/MCP write, customer-data, financial or Managed Secure release controls.
