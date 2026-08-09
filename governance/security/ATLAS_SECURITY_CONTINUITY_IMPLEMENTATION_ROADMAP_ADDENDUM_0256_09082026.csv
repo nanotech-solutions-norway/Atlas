@@ -1,0 +1,13 @@
+work_id,workstream,control_refs,sequence,dependency,required_evidence,current_status,classification
+SC-001,Secondary Git platform selection,"GIT-05;IAM-06;AZR-05;ALT-01",1,Approved security baseline,"Provider/account comparison; identity/admin separation; region; cost; operations; explicit selection",PENDING_REVIEW,PENDING_REVIEW
+SC-002,Independent signing root,"GIT-06;IAM-07",2,SC-001 optional for design,"Signing identity/key custody design; public verification material; test signature verification",DESIGNED,APPROVED_REQUIREMENT
+SC-003,Git bundle checkpoint automation,"GIT-07;GIT-08",3,SC-002,"Full bundle creation; all-ref coverage; SHA-256 manifest; bundle verify; retained divergent checkpoints",NOT_IMPLEMENTED,APPROVED_REQUIREMENT
+SC-004,Immutable recovery storage,"BCM-05",4,SC-003,"WORM/immutability configuration; separate access policy; retention; test attempted overwrite/delete failure",NOT_IMPLEMENTED,APPROVED_REQUIREMENT
+SC-005,Encrypted offline recovery,"BCM-06",5,SC-003,"Encrypted cold copy; custody/location record; offline verification material; restore read test",NOT_IMPLEMENTED,APPROVED_REQUIREMENT
+SC-006,Secondary Git protected configuration,"GIT-05;IAM-06;HOST-01",6,SC-001,"Branch protection; least privilege; separate credentials/recovery; no production secrets; network controls where applicable",NOT_IMPLEMENTED,APPROVED_REQUIREMENT
+SC-007,Break-glass source authority,"GIT-09;GIT-10;REL-03;REL-04",7,"SC-002;SC-003;SC-006","Incident declaration; known-good checkpoint verification; independent CI/test; operator approval; audit record",DESIGNED,APPROVED_REQUIREMENT
+SC-008,GitHub compromise kill-switch integration,"GIT-09;IR-05;IR-06",8,SC-007,"Demonstrate GitHub-originated deployment/write freeze independent of repository content",NOT_IMPLEMENTED,APPROVED_REQUIREMENT
+SC-009,Return-to-GitHub procedure,"GIT-11;IR-07",9,SC-007,"Credential rotation; branch/workflow revalidation; history reconciliation; independent tests; return approval",DESIGNED,APPROVED_REQUIREMENT
+SC-010,Independent restore exercise,"BCM-07;BCM-08",10,"SC-003;SC-004;SC-005;SC-006","Quarterly restore without GitHub; signature/history/build/test results; RTO/RPO; defects and remediation",NOT_RUN,APPROVED_REQUIREMENT
+SC-011,Domeneshop optional recovery-node evaluation,"HOST-02;HOST-03",11,SC-001,"Confirm separate admin/account boundary; VPN/IP restrictions; SSH keys; patching; monitoring; encryption; off-provider backup",OPTION_ONLY,APPROVED_CONTROL
+SC-012,Managed Secure continuity gate,"REL-03;REL-04;BCM-07",12,SC-010,"Customer/release profile demonstrates independent source recovery and successful restore exercise where applicable",BLOCKED_PENDING_EVIDENCE,APPROVED_REQUIREMENT
