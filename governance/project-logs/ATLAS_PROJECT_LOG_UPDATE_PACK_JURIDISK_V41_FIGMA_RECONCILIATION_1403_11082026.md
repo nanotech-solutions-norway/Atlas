@@ -221,7 +221,7 @@ All ten slides now carry:
 - `handoffStatus = PASS_DESIGN_AND_CONTENT_HANDOFF`;
 - `deterministicValidation = PASS`;
 - `renderedVisualQA = PASS_10_OF_10`;
-- `validatedAt = 14:03, 11.08.2026 Europe/Oslo`;
+- `validatedAt = 14:20, 11.08.2026 Europe/Oslo`;
 - the recorded PDF/PPTX canvas discrepancy.
 
 The slide row was renamed to `Juridisk v4.1`.
