@@ -2,10 +2,10 @@
 
 **Project:** Atlas Website / Atlas AI  
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
-**Last controlled update:** 02:13, 12.08.2026 Europe/Oslo  
+**Last controlled update:** 14:20, 12.08.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled update branch:** `main`  
+**Controlled update branch:** `atlas/juridisk-sync-generic-design-transfer-pack-20260812`  
 **Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
@@ -23,6 +23,7 @@
 9. `ATLAS_SECURITY_CONTINUITY_UPDATE_REGISTER_0256_09082026.md` — supplemental universal-security and source-control-continuity decision, learning, risk, validation, source-authority, implementation-task and session entries. Mandatory security requirements are item-classified `APPROVED`/`AUTO_APPROVED`; secondary-platform procurement remains `PENDING_REVIEW`.
 10. `ATLAS_PHASE_TERMINOLOGY_UPDATE_REGISTER_0213_12082026.md` — approved internal phase namespace: `W1` for the 15-page public website Phase 1 and `D0–D9` for the full-deployment programme.
 11. `ATLAS_PENDING_REVIEW_INDEX_0213_12082026.md` — consolidated current, non-superseded pending-review decisions/tasks with closure actions.
+12. `ATLAS_FIGMA_JURIDISK_AND_GENERIC_TRANSFER_UPDATE_REGISTER_1415_12082026.md` — Juridisk v4.1 record reconciliation, stale-PR correction, reusable design-transfer template boundary, validation and session entries.
 
 ## Supplemental controls
 
@@ -70,6 +71,13 @@
 - `../../project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_PHASE_TERMINOLOGY_0213_12082026.md`
 - `../../../project-memory/atlas/ATLAS_PHASE_TERMINOLOGY_MEMORY_UPDATE_0213_12082026.md`
 
+### Juridisk and reusable design-transfer package — 12.08.2026
+
+- `ATLAS_FIGMA_JURIDISK_AND_GENERIC_TRANSFER_UPDATE_REGISTER_1415_12082026.md`
+- `../../project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_JURIDISK_V41_FIGMA_RECONCILIATION_1403_11082026.md`
+- `../../project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_JURIDISK_AND_GENERIC_TRANSFER_1418_12082026.md`
+- `../../templates/GENERAL_FIGMA_GAMMA_DESIGN_RECONCILIATION_TRANSFER_PACK_v1_1408_12082026.md`
+
 ## Storage and authority
 
 - **Canonical during normal trusted operation:** GitHub Markdown in `nanotech-solutions-norway/Atlas/governance/registers/canonical/` and its linked controlled package records.
@@ -78,6 +86,7 @@
 - **Atlas Workspace report:** controlled Google Drive report/memory records dated 05.08.2026.
 - **Full deployment report:** DOCX/PDF report artifacts plus the controlled GitHub integration record dated 06.08.2026.
 - **Gamma/Wix/Figma:** Non-public reference/index artifacts only and not competing canonical sources.
+- **Reusable project-agnostic design transfer:** Atlas stores a controlled export snapshot; the reusable cross-project copy is maintained in `nanotech-solutions-norway/ai-memory-ops`. A target project must explicitly adopt its own governing version.
 - **Public release:** `NO_GO` unless/until the applicable current release gates are explicitly passed and approved.
 
 ## Maintenance rules
