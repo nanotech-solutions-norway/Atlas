@@ -2,10 +2,10 @@
 
 **Project:** Atlas Website / Atlas AI  
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
-**Last controlled update:** 14:20, 12.08.2026 Europe/Oslo  
+**Last controlled update:** 14:45, 12.08.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled update branch:** `atlas/juridisk-sync-generic-design-transfer-pack-20260812`  
+**Controlled update branch:** `main`  
 **Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
