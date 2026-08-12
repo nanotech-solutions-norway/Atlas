@@ -2,10 +2,10 @@
 
 **Project:** Atlas Website / Atlas AI  
 **Created:** 02:29, 25.07.2026 Europe/Oslo  
-**Last controlled update:** 02:56, 09.08.2026 Europe/Oslo  
+**Last controlled update:** 02:13, 12.08.2026 Europe/Oslo  
 **Canonical repository:** `nanotech-solutions-norway/Atlas`  
 **Repository path:** `governance/registers/canonical/`  
-**Controlled update branch:** `agent/security-continuity-propagation-20260809`  
+**Controlled update branch:** `main`  
 **Drive mirror:** https://drive.google.com/drive/folders/1cXjuJQONMu9lEDYqk6uc62SKJqnTWKiz  
 
 > **Authority rule:** The file is a canonical container. Each entry has its own classification. Only entries marked `CANONICAL`, `APPROVED`, or `AUTO_APPROVED` may be applied as governing instructions. `PENDING_REVIEW` entries are advisory and must not be represented as approved decisions.
@@ -21,6 +21,8 @@
 7. `ATLAS_WORKSPACE_UPDATE_REGISTER_1854_05082026.md` — supplemental Workspace decision, learning, error, validation, source-authority and session entries. Apply item-level classifications; architecture remains `PENDING_REVIEW` where not subsequently approved.
 8. `ATLAS_FULL_DEPLOYMENT_UPDATE_REGISTER_1545_06082026.md` — supplemental full-deployment decision, learning, error, validation, source-authority and task entries. Apply item-level classifications; architecture, platform and procurement choices remain `PENDING_REVIEW` unless a later approved decision supersedes them.
 9. `ATLAS_SECURITY_CONTINUITY_UPDATE_REGISTER_0256_09082026.md` — supplemental universal-security and source-control-continuity decision, learning, risk, validation, source-authority, implementation-task and session entries. Mandatory security requirements are item-classified `APPROVED`/`AUTO_APPROVED`; secondary-platform procurement remains `PENDING_REVIEW`.
+10. `ATLAS_PHASE_TERMINOLOGY_UPDATE_REGISTER_0213_12082026.md` — approved internal phase namespace: `W1` for the 15-page public website Phase 1 and `D0–D9` for the full-deployment programme.
+11. `ATLAS_PENDING_REVIEW_INDEX_0213_12082026.md` — consolidated current, non-superseded pending-review decisions/tasks with closure actions.
 
 ## Supplemental controls
 
@@ -58,6 +60,16 @@
 - `../../project-logs/ATLAS_PROJECT_LOG_SECURITY_CONTINUITY_0256_09082026.md`
 - `../../../project-memory/atlas/ATLAS_SECURITY_CONTINUITY_MEMORY_UPDATE_0256_09082026.md`
 
+### Phase terminology package — 12.08.2026
+
+- `ATLAS_PHASE_TERMINOLOGY_UPDATE_REGISTER_0213_12082026.md`
+- `ATLAS_PENDING_REVIEW_INDEX_0213_12082026.md`
+- `../../roadmaps/ATLAS_WEBSITE_AND_FULL_DEPLOYMENT_PHASE_MAP_0213_12082026.md`
+- `../../source-registers/ATLAS_PHASE_TERMINOLOGY_SOURCE_REGISTER_0213_12082026.md`
+- `../../validation/ATLAS_PHASE_TERMINOLOGY_VALIDATION_0213_12082026.md`
+- `../../project-logs/ATLAS_PROJECT_LOG_UPDATE_PACK_PHASE_TERMINOLOGY_0213_12082026.md`
+- `../../../project-memory/atlas/ATLAS_PHASE_TERMINOLOGY_MEMORY_UPDATE_0213_12082026.md`
+
 ## Storage and authority
 
 - **Canonical during normal trusted operation:** GitHub Markdown in `nanotech-solutions-norway/Atlas/governance/registers/canonical/` and its linked controlled package records.
@@ -79,6 +91,8 @@
 - Validate GitHub and Drive readback after each substantive update.
 - Store full report artifacts and controlled summaries with stable filenames and provenance.
 - Keep architecture/procurement recommendations separate from implementation and release evidence.
+- Use `W1` for the public website Phase 1 and `D0–D9` for full-deployment phases whenever phase ambiguity is possible.
+- Preserve legacy dated phase labels when quoting historical evidence; add the modern alias rather than silently renumbering history.
 - Never use a destructive live Git mirror as the only recovery copy.
 - Preserve independently verifiable source checkpoints, immutable/offline recovery evidence and a tested break-glass source-authority procedure.
 - A source-control outage or compromise does not relax Atlas/MCP write, customer-data, financial or Managed Secure release controls.
