@@ -90,6 +90,24 @@ def validate_gate_safeguards(schema: dict[str, Any]) -> None:
     }
     validator.validate(deny_instance)
 
+    # A denial cannot claim that every control passed; an allowance cannot
+    # carry a contradictory denial reason. Exercise every published reason.
+    contradictory_deny = json.loads(json.dumps(deny_instance))
+    contradictory_deny["reasonCodes"] = ["ALL_REQUIRED_CONTROLS_PASSED"]
+    assert_invalid(validator, contradictory_deny, "DENY with success reason")
+    reasons = schema["properties"]["reasonCodes"]["items"]["enum"]
+    for reason in reasons:
+        if reason == "ALL_REQUIRED_CONTROLS_PASSED":
+            continue
+        denied = json.loads(json.dumps(deny_instance))
+        denied["reasonCodes"] = [reason]
+        validator.validate(denied)
+        mixed = json.loads(json.dumps(deny_instance))
+        mixed["decision"] = "ALLOW"
+        mixed["reasonCodes"] = ["ALL_REQUIRED_CONTROLS_PASSED", reason]
+        mixed["dependencyState"] = dict.fromkeys(mixed["dependencyState"], True)
+        assert_invalid(validator, mixed, f"ALLOW with denial reason {reason}")
+
     unsafe_allow = json.loads(json.dumps(deny_instance))
     unsafe_allow["decision"] = "ALLOW"
     unsafe_allow["reasonCodes"] = ["ALL_REQUIRED_CONTROLS_PASSED"]
