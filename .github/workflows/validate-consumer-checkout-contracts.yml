@@ -6,6 +6,8 @@ on:
       - "governance/implementation/contracts/**"
       - "governance/implementation/test-vectors/**"
       - "scripts/validate_consumer_checkout_contracts.py"
+      - "scripts/checkout_consent_contract.py"
+      - "scripts/test_checkout_consent_contract.py"
       - ".github/workflows/validate-consumer-checkout-contracts.yml"
   push:
     branches:
@@ -14,6 +16,8 @@ on:
       - "governance/implementation/contracts/**"
       - "governance/implementation/test-vectors/**"
       - "scripts/validate_consumer_checkout_contracts.py"
+      - "scripts/checkout_consent_contract.py"
+      - "scripts/test_checkout_consent_contract.py"
       - ".github/workflows/validate-consumer-checkout-contracts.yml"
   workflow_dispatch:
 
@@ -40,6 +44,9 @@ jobs:
 
       - name: Validate schemas and negative paths
         run: python scripts/validate_consumer_checkout_contracts.py
+
+      - name: Validate immutable synthetic consent evidence
+        run: python scripts/test_checkout_consent_contract.py
 
       - name: Confirm non-deployment scope
         run: |
