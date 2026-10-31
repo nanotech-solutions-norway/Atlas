@@ -24,6 +24,15 @@ class CaseTests(unittest.TestCase):
                 if units<=balance: self.assertEqual(consume_prepaid(balance,units),balance-units)
                 else:
                     with self.assertRaises(ValueError): consume_prepaid(balance,units)
+    def test_contradictory_closed_state_is_denied(self):
+        with self.assertRaises(ValueError):
+            validate_case_update(self.schema,self.case,dict(self.case,currentState='CLOSED',closed=False))
+    def test_fully_reconciled_closure_and_time_bounds(self):
+        complete=dict(self.case,currentState='CLOSED',closed=True,closedAt='2026-10-31T01:00:00Z',updatedAt='2026-10-31T02:00:00Z',reconciliationState='MATCHED',wixOrderState='CANCELED',paymentRefundState='SUCCEEDED',entitlementState='ENDED',accountingState='CORRECTED')
+        self.assertTrue(validate_case_update(self.schema,self.case,complete)['closed'])
+        for stamp in ('2026-10-30T23:00:00Z','2026-10-31T03:00:00Z'):
+            with self.assertRaises(ValueError): validate_case_update(self.schema,self.case,dict(complete,closedAt=stamp))
+        with self.assertRaises(ValueError): validate_case_update(self.schema,complete,complete)
     def test_invalid_units(self):
         for balance,units in [(-1,0),(1,-1),(True,1),(1,False),(1,1.5),(1,float('nan'))]:
             with self.assertRaises(ValueError): consume_prepaid(balance,units)
